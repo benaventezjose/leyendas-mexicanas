@@ -1,0 +1,5962 @@
+{
+ "title": "La Mulata de Córdoba: la bruja que escapó de la Inquisición en un barco dibujado",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "G",
+ "seed": 7,
+ "grade": "warm",
+ "vignette": 0.55,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "o01",
+   "text": "Madrugada de tormenta en Veracruz. Un carcelero baja a los calabozos de San Juan de Ulúa, y las llaves le tiemblan en la mano.",
+   "pre": 0.6,
+   "music": "dread",
+   "amb": [
+    "sea",
+    {
+     "name": "rain",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 1.2,
+     "gain": -2
+    },
+    {
+     "name": "footsteps",
+     "at": 4.0,
+     "gain": -6,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "chains",
+     "at": 6.5,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ulua_storm.png"
+      },
+      {
+       "src": "art/bolt.png",
+       "appear_at": 1.2,
+       "vanish_at": 1.45,
+       "blend": "screen"
+      },
+      {
+       "src": "art/ulua_waves_fg.png",
+       "depth": 1.3,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.006,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "lightning",
+       "at": [
+        1.2
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        150,
+        170,
+        190
+       ]
+      }
+     ],
+     "grade": "cold",
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/jailer_l.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.82,
+         "to": 0.95,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        },
+        {
+         "type": "drift",
+         "dy": 0.03
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.56,
+       1.3
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "cold",
+     "weight": 1.1
+    }
+   ]
+  },
+  {
+   "id": "o02",
+   "text": "Abre la reja… y la celda está vacía.",
+   "amb": [
+    "drips",
+    {
+     "name": "sea",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.2,
+     "gain": -3
+    },
+    {
+     "name": "sting",
+     "at": 1.6,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cellgate.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.53,
+       0.58,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        1.2,
+        1.8
+       ]
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "o03",
+   "text": "En la pared hay un mar dibujado con carbón. Pero el barco que anoche navegaba en él… ya no está.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea_gap.png"
+      },
+      {
+       "src": "art/lantern_pool.png",
+       "blend": "screen",
+       "opacity": 0.6,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.15
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        210,
+        200,
+        160
+       ]
+      }
+     ],
+     "grade": "candle",
+     "transition": "flash",
+     "vignette": 0.9,
+     "transition_len": 0.4
+    }
+   ]
+  },
+  {
+   "id": "o04",
+   "text": "Solo queda un olor a azufre. Y un rumor que cruzó el océano: que años después, alguien la volvió a ver.",
+   "pause": 0.4,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea_gap.png"
+      },
+      {
+       "src": "art/lantern_pool.png",
+       "blend": "screen",
+       "opacity": 0.6,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.52,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.45
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        200,
+        190,
+        120
+       ],
+       "low": false,
+       "speed": 0.6
+      },
+      "dust"
+     ],
+     "grade": "candle",
+     "vignette": 0.9
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close.png",
+       "depth": 1.04
+      },
+      {
+       "src": "#050302",
+       "opacity": 0.55
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        160,
+        180,
+        200
+       ]
+      }
+     ],
+     "grade": "night",
+     "text": [
+      {
+       "str": "LA MULATA DE CÓRDOBA|la bruja que escapó en un barco dibujado",
+       "style": "title",
+       "at": [
+        0.6,
+        99
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "weight": 0.9
+    }
+   ]
+  },
+  {
+   "id": "o05",
+   "text": "",
+   "pause": 3.2,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -2
+    },
+    {
+     "name": "bell",
+     "at": 0.4,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen",
+       "opacity": 0.6,
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.02,
+         "period": 3,
+         "pivot": [
+          0.5,
+          0.5
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.15
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "LA MULATA DE CÓRDOBA|la bruja que escapó en un barco dibujado",
+       "style": "title",
+       "at": [
+        0.2,
+        99
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.5,
+     "out": "fade",
+     "out_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "c101",
+   "text": "Córdoba, Veracruz. Siglo diecisiete. Imagina el calor húmedo pegado a la piel, y el aire que huele a tierra mojada y a caña de azúcar recién cortada.",
+   "pre": 0.8,
+   "music": "calm",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cordoba_plaza.png"
+      },
+      {
+       "src": "#050302",
+       "opacity": 0.62
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ]
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "color": [
+        255,
+        240,
+        200
+       ]
+      }
+     ],
+     "grade": "warm",
+     "text": [
+      {
+       "str": "CAPÍTULO I|La mujer que no envejecía",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.2
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cane_fields.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "color": [
+        255,
+        220,
+        160
+       ],
+       "count": 50
+      },
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        255,
+        210,
+        170
+       ]
+      }
+     ],
+     "grade": "warm",
+     "text": [
+      {
+       "str": "Córdoba, Veracruz|siglo diecisiete",
+       "style": "date",
+       "at": [
+        0.3,
+        4.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c102",
+   "text": "A lo lejos, por encima de las nubes, brilla la nieve del Citlaltépetl, el Pico de Orizaba, la montaña más alta de México.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/orizaba.png"
+      },
+      {
+       "src": "art/orizaba_clouds.png",
+       "depth": 1.15,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.04
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.05
+      ]
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c103",
+   "text": "Córdoba es una villa joven: la fundaron treinta familias españolas en mil seiscientos dieciocho.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cordoba_plaza.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.55,
+       1.5
+      ],
+      "to": [
+       0.44,
+       0.5,
+       1.7
+      ]
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c104",
+   "text": "Tiene su plaza, sus portales y su iglesia. Y alrededor, los cañaverales donde trabajan, de sol a sol, cientos de personas esclavizadas, traídas a la fuerza desde África.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cordoba_plaza.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.75,
+       0.68,
+       1.6
+      ],
+      "to": [
+       0.6,
+       0.66,
+       1.6
+      ]
+     },
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cane_fields.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.7
+      ],
+      "to": [
+       0.55,
+       0.74,
+       1.85
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        255,
+        200,
+        150
+       ]
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c105",
+   "text": "Muy cerca, en esas mismas montañas, un hombre llamado Yanga y su gente le habían arrancado a la Corona algo que parecía imposible: un pueblo libre.",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -6
+    },
+    {
+     "name": "fire",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/yanga.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.65,
+       0.62,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        220,
+        180,
+        170
+       ]
+      },
+      "embers"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c106",
+   "text": "En ese mundo, cuentan, vivía una mujer a la que todos llamaban, simplemente… la Mulata de Córdoba.",
+   "music": "mystery",
+   "amb": [
+    "crickets",
+    {
+     "name": "night",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      },
+      {
+       "src": "art/plants_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.0,
+         "period": 8,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.25
+      ]
+     },
+     "fx": [
+      "fireflies",
+      {
+       "type": "fog",
+       "strength": 0.2
+      }
+     ],
+     "grade": "night",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "c107",
+   "text": "Algunas versiones dicen que se llamaba Soledad. Nadie sabía de dónde había llegado. Nadie conoció a sus padres.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/bust_l.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.36,
+       1.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.04
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c108",
+   "text": "Era libre, y vivía sola a las afueras de la villa, rodeada de plantas y de luciérnagas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      },
+      {
+       "src": "art/plants_fg.png",
+       "depth": 1.4,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.2,
+         "period": 7,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.32,
+       0.62,
+       1.6
+      ],
+      "to": [
+       0.4,
+       0.62,
+       1.45
+      ]
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c109",
+   "text": "Y era hermosa. De piel morena, de rizos negros recogidos en un pañuelo, y con una mirada tranquila… como de quien sabe algo que tú todavía no sabes.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.04
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close_eyes.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.47,
+       1.55
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.7
+      ]
+     },
+     "grade": "warm",
+     "weight": 0.8
+    }
+   ]
+  },
+  {
+   "id": "c110",
+   "text": "Pero lo que de verdad la hacía distinta no era su belleza. Era lo que sabía hacer con las manos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/bust_herbs.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.7,
+       1.7
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.04
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c111",
+   "text": "Conocía las hierbas. La ruda, el estafiate, la hierbabuena, el toloache. Sabía cuál baja la fiebre, cuál calma el dolor… y cuál, mal usada, puede matar.",
+   "music": "hope",
+   "amb": [
+    {
+     "name": "fire",
+     "gain": -12
+    },
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/herbs_table.png"
+      },
+      {
+       "src": "art/copal_smoke.png",
+       "blend": "screen",
+       "opacity": 0.7,
+       "anim": [
+        {
+         "type": "drift",
+         "dy": -0.05
+        },
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/herbs_table.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.34,
+       0.75,
+       1.9
+      ],
+      "to": [
+       0.34,
+       0.77,
+       2.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      {
+       "type": "darken",
+       "amount": 0.8
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.8
+    }
+   ]
+  },
+  {
+   "id": "c112",
+   "text": "Cuando un niño ardía en calentura y el médico ya se había dado por vencido, las madres iban a buscarla de noche, a escondidas.",
+   "amb": [
+    "night",
+    {
+     "name": "rain",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.62,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "rain",
+       "strength": 0.15
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c113",
+   "text": "Y ella llegaba. Encendía copal, ponía las manos sobre la frente del niño… y al amanecer, la fiebre se había ido.",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -6
+    },
+    {
+     "name": "fire",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sickroom.png"
+      },
+      {
+       "src": "art/copal_smoke.png",
+       "blend": "screen",
+       "opacity": 0.6,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.3,
+         "dy": -0.05
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.35,
+       0.6,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/bust_closed.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.32,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.33,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "c114",
+   "text": "Encontraba cosas perdidas. Y a los enamorados sin suerte les daba consejos que, decían, nunca fallaban.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/objects.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.7,
+       1.4
+      ],
+      "to": [
+       0.6,
+       0.7,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c115",
+   "text": "Ricos y pobres tocaban a su puerta, y a todos los atendía igual.",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_queue.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.65,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.65,
+       1.2
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c116",
+   "text": "Pero había algo que inquietaba a la gente. Pasaban los años… y ella no envejecía.",
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.2,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/bust_l.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.33,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        190,
+        200,
+        220
+       ]
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "NO ENVEJECÍA|pasaban los años…",
+       "style": "big",
+       "at": [
+        2.2,
+        99
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.35
+    }
+   ]
+  },
+  {
+   "id": "c117",
+   "text": "Las que eran niñas cuando ella llegó ya peinaban canas. Y la Mulata seguía igual. La misma piel. La misma mirada.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_queue.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.7,
+       1.7
+      ],
+      "to": [
+       0.45,
+       0.7,
+       1.8
+      ]
+     },
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ]
+     },
+     "grade": "warm",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "c118",
+   "text": "Y empezaron los rumores. Que la habían visto curando en Orizaba… a la misma hora en que otros la veían en misa, en Córdoba.",
+   "amb": [
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/twin.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2
+        }
+       ],
+       "opacity": 0.9
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c119",
+   "text": "Que de su casa salían luces extrañas a medianoche. Que se escuchaba música, y risas, aunque ella vivía sola.",
+   "amb": [
+    "crickets"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -9,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      },
+      {
+       "src": "art/strange_lights.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.05,
+         "period": 2.5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.4,
+         "speed": 3
+        }
+       ]
+      },
+      {
+       "src": "art/plants_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.0,
+         "period": 6,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.5
+      ]
+     },
+     "fx": [
+      "fireflies",
+      {
+       "type": "fog",
+       "strength": 0.25
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c120",
+   "text": "¿Santa? ¿Bruja? Nadie se atrevía a decirlo en voz alta. Todavía.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 5,
+      "bpm": 60
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.0,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close_eyes.png",
+       "depth": 1.04
+      },
+      {
+       "src": "#050302",
+       "opacity": 0.4
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.47,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.1
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "¿SANTA? ¿BRUJA?|nadie se atrevía a decirlo",
+       "style": "big",
+       "at": [
+        1.0,
+        99
+       ]
+      }
+     ],
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "c201",
+   "text": "Entre los hombres que se fijaron en ella, había uno que no estaba acostumbrado a escuchar la palabra no.",
+   "pre": 0.8,
+   "music": "tension",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.15
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3
+      }
+     ],
+     "grade": "night",
+     "text": [
+      {
+       "str": "CAPÍTULO II|El alcalde",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "c202",
+   "text": "Era el alcalde de la villa. Muchas versiones lo llaman don Martín de Ocaña. Un hombre mayor, rico… y con poder.",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    },
+    {
+     "name": "clock",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alcalde_study.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.35,
+       0.42,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c203",
+   "text": "Primero le mandó regalos: telas finas, aretes de oro, dulces de convento. Ella los devolvió todos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/objects.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.75,
+       1.8
+      ],
+      "to": [
+       0.55,
+       0.74,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c204",
+   "text": "Después fue en persona, con el sombrero en la mano, a ofrecerle lo que, según él, ninguna mujer podía rechazar.",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -10
+    },
+    {
+     "name": "crickets",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alcalde_door.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.2
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c205",
+   "text": "Conmigo no te faltaría nada. Ni casa, ni apellido, ni protección.",
+   "voice": "em_santa",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alcalde_door.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.33,
+       0.4,
+       1.8
+      ],
+      "to": [
+       0.34,
+       0.4,
+       1.95
+      ]
+     },
+     "grade": "warm",
+     "text": [
+      {
+       "str": "Conmigo no te faltaría nada|el alcalde",
+       "style": "quote",
+       "at": [
+        0.3,
+        99
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c206",
+   "text": "No necesito su protección, señor alcalde. Y mi nombre… ya lo tengo.",
+   "voice": "ef_dora",
+   "speed": 0.85,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alcalde_door.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.36,
+       1.8
+      ],
+      "to": [
+       0.62,
+       0.35,
+       2.0
+      ]
+     },
+     "grade": "warm",
+     "text": [
+      {
+       "str": "Mi nombre… ya lo tengo|la Mulata",
+       "style": "quote",
+       "at": [
+        1.5,
+        99
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c207",
+   "text": "Imagina: una mujer, mulata y sola, rechazando al hombre más poderoso del pueblo. Frente a los vecinos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alcalde_door.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.2,
+       0.7,
+       1.6
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.3
+      ]
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c208",
+   "text": "El alcalde se fue sin decir palabra. Pero la humillación se le volvió veneno.",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alcalde_study.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.4,
+       0.45,
+       1.45
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "c209",
+   "text": "Si no podía ser suya… no sería de nadie.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/alcalde_l.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.25,
+       1.7
+      ],
+      "to": [
+       0.52,
+       0.25,
+       1.9
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.15
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash",
+     "transition_len": 0.3
+    }
+   ]
+  },
+  {
+   "id": "c210",
+   "text": "Empezó a decir que lo había embrujado. Que esa mujer le había dado un brebaje para volverlo loco de amor.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alcalde_study.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.72,
+       1.9
+      ],
+      "to": [
+       0.66,
+       0.72,
+       2.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.6,
+       1.5
+      ],
+      "to": [
+       0.4,
+       0.6,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c211",
+   "text": "Y los rumores que antes se decían en voz baja… ahora tenían un dueño con poder.",
+   "amb": [
+    "city"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.3,
+     "gain": -6,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gossip.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.25
+      },
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c212",
+   "text": "La envidia hizo el resto. Algunas vecinas, que no le perdonaban su belleza, contaron historias.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gossip.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.38,
+       0.62,
+       1.6
+      ],
+      "to": [
+       0.66,
+       0.62,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c213",
+   "text": "Que la habían visto volar sobre los tejados. Que vendía pócimas de amor. Que hablaba con el demonio entre los cañaverales.",
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 1.0,
+     "gain": -8
+    },
+    {
+     "name": "whoosh",
+     "at": 0.8,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rooftops.png"
+      },
+      {
+       "src": "art/flyer.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.35,
+         "dy": -0.08
+        }
+       ],
+       "opacity": 0.95
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.15
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.2
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cane_fields.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.7,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.72,
+       1.7
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        120,
+        140,
+        170
+       ]
+      },
+      {
+       "type": "darken",
+       "amount": 0.55
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c214",
+   "text": "Lo curioso es que ella iba a misa todos los domingos. Se confesaba. Comulgaba. Y muchos de los que la acusaban… le debían la vida.",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.3,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_interior.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/church_interior.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.8,
+       1.9
+      ],
+      "to": [
+       0.52,
+       0.78,
+       1.7
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c215",
+   "text": "Pero en la Nueva España de aquel tiempo, eso no importaba. Bastaba una denuncia. Y el alcalde la escribió.",
+   "pause": 0.9,
+   "amb": [
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 4.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/denuncia.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.62,
+       0.78,
+       1.8
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "c216",
+   "text": "Antes de seguir: si te gustan estas historias que el tiempo no ha podido borrar, suscríbete y activa la campanita. Porque lo que viene es la parte más oscura de esta leyenda.",
+   "pause": 0.9,
+   "music": "mystery",
+   "amb": [
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      },
+      {
+       "src": "art/plants_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.0,
+         "period": 8,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.1
+      ]
+     },
+     "fx": [
+      "fireflies",
+      {
+       "type": "fog",
+       "strength": 0.2
+      }
+     ],
+     "grade": "night",
+     "transition": "xfade"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.04
+      },
+      {
+       "type": "darken",
+       "amount": 0.85
+      }
+     ],
+     "grade": "warm",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "c301",
+   "text": "Para entender el miedo que sintió Córdoba, tienes que saber algo. Y esto no es leyenda. Es historia.",
+   "pre": 0.8,
+   "music": "dread",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.3,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tribunal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.15
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      "embers"
+     ],
+     "grade": "blood",
+     "text": [
+      {
+       "str": "CAPÍTULO III|El Santo Oficio",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "c302",
+   "text": "En mil quinientos setenta y uno se estableció en la Ciudad de México el Tribunal del Santo Oficio de la Inquisición.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "freq": 160
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tribunal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.2,
+       1.8
+      ],
+      "to": [
+       0.5,
+       0.25,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "Ciudad de México, 1571|Tribunal del Santo Oficio",
+       "style": "date",
+       "at": [
+        0.5,
+        99
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c303",
+   "text": "Perseguía herejes y blasfemos… y también hechicería. Muchas acusadas eran curanderas. Muchas eran de origen africano.",
+   "amb": [
+    {
+     "name": "fire",
+     "gain": -8
+    },
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/pyre.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ]
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        200,
+        150,
+        130
+       ]
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "c304",
+   "text": "Bastaba con que alguien te señalara. Y nunca sabías quién te había denunciado.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/hooded_l.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.35,
+       1.5
+      ],
+      "to": [
+       0.62,
+       0.32,
+       1.9
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "c305",
+   "text": "Una noche sin luna, cuentan, alguien golpeó la puerta de la Mulata.",
+   "pause": 0.9,
+   "amb": [
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 2.3,
+     "gain": -1,
+     "args": {
+      "times": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      },
+      {
+       "src": "art/plants_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.32,
+       0.62,
+       1.7
+      ],
+      "to": [
+       0.32,
+       0.64,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.6
+      },
+      {
+       "type": "shake",
+       "amp": 4,
+       "at": [
+        2.0,
+        2.6
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c306",
+   "text": "Eran los familiares del Santo Oficio, con antorchas y una orden sellada. Y detrás de ellos, entre las sombras… estaba el alcalde.",
+   "amb": [
+    {
+     "name": "fire",
+     "gain": -6
+    },
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "sting",
+     "at": 4.6,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/arrest.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.35,
+       0.58,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "embers"
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/arrest.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.1,
+       0.4,
+       2.0
+      ],
+      "to": [
+       0.11,
+       0.4,
+       2.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.1
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash",
+     "transition_len": 0.25
+    }
+   ]
+  },
+  {
+   "id": "c307",
+   "text": "Ella no gritó. No corrió. Solo tomó su rebozo, miró por última vez sus plantas… y salió con ellos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/bust_l.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.33,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "embers"
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      },
+      {
+       "src": "art/plants_fg.png",
+       "depth": 1.4,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 5,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.65,
+       1.5
+      ],
+      "to": [
+       0.6,
+       0.65,
+       1.3
+      ]
+     },
+     "fx": [
+      "fireflies",
+      {
+       "type": "fog",
+       "strength": 0.25
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c308",
+   "text": "Dice la leyenda que la encerraron en el lugar más temido de la costa: la fortaleza de San Juan de Ulúa.",
+   "amb": [
+    "sea"
+   ],
+   "sfx": [
+    {
+     "name": "splash",
+     "at": 1.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ulua_dusk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        255,
+        210,
+        190
+       ]
+      }
+     ],
+     "grade": "warm",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "c309",
+   "text": "Una isla de piedra frente al puerto de Veracruz, levantada con roca de coral para defender la costa de los piratas. De sus calabozos, decían, nadie salía.",
+   "amb": [
+    "sea",
+    {
+     "name": "rain",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 2.0,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ulua_storm.png"
+      },
+      {
+       "src": "art/ulua_waves_fg.png",
+       "depth": 1.3,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.008,
+         "period": 3.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.56,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.56,
+       0.58,
+       1.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.3
+      },
+      {
+       "type": "lightning",
+       "at": [
+        2.0
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        150,
+        170,
+        190
+       ]
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cellgate.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      "dust",
+      {
+       "type": "darken",
+       "amount": 0.75
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "c310",
+   "text": "Otras versiones la llevan a las cárceles secretas del Santo Oficio, en la Ciudad de México. Pero todas coinciden en algo: la celda era oscura, húmeda… y estrecha como una tumba.",
+   "amb": [
+    "drips",
+    {
+     "name": "sea",
+     "gain": -12
+    }
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.3,
+     "gain": -6
+    },
+    {
+     "name": "chains",
+     "at": 4.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cellgate.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cell.png"
+      },
+      {
+       "src": "art/cell_beam.png",
+       "blend": "screen",
+       "opacity": 0.7
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.25
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "c311",
+   "text": "Imagina el goteo constante. El calor que no se va ni de noche. Y el mar golpeando el muro, tan cerca… y tan imposible.",
+   "amb": [
+    "drips",
+    {
+     "name": "sea",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cell.png"
+      },
+      {
+       "src": "art/cell_beam.png",
+       "blend": "screen",
+       "opacity": 0.8
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.75,
+       1.7
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.5
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cellgate.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       2.0
+      ],
+      "to": [
+       0.55,
+       0.45,
+       2.2
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "c312",
+   "text": "Vino el proceso. Los inquisidores la interrogaron durante días. Lo que pasó en esos interrogatorios, la leyenda prefiere callarlo.",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 7,
+      "bpm": 70
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tribunal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.35,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      {
+       "type": "darken",
+       "amount": 0.8
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "c313",
+   "text": "¿Confiesas haber hecho pacto con el demonio?",
+   "voice": "em_santa",
+   "speed": 0.86,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tribunal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.25,
+       1.8
+      ],
+      "to": [
+       0.5,
+       0.25,
+       2.0
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "grade": "blood",
+     "text": [
+      {
+       "str": "¿Confiesas pacto con el demonio?|el inquisidor",
+       "style": "quote",
+       "at": [
+        0.2,
+        99
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.25
+    }
+   ]
+  },
+  {
+   "id": "c314",
+   "text": "Confieso haber curado a sus enfermos, señor. Pregúnteles a ellos.",
+   "voice": "ef_dora",
+   "speed": 0.85,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c315",
+   "text": "Desfilaron los testigos: los que la vieron volar, los que oyeron risas a medianoche. Nadie habló de los niños que había salvado.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gossip.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/door_queue.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.7,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.7
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "c316",
+   "text": "Y llegó la sentencia. Culpable de brujería. Moriría en la hoguera, frente a todo el pueblo, en un auto de fe.",
+   "pause": 1.2,
+   "amb": [
+    {
+     "name": "fire",
+     "gain": -4
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.2,
+     "gain": -6,
+     "args": {
+      "freq": 130
+     }
+    },
+    {
+     "name": "boom",
+     "at": 1.6,
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/pyre.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        1.6,
+        2.4
+       ]
+      }
+     ],
+     "grade": "blood",
+     "text": [
+      {
+       "str": "CULPABLE|auto de fe",
+       "style": "big",
+       "at": [
+        1.6,
+        99
+       ]
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "c401",
+   "text": "En su encierro, solo la veía el carcelero: un hombre viejo y callado que le llevaba agua y pan.",
+   "pre": 0.8,
+   "music": "mystery",
+   "amb": [
+    "drips",
+    {
+     "name": "sea",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cell.png"
+      },
+      {
+       "src": "art/jailer_l.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "CAPÍTULO IV|El barco de carbón",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "c402",
+   "text": "Al principio le tenía miedo. Dejaba la comida en el suelo y se iba deprisa.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 2.0,
+     "gain": -8,
+     "args": {
+      "dur": 2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cellgate.png"
+      },
+      {
+       "src": "art/jailer_right.png",
+       "depth": 1.1
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.62,
+       0.6,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c403",
+   "text": "Pero ella le hablaba con calma. Dicen que hasta le curó una tos que no lo dejaba dormir.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cell.png"
+      },
+      {
+       "src": "art/cell_beam.png",
+       "blend": "screen",
+       "opacity": 0.6
+      },
+      {
+       "src": "art/mulata_stand.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.4
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c404",
+   "text": "Y una tarde, ella le pidió algo muy extraño.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close_eyes.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c405",
+   "text": "¿Me trae un pedazo de carbón? Solo quiero dibujar… para no perder la cabeza aquí adentro.",
+   "voice": "ef_dora",
+   "speed": 0.85,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cell.png"
+      },
+      {
+       "src": "art/mulata_stand.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.38,
+       1.8
+      ],
+      "to": [
+       0.48,
+       0.36,
+       1.95
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "¿Me trae un pedazo de carbón?|la Mulata",
+       "style": "quote",
+       "at": [
+        0.3,
+        99
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c406",
+   "text": "¿Qué daño podía hacer un pedazo de carbón? Al día siguiente se lo llevó, escondido entre el pan.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 3.5,
+     "gain": -9,
+     "args": {
+      "dur": 2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/jailer_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.42,
+       1.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c407",
+   "text": "Desde entonces la encontraba dibujando en la pared. Flores. Pájaros. El Pico de Orizaba con su nieve.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_drawings.png"
+      },
+      {
+       "src": "art/mulata_reach.png",
+       "depth": 1.08
+      }
+     ],
+     "cam": {
+      "from": [
+       0.25,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.7,
+       0.45,
+       1.4
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c408",
+   "text": "Y luego, el mar. Olas y más olas, cubriendo la piedra húmeda.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.78,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.75,
+       1.3
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c409",
+   "text": "La víspera de la ejecución, el carcelero bajó con su farol. Y se quedó helado.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "door",
+     "at": 3.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/jailer_l.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.9,
+         "to": 1.0,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "c410",
+   "text": "En la pared había un barco. Un bergantín con las velas desplegadas, tan perfecto que parecía moverse con la luz de la vela.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.9
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "transition": "flash",
+     "transition_len": 0.4
+    }
+   ]
+  },
+  {
+   "id": "c411",
+   "text": "Cada cuerda. Cada tabla. Cada pliegue de las velas. Hasta la espuma alrededor del casco.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.32,
+       1.9
+      ],
+      "to": [
+       0.56,
+       0.3,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.68,
+       1.9
+      ],
+      "to": [
+       0.42,
+       0.7,
+       2.0
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c412",
+   "text": "Dígame… ¿qué le falta a este barco?",
+   "voice": "ef_dora",
+   "speed": 0.85,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      },
+      {
+       "src": "art/mulata_left.png",
+       "depth": 1.06
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.42,
+       0.45,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      },
+      "dust"
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "¿Qué le falta a este barco?|la Mulata",
+       "style": "quote",
+       "at": [
+        0.3,
+        99
+       ],
+       "pos": "top"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c413",
+   "text": "Nada, señora. Solo le falta… que navegue.",
+   "voice": "em_santa",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      },
+      {
+       "src": "art/jailer_right.png",
+       "depth": 1.06
+      }
+     ],
+     "cam": {
+      "from": [
+       0.8,
+       0.4,
+       1.9
+      ],
+      "to": [
+       0.8,
+       0.38,
+       2.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "Solo le falta… que navegue|el carcelero",
+       "style": "quote",
+       "at": [
+        0.3,
+        99
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c414",
+   "text": "Entonces mire bien… porque va a navegar.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "fx": "eco",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.0,
+     "gain": -4,
+     "args": {
+      "dur": 6
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close_eyes.png",
+       "depth": 1.04
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen",
+       "opacity": 0.22
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 80,
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c415",
+   "text": "Y entonces, dice la leyenda, ella dio un paso hacia la pared… y subió al barco.",
+   "pre": 0.4,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "whoosh",
+     "at": 2.5,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen",
+       "opacity": [
+        0.0,
+        0.8
+       ]
+      },
+      {
+       "src": "art/mulata_back.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "scale",
+         "from": 1.0,
+         "to": 0.9,
+         "pivot": [
+          0.5,
+          0.7
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "shake",
+       "amp": 7,
+       "at": [
+        0,
+        0.7
+       ]
+      }
+     ],
+     "grade": "candle",
+     "transition": "flash",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "c416",
+   "text": "Las líneas de carbón se llenaron de color. Las velas se inflaron con un viento que no venía de ninguna parte. Y el agua dibujada empezó a moverse.",
+   "amb": [
+    "sea",
+    {
+     "name": "wind",
+     "gain": -4
+    }
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 1.0,
+     "gain": -3
+    },
+    {
+     "name": "splash",
+     "at": 5.5,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen",
+       "opacity": 0.8
+      },
+      {
+       "src": "art/ship_color.png",
+       "fade_in": 3.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ]
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 1.1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 2.2
+        }
+       ]
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen",
+       "opacity": 0.9
+      },
+      {
+       "src": "art/ship_color.png",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.006,
+         "period": 3
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        180,
+        210,
+        240
+       ],
+       "low": false,
+       "speed": 2.0
+      },
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c417",
+   "text": "El carcelero sintió en la cara el aire salado del mar. Escuchó crujir la madera. Escuchó las olas… dentro de la celda.",
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.0,
+     "gain": -5
+    },
+    {
+     "name": "splash",
+     "at": 3.0,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/jailer_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.45,
+       0.42,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        180,
+        210,
+        240
+       ],
+       "low": false,
+       "speed": 3.0
+      },
+      {
+       "type": "shake",
+       "amp": 4,
+       "at": [
+        0,
+        9
+       ]
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.012,
+         "period": 2
+        }
+       ]
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen"
+      },
+      {
+       "src": "art/ship_color.png",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.008,
+         "period": 2.5
+        },
+        {
+         "type": "sway",
+         "deg": 2.0,
+         "period": 3,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.7,
+       1.7
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        180,
+        210,
+        240
+       ],
+       "low": false,
+       "speed": 2.5
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c418",
+   "text": "Ella volteó una última vez. Lo miró con esa calma de siempre… y sonrió.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/profile_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.43,
+       1.5
+      ]
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "transition": "flash",
+     "transition_len": 0.4
+    }
+   ]
+  },
+  {
+   "id": "c419",
+   "text": "Y el barco atravesó la piedra como si el muro fuera neblina. Se alejó, cada vez más pequeño… hasta desaparecer.",
+   "pause": 1.3,
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 1.0,
+     "gain": -3
+    },
+    {
+     "name": "gust",
+     "at": 2.0,
+     "gain": -6
+    },
+    {
+     "name": "boom",
+     "at": 6.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.25,
+         "dy": -0.12,
+         "ease": "in"
+        },
+        {
+         "type": "scale",
+         "from": 1.0,
+         "to": 0.25,
+         "pivot": [
+          0.5,
+          0.5
+         ],
+         "ease": "in"
+        }
+       ],
+       "fade_out": 1.5
+      },
+      {
+       "src": "art/ship_color.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.25,
+         "dy": -0.12,
+         "ease": "in"
+        },
+        {
+         "type": "scale",
+         "from": 1.0,
+         "to": 0.25,
+         "pivot": [
+          0.5,
+          0.5
+         ],
+         "ease": "in"
+        }
+       ],
+       "fade_out": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.42,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        180,
+        210,
+        240
+       ],
+       "low": false,
+       "speed": 2.0
+      },
+      "embers"
+     ],
+     "grade": "candle",
+     "out": "fade",
+     "out_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "c501",
+   "text": "Al amanecer, los guardias encontraron la celda vacía. La reja cerrada. El candado intacto.",
+   "pre": 0.8,
+   "music": "mystery",
+   "amb": [
+    "drips",
+    {
+     "name": "sea",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cellgate.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.15
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold",
+     "text": [
+      {
+       "str": "CAPÍTULO V|Lo que quedó en la pared",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "c502",
+   "text": "En la pared, el mar de carbón seguía ahí. Pero el barco ya no estaba. Y en el aire flotaba un olor a azufre: para los inquisidores, la prueba de que el demonio se la había llevado.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 4.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea_gap.png"
+      },
+      {
+       "src": "art/window_beam.png",
+       "blend": "screen",
+       "opacity": 0.35
+      },
+      {
+       "src": "art/lantern_pool.png",
+       "blend": "screen",
+       "opacity": 0.4
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon",
+     "vignette": 0.9
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/hooded_l.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        200,
+        190,
+        110
+       ],
+       "low": false,
+       "speed": 0.7
+      },
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "c503",
+   "text": "Al carcelero lo encontraron en un rincón, temblando. Unos dicen que murió de espanto. Otros, que nunca más quiso hablar de ella.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/jailer_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.42,
+       0.5,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.75
+      },
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "c504",
+   "text": "Pero esa madrugada pasó algo más. Una tormenta eléctrica tenía cerrado el puerto. Ningún barco podía salir.",
+   "music": "tension",
+   "amb": [
+    "rain",
+    "sea"
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 2.5,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ulua_storm.png"
+      },
+      {
+       "src": "art/bolt.png",
+       "appear_at": 2.5,
+       "vanish_at": 2.75,
+       "blend": "screen"
+      },
+      {
+       "src": "art/ulua_waves_fg.png",
+       "depth": 1.3,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.008,
+         "period": 3.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.52,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.4
+      },
+      {
+       "type": "lightning",
+       "at": [
+        2.5
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        150,
+        170,
+        190
+       ]
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "c505",
+   "text": "Y aun así, cuentan los pescadores, entre los relámpagos se vio un navío con todas las velas desplegadas… navegando contra el viento, hacia mar abierto.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 1.5,
+     "gain": -4
+    },
+    {
+     "name": "thunder",
+     "at": 5.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ship_storm.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.62,
+       0.48,
+       1.15
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.4
+      },
+      {
+       "type": "lightning",
+       "at": [
+        1.5,
+        5.0
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        150,
+        170,
+        190
+       ]
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ship_far.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.65,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.72,
+       0.55,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "lightning",
+       "at": [
+        1.0
+       ]
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "c506",
+   "text": "Ahora, separemos la historia de la leyenda.",
+   "music": "calm",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "music_at": 0.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/archive.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.04
+      }
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "HISTORIA|y leyenda",
+       "style": "big",
+       "at": [
+        0.2,
+        99
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "c507",
+   "text": "Córdoba es real. La Inquisición existió, y persiguió a muchas curanderas. Y San Juan de Ulúa sigue frente al puerto: hoy puedes recorrer sus muros.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cordoba_plaza.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ]
+     },
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tribunal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.25,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.3,
+       1.4
+      ]
+     },
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ulua_dusk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.58,
+       0.55,
+       1.15
+      ]
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c508",
+   "text": "Hay quien pone esta historia en el siglo dieciséis… pero entonces Córdoba ni existía. Y aunque se dice que su expediente duerme en el Archivo General de la Nación, nadie ha podido mostrarlo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/archive.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.7,
+       0.4,
+       1.4
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/archive.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.82,
+       1.8
+      ],
+      "to": [
+       0.48,
+       0.84,
+       2.0
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "c509",
+   "text": "Lo que sí sabemos es que su historia no murió. Cronistas y escritores la recogieron, y José Pablo Moncayo la convirtió en ópera, con libreto de Xavier Villaurrutia.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/opera.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.12
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/opera.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.8
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c510",
+   "text": "Y entonces… ¿a dónde fue? Al principio te dije que alguien la volvió a ver.",
+   "music": "mystery",
+   "amb": [
+    "drips"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea_gap.png"
+      },
+      {
+       "src": "art/lantern_pool.png",
+       "blend": "screen",
+       "opacity": 0.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.1
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        200,
+        200,
+        170
+       ]
+      }
+     ],
+     "grade": "candle",
+     "transition": "xfade",
+     "vignette": 0.9
+    }
+   ]
+  },
+  {
+   "id": "c511",
+   "text": "Cuentan que años después, unos marineros que llegaron a Manila, al otro lado del Pacífico, vieron en el puerto a una mujer morena, con rebozo y mirada tranquila. Curando enfermos. Sin una sola arruga.",
+   "amb": [
+    {
+     "name": "sea",
+     "gain": -6
+    },
+    {
+     "name": "wind",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/manila.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.6,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        255,
+        200,
+        170
+       ]
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/manila.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.62,
+       2.1
+      ],
+      "to": [
+       0.48,
+       0.6,
+       2.4
+      ]
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "c512",
+   "text": "Manila. El último puerto del imperio, al final de la ruta del galeón. Ningún barco podía llegar ahí desde un calabozo de Veracruz. Ninguno… excepto uno dibujado.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 4.5,
+     "gain": -6
+    },
+    {
+     "name": "bell",
+     "at": 5.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ship_far.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.7,
+       0.55,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.2
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/manila.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.75,
+       0.62,
+       1.6
+      ]
+     },
+     "grade": "warm",
+     "text": [
+      {
+       "str": "MANILA|al otro lado del mundo",
+       "style": "big",
+       "at": [
+        0.3,
+        99
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.4
+    }
+   ]
+  },
+  {
+   "id": "c513",
+   "text": "Otros dicen que nunca se fue. Que en las noches de lluvia, entre los cafetales de Córdoba, una mujer recoge hierbas… y deja ruda en la puerta de los enfermos.",
+   "amb": [
+    "rain",
+    {
+     "name": "crickets",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cafetal.png"
+      },
+      {
+       "src": "art/cafetal_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.0,
+         "period": 5,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.62,
+       1.3
+      ],
+      "to": [
+       0.62,
+       0.62,
+       1.55
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "fog",
+       "strength": 0.3
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ruda_door.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.3
+      ],
+      "to": [
+       0.47,
+       0.75,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.2
+      },
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "c514",
+   "text": "Durante siglos la llamaron bruja. Hoy muchos la ven de otra manera: una mujer libre, sabia, afromexicana, castigada por saber demasiado… y por no dejarse.",
+   "music": "hope",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cane_fields.png"
+      },
+      {
+       "src": "art/mulata_herbs.png",
+       "depth": 1.06,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        255,
+        210,
+        170
+       ]
+      },
+      "dust"
+     ],
+     "grade": "warm",
+     "transition": "xfade"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.52,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.04
+      },
+      "dust"
+     ],
+     "grade": "warm",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "c515",
+   "text": "Porque al final, la Mulata de Córdoba no escapó con magia negra. Escapó con lo único que nunca pudieron quitarle: su imaginación.",
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen",
+       "opacity": 0.7
+      },
+      {
+       "src": "art/ship_color.png",
+       "opacity": 0.85,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ]
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c516",
+   "text": "Y si algún día, en una pared vieja, encuentras un barco dibujado con carbón… míralo bien. Tal vez todavía espera que alguien le diga lo que le falta.",
+   "music": "mystery",
+   "amb": [
+    "drips"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.15
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "transition": "xfade"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.7
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "darken",
+       "amount": 0.85
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "c517",
+   "text": "Que navegue…",
+   "voice": "ef_dora",
+   "speed": 0.78,
+   "fx": "eco",
+   "pause": 1.4,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 2.5
+     }
+    },
+    {
+     "name": "splash",
+     "at": 1.5,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wall_base.png"
+      },
+      {
+       "src": "art/wall_sea.png"
+      },
+      {
+       "src": "art/ship_charcoal.png"
+      },
+      {
+       "src": "art/ship_glow.png",
+       "blend": "screen",
+       "opacity": [
+        0.0,
+        0.9
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "que navegue…",
+       "style": "whisper",
+       "at": [
+        0.3,
+        99
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c518",
+   "text": "Y tú, ¿qué crees? ¿Bruja o mujer sabia? Te leo en los comentarios.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bust_bg.png"
+      },
+      {
+       "src": "art/face_close.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.08
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.04
+      }
+     ],
+     "grade": "warm",
+     "text": [
+      {
+       "str": "¿Bruja o mujer sabia?|te leo en los comentarios",
+       "style": "quote",
+       "at": [
+        0.4,
+        99
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "c519",
+   "text": "En el próximo video: una mujer vestida de blanco llora junto al río. Y dicen que si la escuchas lejos… ya está junto a ti. La Llorona. No te la pierdas.",
+   "pause": 0.8,
+   "music": "dread",
+   "amb": [
+    "river",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 6.0,
+     "gain": -6,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/llorona.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45
+      },
+      "fireflies"
+     ],
+     "grade": "moon",
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/llorona.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.62,
+       1.6
+      ],
+      "to": [
+       0.66,
+       0.6,
+       1.8
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.5
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "LA LLORONA|el próximo video",
+       "style": "big",
+       "at": [
+        0.8,
+        99
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  }
+ ]
+}

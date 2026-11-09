@@ -1,0 +1,6945 @@
+{
+ "title": "¿Qué hora es?: la pregunta que costaba la vida en la Ciudad de México",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.22,
+ "key": "C",
+ "seed": 11,
+ "grade": "night",
+ "vignette": 0.6,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Es de noche en la Ciudad de México. Tu linterna apenas alumbra las piedras mojadas.",
+   "pause": 0.5,
+   "pre": 0.8,
+   "music": "dread",
+   "amb": [
+    "city",
+    {
+     "name": "wind",
+     "gain": -6
+    },
+    {
+     "name": "rain",
+     "gain": -12
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.6,
+     "gain": -12,
+     "args": {
+      "dur": 5
+     }
+    },
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 1.45,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 2.4,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 3.35,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 4.3,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 5.25,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 6.2,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 7.15,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 8.1,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 9.05,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 10.0,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_b.png"
+      },
+      {
+       "src": "art/l_pov_lantern.png",
+       "depth": 1.15,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 3,
+         "period": 1.6,
+         "pivot": [
+          0.692,
+          0.444
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.36,
+       0.62,
+       1.32
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "rain",
+       "strength": 0.22
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "weight": 1.3
+    },
+    {
+     "layers": [
+      {
+       "src": "art/belltower.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.73,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Bajo un portón, un caballero de capa negra da un paso hacia ti.",
+   "pause": 0.45,
+   "music": "tension",
+   "music_at": 1.0,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 4.0,
+     "gain": -10,
+     "args": {
+      "dur": 2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/portal_night.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.8,
+         "to": 0.93,
+         "pivot": [
+          0.6042,
+          0.5926
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": 0.0073,
+         "dy": 0.0185,
+         "ease": "linear"
+        }
+       ],
+       "opacity": [
+        0.3,
+        1
+       ],
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.52,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Perdone usted… ¿qué hora es?",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.4,
+   "pre": 0.3,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.48,
+       1.12
+      ],
+      "to": [
+       0.5,
+       0.44,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "¿QUÉ HORA ES?",
+       "style": "big",
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Las once, señor.",
+   "voice": "em_alex",
+   "speed": 1.0,
+   "pause": 0.4,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_b.png"
+      },
+      {
+       "src": "art/l_passer.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.6,
+         "to": 0.6,
+         "pivot": [
+          0.1875,
+          0.8889
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.55
+      ],
+      "to": [
+       0.41,
+       0.49,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "rain",
+       "strength": 0.22
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "¡Dichoso usted… que sabe la hora en que muere!",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 1.5,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -12
+    },
+    {
+     "name": "boom",
+     "at": 4.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 4.4,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_ember.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.4,
+       1.45
+      ],
+      "to": [
+       0.52,
+       0.38,
+       1.75
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "weight": 1.4,
+     "dur": 4.35
+    },
+    {
+     "layers": [
+      {
+       "src": "art/portal_night.png"
+      },
+      {
+       "src": "art/l_dagger.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.4,
+       1.2
+      ],
+      "to": [
+       0.62,
+       0.38,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.55
+      },
+      {
+       "type": "shake",
+       "amp": 14,
+       "at": [
+        0,
+        0.7
+       ]
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Esa pregunta se repitió muchas noches. Y lo que apareció al amanecer, colgando de la horca… nadie lo ha podido explicar.",
+   "pause": 0.6,
+   "music": "dread",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -3
+    },
+    {
+     "name": "clock",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 3.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lantern_fallen.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.7,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.72,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "out": "fade",
+     "out_len": 0.9,
+     "dur": 2.3
+    },
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.6,
+     "weight": 0.8
+    },
+    {
+     "layers": [
+      {
+       "src": "art/gallows_dawn.png"
+      },
+      {
+       "src": "art/l_noose.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 2.2,
+         "period": 5.5,
+         "pivot": [
+          0.479,
+          0.289
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.4,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "grade": "cold",
+     "text": [
+      {
+       "str": "¿QUÉ HORA ES?|la leyenda de Don Juan Manuel",
+       "style": "title",
+       "at": [
+        1.0,
+        99
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Esta es la leyenda de Don Juan Manuel.",
+   "pause": 2.4,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.2,
+     "gain": -10
+    },
+    {
+     "name": "bell",
+     "at": 0.3,
+     "gain": -10,
+     "args": {
+      "freq": 110
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/belltower.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05
+        }
+       ]
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.3
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.66,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "text": [
+      {
+       "str": "¿QUÉ HORA ES?|la leyenda de Don Juan Manuel",
+       "style": "title",
+       "at": [
+        -0.5,
+        4.3
+       ]
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Ciudad de México. Mil seiscientos treinta y tantos. La capital de la Nueva España se levanta sobre lo que fue Tenochtitlan, entre canales, iglesias y palacios de cantera.",
+   "pause": 0.45,
+   "pre": 2.4,
+   "music": "mystery",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/city.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "text": [
+      {
+       "str": "CAPÍTULO I|El caballero de la calle Nueva",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.2
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "dur": 4.6
+    },
+    {
+     "layers": [
+      {
+       "src": "art/city.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.62,
+       1.35
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "warm",
+     "text": [
+      {
+       "str": "Ciudad de México, Nueva España|mil seiscientos treinta y tantos",
+       "style": "date",
+       "at": [
+        0.5,
+        7.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "De día huele a pan, a incienso y a lodo de las acequias. Pero de noche… de noche la ciudad es otra.",
+   "pause": 0.7,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/canal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "No hay faroles en las calles. Faltaba más de un siglo para eso. Cuando suena la queda, las puertas se cierran, y quien sale lo hace con su propia linterna… y bajo su propio riesgo.",
+   "pause": 0.45,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 2.4,
+     "gain": -14,
+     "args": {
+      "freq": 196
+     }
+    },
+    {
+     "name": "door",
+     "at": 5.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_b.png"
+      },
+      {
+       "src": "art/l_passer.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.16,
+         "to": 0.41,
+         "pivot": [
+          0.2966,
+          0.5661
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0217,
+         "dy": 0.0489,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.36,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.36,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "En una de esas calles, a unas cuadras del palacio del virrey, vivía un hombre rico, respetado y temido: Don Juan Manuel de Solórzano.",
+   "pause": 0.7,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "Don Juan Manuel de Solórzano",
+       "style": "caption",
+       "at": [
+        0.6,
+        5
+       ]
+      }
+     ],
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Y aquí, una pausa: Don Juan Manuel no es un invento. Los archivos dicen que existió.",
+   "pause": 0.6,
+   "music": "calm",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/docs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.48,
+       0.48,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Fue muy cercano al virrey Lope Díez de Armendáriz, marqués de Cadereyta, el primer virrey nacido en América, que gobernó desde mil seiscientos treinta y cinco.",
+   "pause": 0.45,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/viceroy.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "Lope Díez de Armendáriz, marqués de Cadereyta · virrey 1635–1640",
+       "style": "caption",
+       "at": [
+        0.8,
+        8
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Juan Manuel manejaba dinero, favores y secretos. Tenía amigos poderosos… y enemigos todavía más poderosos.",
+   "pause": 0.45,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 0.8,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/study.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.6,
+       1.5
+      ],
+      "to": [
+       0.66,
+       0.6,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Eso dicen los papeles. Lo que sigue… lo cuenta la leyenda.",
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_c.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.62,
+       0.52,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Cuentan que estaba casado con doña Mariana, hija de un rico minero de Zacatecas. Joven, piadosa, de ojos tristes.",
+   "pause": 0.45,
+   "music": "sad",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wife_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.45,
+       0.42,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Vivían en una casona de la calle Nueva, la que hoy se llama República de Uruguay: balcones de hierro, y un portón tan grande que por él cabía un carruaje.",
+   "pause": 0.45,
+   "music": "mystery",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "La calle Nueva · hoy República de Uruguay",
+       "style": "caption",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/portal_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Tenían todo. Plata, criados, un lugar en la corte. Todo… menos hijos.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bedroom.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.42,
+       0.6,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "darken",
+       "amount": 0.85
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Dicen que esa ausencia fue la primera sombra en la casa. Don Juan Manuel se volvió devoto; pasaba horas rezando en el convento de San Francisco, y hasta pensó en tomar el hábito.",
+   "pause": 0.45,
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 6.0,
+     "gain": -8,
+     "args": {
+      "freq": 220
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/convent.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.56,
+       0.65,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/confession.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.62,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Para eso necesitaba a alguien de confianza que cuidara sus negocios. Y mandó traer de España a un sobrino suyo.",
+   "pause": 0.45,
+   "music": "calm",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_dawn.png"
+      },
+      {
+       "src": "art/l_nephew.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.18,
+         "to": 0.45,
+         "pivot": [
+          0.4746,
+          0.5745
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0277,
+         "dy": 0.0655,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.48,
+       0.62,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Un muchacho alegre, que llenó la casa de risas, de cuentas y de pasos en la escalera.",
+   "pause": 0.45,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 2.5,
+     "gain": -6,
+     "args": {
+      "dur": 3,
+      "rate": 2.4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/patio.png"
+      },
+      {
+       "src": "art/l_nephew.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.33,
+         "to": 0.33,
+         "pivot": [
+          0.9726,
+          0.3991
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.72,
+       0.5,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Pasos en la escalera… a cualquier hora de la noche.",
+   "pause": 1.0,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -7,
+     "args": {
+      "dur": 4,
+      "rate": 1.4
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -9,
+     "args": {
+      "dur": 4,
+      "bpm": 80
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/l_shadow.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.75,
+         "to": 0.75,
+         "pivot": [
+          0.5833,
+          0.8148
+         ]
+        },
+        {
+         "type": "drift",
+         "dx": 0.12,
+         "dy": -0.1
+        }
+       ],
+       "fade_in": 1.0
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.62,
+       0.38,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Y fue entonces cuando Don Juan Manuel empezó a escuchar.",
+   "pause": 1.3,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.4,
+       1.5
+      ],
+      "to": [
+       0.6,
+       0.4,
+       1.75
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "out": "fade",
+     "out_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Imagina que eres él. Es medianoche. La vela de tu cuarto ya casi se consume, y tu esposa duerme… o finge dormir.",
+   "pause": 0.45,
+   "pre": 2.4,
+   "music": "dread",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -2
+    },
+    {
+     "name": "clock",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bedroom.png"
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.45
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.08
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "CAPÍTULO II|Los celos",
+       "style": "chapter",
+       "at": [
+        0.3,
+        3.6
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "dur": 4.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bedroom.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.62,
+       1.4
+      ],
+      "to": [
+       0.42,
+       0.58,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Abajo, en el patio, cruje una madera. Una puerta se cierra despacio. Alguien camina sobre las losas de piedra.",
+   "pause": 0.45,
+   "sfx": [
+    {
+     "name": "door",
+     "at": 2.6,
+     "gain": -8
+    },
+    {
+     "name": "footsteps",
+     "at": 4.6,
+     "gain": -8,
+     "args": {
+      "dur": 4,
+      "rate": 1.3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/patio.png"
+      },
+      {
+       "src": "art/l_shadow.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.45,
+         "to": 0.45,
+         "pivot": [
+          0.5758,
+          0.7609
+         ]
+        },
+        {
+         "type": "drift",
+         "dx": 0.12
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.55,
+       0.62,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "darken",
+       "amount": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "¿Un criado? ¿El viento? ¿O un hombre que sale de tu casa cuando cree que nadie lo ve?",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/zaguan.png"
+      },
+      {
+       "src": "art/l_passer.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.45,
+         "to": 0.4,
+         "pivot": [
+          0.4242,
+          0.7609
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": 0.1705,
+         "dy": -0.0121,
+         "ease": "linear"
+        }
+       ],
+       "opacity": 0.9
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Don Juan Manuel nunca supo quién era. Porque una duda, en la oscuridad, crece como la humedad en las paredes.",
+   "pause": 0.45,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_cold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Empezó a vigilarla. Le prohibió salir, salvo a misa y con el rostro cubierto. Revisaba sus cartas. Miraba quién se detenía frente al balcón.",
+   "pause": 0.6,
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wife_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.55,
+       1.25
+      ],
+      "to": [
+       0.46,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      },
+      {
+       "src": "art/l_wife_small.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 5
+        }
+       ]
+      },
+      {
+       "src": "art/l_djm.png",
+       "depth": 1.25,
+       "anim": [
+        {
+         "type": "scale",
+         "from": 1.15,
+         "to": 1.15,
+         "pivot": [
+          -2.1111,
+          -0.716
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.62,
+       0.42,
+       1.32
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Juan Manuel… ¿qué te pasa? Ya no me miras como antes.",
+   "voice": "ef_dora",
+   "speed": 0.85,
+   "pause": 0.5,
+   "music": "sad",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wife_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.44,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.42,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Te miro más de lo que crees, Mariana.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_cold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.46,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.44,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Dicen que ella lloraba por las noches junto a la ventana, con una vela encendida, rezando para que su marido volviera a ser el de antes.",
+   "pause": 0.45,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony.png"
+      },
+      {
+       "src": "art/l_wife_big.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.62,
+       0.48,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Pero él, desde la calle, solo veía una luz en el balcón. Y pensaba: es una señal. Está esperando a alguien.",
+   "pause": 0.7,
+   "music": "tension",
+   "amb": [
+    "city"
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 2.0,
+     "gain": -6,
+     "args": {
+      "dur": 6,
+      "bpm": 70
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_night.png"
+      },
+      {
+       "src": "art/l_wife_small.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 5
+        }
+       ]
+      },
+      {
+       "src": "art/l_djm.png",
+       "depth": 1.3,
+       "anim": [
+        {
+         "type": "scale",
+         "from": 1.15,
+         "to": 1.15,
+         "pivot": [
+          -2.1111,
+          -0.716
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.58,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Los celos le quitaron el sueño, luego el hambre, luego la fe. Seguía rezando, pero ya no le pedía perdón a Dios… le pedía un nombre.",
+   "pause": 0.45,
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rosary.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.38,
+       1.7
+      ],
+      "to": [
+       0.53,
+       0.38,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 66,
+       "amp": 0.14
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Y una noche, cuando el cielo no le contestó… le preguntó a alguien más.",
+   "pause": 1.4,
+   "amb": [
+    {
+     "name": "wind",
+     "gain": 0
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 3.5,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/belltower.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.08
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      },
+      {
+       "type": "lightning",
+       "at": [
+        3.5
+       ]
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Cuentan que se encerró en su estudio, apagó todas las velas menos una, y llamó al diablo por su nombre.",
+   "pause": 0.45,
+   "pre": 2.4,
+   "music": "dread",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candle_bg.png"
+      },
+      {
+       "src": "art/l_flame.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.1,
+         "speed": 6
+        }
+       ]
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.25
+      }
+     ],
+     "cam": {
+      "from": [
+       0.8,
+       0.5,
+       1.6
+      ],
+      "to": [
+       0.8,
+       0.5,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "grade": "candle",
+     "text": [
+      {
+       "str": "CAPÍTULO III|El trato",
+       "style": "chapter",
+       "at": [
+        0.3,
+        3.8
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "dur": 4.2,
+     "fx": []
+    },
+    {
+     "layers": [
+      {
+       "src": "art/study.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Al principio no pasó nada. Luego la llama se inclinó, como si alguien hubiera abierto una puerta. Pero todas las puertas estaban cerradas.",
+   "pause": 0.7,
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 2.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candle_bg.png"
+      },
+      {
+       "src": "art/l_flame.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 16,
+         "period": 4.0,
+         "pivot": [
+          0.5,
+          0.44
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Primero llegó el frío. Después, un olor a cera quemada. Y en el rincón más oscuro del cuarto… se encendieron dos brasas, a la altura de unos ojos.",
+   "pause": 1.0,
+   "music": "silence",
+   "music_at": 4.0,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "sting",
+     "at": 6.4,
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/study.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.86,
+       0.42,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "weight": 2.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/eyes_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 12,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Quieres saber quién te deshonra.",
+   "voice": "em_alex",
+   "speed": 0.72,
+   "fx": "eco",
+   "pause": 0.5,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/devil_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "embers",
+       "count": 40,
+       "strength": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Dímelo. Te daré lo que me pidas.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.5,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.45,
+       1.35
+      ],
+      "to": [
+       0.48,
+       0.43,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Esta noche, a las once, sal a tu puerta. Al primero que pase, mátalo: ese es el hombre que buscas.",
+   "voice": "em_alex",
+   "speed": 0.72,
+   "fx": "eco",
+   "pause": 0.6,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -4,
+     "args": {
+      "dur": 9,
+      "bpm": 60
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/study.png"
+      },
+      {
+       "src": "art/l_devil.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.92,
+         "to": 0.92,
+         "pivot": [
+          2.1667,
+          1.0926
+         ]
+        },
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 4
+        }
+       ],
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.65,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.7,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/devil_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.75
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "count": 40,
+       "strength": 0.6
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.14
+      }
+     ],
+     "text": [
+      {
+       "str": "Al primero que pase… mátalo.|el diablo",
+       "style": "quote",
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Y la llama se apagó.",
+   "pause": 1.3,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.6,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candle_bg.png"
+      },
+      {
+       "src": "art/l_flame.png",
+       "vanish_at": 1.1,
+       "fade_out": 0.25
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.46,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "grade": "candle",
+     "out": "fade",
+     "out_len": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Si te gustan las leyendas de la vieja Ciudad de México, suscríbete y activa la campanita. Y quédate hasta el final: lo que pasó la última vez que Don Juan Manuel preguntó la hora… nadie ha podido explicarlo.",
+   "pause": 0.9,
+   "music": "mystery",
+   "amb": [
+    "city",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "SUSCRÍBETE · ACTIVA LA CAMPANITA",
+       "style": "caption",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_c.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.62,
+       0.52,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Esa noche esperó en el zaguán, con la capa sobre los hombros… y la daga bajo la capa.",
+   "pause": 0.6,
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/portal_night.png"
+      },
+      {
+       "src": "art/l_djm_dagger.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.83,
+         "to": 0.83,
+         "pivot": [
+          0.6225,
+          0.5272
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.55,
+       1.5
+      ],
+      "to": [
+       0.42,
+       0.53,
+       1.75
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Entonces, en la torre de una iglesia cercana, la campana empezó a dar las once.",
+   "pause": 1.6,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 4.5,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 6.0,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 7.5,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 9.0,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 10.5,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 12.0,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 13.5,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 15.0,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 16.5,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 18.0,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/belltower.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.74,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "LAS ONCE|de la noche",
+       "style": "big",
+       "at": [
+        3.0,
+        6.6
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Cada campanada sonaba más fuerte que la anterior. Y entre la séptima y la octava… se oyeron pasos.",
+   "pause": 1.4,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 5.5,
+     "gain": -10,
+     "args": {
+      "dur": 12
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 40,
+       "amp": 0.14
+      },
+      "dust"
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.58,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Un hombre venía por la calle, envuelto en su capa, con una linterna en la mano. Silbaba bajito, como quien vuelve a casa.",
+   "pause": 0.6,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_b.png"
+      },
+      {
+       "src": "art/l_passer.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.14,
+         "to": 0.45,
+         "pivot": [
+          0.3062,
+          0.5581
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0351,
+         "dy": 0.0597,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.38,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.38,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Perdone usted… ¿qué hora es?",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.4,
+   "pre": 0.3,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/portal_night.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.83,
+         "to": 0.83,
+         "pivot": [
+          0.6225,
+          0.5272
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.33,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Las once, señor.",
+   "voice": "em_alex",
+   "speed": 1.0,
+   "pause": 0.4,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_c.png"
+      },
+      {
+       "src": "art/l_passer.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.6,
+         "to": 0.6,
+         "pivot": [
+          0.8125,
+          0.8889
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.625,
+       0.42,
+       1.75
+      ],
+      "to": [
+       0.625,
+       0.42,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "¡Dichoso usted… que sabe la hora en que muere!",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.5,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -11
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.52,
+       1.6
+      ],
+      "to": [
+       0.48,
+       0.5,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "La linterna cayó sobre las piedras. Rodó. Y se apagó.",
+   "pause": 1.3,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": -0.35,
+     "gain": -6
+    },
+    {
+     "name": "whoosh",
+     "at": -0.35,
+     "gain": -11
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/portal_night.png"
+      },
+      {
+       "src": "art/l_dagger.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.55,
+       0.42,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.5
+      },
+      {
+       "type": "shake",
+       "amp": 14,
+       "at": [
+        0,
+        0.8
+       ]
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash",
+     "dur": 1.4
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lantern_fallen.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.78,
+       1.5
+      ],
+      "to": [
+       0.52,
+       0.76,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "A la mañana siguiente, la ronda encontró a un hombre tendido frente al portón de Don Juan Manuel. Nadie vio nada. Nadie oyó nada.",
+   "pause": 0.8,
+   "music": "sad",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_dawn.png"
+      },
+      {
+       "src": "art/l_ronda.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.56,
+         "to": 0.56,
+         "pivot": [
+          0.4375,
+          0.5407
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      }
+     ],
+     "grade": "cold",
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/portal_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Y esa noche, el diablo volvió.",
+   "pause": 0.6,
+   "music": "dread",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/study.png"
+      },
+      {
+       "src": "art/l_devil.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.92,
+         "to": 0.92,
+         "pivot": [
+          2.1667,
+          1.0926
+         ]
+        }
+       ],
+       "fade_in": 2.0,
+       "opacity": 0.9
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.76,
+       0.42,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.75
+      },
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Te equivocaste, Juan Manuel, no era él. Sal otra vez.",
+   "voice": "em_alex",
+   "speed": 0.72,
+   "fx": "eco",
+   "pause": 1.3,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/devil_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.44,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "count": 40,
+       "strength": 0.6
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Y salió otra vez. Y otra. Y otra más.",
+   "pause": 0.45,
+   "pre": 2.4,
+   "music": "tension",
+   "amb": [
+    "city",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.08
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|Las once",
+       "style": "chapter",
+       "at": [
+        0.3,
+        3.6
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "dur": 4.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/portal_night.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.83,
+         "to": 0.83,
+         "pivot": [
+          0.6225,
+          0.5272
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Cada noche, a las once, la misma sombra bajo el mismo portón. La misma pregunta, con la misma voz cortés.",
+   "pause": 0.45,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 5.0,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.41,
+         "to": 0.41,
+         "pivot": [
+          1.072,
+          0.8374
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.62,
+       1.35
+      ],
+      "to": [
+       0.74,
+       0.62,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Algunos contestaban con prisa; otros, con una sonrisa. Ninguno llegó a su casa.",
+   "pause": 0.45,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_b.png"
+      },
+      {
+       "src": "art/l_passer.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.6,
+         "to": 0.6,
+         "pivot": [
+          0.1875,
+          0.8889
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.4,
+       0.44,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lantern_fallen.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      },
+      {
+       "type": "darken",
+       "amount": 0.85
+      }
+     ],
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "La ciudad empezó a contar muertos. Hay quien dice que fueron siete. Otros, que fueron más de veinte.",
+   "pause": 0.7,
+   "music": "dread",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_dawn.png"
+      },
+      {
+       "src": "art/l_ronda.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.42,
+         "to": 0.62,
+         "pivot": [
+          0.4626,
+          0.5663
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0158,
+         "dy": 0.0051,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Los de la ronda caminaban en grupo, con las alabardas por delante. Y nadie, nadie, se atrevía a pasar por la calle Nueva a las once de la noche.",
+   "pause": 0.45,
+   "amb": [
+    "city",
+    {
+     "name": "wind",
+     "gain": -4
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 4.0,
+     "gain": -6,
+     "args": {
+      "dur": 5,
+      "rate": 2.2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_b.png"
+      },
+      {
+       "src": "art/l_ronda.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.28,
+         "to": 0.5,
+         "pivot": [
+          0.2292,
+          0.5716
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0521,
+         "dy": 0.0364,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.35,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.62,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Imagina que eres tú. Vas tarde. Escuchas la primera campanada y apresuras el paso. Ves el portón a lo lejos. Ves una sombra que se despega del muro…",
+   "pause": 0.4,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.6,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "footsteps",
+     "at": 2.0,
+     "gain": -10,
+     "args": {
+      "dur": 6,
+      "rate": 2.6
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 4.0,
+     "gain": -10,
+     "args": {
+      "dur": 7,
+      "bpm": 100
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_c.png"
+      },
+      {
+       "src": "art/l_pov_lantern.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 6,
+         "period": 0.9,
+         "pivot": [
+          0.692,
+          0.444
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.68,
+       0.6,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.4,
+         "to": 0.44,
+         "pivot": [
+          1.0972,
+          0.8272
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0178,
+         "dy": 0.0131,
+         "ease": "linear"
+        }
+       ],
+       "fade_in": 2.0
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.76,
+       0.6,
+       1.65
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      },
+      {
+       "type": "pulse",
+       "bpm": 90,
+       "amp": 0.14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Y una voz amable te pregunta la hora.",
+   "pause": 1.3,
+   "music": "silence",
+   "music_at": 1.5,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -7
+    },
+    {
+     "name": "boom",
+     "at": 0.05,
+     "gain": -9
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_ember.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 12,
+       "at": [
+        0,
+        0.7
+       ]
+      },
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Ahora sí, presta atención. Porque esta es la noche que lo cambió todo.",
+   "pause": 0.9,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 1.0,
+     "gain": -6,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.47,
+       0.42,
+       1.85
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "fade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Un joven volvía tarde de jugar a las cartas, contento, con el sombrero ladeado y la linterna balanceándose en la mano.",
+   "pause": 0.45,
+   "music": "sad",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 9,
+      "rate": 1.6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_c.png"
+      },
+      {
+       "src": "art/l_nephew.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.17,
+         "to": 0.5,
+         "pivot": [
+          0.7209,
+          0.5881
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": 0.0146,
+         "dy": 0.0541,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.64,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.62,
+       0.62,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Conocía bien esa calle. La había caminado cientos de veces. Iba de regreso… a su casa.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_nephew.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.2,
+         "to": 0.43,
+         "pivot": [
+          0.5,
+          0.5926
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": 0.125,
+         "dy": 0.0481,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Perdone usted… ¿qué hora es?",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.4,
+   "pre": 0.3,
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/portal_night.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.83,
+         "to": 0.83,
+         "pivot": [
+          0.6225,
+          0.5272
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.47,
+       0.3,
+       1.75
+      ],
+      "to": [
+       0.47,
+       0.3,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Las once, señor.",
+   "voice": "em_alex",
+   "speed": 1.0,
+   "pause": 0.4,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_nephew.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.62,
+         "to": 0.62,
+         "pivot": [
+          0.0614,
+          0.9045
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.33,
+       0.42,
+       1.75
+      ],
+      "to": [
+       0.33,
+       0.42,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "¡Dichoso usted… que sabe la hora en que muere!",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.2,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_ember.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.62,
+       1.4
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      },
+      {
+       "type": "pulse",
+       "bpm": 110,
+       "amp": 0.14
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "",
+   "pause": 2.6,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lantern_fallen.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.76,
+       1.8
+      ],
+      "to": [
+       0.48,
+       0.76,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      },
+      {
+       "type": "darken",
+       "amount": 0.7
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash",
+     "out": "fade",
+     "out_len": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Al amanecer, tocaron a la puerta de Don Juan Manuel. Eran los de la ronda. Traían un cuerpo cubierto con una capa.",
+   "pause": 0.6,
+   "music": "sad",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -2
+    }
+   ],
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 0.6,
+     "gain": 0,
+     "args": {
+      "times": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_dawn.png"
+      },
+      {
+       "src": "art/l_ronda.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.5,
+         "to": 0.85,
+         "pivot": [
+          0.45,
+          0.5407
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0071,
+         "dy": 0.0185,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.15
+      ],
+      "to": [
+       0.52,
+       0.66,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Señor, le dijeron, ¿conoce usted a este hombre?",
+   "pause": 0.6,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_dawn.png"
+      },
+      {
+       "src": "art/l_ronda.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.85,
+         "to": 0.85,
+         "pivot": [
+          0.4028,
+          0.6642
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.62,
+       1.6
+      ],
+      "to": [
+       0.56,
+       0.62,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Don Juan Manuel levantó la capa… y vio la cara de su sobrino.",
+   "pause": 1.4,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.6,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_cold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.52,
+       0.42,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      }
+     ],
+     "grade": "cold",
+     "weight": 1.1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_b.png"
+      },
+      {
+       "src": "art/l_nephew.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.62,
+         "to": 0.62,
+         "pivot": [
+          0.1711,
+          0.9045
+         ]
+        }
+       ]
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.2
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.42,
+       1.8
+      ],
+      "to": [
+       0.42,
+       0.42,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [],
+     "grade": "bw",
+     "text": [
+      {
+       "str": "SU SOBRINO",
+       "style": "big"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "El muchacho que él mismo había traído de España. El que llenaba la casa de risas. El que subía la escalera… a cualquier hora.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/patio.png"
+      },
+      {
+       "src": "art/l_nephew.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.33,
+         "to": 0.33,
+         "pivot": [
+          0.9726,
+          0.3991
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.72,
+       0.55,
+       1.5
+      ],
+      "to": [
+       0.7,
+       0.52,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Y en ese momento entendió. Los pasos, las risas, la luz en el balcón… nunca hubo un amante. Solo hubo un hombre celoso… y un diablo que sabía escuchar.",
+   "pause": 1.4,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wife_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/devil_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "count": 40,
+       "strength": 0.6
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "Desesperado, Don Juan Manuel corrió al convento de San Francisco. Se arrodilló frente a un fraile y le confesó todo. Cada noche. Cada pregunta. Cada muerto.",
+   "pause": 0.45,
+   "pre": 2.4,
+   "music": "sad",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -6
+    },
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_night.png"
+      },
+      {
+       "src": "art/l_noose.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 2.2,
+         "period": 5.5,
+         "pivot": [
+          0.479,
+          0.289
+         ]
+        }
+       ]
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.4
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.08
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|La horca",
+       "style": "chapter",
+       "at": [
+        0.3,
+        3.6
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "dur": 4.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/convent.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.35,
+         "to": 0.3,
+         "pivot": [
+          0.3077,
+          0.792
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": 0.1346,
+         "dy": -0.0433,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/confession.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.6,
+       1.0
+      ],
+      "to": [
+       0.55,
+       0.58,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "El fraile lo escuchó en silencio. Y al final le impuso una penitencia.",
+   "pause": 0.45,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/confession.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.68,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.68,
+       0.55,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "Tres noches seguidas, a las once, irás a rezar un rosario al pie de la horca de la Plaza Mayor. Y pase lo que pase… no huirás.",
+   "voice": "em_alex",
+   "speed": 0.8,
+   "pause": 0.9,
+   "music": "mystery",
+   "music_at": 4.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/confession.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.65,
+       0.5,
+       1.8
+      ],
+      "to": [
+       0.66,
+       0.5,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b078",
+   "text": "La primera noche, la plaza estaba vacía. Solo la horca, negra contra la luna. Don Juan Manuel se arrodilló y empezó a rezar.",
+   "pause": 0.45,
+   "music": "dread",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -2
+    },
+    {
+     "name": "night",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_night.png"
+      },
+      {
+       "src": "art/l_noose.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 2.2,
+         "period": 5.5,
+         "pivot": [
+          0.479,
+          0.289
+         ]
+        }
+       ]
+      },
+      {
+       "src": "art/l_kneel.png",
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.4,
+       0.6,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b079",
+   "text": "Iba a la mitad del rosario cuando escuchó una voz a sus espaldas.",
+   "pause": 0.5,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.2,
+     "gain": -6,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rosary.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.47,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.65,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b080",
+   "text": "Un padrenuestro y un avemaría, por el alma de Don Juan Manuel.",
+   "voice": "em_santa",
+   "speed": 0.72,
+   "fx": "eco",
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_night.png"
+      },
+      {
+       "src": "art/l_noose.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 2.2,
+         "period": 5.5,
+         "pivot": [
+          0.479,
+          0.289
+         ]
+        }
+       ]
+      },
+      {
+       "src": "art/l_kneel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.72,
+       1.6
+      ],
+      "to": [
+       0.32,
+       0.7,
+       1.8
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "text": [
+      {
+       "str": "Un padrenuestro y un avemaría…|una voz",
+       "style": "quote",
+       "pos": "top"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b081",
+   "text": "Se dio la vuelta. No había nadie. Y entonces se dio cuenta… de que era su propia voz. Esa noche huyó.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.4,
+     "gain": -6
+    },
+    {
+     "name": "footsteps",
+     "at": 7.5,
+     "gain": -4,
+     "args": {
+      "dur": 3,
+      "rate": 3.2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_cold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.44,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 4,
+       "at": [
+        0,
+        3
+       ]
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_c.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.5,
+         "to": 0.2,
+         "pivot": [
+          0.75,
+          0.7407
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0167,
+         "dy": -0.1185,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.65,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.67,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b082",
+   "text": "La segunda noche volvió, temblando. Y a las once en punto vio venir por la calle una procesión de encapuchados, con velas en las manos.",
+   "pause": 0.45,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 4.5,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "footsteps",
+     "at": 6.0,
+     "gain": -6,
+     "args": {
+      "dur": 8,
+      "rate": 1.0
+     }
+    },
+    {
+     "name": "chains",
+     "at": 8.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_b.png"
+      },
+      {
+       "src": "art/l_procession.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.28,
+         "to": 0.7,
+         "pivot": [
+          0.2407,
+          0.5449
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.1181,
+         "dy": 0.0099,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.36,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.36,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b083",
+   "text": "Cargaban un ataúd abierto. Pasaron junto a él, despacio, y Don Juan Manuel se asomó.",
+   "pause": 0.6,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaza.png"
+      },
+      {
+       "src": "art/l_procession.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.75,
+         "to": 0.75,
+         "pivot": [
+          1.0417,
+          1.0519
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.2083,
+         "dy": 0.0,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.65,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b084",
+   "text": "Adentro estaba él mismo. Pálido. Con los ojos abiertos.",
+   "pause": 1.4,
+   "music": "silence",
+   "music_at": 2.0,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -7
+    },
+    {
+     "name": "sting",
+     "at": 0.05,
+     "gain": -9
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coffin.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.53,
+       0.42,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 12,
+       "at": [
+        0,
+        0.7
+       ]
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "color": [
+        170,
+        185,
+        205
+       ],
+       "seed": 3
+      },
+      {
+       "type": "darken",
+       "amount": 0.85
+      }
+     ],
+     "grade": "cold",
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b085",
+   "text": "Corrió de nuevo al convento. Le rogó al fraile que lo librara de la penitencia.",
+   "pause": 0.45,
+   "music": "sad",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 3,
+      "rate": 3
+     }
+    },
+    {
+     "name": "door",
+     "at": 3.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/convent.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.4,
+         "to": 0.28,
+         "pivot": [
+          0.3611,
+          0.8395
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": 0.1542,
+         "dy": -0.0741,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.65,
+       1.35
+      ],
+      "to": [
+       0.56,
+       0.68,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b086",
+   "text": "Te falta una noche, hijo. Solo una. Ve… y no huyas.",
+   "voice": "em_alex",
+   "speed": 0.8,
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/confession.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.48,
+       1.55
+      ],
+      "to": [
+       0.64,
+       0.5,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b087",
+   "text": "Y aquí está lo que te prometí al principio.",
+   "pause": 0.9,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -0.5,
+     "gain": -6,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b088",
+   "text": "La tercera noche llegó a la plaza, se arrodilló y empezó a rezar. Y escuchó pasos sobre las piedras, acercándose despacio.",
+   "pause": 0.7,
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -2
+    },
+    {
+     "name": "night",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 4.3,
+     "gain": -8,
+     "args": {
+      "dur": 8,
+      "rate": 1.0
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaza.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.58,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.62,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/gallows_night.png"
+      },
+      {
+       "src": "art/l_noose.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 2.2,
+         "period": 5.5,
+         "pivot": [
+          0.479,
+          0.289
+         ]
+        }
+       ]
+      },
+      {
+       "src": "art/l_kneel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.62,
+       1.4
+      ],
+      "to": [
+       0.38,
+       0.65,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b089",
+   "text": "Cuentan, aunque eso ya no lo escribió ningún cronista, que sin levantar la vista, por pura costumbre… Don Juan Manuel preguntó.",
+   "pause": 0.5,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -9,
+     "args": {
+      "dur": 7,
+      "bpm": 96
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_night.png"
+      },
+      {
+       "src": "art/l_kneel.png"
+      },
+      {
+       "src": "art/l_devil.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.85,
+         "to": 0.85,
+         "pivot": [
+          -0.5139,
+          0.9012
+         ]
+        }
+       ],
+       "fade_in": 4.0,
+       "opacity": 0.85
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b090",
+   "text": "¿Qué hora es?",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.6,
+   "music": "silence",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_cold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.65
+      ],
+      "to": [
+       0.5,
+       0.41,
+       1.8
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "cold",
+     "text": [
+      {
+       "str": "¿QUÉ HORA ES?",
+       "style": "big",
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b091",
+   "text": "Las once, Juan Manuel… Dichoso tú, que sabes la hora en que mueres.",
+   "voice": "em_alex",
+   "speed": 0.72,
+   "fx": "eco",
+   "pause": 0.3,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_night.png"
+      },
+      {
+       "src": "art/l_kneel.png"
+      },
+      {
+       "src": "art/l_devil.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.85,
+         "to": 0.85,
+         "pivot": [
+          -0.5139,
+          0.9012
+         ]
+        },
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.4,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      },
+      {
+       "type": "embers",
+       "count": 40,
+       "strength": 0.6
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/devil_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "count": 40,
+       "strength": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b092",
+   "text": "",
+   "pause": 3.0,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": 0
+    },
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eyes_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 14,
+       "at": [
+        0,
+        0.9
+       ]
+      }
+     ],
+     "transition": "flash",
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  },
+  {
+   "id": "b093",
+   "text": "Al amanecer, los primeros que cruzaron la Plaza Mayor se detuvieron en seco.",
+   "pause": 0.6,
+   "music": "sad",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": 0
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "grade": "cold",
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b094",
+   "text": "De la horca colgaba un hombre de capa negra y golilla blanca. Era Don Juan Manuel de Solórzano.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.3,
+     "gain": -12,
+     "args": {
+      "freq": 110
+     }
+    },
+    {
+     "name": "bell",
+     "at": 4.8,
+     "gain": -14,
+     "args": {
+      "freq": 110
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_dawn.png"
+      },
+      {
+       "src": "art/l_hanged.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.6,
+         "period": 6.5,
+         "pivot": [
+          0.479,
+          0.29
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.48,
+       0.43,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b095",
+   "text": "Nadie lo había juzgado. Nadie lo vio subir. Y la gente, persignándose, dijo lo único que podía explicarlo: lo ahorcaron los ángeles.",
+   "pause": 1.3,
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 6.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_dawn.png"
+      },
+      {
+       "src": "art/l_hanged.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.6,
+         "period": 6.5,
+         "pivot": [
+          0.479,
+          0.29
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      },
+      "dust"
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/belltower.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.06
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.3,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "text": [
+      {
+       "str": "LOS ÁNGELES|dijo la gente",
+       "style": "big"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b096",
+   "text": "Ahora, los archivos. Porque la historia real es casi tan oscura como la leyenda.",
+   "pause": 0.7,
+   "pre": 1.4,
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/docs.png"
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.58
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "EPÍLOGO|Lo que dicen los archivos",
+       "style": "chapter",
+       "at": [
+        0.3,
+        4.2
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b097",
+   "text": "Los papeles de la época cuentan que Juan Manuel de Solórzano se ganó enemigos poderosos en la Real Audiencia, enfrentada al virrey por dinero y poder, y que terminó en la cárcel.",
+   "pause": 0.45,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaza.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.2,
+       0.55,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_c.png"
+      },
+      {
+       "src": "art/l_bars.png",
+       "depth": 1.2
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.4,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.8
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b098",
+   "text": "Y que una mañana de octubre de mil seiscientos cuarenta y uno, su cuerpo apareció colgado en la plaza. ¿Quién lo hizo? Los papeles no lo dicen con claridad.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gallows_dawn.png"
+      },
+      {
+       "src": "art/l_hanged.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.6,
+         "period": 6.5,
+         "pivot": [
+          0.479,
+          0.29
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.08
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "Ciudad de México · octubre de 1641",
+       "style": "caption",
+       "at": [
+        0.6,
+        5.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b099",
+   "text": "Casi dos siglos después, el conde de la Cortina rescató esos documentos, y cronistas como Luis González Obregón recogieron la leyenda tal como la contaba la gente. Quizá los ángeles… tenían nombre y apellido.",
+   "pause": 1.5,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/docs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.85,
+       0.2,
+       1.6
+      ],
+      "to": [
+       0.8,
+       0.25,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "Luis González Obregón · cronista de la Ciudad de México",
+       "style": "caption",
+       "at": [
+        2.5,
+        7.5
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/plaza.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b100",
+   "text": "La casa todavía existe. Está en la calle de República de Uruguay, en el Centro Histórico, y una placa recuerda la leyenda.",
+   "pause": 0.45,
+   "pre": 0.6,
+   "music": "mystery",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_modern.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.68,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "none",
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/plaque.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "grade": "none",
+     "text": [
+      {
+       "str": "República de Uruguay · Centro Histórico, Ciudad de México",
+       "style": "caption",
+       "at": [
+        0.3,
+        5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b101",
+   "text": "Los vecinos dicen que algunas noches, a las once en punto, se oyen pasos frente al viejo portón. Y que un caballero de capa negra se acerca a los que caminan solos…",
+   "pause": 0.3,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 3.0,
+     "gain": -4,
+     "args": {
+      "dur": 6,
+      "rate": 1.2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_modern.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.41,
+         "to": 0.6,
+         "pivot": [
+          1.072,
+          0.8374
+         ],
+         "ease": "linear"
+        },
+        {
+         "type": "drift",
+         "dx": -0.0205,
+         "dy": 0.0502,
+         "ease": "linear"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.3,
+         "speed": 3
+        }
+       ],
+       "blend": "screen",
+       "opacity": 0.65
+      }
+     ],
+     "cam": {
+      "from": [
+       0.68,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.68,
+       0.58,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b102",
+   "text": "Para preguntarles la hora.",
+   "pause": 1.4,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -4,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/djm_portrait_cold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.44,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.14,
+       "speed": 5
+      },
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b103",
+   "text": "Así que si alguna vez pasas por ahí de noche, y una voz amable te pregunta qué hora es… piénsalo bien antes de contestar.",
+   "pause": 0.7,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_modern.png"
+      },
+      {
+       "src": "art/l_pov_lantern.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 3,
+         "period": 1.6,
+         "pivot": [
+          0.692,
+          0.444
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.52,
+       0.6,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "none"
+    }
+   ]
+  },
+  {
+   "id": "b104",
+   "text": "Porque Don Juan Manuel… sigue esperando a que alguien le diga que son las once.",
+   "pause": 1.5,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 4.6,
+     "gain": -12,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "sting",
+     "at": 4.8,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/portal_night.png"
+      },
+      {
+       "src": "art/l_djm.png",
+       "anim": [
+        {
+         "type": "scale",
+         "from": 0.83,
+         "to": 0.83,
+         "pivot": [
+          0.6225,
+          0.5272
+         ]
+        },
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.55,
+       "speed": 0.7
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b105",
+   "text": "¿Y tú? ¿Tú qué le contestarías? Déjamelo en los comentarios.",
+   "pause": 0.8,
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.3
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "¿TÚ QUÉ LE CONTESTARÍAS?",
+       "style": "caption",
+       "at": [
+        0.4,
+        6
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b106",
+   "text": "En el próximo video: la Mulata de Córdoba, la bruja que escapó de la Inquisición… en un barco que ella misma dibujó en la pared de su celda. Nos vemos en la oscuridad.",
+   "pause": 0.45,
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.5,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ship_wall.png"
+      },
+      {
+       "src": "#000000",
+       "opacity": 0.45
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.45
+      ],
+      "to": [
+       0.52,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|La Mulata de Córdoba",
+       "style": "chapter",
+       "at": [
+        0.5,
+        14.0
+       ]
+      }
+     ],
+     "weight": 1.4,
+     "out": "fade",
+     "out_len": 2.0,
+     "transition": "xfade",
+     "transition_len": 1.0
+    }
+   ]
+  }
+ ]
+}

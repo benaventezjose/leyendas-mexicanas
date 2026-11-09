@@ -1,0 +1,41 @@
+{
+ "done": [
+  {"slug": "la-llorona", "title": "La Llorona: si la escuchas lejos… ya está junto a ti", "published": "2026-11 (manual)"},
+  {"slug": "charro-negro", "title": "El Charro Negro: nunca aceptes subir a su caballo", "published": "2026-11 (manual)"},
+  {"slug": "la-planchada", "title": "La Planchada: la enfermera muerta que sigue haciendo su ronda", "published": "2026-11 (manual)"},
+  {"slug": "don-juan-manuel", "title": "¿Qué hora es?: la pregunta que costaba la vida en la Ciudad de México", "published": "2026-11 (manual)"},
+  {"slug": "mulata-de-cordoba", "title": "La Mulata de Córdoba: la bruja que escapó de la Inquisición en un barco dibujado", "published": "2026-11 (manual)"}
+ ],
+ "backlog": [
+  "El Callejón del Beso (Guanajuato)",
+  "La leyenda de los volcanes: Popocatépetl e Iztaccíhuatl",
+  "El Nahual",
+  "La Xtabay (Yucatán)",
+  "Los Aluxes (Yucatán)",
+  "La Mano Peluda",
+  "La Calle de la Quemada (Ciudad de México)",
+  "El Callejón del Aguacate (Coyoacán)",
+  "La Pascualita (Chihuahua)",
+  "El Sombrerón",
+  "El Cadejo",
+  "La Monja del convento de La Concepción",
+  "La Casa de los Azulejos y el hijo que no hacía casa",
+  "El Hombre Caimán (Oaxaca)",
+  "La Leyenda del Jinete sin Cabeza",
+  "La Isla de las Muñecas (Xochimilco)",
+  "La Dama de Negro de Guadalajara / el árbol del Panteón de Belén",
+  "El Vampiro del Panteón de Belén (Guadalajara)",
+  "La Niña del Panteón de Belén",
+  "La Bruja de la Casa de la Calle de Olmedo",
+  "El Puente del Clérigo",
+  "La Calle de Olvido",
+  "El Diablo de la Mina de Real de Catorce",
+  "La Leyenda de la China Poblana",
+  "La Leyenda del Pípila y el túnel de Guanajuato",
+  "El Perro Negro del camino real",
+  "La Lechuza (la bruja que se vuelve ave)",
+  "La Leyenda de la Calle del Indio Triste",
+  "La Mujer de la Lavandería de Durango",
+  "El Tzitzimime"
+ ]
+}

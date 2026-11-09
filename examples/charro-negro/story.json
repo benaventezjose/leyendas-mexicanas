@@ -1,0 +1,6579 @@
+{
+ "title": "El Charro Negro: nunca aceptes subir a su caballo",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.2,
+ "key": "D",
+ "seed": 7,
+ "grade": "night",
+ "vignette": 0.55,
+ "outro": 4.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "La noche está quieta. Ni un grillo, ni un perro… solo el viento.",
+   "pre": 0.6,
+   "pause": 0.42,
+   "music": "dread",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.3,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.55
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "dust"
+     ],
+     "grade": "moon",
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Y entonces lo escuchas, detrás de ti… espuelas de plata.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 0.8,
+     "gain": -8,
+     "args": {
+      "dur": 2.2
+     }
+    },
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 4,
+      "rate": 1.3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/spurs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.56,
+       0.55,
+       1.75
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Un caballo negro, enorme, se detiene a tu lado. El aire huele a azufre.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -2,
+     "args": {
+      "dur": 2.5,
+      "bpm": 34,
+      "distance": 0.1
+     }
+    },
+    {
+     "name": "whoosh",
+     "at": 2.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.47,
+       0.42,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/horse_head.png"
+      },
+      {
+       "src": "art/steam.png",
+       "depth": 1.0,
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.01
+        }
+       ],
+       "opacity": [
+        0.9,
+        0.5
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.38,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.33,
+       0.62,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "pulse",
+       "bpm": 50,
+       "amp": 0.08
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "¿Va lejos, amigo? Súbase, yo lo llevo.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "fx": "eco",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.66,
+       1.85
+      ]
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0.0,
+        1.3
+       ]
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Si dices que sí… nadie volverá a verte.",
+   "pause": 0.42,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/rider_red.png",
+       "depth": 1.06
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.0
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "blood",
+     "text": [
+      {
+       "str": "NO SUBAS|nadie volverá a verte",
+       "style": "big",
+       "at": [
+        0.2,
+        3.6
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Quédate hasta el final, porque te voy a contar la única forma de rechazarlo… sin perder el alma.",
+   "pause": 0.42,
+   "music": "mystery",
+   "music_at": 0.3,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.1,
+     "gain": -2
+    },
+    {
+     "name": "howl",
+     "at": 2.5,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/loma_moon.png"
+      },
+      {
+       "src": "art/rider_hill.png",
+       "depth": 1.04,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.32,
+       0.5,
+       1.6
+      ],
+      "to": [
+       0.35,
+       0.5,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      "dust"
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "EL CHARRO NEGRO|nunca aceptes subir a su caballo",
+       "style": "title",
+       "at": [
+        0.2,
+        8.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Esta es la leyenda… del Charro Negro.",
+   "pre": 0.2,
+   "pause": 2.0,
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 1.0,
+     "gain": -12,
+     "args": {
+      "dur": 1.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_front.png"
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.15
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "night",
+     "out": "fade",
+     "out_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Cuentan que esto pasó en los Altos de Jalisco, hace ya casi cien años, en un pueblo tan pequeño que ni los mapas lo conocían.",
+   "pre": 1.0,
+   "pause": 0.42,
+   "music": "mystery",
+   "amb": [
+    "crickets",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/milpa.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.15
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "CAPÍTULO I|La cantina",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.4
+       ]
+      },
+      {
+       "str": "Los Altos de Jalisco|hace casi cien años",
+       "style": "date",
+       "at": [
+        4.8,
+        9.0
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Ahí vivía Anselmo, un campesino de manos duras y bolsillos vacíos. Ese año la lluvia no llegó. La milpa se secó en pie… y las deudas crecieron como la hierba mala.",
+   "pause": 0.42,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/milpa.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.62,
+       0.68,
+       1.9
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.04
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Una noche de octubre, Anselmo bajó al pueblo a vender lo poco que le quedaba. Le pagaron una miseria. Y con esa miseria… entró a la cantina.",
+   "pause": 0.42,
+   "amb": [
+    "night",
+    {
+     "name": "fire",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 1.0,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cantina_ext.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Imagina el lugar. Humo de cigarro, quinqués colgando del techo, una guitarra desafinada en el rincón, y el olor agrio del mezcal derramado.",
+   "pause": 0.42,
+   "amb": [
+    "room",
+    {
+     "name": "fire",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cantina_int.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.45,
+       1.25
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "transition": "xfade"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cantina_int.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.12,
+       0.6,
+       1.8
+      ],
+      "to": [
+       0.15,
+       0.58,
+       1.6
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Anselmo bebió solo. Un trago por la milpa. Otro por las deudas. Y otro más… por la rabia.",
+   "pause": 0.42,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_table.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.5,
+       1.3
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "Ya muy entrada la noche, golpeó la mesa y dijo en voz alta lo que nunca se debe decir. ¡Daría lo que fuera por ser rico!",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 3.4,
+     "gain": -2,
+     "args": {
+      "times": 1
+     }
+    },
+    {
+     "name": "whoosh",
+     "at": 3.6,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_table.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.5
+      ],
+      "to": [
+       0.58,
+       0.62,
+       1.7
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.9
+    },
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_table.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.38,
+       0.45,
+       1.35
+      ],
+      "to": [
+       0.36,
+       0.42,
+       1.55
+      ]
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0.0,
+        0.5
+       ]
+      },
+      {
+       "type": "flicker",
+       "amp": 0.1
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "La guitarra se calló. Los hombres bajaron la mirada. Y desde la mesa del fondo, un viejo lo miró con unos ojos muy cansados.",
+   "pause": 0.42,
+   "music": "silence",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cantina_int.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.25,
+       0.65,
+       1.3
+      ],
+      "to": [
+       0.3,
+       0.65,
+       1.4
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "darken",
+       "amount": 0.8
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/oldman.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.6
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.35
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "El viejo se acercó arrastrando los pies. Tenía la mano izquierda negra, seca, como un tizón apagado. Nadie en el pueblo sabía por qué.",
+   "pause": 0.42,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 3.2,
+     "gain": -8,
+     "args": {
+      "root": "D2"
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cantina_int.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.6
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.8
+    },
+    {
+     "layers": [
+      {
+       "src": "art/black_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.32,
+       0.6,
+       1.6
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Muchacho, le dijo en voz baja, no repitas eso. Y si te vas esta noche, no tomes el camino viejo. Ahí anda él.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/oldman.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.42,
+       1.55
+      ],
+      "to": [
+       0.58,
+       0.42,
+       1.8
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "No tomes el camino viejo.|el viejo de la cantina",
+       "style": "quote",
+       "at": [
+        2.5,
+        7.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Anselmo se le rió en la cara. Pagó su cuenta, se acomodó el sombrero… y salió a la oscuridad.",
+   "pause": 0.42,
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -4
+    }
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 3.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cantina_ext.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "night",
+     "weight": 1.1
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "La luna se escondía entre nubes. Los magueyes parecían hombres quietos a la orilla del camino, mirándolo pasar.",
+   "pre": 1.0,
+   "pause": 0.42,
+   "music": "tension",
+   "amb": [
+    "crickets",
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/anselmo_walk_small.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 1.1
+        },
+        {
+         "type": "drift",
+         "dx": 0.0,
+         "dy": -0.01
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.52,
+       0.58,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "CAPÍTULO II|El jinete",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_curve.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Al principio solo había grillos. Miles de grillos. Y de pronto… todos se callaron al mismo tiempo.",
+   "pause": 0.42,
+   "amb": [
+    "wind"
+   ],
+   "music": "silence",
+   "music_at": 4.0,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 4.2,
+     "gain": -8,
+     "args": {
+      "dur": 4,
+      "bpm": 60
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/roadside_cross.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.68,
+       0.75,
+       1.5
+      ],
+      "to": [
+       0.68,
+       0.72,
+       1.75
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Entonces lo oyó. Muy lejos, detrás de la loma. Cascos. Un galope lento, pesado, sin ninguna prisa.",
+   "pause": 0.42,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 1.5,
+     "gain": -6,
+     "args": {
+      "dur": 9,
+      "bpm": 96,
+      "distance": 0.85
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_curve.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.65,
+       0.6,
+       1.6
+      ],
+      "to": [
+       0.68,
+       0.62,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/anselmo_side.png",
+       "depth": 1.06,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.8,
+       0.45,
+       1.7
+      ],
+      "to": [
+       0.8,
+       0.45,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Anselmo apretó el paso. El galope también. Cada vez más cerca. Cada vez más fuerte. Hasta que el suelo empezó a temblar bajo sus huaraches.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -2,
+     "args": {
+      "dur": 10,
+      "bpm": 120,
+      "distance": 0.35
+     }
+    },
+    {
+     "name": "riser",
+     "at": 5.0,
+     "gain": -6,
+     "args": {
+      "dur": 5
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 3,
+     "gain": -6,
+     "args": {
+      "dur": 7,
+      "bpm": 110
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/anselmo_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 0.7
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "shake",
+       "amp": 2
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hooves.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.78,
+       1.35
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "shake",
+       "amp": 5
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Y luego… nada. Silencio. Anselmo sintió un frío en la nuca, como si alguien hubiera abierto una puerta a sus espaldas.",
+   "pause": 0.42,
+   "music": "silence",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -3
+    }
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 2.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/anselmo_walk.png",
+       "depth": 1.1
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.32,
+       1.75
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "darken",
+       "amount": 0.85
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Volteó. Y ahí estaba.",
+   "pause": 0.9,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.6,
+     "gain": 0
+    },
+    {
+     "name": "sting",
+     "at": 0.6,
+     "gain": -2
+    },
+    {
+     "name": "hooves",
+     "at": 0.6,
+     "gain": -10,
+     "args": {
+      "dur": 1.0,
+      "bpm": 60
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.3,
+       1.7
+      ],
+      "to": [
+       0.48,
+       0.32,
+       1.45
+      ]
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0.0,
+        1.3
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Un charro, vestido completamente de negro. Traje bordado con hilos de plata, y una hilera de botones de plata bajando por cada pierna.",
+   "pause": 0.42,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.42,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/spurs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.52,
+       0.45,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Un sombrero de ala enorme le cubría la cara de sombra. Guantes negros. Y unas espuelas de plata que tintineaban aunque el caballo no se moviera.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 6.5,
+     "gain": -10,
+     "args": {
+      "dur": 2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_front.png"
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.2,
+       1.8
+      ],
+      "to": [
+       0.5,
+       0.24,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/spurs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.57,
+       1.7
+      ],
+      "to": [
+       0.54,
+       0.56,
+       1.95
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Pero lo peor era el caballo. Enorme, negro como el fondo de un pozo. De sus narices salía vapor… y sus ojos ardían como dos brasas.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.5,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.35
+      ],
+      "to": [
+       0.62,
+       0.4,
+       1.55
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.8
+    },
+    {
+     "layers": [
+      {
+       "src": "art/horse_head.png"
+      },
+      {
+       "src": "art/steam.png",
+       "depth": 1.0,
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.01
+        }
+       ],
+       "opacity": [
+        0.9,
+        0.5
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.38,
+       0.4,
+       1.1
+      ],
+      "to": [
+       0.34,
+       0.45,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "pulse",
+       "bpm": 44,
+       "amp": 0.1
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Buenas noches, amigo. Es muy tarde para andar solo.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "fx": "eco",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.04
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "Buenas noches, amigo.|el charro",
+       "style": "quote",
+       "at": [
+        0.6,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Anselmo no pudo contestar. El charro inclinó la cabeza, y debajo del sombrero, por un instante, brillaron dos puntos rojos.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 4.5,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/anselmo_side.png",
+       "depth": 1.06
+      }
+     ],
+     "cam": {
+      "from": [
+       0.8,
+       0.32,
+       1.9
+      ],
+      "to": [
+       0.8,
+       0.33,
+       2.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.8
+    },
+    {
+     "layers": [
+      {
+       "src": "art/charro_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.15
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Súbase a mi caballo. Yo lo llevo hasta su casa.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "fx": "eco",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 8,
+      "bpm": 80
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.3,
+       1.4
+      ],
+      "to": [
+       0.44,
+       0.32,
+       1.65
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "Súbase a mi caballo.|el charro",
+       "style": "quote",
+       "at": [
+        0.5,
+        5.0
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "No, gracias, señor, dijo Anselmo con la voz temblando. Prefiero caminar.",
+   "pause": 0.42,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.45,
+       0.45,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "El charro no insistió. Solo empezó a cabalgar a su lado, despacio, al mismo paso que él. Sin decir nada.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 10,
+      "bpm": 46,
+      "distance": 0.2
+     }
+    },
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -10,
+     "args": {
+      "dur": 10,
+      "rate": 1.4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/anselmo_side.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.1
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.48,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.48,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/anselmo_side.png",
+       "depth": 1.08
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.68,
+       0.44,
+       1.75
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Después de un largo rato, el charro metió la mano enguantada en su chaqueta y sacó una bolsa de cuero. Pesada. Llena.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "dur": 1.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_front.png"
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.6,
+       0.5,
+       2.0
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "La abrió frente a él. Monedas de oro. Cientos de monedas, brillando con una luz que no venía de la luna.",
+   "pause": 0.42,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 0.5,
+     "gain": -4,
+     "args": {
+      "dur": 2.0
+     }
+    },
+    {
+     "name": "riser",
+     "at": 1.0,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.4,
+       1.5
+      ],
+      "to": [
+       0.48,
+       0.42,
+       1.2
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Usted dijo que daría lo que fuera por ser rico. Aquí está, tómelo.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "fx": "eco",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_front.png"
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.42,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "night",
+     "weight": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/charro_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.68,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.65
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Anselmo se quedó helado. Él había dicho eso en la cantina. Pero el charro… no estaba en la cantina.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 3.0,
+     "gain": -4,
+     "args": {
+      "root": "D2"
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_table.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.4,
+       0.45,
+       1.15
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "bw",
+     "transition": "flash",
+     "transition_len": 0.25,
+     "weight": 0.9
+    },
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 90,
+       "amp": 0.12
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "La mano de Anselmo empezó a subir, sola, hacia la bolsa. Las monedas estaban tibias. Casi calientes. Como si respiraran.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -4,
+     "args": {
+      "dur": 9,
+      "bpm": 100
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins_reach.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.45
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "pulse",
+       "bpm": 100,
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Pero antes de contarte lo que hizo Anselmo, tienes que saber quién era en verdad ese jinete. Y por qué necesitaba tanto que alguien aceptara su oro.",
+   "pause": 0.42,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 6.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins_reach.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.8
+      ],
+      "to": [
+       0.6,
+       0.5,
+       2.0
+      ]
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.8
+      }
+     ],
+     "out": "fade",
+     "out_len": 0.6,
+     "weight": 0.7
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/rider_red.png",
+       "depth": 1.06
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.05
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "blood",
+     "transition": "fade"
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Si estas historias te ponen la piel de gallina, suscríbete y activa la campanita. Cada semana contamos una leyenda que no deberías escuchar solo.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -14,
+     "args": {
+      "freq": 196
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/loma_moon.png"
+      },
+      {
+       "src": "art/rider_hill.png",
+       "depth": 1.04,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.52,
+       1.2
+      ],
+      "to": [
+       0.52,
+       0.5,
+       1.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      "fireflies"
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "SUSCRÍBETE|una leyenda cada semana",
+       "style": "caption",
+       "at": [
+        1.0,
+        6.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Dice la leyenda que el Charro Negro no siempre fue un espanto. Hace mucho tiempo, también en Jalisco, fue un muchacho pobre, hijo de campesinos.",
+   "pre": 1.0,
+   "pause": 0.42,
+   "music": "sad",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/boy_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.15
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "CAPÍTULO III|El pacto",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.5
+       ]
+      },
+      {
+       "str": "Jalisco|mucho tiempo atrás",
+       "style": "date",
+       "at": [
+        5.0,
+        9.5
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Sus padres no podían darle nada. Y él lo quería todo: trajes finos, caballos, respeto. A veces dejaba de comer… para comprarse un buen sombrero.",
+   "pause": 0.42,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/boy_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.65,
+       1.6
+      ],
+      "to": [
+       0.32,
+       0.62,
+       1.8
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/boy_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.66,
+       0.45,
+       1.75
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.04
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Cuando sus padres murieron, la pobreza se le volvió insoportable. Y una noche de tormenta fue a una encrucijada, a medianoche, y llamó a quien nadie debe llamar.",
+   "pause": 0.42,
+   "music": "dread",
+   "amb": [
+    "rain",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 1.0,
+     "gain": -2
+    },
+    {
+     "name": "thunder",
+     "at": 7.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/crossroads.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.4
+      },
+      {
+       "type": "lightning",
+       "at": [
+        1.0
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/crossroads.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.72,
+       1.7
+      ],
+      "to": [
+       0.45,
+       0.7,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.45
+      },
+      {
+       "type": "lightning",
+       "at": [
+        2.0
+       ]
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Dicen que el Diablo llegó vestido de caballero. Elegante. Sonriente. Y le ofreció más dinero del que podría gastar en dos vidas.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.3,
+     "gain": -6
+    },
+    {
+     "name": "whisper",
+     "at": 2,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/crossroads.png"
+      },
+      {
+       "src": "art/devil.png",
+       "depth": 1.05,
+       "opacity": [
+        0,
+        0.95
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.45,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "lightning",
+       "at": [
+        0.4
+       ]
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Todo lo que quieras será tuyo. Solo te pido una cosa… tu alma.",
+   "voice": "em_santa",
+   "speed": 0.7,
+   "fx": "eco",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "root": "D2"
+     }
+    },
+    {
+     "name": "fire",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 8
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/red_hills.png"
+      },
+      {
+       "src": "art/devil.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.2,
+       1.8
+      ],
+      "to": [
+       0.52,
+       0.17,
+       2.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "El muchacho no lo pensó dos veces. Dijo que sí.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 2.2,
+     "gain": 0
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/crossroads.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.68,
+       1.5
+      ],
+      "to": [
+       0.45,
+       0.66,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.45
+      },
+      {
+       "type": "lightning",
+       "at": [
+        2.2
+       ]
+      },
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        2.2,
+        3.0
+       ]
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Y la riqueza llegó. Una hacienda enorme, caballos finos, trajes bordados en plata. Fiestas que duraban días. Apuestas, vino.",
+   "pause": 0.42,
+   "music": "calm",
+   "amb": [
+    {
+     "name": "city",
+     "gain": -4
+    },
+    {
+     "name": "fire",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 4.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hacienda_party.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "warm",
+     "transition": "xfade"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/gamble.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.75,
+       1.5
+      ],
+      "to": [
+       0.6,
+       0.75,
+       1.5
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Pero con los años, algo empezó a pudrirse por dentro. Nadie lo quería a él. Querían su dinero. Y en medio de sus fiestas… estaba más solo que nunca.",
+   "pause": 0.42,
+   "music": "sad",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gamble.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hacienda_party.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.9
+      ],
+      "to": [
+       0.5,
+       0.33,
+       2.1
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "darken",
+       "amount": 0.75
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Se olvidó del pacto. Hasta que una noche, el Diablo regresó y le dijo al oído: ya casi es hora.",
+   "pause": 0.42,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.5,
+     "gain": -6,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gamble.png"
+      },
+      {
+       "src": "art/devil.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.5
+       ],
+       "fade_in": 1.5,
+       "appear_at": 1.0,
+       "depth": 1.03
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.35,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.15
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Aterrado, el hombre llenó su hacienda de cruces. Mandó construir una capilla. Se encerraba de día y rezaba de noche.",
+   "pause": 0.42,
+   "amb": [
+    "wind",
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "freq": 160
+     }
+    },
+    {
+     "name": "knock",
+     "at": 4.0,
+     "gain": -10,
+     "args": {
+      "times": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hacienda_crosses.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Pero el miedo pudo más que la fe. Una madrugada ensilló a su caballo negro, tomó una bolsa de monedas de oro… y huyó.",
+   "pause": 0.42,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 4.0,
+     "gain": -2,
+     "args": {
+      "dur": 6,
+      "bpm": 150,
+      "distance": 0.1
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hacienda_crosses.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.8,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.75,
+       0.55,
+       1.8
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "weight": 0.8
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/rider_gallop.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.08,
+         "dy": 0
+        },
+        {
+         "type": "float",
+         "amp": 0.008,
+         "period": 0.45
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "No llegó muy lejos. En medio del camino, una sombra le cerró el paso. El caballo se encabritó. Y una voz que parecía salir de la tierra le dijo:",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 3.5,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 3.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/devil.png",
+       "depth": 1.05,
+       "opacity": [
+        0,
+        1
+       ],
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.52,
+       0.45,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/rider_gallop.png",
+       "depth": 1.06,
+       "anim": [
+        {
+         "type": "shake",
+         "amp": 0.004
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "shake",
+       "amp": 5
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Te iba a esperar hasta tu muerte, pero huiste como un cobarde. Así que ahora, me vas a servir a mí.",
+   "voice": "em_santa",
+   "speed": 0.7,
+   "fx": "eco",
+   "pause": 0.42,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "root": "D2"
+     }
+    },
+    {
+     "name": "fire",
+     "at": 0.0,
+     "gain": -10,
+     "args": {
+      "dur": 10
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/red_hills.png"
+      },
+      {
+       "src": "art/devil.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.3,
+       1.5
+      ],
+      "to": [
+       0.52,
+       0.2,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "flicker",
+       "amp": 0.1
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/red_hills.png"
+      },
+      {
+       "src": "art/devil.png",
+       "depth": 1.05
+      },
+      {
+       "src": "art/flames.png",
+       "blend": "screen",
+       "opacity": 0.7,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.3,
+         "speed": 7
+        },
+        {
+         "type": "pulse",
+         "amp": 0.02,
+         "period": 0.8,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.18,
+       2.2
+      ],
+      "to": [
+       0.52,
+       0.17,
+       2.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.12
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Dicen que la carne se le secó sobre los huesos en un instante. Que del hombre solo quedó un esqueleto dentro de un traje de charro.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": 0
+    },
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -2,
+     "args": {
+      "root": "D2"
+     }
+    },
+    {
+     "name": "chains",
+     "at": 0.3,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_skull.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0.0,
+        1.3
+       ]
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Y el caballo, que solo había obedecido a su amo, fue maldito con él. Sus ojos se volvieron fuego. Su aliento, azufre.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "fire",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 8
+     }
+    },
+    {
+     "name": "whoosh",
+     "at": 4.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/horse_head.png"
+      },
+      {
+       "src": "art/steam.png",
+       "depth": 1.0,
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.01
+        }
+       ],
+       "opacity": [
+        0.9,
+        0.5
+       ]
+      },
+      {
+       "src": "art/flames.png",
+       "blend": "screen",
+       "opacity": 0.6,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.3,
+         "speed": 7
+        },
+        {
+         "type": "pulse",
+         "amp": 0.02,
+         "period": 0.8,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.36,
+       0.45,
+       1.55
+      ]
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "pulse",
+       "bpm": 50,
+       "amp": 0.1
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Desde entonces, el Charro Negro cabalga los caminos de noche, cobrando las almas que se le deben al Diablo.",
+   "pause": 0.42,
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 7,
+      "bpm": 110,
+      "distance": 0.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/rider_gallop.png",
+       "depth": 1.06,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.1,
+         "dy": 0.0
+        },
+        {
+         "type": "float",
+         "amp": 0.008,
+         "period": 0.45
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.48,
+       1.15
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Pero hay algo más. El Diablo le dejó una sola salida: si alguien acepta su bolsa de oro… ese alguien toma su lugar.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 4.5,
+     "gain": -6
+    },
+    {
+     "name": "riser",
+     "at": 5.0,
+     "gain": -8,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/rider_red.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.3,
+       1.5
+      ],
+      "to": [
+       0.48,
+       0.3,
+       1.7
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coins_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.48,
+       0.4,
+       1.6
+      ]
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Por eso ofrece el oro. No es un regalo. Es un relevo.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.2,
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins_hand.png"
+      },
+      {
+       "src": "art/smoke.png",
+       "blend": "screen",
+       "opacity": 0.4,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "dy": -0.03
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.42,
+       1.7
+      ],
+      "to": [
+       0.48,
+       0.42,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "darken",
+       "amount": 0.7
+      }
+     ],
+     "grade": "blood",
+     "text": [
+      {
+       "str": "UN RELEVO|quien acepta, toma su lugar",
+       "style": "big",
+       "at": [
+        0.3,
+        5.2
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Y en todo México hay quien jura haberlo visto.",
+   "pre": 1.0,
+   "pause": 0.42,
+   "music": "mystery",
+   "amb": [
+    "wind",
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/loma_moon.png"
+      },
+      {
+       "src": "art/rider_hill.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.33,
+       0.52,
+       1.55
+      ],
+      "to": [
+       0.36,
+       0.52,
+       1.45
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "CAPÍTULO IV|Los que dijeron que sí",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.8
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "fade"
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "En Tlaxcala, en las faldas del volcán La Malinche, cuentan que el charro invita a los arrieros a una cueva llena de tesoros. Los que lo siguieron… nunca bajaron del cerro.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 2.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/malinche.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.55,
+       0.58,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "Faldas de La Malinche|Tlaxcala",
+       "style": "date",
+       "at": [
+        0.5,
+        5.5
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cave_gold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.35
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "En el Valle de Toluca, en el Estado de México, dicen que las monedas que regala se vuelven ceniza al amanecer. Y que a quien apenas las rozó… la mano se le queda negra para siempre.",
+   "pause": 0.42,
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/toluca.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "text": [
+      {
+       "str": "Valle de Toluca|Estado de México",
+       "style": "date",
+       "at": [
+        0.5,
+        5.5
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coins_ash.png"
+      },
+      {
+       "src": "art/smoke.png",
+       "blend": "screen",
+       "opacity": 0.45,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "dy": -0.03
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.65,
+       0.5,
+       1.4
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "ash"
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Negra. Seca. Como un tizón apagado.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "root": "D2"
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/black_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.6,
+       1.6
+      ],
+      "to": [
+       0.33,
+       0.6,
+       1.85
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Igual que la mano del viejo de la cantina.",
+   "pause": 0.9,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -6
+    },
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/oldman.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.1
+      }
+     ],
+     "grade": "candle",
+     "transition": "flash",
+     "transition_len": 0.25
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "En Michoacán, en los puentes de piedra de Tierra Caliente, les pregunta su nombre a los viajeros. Nunca hay que dárselo. Porque una vez que lo sabe… ya no lo olvida.",
+   "pause": 0.42,
+   "music": "mystery",
+   "amb": [
+    "river",
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "Tierra Caliente|Michoacán",
+       "style": "date",
+       "at": [
+        0.5,
+        5.5
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bridge.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.48,
+       2.0
+      ],
+      "to": [
+       0.46,
+       0.47,
+       2.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "En las cantinas se cuenta que a veces entra, paga la ronda con oro y se va sin decir palabra. Al día siguiente, en la caja del cantinero, solo hay piedras y carbón.",
+   "pause": 0.42,
+   "amb": [
+    "room",
+    {
+     "name": "fire",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 2.5,
+     "gain": -6
+    },
+    {
+     "name": "door",
+     "at": 4.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cantina_int.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.7,
+       0.45,
+       1.3
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cashbox.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.4
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Pero la historia que más se repite es la de una muchacha.",
+   "pause": 0.42,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "night"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_curve.png"
+      },
+      {
+       "src": "art/woman_walk.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Volvía sola a su casa, ya muy noche, después de un baile en el pueblo vecino. Cansada. Y un charro elegante le ofreció llevarla.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 5.0,
+     "gain": -8,
+     "args": {
+      "dur": 5,
+      "bpm": 60,
+      "distance": 0.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_curve.png"
+      },
+      {
+       "src": "art/woman_walk.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.35,
+       1.7
+      ],
+      "to": [
+       0.48,
+       0.36,
+       1.9
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Gracias, señor… qué amable es usted.",
+   "voice": "ef_dora",
+   "speed": 0.85,
+   "pause": 0.42,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_curve.png"
+      },
+      {
+       "src": "art/woman_walk.png",
+       "depth": 1.08
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.42,
+       1.9
+      ],
+      "to": [
+       0.48,
+       0.42,
+       2.15
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "Gracias, señor…|la muchacha",
+       "style": "quote",
+       "at": [
+        0.4,
+        3.8
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Se subió a la grupa del caballo negro. Y en cuanto lo hizo, sintió que las manos se le pegaban al traje del charro. No podía soltarse.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 10,
+      "bpm": 120
+     }
+    },
+    {
+     "name": "riser",
+     "at": 4.0,
+     "gain": -6,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/rider_red.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.4,
+       1.45
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/charro_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.45
+      ]
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "pulse",
+       "bpm": 120,
+       "amp": 0.12
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "El caballo relinchó, y su cuerpo entero se encendió en llamas. Salió galopando hacia los cerros, dejando detrás un camino de fuego.",
+   "pause": 0.42,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": 0
+    },
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3,
+     "args": {
+      "root": "D2"
+     }
+    },
+    {
+     "name": "fire",
+     "at": 0.0,
+     "gain": -2,
+     "args": {
+      "dur": 9
+     }
+    },
+    {
+     "name": "hooves",
+     "at": 1.0,
+     "gain": -4,
+     "args": {
+      "dur": 7,
+      "bpm": 150,
+      "distance": 0.1
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/rider_fire.png",
+       "depth": 1.06,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 0.45
+        },
+        {
+         "type": "flicker",
+         "amp": 0.08,
+         "speed": 9
+        }
+       ]
+      },
+      {
+       "src": "art/flames.png",
+       "blend": "screen",
+       "opacity": 0.8,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.3,
+         "speed": 7
+        },
+        {
+         "type": "pulse",
+         "amp": 0.02,
+         "period": 0.8,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.45,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0.0,
+        1.3
+       ]
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_red.png"
+      },
+      {
+       "src": "art/rider_fire.png",
+       "depth": 1.06,
+       "anim": [
+        {
+         "type": "scale",
+         "from": 1.0,
+         "to": 0.45,
+         "pivot": [
+          0.52,
+          0.6
+         ]
+        },
+        {
+         "type": "drift",
+         "dx": 0.08,
+         "dy": -0.1
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.0
+      ]
+     },
+     "fx": [
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Los vecinos escucharon sus gritos alejarse en la oscuridad… hasta que se apagaron.",
+   "pause": 0.42,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 0.5,
+     "gain": -6
+    },
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/red_hills.png"
+      },
+      {
+       "src": "art/flames.png",
+       "blend": "screen",
+       "opacity": 0.5,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.3,
+         "speed": 7
+        },
+        {
+         "type": "pulse",
+         "amp": 0.02,
+         "period": 0.8,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.25
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      },
+      "ash"
+     ],
+     "grade": "blood",
+     "out": "fade",
+     "out_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "A la mañana siguiente solo encontraron su rebozo, chamuscado, en medio del camino. Y alrededor… huellas de cascos quemadas en la tierra.",
+   "pause": 0.42,
+   "music": "sad",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 1.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rebozo_dawn.png"
+      },
+      {
+       "src": "art/smoke.png",
+       "blend": "screen",
+       "opacity": 0.35,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "dy": -0.03
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.4
+      ]
+     },
+     "fx": [
+      "ash",
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "sepia",
+     "transition": "fade"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rebozo_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.75,
+       1.9
+      ],
+      "to": [
+       0.54,
+       0.74,
+       2.1
+      ]
+     },
+     "fx": [
+      "ash"
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Ahora regresa conmigo a aquel camino viejo, donde Anselmo tiene la mano a unos centímetros del oro.",
+   "pre": 1.0,
+   "pause": 0.42,
+   "music": "tension",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/anselmo_side.png",
+       "depth": 1.08
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.6,
+       0.48,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "CAPÍTULO V|La respuesta",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ],
+     "transition": "fade"
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Las monedas brillan. El caballo resopla. Y el charro espera, inclinado, paciente, como quien ya ganó.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 0.3,
+     "gain": -8
+    },
+    {
+     "name": "heartbeat",
+     "at": 2.0,
+     "gain": -8,
+     "args": {
+      "dur": 6,
+      "bpm": 96
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins_reach.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.6,
+       0.48,
+       1.5
+      ]
+     },
+     "fx": [
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/rider_moon.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.24,
+       2.1
+      ],
+      "to": [
+       0.48,
+       0.25,
+       2.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Entonces Anselmo recordó la mano negra del viejo… y lo último que le dijo en la cantina.",
+   "pause": 0.42,
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/black_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.38,
+       0.6,
+       1.4
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "Si se te aparece, no le recibas nada. Ni oro, ni un cigarro, ni un trago. No te subas. No le digas tu nombre. No lo mires a los ojos. Y camina sin voltear.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/oldman.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.42,
+       1.7
+      ],
+      "to": [
+       0.55,
+       0.42,
+       1.9
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "No le recibas nada.|el viejo de la cantina",
+       "style": "quote",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_table.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.75,
+       0.5,
+       1.6
+      ],
+      "to": [
+       0.72,
+       0.5,
+       1.4
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "No te subas · No digas tu nombre · No voltees",
+       "style": "whisper",
+       "at": [
+        0.3,
+        5.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "Anselmo bajó la mano. Bajó la mirada. Se persignó despacio… y dijo con la voz más firme que pudo:",
+   "pause": 0.42,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 8,
+      "bpm": 90
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.1
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "No, señor. Gracias. Yo camino con Dios.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "freq": 220
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/anselmo_side.png",
+       "depth": 1.08
+      }
+     ],
+     "cam": {
+      "from": [
+       0.8,
+       0.38,
+       1.8
+      ],
+      "to": [
+       0.8,
+       0.4,
+       2.0
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "Yo camino con Dios.|Anselmo",
+       "style": "quote",
+       "at": [
+        0.4,
+        4.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b078",
+   "text": "El charro soltó una carcajada que hizo temblar los magueyes. La bolsa cayó a los pies de Anselmo, regando monedas de oro por el camino.",
+   "pause": 0.42,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -6
+    },
+    {
+     "name": "coins",
+     "at": 3.5,
+     "gain": -2,
+     "args": {
+      "dur": 2.5
+     }
+    },
+    {
+     "name": "whoosh",
+     "at": 3.2,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/rider_red.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 4
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coins_ash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.25,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.28,
+       0.45,
+       1.6
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b079",
+   "text": "Anselmo pasó sobre ellas. Sin agacharse. Sin detenerse.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 5,
+      "rate": 1.4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_bg.png"
+      },
+      {
+       "src": "art/anselmo_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 0.9
+        }
+       ]
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b080",
+   "text": "Entonces sintió el aliento del caballo en la nuca. Caliente. Apestoso a azufre. Y una voz, muy cerca de su oído, dijo su nombre.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -4,
+     "args": {
+      "dur": 10,
+      "bpm": 120
+     }
+    },
+    {
+     "name": "gust",
+     "at": 1.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/horse_head.png"
+      },
+      {
+       "src": "art/steam.png",
+       "depth": 1.0,
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.01
+        }
+       ],
+       "opacity": [
+        0.9,
+        0.5
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.75,
+       1.6
+      ],
+      "to": [
+       0.32,
+       0.72,
+       1.85
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "pulse",
+       "bpm": 120,
+       "amp": 0.1
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.42,
+       1.6
+      ],
+      "to": [
+       0.42,
+       0.42,
+       1.85
+      ]
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 120,
+       "amp": 0.1
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b081",
+   "text": "Anselmo…",
+   "voice": "em_santa",
+   "speed": 0.72,
+   "fx": "eco",
+   "pause": 0.7,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": 0
+    },
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -2,
+     "args": {
+      "root": "D2"
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0.0,
+        1.3
+       ]
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      },
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        140,
+        40,
+        30
+       ]
+      }
+     ],
+     "grade": "blood",
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b082",
+   "text": "Él nunca le había dicho su nombre.",
+   "pause": 0.9,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 4,
+      "bpm": 60
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/roadside_cross.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "darken",
+       "amount": 0.55
+      }
+     ],
+     "grade": "cold",
+     "text": [
+      {
+       "str": "SU NOMBRE|él nunca se lo dijo",
+       "style": "big",
+       "at": [
+        0.2,
+        3.6
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b083",
+   "text": "Todo su cuerpo le gritaba que volteara. Pero no volteó. Siguió caminando, rezando entre dientes, mientras los cascos lo seguían toda la noche.",
+   "pause": 0.42,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 11,
+      "bpm": 44,
+      "distance": 0.3
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -14,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_side.png"
+      },
+      {
+       "src": "art/rider_red.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.6
+        }
+       ],
+       "opacity": 0.85
+      },
+      {
+       "src": "art/anselmo_side.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 1.1
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.48,
+       1.2
+      ],
+      "to": [
+       0.65,
+       0.46,
+       1.35
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "NO VOLTEES|",
+       "style": "big",
+       "at": [
+        0.4,
+        3.8
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_curve.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "darken",
+       "amount": 0.8
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b084",
+   "text": "Hasta que, a lo lejos, sonó la primera campana del amanecer.",
+   "pause": 0.42,
+   "music": "hope",
+   "music_at": 0.5,
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.0,
+     "gain": -2,
+     "args": {
+      "freq": 196
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      "dust"
+     ],
+     "grade": "warm",
+     "transition": "xfade",
+     "transition_len": 1.5
+    }
+   ]
+  },
+  {
+   "id": "b085",
+   "text": "El galope se detuvo. El olor a azufre se fue con el viento. Y cuando Anselmo por fin se atrevió a mirar atrás… el camino estaba vacío.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 3.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.7,
+       1.8
+      ],
+      "to": [
+       0.5,
+       0.72,
+       2.0
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rebozo_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.35
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.22
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b086",
+   "text": "Donde habían caído las monedas, solo quedaba un puñado de ceniza gris.",
+   "pause": 0.42,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins_ash.png"
+      },
+      {
+       "src": "art/smoke.png",
+       "blend": "screen",
+       "opacity": 0.5,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "dy": -0.03
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.72,
+       0.55,
+       1.5
+      ],
+      "to": [
+       0.72,
+       0.55,
+       1.8
+      ]
+     },
+     "fx": [
+      "ash"
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b087",
+   "text": "Esa es la única forma de rechazarlo, la que te prometí. No recibir nada. No subir. No dar tu nombre. No voltear. Y caminar con Dios hasta que salga el sol.",
+   "pause": 0.42,
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_front.png"
+      },
+      {
+       "src": "art/road_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.2
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "darken",
+       "amount": 0.7
+      }
+     ],
+     "grade": "night",
+     "text": [
+      {
+       "str": "No recibir nada",
+       "style": "whisper",
+       "at": [
+        2.6,
+        4.6
+       ]
+      },
+      {
+       "str": "No subir",
+       "style": "whisper",
+       "at": [
+        4.7,
+        6.2
+       ]
+      },
+      {
+       "str": "No dar tu nombre",
+       "style": "whisper",
+       "at": [
+        6.3,
+        8.0
+       ]
+      },
+      {
+       "str": "No voltear",
+       "style": "whisper",
+       "at": [
+        8.1,
+        9.6
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/church_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.0
+      ]
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b088",
+   "text": "Anselmo llegó a su casa con el cabello blanco. Y nunca más volvió a decir que daría lo que fuera por ser rico.",
+   "pause": 0.42,
+   "amb": [
+    "room",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_old.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.4,
+       0.62,
+       1.6
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b089",
+   "text": "Vivió muchos años. Pero cada noche cerraba la ventana que daba al camino. Porque decía que a veces, de madrugada, todavía escuchaba unas espuelas de plata… esperando.",
+   "pause": 0.42,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 7.5,
+     "gain": -10,
+     "args": {
+      "dur": 2.0
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_old.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.48,
+       1.2
+      ]
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/anselmo_old.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.68,
+       0.4,
+       2.0
+      ],
+      "to": [
+       0.68,
+       0.42,
+       2.3
+      ]
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.8
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b090",
+   "text": "Recuérdalo. El Charro Negro no tiene prisa. Solo necesita que alguien, una sola vez… diga que sí.",
+   "pause": 1.2,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.2,
+     "gain": -6
+    },
+    {
+     "name": "hooves",
+     "at": 1.0,
+     "gain": -10,
+     "args": {
+      "dur": 6,
+      "bpm": 60,
+      "distance": 0.7
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/loma_moon.png"
+      },
+      {
+       "src": "art/rider_hill.png",
+       "depth": 1.04,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "dy": 0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.52,
+       0.5,
+       1.0
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b091",
+   "text": "Y tú, ¿alguien de tu familia lo ha visto? ¿En qué camino? Cuéntamelo en los comentarios… si te atreves.",
+   "pause": 0.42,
+   "music": "mystery",
+   "amb": [
+    "wind",
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/roadside_cross.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.05
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "fireflies",
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "grade": "moon",
+     "text": [
+      {
+       "str": "¿Alguien de tu familia lo ha visto?|cuéntalo en los comentarios",
+       "style": "caption",
+       "at": [
+        0.5,
+        7.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b092",
+   "text": "En la próxima leyenda entraremos a un viejo hospital donde una enfermera que murió hace muchos años… sigue haciendo su ronda. La Planchada. No te la pierdas.",
+   "pause": 0.42,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -14,
+     "args": {
+      "freq": 262
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/planchada.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.22
+      },
+      {
+       "type": "flicker",
+       "amp": 0.1
+      }
+     ],
+     "grade": "cold",
+     "text": [
+      {
+       "str": "PRÓXIMA LEYENDA|La Planchada",
+       "style": "title",
+       "at": [
+        6.0,
+        12.5
+       ]
+      }
+     ],
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b093",
+   "text": "Buenas noches… y nunca aceptes nada en el camino.",
+   "pause": 0.6,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 1.5,
+     "gain": -8,
+     "args": {
+      "root": "D2"
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charro_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ]
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "embers",
+       "strength": 0.9
+      }
+     ],
+     "grade": "night",
+     "transition": "fade",
+     "out": "fade",
+     "out_len": 3.0
+    }
+   ]
+  }
+ ]
+}

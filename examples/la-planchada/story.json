@@ -1,0 +1,6336 @@
+{
+ "title": "La Planchada: la enfermera muerta que sigue haciendo su ronda",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "E",
+ "seed": 5,
+ "grade": "cold",
+ "vignette": 0.6,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Son las tres de la mañana.",
+   "pre": 1.2,
+   "music": "dread",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -2
+    },
+    {
+     "name": "clock",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.2,
+     "gain": -8,
+     "args": {
+      "freq": 220
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.08
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Estás internado en una sala del viejo Hospital Juárez, en el centro de la Ciudad de México. Las lámparas del techo zumban. Todos duermen.",
+   "amb": [
+    {
+     "name": "rain",
+     "gain": -4
+    },
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 3,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ward_bg.png"
+      },
+      {
+       "src": "art/ward_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.18
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 1,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      },
+      {
+       "type": "flicker",
+       "amp": 0.04,
+       "speed": 3
+      }
+     ],
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Entonces lo oyes. Pasos en el pasillo. Lentos. Tranquilos… Pero no hacen eco.",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -2
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.4,
+     "gain": -2,
+     "args": {
+      "rate": 1.2,
+      "dur": 7
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr5_bg.png"
+      },
+      {
+       "src": "art/corr5_flick.png",
+       "blend": "add",
+       "opacity": 0.75,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.6,
+         "speed": 9
+        }
+       ]
+      },
+      {
+       "src": "art/corr5_ghost.png",
+       "blend": "normal",
+       "opacity": 0.85,
+       "fade_in": 2.0,
+       "appear_at": 1.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.46,
+       0.42,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.39,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.32,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 2,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Huele a almidón, a ropa recién planchada. Y una mano helada se posa en tu frente.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 7,
+      "bpm": 64
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/pov_bg.png"
+      },
+      {
+       "src": "art/pov_hand.png",
+       "blend": "normal",
+       "opacity": 0.9,
+       "fade_in": 1.5,
+       "appear_at": 1.2,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.06,
+         "speed": 3
+        },
+        {
+         "type": "drift",
+         "dx": 0.0,
+         "dy": 0.1,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.22
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 4,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "pulse",
+       "bpm": 64,
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Ya pasó. Ya le traje su medicina.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "fx": "eco",
+   "pre": 0.4,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -2
+    },
+    {
+     "name": "whoosh",
+     "at": -0.3,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ghost_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.62
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 7,
+       "at": [
+        0,
+        0.6
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 5,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Abres los ojos. Junto a tu cama hay una enfermera de uniforme blanco, perfecto, sin una sola arruga. Te sonríe… y se va.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 4.0,
+     "gain": -10,
+     "args": {
+      "rate": 1.2,
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/pov_bg.png"
+      },
+      {
+       "src": "art/pov_nurse.png",
+       "blend": "normal",
+       "opacity": 0.9,
+       "fade_in": 0.8,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ],
+       "vanish_at": 6.0,
+       "fade_out": 1.2
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.52,
+       0.43,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 6,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1.3
+    },
+    {
+     "layers": [
+      {
+       "src": "art/corr3_bg.png"
+      },
+      {
+       "src": "art/corr3_ghost_back.png",
+       "blend": "normal",
+       "opacity": 0.85,
+       "fade_in": 0.6,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        },
+        {
+         "type": "drift",
+         "dx": 0.0,
+         "dy": -0.02,
+         "ease": "inout"
+        },
+        {
+         "type": "scale",
+         "from": 1.0,
+         "to": 0.82,
+         "pivot": [
+          0.33,
+          0.55
+         ],
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.36,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.33,
+       0.47,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 7,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "A la mañana siguiente preguntas por ella. Nadie sabe de quién hablas. En ese hospital, ninguna enfermera es así.",
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "city",
+     "gain": -10
+    },
+    {
+     "name": "room",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/station_bg.png"
+      },
+      {
+       "src": "art/station_figs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.52,
+       0.42,
+       1.08
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "none",
+     "text": [
+      {
+       "str": "NADIE|la conoce",
+       "style": "big",
+       "at": [
+        2.0,
+        6.5
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Quédate hasta el final, porque te voy a contar qué encontraron escrito en el expediente de un paciente, una madrugada… y qué les pasa a quienes maltratan a un enfermo cuando ella está de guardia.",
+   "music": "tension",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ines_old.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.5
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08,
+       "speed": 3
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/doorway.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.35
+      },
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 8,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1,
+     "out": "fade",
+     "out_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Esta es la leyenda de La Planchada.",
+   "pause": 3.2,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -4.0,
+     "gain": -6,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "boom",
+     "at": 0.3,
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr_bg.png"
+      },
+      {
+       "src": "art/corr_flick.png",
+       "blend": "add",
+       "opacity": 0.75,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.4,
+         "speed": 6
+        }
+       ]
+      },
+      {
+       "src": "art/corr_ghost_far.png",
+       "blend": "normal",
+       "opacity": 0.9,
+       "fade_in": 2.5,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ]
+      },
+      {
+       "src": "art/corr_fg.png",
+       "depth": 1.3
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.46,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 9,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "text": [
+      {
+       "str": "LA PLANCHADA|la enfermera que sigue haciendo su ronda",
+       "style": "title",
+       "at": [
+        0.6,
+        6.8
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Otoño de mil novecientos ochenta y cuatro. Inés tiene veintidós años y una cofia nueva. Es su primera semana en el turno de noche.",
+   "pre": 1.6,
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "rain",
+     "gain": -6
+    },
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.64,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.3
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 10,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|El turno de noche",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.2
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "weight": 1.1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/corr_bg.png"
+      },
+      {
+       "src": "art/corr_ines.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.58,
+       0.46,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 11,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "text": [
+      {
+       "str": "Hospital Juárez, Ciudad de México|otoño de 1984",
+       "style": "date"
+      }
+     ],
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "El Hospital Juárez es viejo, muy viejo. Nació en mil ochocientos cuarenta y siete como hospital de sangre, para curar a los heridos de la guerra contra Estados Unidos, en el antiguo colegio de San Pablo.",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.0,
+     "gain": -12,
+     "args": {
+      "freq": 160
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hosp1847.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "flicker",
+       "amp": 0.05,
+       "speed": 3
+      }
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "Hospital de San Pablo|1847",
+       "style": "date"
+      }
+     ],
+     "transition": "xfade",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hosp1847.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.62,
+       1.6
+      ],
+      "to": [
+       0.62,
+       0.6,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        200,
+        180,
+        150
+       ],
+       "seed": 12,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "En mil ochocientos setenta y dos le pusieron el nombre de Benito Juárez. Y desde entonces, por sus pasillos ha pasado de todo. Nacimientos, epidemias, despedidas…",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaque.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hosp1847.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.45
+      ],
+      "to": [
+       0.36,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        200,
+        180,
+        150
+       ],
+       "seed": 13,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "La jefa de enfermeras, doña Amparo, le entrega las llaves del piso y le dice algo que Inés no entiende.",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -3
+    },
+    {
+     "name": "clock",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 2.5,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/station_bg.png"
+      },
+      {
+       "src": "art/station_figs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.53,
+       0.62,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Si en la madrugada ves a una compañera con el uniforme muy planchado… no le hables. Déjala trabajar.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/amparo_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.44,
+       1.2
+      ],
+      "to": [
+       0.48,
+       0.42,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "flicker",
+       "amp": 0.04,
+       "speed": 3
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "«Si ves a una compañera con el uniforme muy planchado… no le hables»|",
+       "style": "whisper"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Inés se ríe. Piensa que es una broma para asustar a las nuevas. A todas las nuevas les cuentan algo así.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ines_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.43,
+       1.28
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "La primera noche todo está en calma. El reloj de la estación marca cada minuto. Los focos parpadean con un zumbido verdoso. Huele a desinfectante y a café recalentado.",
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.42,
+       2.2
+      ],
+      "to": [
+       0.52,
+       0.42,
+       2.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.05
+      }
+     ],
+     "weight": 0.9
+    },
+    {
+     "layers": [
+      {
+       "src": "art/corr4_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.64,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.12,
+       "speed": 6
+      },
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 14,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1.1
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "A las dos y media, Inés revisa la sala de hombres. Doce camas de fierro. Doce cortinas blancas. Y algo raro.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.2,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ward_bg.png"
+      },
+      {
+       "src": "art/ward_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.48,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 15,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Los sueros ya están cambiados. Las sábanas, estiradas con esquinas perfectas. Y en las hojas de enfermería, las medicinas de las tres… ya están marcadas como dadas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chart84.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.47,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "grade": "candle",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/chart84.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.48,
+       1.6
+      ],
+      "to": [
+       0.64,
+       0.5,
+       1.8
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Pero Inés es la única enfermera en todo el piso.",
+   "pause": 1.0,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.1,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr2_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.25
+      ],
+      "to": [
+       0.62,
+       0.48,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 16,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "darken",
+       "amount": 0.8
+      }
+     ],
+     "text": [
+      {
+       "str": "SOLA|era la única enfermera del piso",
+       "style": "big",
+       "at": [
+        0.2,
+        5.0
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "En la cama doce, don Refugio, un viejito que lleva semanas internado, abre los ojos y le sonríe.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bed12_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.44,
+       0.56,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      },
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 17,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "No se apure, señorita. La otra enfermera ya vino. La güerita… la del uniforme tan planchado.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bed12_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.44,
+       0.58,
+       1.75
+      ],
+      "to": [
+       0.44,
+       0.58,
+       1.9
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "text": [
+      {
+       "str": "«La otra enfermera ya vino… la del uniforme tan planchado»|",
+       "style": "whisper"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Inés siente un frío que le sube por la espalda. Y al fondo del pasillo, una lámpara empieza a parpadear.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 8,
+      "bpm": 88
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ines_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 90,
+       "amp": 0.12
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/corr2_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.68,
+       0.4,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.25,
+       "speed": 9
+      },
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 18,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1.1
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Bajo la luz, por un segundo, ve una silueta blanca. Una cofia. Una espalda muy derecha.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.6,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr3_bg.png"
+      },
+      {
+       "src": "art/corr3_flick.png",
+       "blend": "add",
+       "opacity": 0.75,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.8,
+         "speed": 11
+        }
+       ]
+      },
+      {
+       "src": "art/corr3_ghost_back.png",
+       "blend": "normal",
+       "opacity": 0.95,
+       "fade_in": 0.3,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.35,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.34,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.34,
+       0.46,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.3,
+       "speed": 10
+      },
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 19,
+       "low": true,
+       "speed": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "La luz se apaga… Y cuando vuelve, el pasillo está vacío.",
+   "pause": 1.2,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -6
+    },
+    {
+     "name": "sting",
+     "at": 2.4,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.4
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/corr3_bg.png"
+      },
+      {
+       "src": "art/corr3_flick.png",
+       "blend": "add",
+       "opacity": 0.75,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.3,
+         "speed": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.34,
+       0.46,
+       1.6
+      ],
+      "to": [
+       0.34,
+       0.46,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 20,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.25,
+     "weight": 1.3,
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Para entender quién camina por ese pasillo, hay que regresar medio siglo atrás.",
+   "pre": 1.4,
+   "music": "sad",
+   "amb": [
+    {
+     "name": "night",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/iron_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.48,
+       0.52,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        230,
+        220,
+        200
+       ],
+       "seed": 21,
+       "low": false,
+       "speed": 1.0
+      }
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "CAPÍTULO II|Eulalia",
+       "style": "chapter",
+       "at": [
+        0.6,
+        4.5
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Cuentan que en los años treinta trabajaba ahí una enfermera llamada Eulalia. Otros dicen que fue antes, a principios de siglo. Pero en algo coinciden todas las versiones.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaque.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.38,
+       0.4,
+       1.6
+      ],
+      "to": [
+       0.62,
+       0.42,
+       1.6
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "text": [
+      {
+       "str": "Hospital Juárez, Ciudad de México|años treinta",
+       "style": "date"
+      }
+     ],
+     "weight": 0.8
+    },
+    {
+     "layers": [
+      {
+       "src": "art/eulalia_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Eulalia era impecable. Delgada, de cabello claro, recogido en un chongo sin un solo pelo fuera de lugar.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eulalia_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.36,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.33,
+       1.8
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Cada noche almidonaba su uniforme y lo planchaba hasta que la tela brillaba. Por eso, en el hospital, empezaron a llamarla así… la planchada.",
+   "amb": [
+    {
+     "name": "rain",
+     "gain": -8
+    },
+    {
+     "name": "fire",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ironing_bg.png"
+      },
+      {
+       "src": "art/ironing_eulalia.png"
+      },
+      {
+       "src": "art/ironing_table.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.42,
+       0.4,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.15
+      },
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/iron_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        240,
+        230,
+        210
+       ],
+       "seed": 23,
+       "low": false,
+       "speed": 1.6
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Era dulce con los enfermos. Les hablaba bajito, les tomaba la mano, les acomodaba la almohada. En su turno, nadie se quedaba solo. Ni siquiera los que ya no tenían a nadie.",
+   "amb": [
+    {
+     "name": "night",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wardsep_bg.png"
+      },
+      {
+       "src": "art/wardsep_eulalia.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.25
+      ],
+      "to": [
+       0.49,
+       0.47,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        220,
+        190,
+        150
+       ],
+       "seed": 24,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/eulalia_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Y entonces llegó él. Un médico joven, elegante, de sonrisa fácil. Las versiones lo llaman Joaquín.",
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cloister_bg.png"
+      },
+      {
+       "src": "art/cl_joaquin.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.53,
+       0.47,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/joaquin_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.33,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Eulalia se enamoró como se enamoran quienes nunca se han enamorado. Con todo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eulalia_veil.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Junto a él se ponía nerviosa. Le temblaban las manos al pasarle el instrumental. Hasta que una noche, en el pasillo, se atrevió a decírselo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cloister_bg.png"
+      },
+      {
+       "src": "art/cl_couple.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        220,
+        190,
+        150
+       ],
+       "seed": 25,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Doctor… yo lo quiero.",
+   "voice": "ef_dora",
+   "speed": 0.84,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cloister_bg.png"
+      },
+      {
+       "src": "art/cl_couple.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.47,
+       0.47,
+       2.3
+      ],
+      "to": [
+       0.47,
+       0.46,
+       2.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Yo también la quiero, Eulalia. En unos meses nos casamos. Se lo prometo.",
+   "voice": "em_santa",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/joaquin_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "En unos meses nos casamos. Se lo prometo|Joaquín",
+       "style": "quote",
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Fueron meses felices. Paseos por la Alameda los domingos. Y un baile, una sola noche, en un salón lleno de candiles, donde él la sacó a bailar delante de todos.",
+   "amb": [
+    {
+     "name": "city",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alameda.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "warm",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ballroom_bg.png"
+      },
+      {
+       "src": "art/ballroom_couple.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.2,
+         "period": 3.2,
+         "pivot": [
+          0.5,
+          0.95
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "flicker",
+       "amp": 0.05,
+       "speed": 4
+      }
+     ],
+     "grade": "candle",
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Eulalia ya se imaginaba vestida de blanco. Pero no de enfermera. De novia.",
+   "amb": [],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eulalia_veil.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        255,
+        240,
+        210
+       ],
+       "seed": 26,
+       "low": false,
+       "speed": 1.0
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Si estas leyendas te ponen la piel chinita, suscríbete al canal. Aquí las contamos todas… con la luz apagada.",
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr4_bg.png"
+      },
+      {
+       "src": "art/corr4_ghost.png",
+       "blend": "normal",
+       "opacity": 0.7,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.66,
+       0.4,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 30,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Una tarde, Joaquín llegó con un traje oscuro. El más fino que tenía.",
+   "pre": 1.4,
+   "music": "calm",
+   "amb": [
+    {
+     "name": "fire",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/suit.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "flicker",
+       "amp": 0.06,
+       "speed": 5
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "CAPÍTULO III|El traje",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.2
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Eulalia, ¿me lo plancharías? Voy a un congreso médico, fuera de la ciudad. Tengo que verme perfecto.",
+   "voice": "em_santa",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/joaquin_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.46,
+       0.42,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "¿Me lo plancharías?|Joaquín",
+       "style": "quote",
+       "at": [
+        0.4,
+        4.0
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Y ella lo planchó con todo su amor. Cada pliegue, cada solapa, cada costura. Como solo ella sabía hacerlo.",
+   "amb": [
+    {
+     "name": "rain",
+     "gain": -10
+    },
+    {
+     "name": "fire",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ironing_suit_bg.png"
+      },
+      {
+       "src": "art/ironing_eulalia.png"
+      },
+      {
+       "src": "art/ironing_table_suit.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "rain",
+       "strength": 0.12
+      }
+     ],
+     "grade": "candle",
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/iron_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        240,
+        230,
+        210
+       ],
+       "seed": 27,
+       "low": false,
+       "speed": 1.4
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Él se fue. Pasó una semana. Pasaron dos. Y no volvió.",
+   "music": "sad",
+   "amb": [
+    {
+     "name": "clock",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/calendar.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Hasta que un enfermero, que llevaba años pretendiéndola sin suerte, le dijo la verdad. Todo el hospital lo sabía. Menos ella.",
+   "amb": [
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cloister_bg.png"
+      },
+      {
+       "src": "art/cl_gossip.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        200,
+        180,
+        150
+       ],
+       "seed": 28,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "No había ningún congreso. Joaquín se había casado con otra mujer. Y estaba de luna de miel.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "freq": 196
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wedding.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/wedding.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.78,
+       1.7
+      ],
+      "to": [
+       0.5,
+       0.76,
+       1.95
+      ],
+      "ease": "inout"
+     },
+     "grade": "sepia",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "El traje que Eulalia planchó con tanto cuidado… era el traje de su boda.",
+   "pause": 1.3,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/suit.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.57,
+       0.35,
+       1.9
+      ],
+      "to": [
+       0.57,
+       0.35,
+       2.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        0,
+        0.4
+       ]
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.1
+      }
+     ],
+     "grade": "blood",
+     "text": [
+      {
+       "str": "SU BODA|el traje que ella planchó",
+       "style": "big",
+       "at": [
+        0.8,
+        6.0
+       ]
+      }
+     ],
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Algo se rompió dentro de ella. La mujer impecable empezó a llegar con el uniforme arrugado. Los ojos hinchados. La mirada perdida.",
+   "music": "sad",
+   "amb": [
+    {
+     "name": "rain",
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/decline_bg.png"
+      },
+      {
+       "src": "art/decline_fig.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.4,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.2
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/eulalia_tears.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Y en un hospital, un descuido cuesta caro. Olvidaba medicinas. No escuchaba los timbres. Dicen que algunos enfermos empeoraron por su culpa… y que otros ya no despertaron.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.0,
+     "gain": -12,
+     "args": {
+      "freq": 880,
+      "dur": 3
+     }
+    },
+    {
+     "name": "bell",
+     "at": 3.5,
+     "gain": -14,
+     "args": {
+      "freq": 880,
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bells.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.15,
+       "speed": 7
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bells.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.55,
+       1.8
+      ],
+      "to": [
+       0.68,
+       0.56,
+       2.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 80,
+       "amp": 0.15
+      }
+     ],
+     "grade": "blood",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "La culpa la fue apagando. Dejó de comer, dejó de dormir. Se enfermó de tristeza, y terminó internada en el mismo hospital donde había cuidado a tantos.",
+   "amb": [
+    {
+     "name": "rain",
+     "gain": -2
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 2.6,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/decline_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.67,
+       0.42,
+       1.5
+      ],
+      "to": [
+       0.67,
+       0.42,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "lightning",
+       "at": [
+        2.5
+       ]
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/eulalia_tears.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.36,
+       1.7
+      ],
+      "to": [
+       0.5,
+       0.36,
+       1.9
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 29,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Murió ahí, en una de esas camas de fierro, una madrugada. Hay versiones más oscuras, que dicen que fue ella quien decidió no seguir. Pero todas terminan igual.",
+   "amb": [
+    {
+     "name": "fire",
+     "gain": -14
+    },
+    {
+     "name": "drips",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/deathbed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08,
+       "speed": 5
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/deathbed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.38,
+       0.6,
+       1.8
+      ],
+      "to": [
+       0.38,
+       0.62,
+       2.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.1,
+       "speed": 5
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Arrepentida. Pidiendo perdón a los enfermos que dejó solos.",
+   "pause": 1.2,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/deathbed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.72,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.72,
+       0.55,
+       1.75
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.15,
+       "speed": 6
+      }
+     ],
+     "grade": "candle",
+     "out": "fade",
+     "out_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Pocos días después de su muerte, los pacientes empezaron a hablar de una enfermera nueva.",
+   "pre": 1.4,
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -2
+    },
+    {
+     "name": "drips",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ward_bg.png"
+      },
+      {
+       "src": "art/ward_fg.png",
+       "depth": 1.35
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 31,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|La ronda",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.2
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Una mujer delgada, güera, muy amable, que llegaba de madrugada. Les daba la medicina, les arreglaba el suero, les ponía la mano en la frente. Y al día siguiente amanecían mejor.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ward2_bg.png"
+      },
+      {
+       "src": "art/ward2_ghost.png",
+       "blend": "normal",
+       "opacity": 0.92,
+       "fade_in": 1.5,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.4,
+       0.42,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 32,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/pov_bg.png"
+      },
+      {
+       "src": "art/pov_hand.png",
+       "blend": "normal",
+       "opacity": 0.85,
+       "fade_in": 1.0,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.05,
+         "speed": 3
+        },
+        {
+         "type": "drift",
+         "dx": 0.0,
+         "dy": 0.08,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 33,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Cuando querían darle las gracias, nadie sabía quién era. Ninguna enfermera del turno se parecía a ella.",
+   "amb": [
+    {
+     "name": "city",
+     "gain": -12
+    },
+    {
+     "name": "room",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/amparo_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.48,
+       1.0
+      ],
+      "to": [
+       0.48,
+       0.45,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "none",
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Volvamos con Inés. Es su tercera noche. Las tres en punto. Y ahora sí la ve.",
+   "music": "tension",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -2
+    }
+   ],
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0.0,
+     "gain": -4,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 56,
+       "amp": 0.08
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ines_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 84,
+       "amp": 0.1
+      }
+     ],
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Al fondo del pasillo, frente a la puerta de la sala, hay una enfermera de pie. Uniforme blanco. Cofia almidonada. Las manos juntas. No se mueve.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 10,
+      "bpm": 76
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr_bg.png"
+      },
+      {
+       "src": "art/corr_ghost_mid.png",
+       "blend": "normal",
+       "opacity": 0.95,
+       "fade_in": 1.5,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.08,
+         "speed": 3
+        }
+       ]
+      },
+      {
+       "src": "art/corr_fg.png",
+       "depth": 1.3
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.49,
+       0.52,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 34,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/corr_bg.png"
+      },
+      {
+       "src": "art/corr_ghost_mid.png",
+       "blend": "normal",
+       "opacity": 0.95,
+       "fade_in": 0.1,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.08,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.475,
+       0.5,
+       2.0
+      ],
+      "to": [
+       0.475,
+       0.48,
+       2.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 59,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "pulse",
+       "bpm": 80,
+       "amp": 0.08
+      }
+     ],
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Inés camina hacia ella. Sus propios pasos retumban en el piso. Pero cuando la otra camina… no se oye nada.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.3,
+     "gain": -3,
+     "args": {
+      "rate": 1.6,
+      "dur": 4
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 9,
+      "bpm": 96
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr_bg.png"
+      },
+      {
+       "src": "art/corr_ghost_mid.png",
+       "blend": "normal",
+       "opacity": 0.95,
+       "fade_in": 0.1,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.08,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.55,
+       1.35
+      ],
+      "to": [
+       0.475,
+       0.52,
+       1.75
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 35,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "pulse",
+       "bpm": 96,
+       "amp": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "La enfermera voltea. Tiene la cara pálida, serena, casi bonita. Y unos ojos tan tristes que Inés se queda helada.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "whoosh",
+     "at": -0.2,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ghost_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.5
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 36,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "transition": "flash"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "No se asuste. Ya no voy a dejar a nadie solo.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "fx": "eco",
+   "pre": 0.3,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ghost_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.36,
+       1.7
+      ],
+      "to": [
+       0.5,
+       0.35,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 37,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "flicker",
+       "amp": 0.04,
+       "speed": 3
+      }
+     ],
+     "text": [
+      {
+       "str": "«Ya no voy a dejar a nadie solo»|",
+       "style": "whisper"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Entra a la sala. Se inclina sobre la cama doce y le acomoda la cobija a don Refugio, como una madre. Y ahí, en la penumbra… desaparece.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 6.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ward3_bg.png"
+      },
+      {
+       "src": "art/ward3_ghost.png",
+       "blend": "normal",
+       "opacity": 0.92,
+       "fade_in": 0.8,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.75,
+       0.47,
+       1.5
+      ],
+      "to": [
+       0.78,
+       0.46,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 38,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bed12_bg.png"
+      },
+      {
+       "src": "art/bed12_ghost.png",
+       "blend": "normal",
+       "opacity": 0.92,
+       "fade_in": 1.0,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ],
+       "vanish_at": 4.5,
+       "fade_out": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.52,
+       0.48,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 39,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b058b",
+   "text": "Inés regresa a la estación con el corazón en la garganta. En el aire todavía flota un olor a ropa almidonada. Y en la sala, don Refugio duerme tranquilo por primera vez en semanas.",
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -3
+    },
+    {
+     "name": "clock",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/station_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        230,
+        230,
+        220
+       ],
+       "seed": 40,
+       "low": false,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ward3_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.35,
+       0.55,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 41,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Desde esa noche, Inés supo que no estaba sola en el turno. Y supo también la otra parte de la leyenda. La que las enfermeras viejas cuentan en voz baja.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/amparo_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.42,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Porque La Planchada es buena con los enfermos. Pero no con quienes los descuidan.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr4_bg.png"
+      },
+      {
+       "src": "art/corr4_ghost.png",
+       "blend": "normal",
+       "opacity": 0.9,
+       "fade_in": 1.0,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.42,
+       1.6
+      ],
+      "to": [
+       0.66,
+       0.41,
+       1.9
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 42,
+       "low": true,
+       "speed": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Cuentan que a las enfermeras que se duermen en la guardia, alguien las despierta tocándoles el hombro con una mano helada.",
+   "amb": [
+    {
+     "name": "clock",
+     "gain": -6
+    },
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/station_bg.png"
+      },
+      {
+       "src": "art/station_sleep.png"
+      },
+      {
+       "src": "art/station_ghosthand.png",
+       "blend": "normal",
+       "opacity": 0.9,
+       "fade_in": 1.5,
+       "appear_at": 1.5,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.05,
+         "speed": 3
+        },
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": 0.04,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.46,
+       0.4,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05,
+       "speed": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Y que a quien trata mal a un paciente, a quien le grita o lo deja con dolor, se le aparece de frente en un pasillo oscuro. Y le pregunta, muy suave…",
+   "music": "dread",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -2
+    },
+    {
+     "name": "drips",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 4.0,
+     "gain": -8,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr5_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.46,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.46,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 43,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "darken",
+       "amount": 0.6
+      },
+      {
+       "type": "flicker",
+       "amp": 0.1,
+       "speed": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "¿Ya le dio su medicina?",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "fx": "eco",
+   "pre": 0.5,
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/doorway.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "«¿Ya le dio su medicina?»|",
+       "style": "whisper"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.3
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Dicen que nadie que la ha visto así vuelve a descuidar a un enfermo. Nunca.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/doorway.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 44,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "darken",
+       "amount": 0.75
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Y no solo pasa en el Hospital Juárez. En Monterrey, en una clínica del Seguro Social, hablan de una enfermera que recorre los pisos de noche. En Guadalajara, en el viejo Hospital Civil, cuentan de una monja que sigue cuidando a los enfermos.",
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/map.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.54,
+       0.42,
+       1.8
+      ],
+      "to": [
+       0.54,
+       0.42,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/map.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.47,
+       0.64,
+       1.8
+      ],
+      "to": [
+       0.47,
+       0.64,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/map.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "sepia",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Casi cada hospital antiguo de México tiene su propia Planchada. Pero la primera, dicen, fue Eulalia.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ghost_full.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 45,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Pasó menos de un año. Y llegó una mañana que la Ciudad de México nunca va a olvidar.",
+   "pre": 1.4,
+   "music": "calm",
+   "amb": [
+    {
+     "name": "city",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/city85.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "none",
+     "text": [
+      {
+       "str": "CAPÍTULO V|Diecinueve de septiembre",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Diecinueve de septiembre de mil novecientos ochenta y cinco. Siete y diecinueve de la mañana.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 3.0,
+     "gain": -6,
+     "args": {
+      "dur": 4.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/city85.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.69,
+       0.5,
+       1.5
+      ],
+      "to": [
+       0.69,
+       0.48,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "grade": "none",
+     "text": [
+      {
+       "str": "Ciudad de México|19 de septiembre de 1985 · 7:19 a. m.",
+       "style": "date"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "La tierra se sacudió con una fuerza de ocho punto uno. Y la torre de hospitalización del Hospital Juárez, de doce pisos, se vino abajo.",
+   "pre": 0.3,
+   "pause": 1.2,
+   "music": "climax",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": 0
+    },
+    {
+     "name": "thunder",
+     "at": 0.4,
+     "gain": -2
+    },
+    {
+     "name": "gust",
+     "at": 2.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tower_fall.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 14
+      },
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        200,
+        185,
+        165
+       ],
+       "seed": 46,
+       "low": false,
+       "speed": 1.0
+      }
+     ],
+     "grade": "none",
+     "transition": "flash",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tower_fall.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 6
+      },
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "none",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Cientos de personas murieron ahí. Pacientes, médicos, residentes, enfermeras. Fue una de las peores tragedias de aquel día.",
+   "music": "sad",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -8
+    },
+    {
+     "name": "city",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ruins.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35,
+       "color": [
+        210,
+        195,
+        175
+       ],
+       "seed": 47,
+       "low": false,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "none"
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Inés no estaba de turno esa mañana. Pero corrió al hospital, como miles de voluntarios, a quitar escombros con las manos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ruins.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.65,
+       1.6
+      ],
+      "to": [
+       0.38,
+       0.65,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "fog",
+       "strength": 0.25,
+       "color": [
+        210,
+        195,
+        175
+       ],
+       "seed": 48,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "grade": "none"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Durante días se buscó entre las ruinas. Y entre el polvo también hubo milagros. Del veintidós al veintiséis de septiembre, rescataron con vida a catorce recién nacidos. Les llamaron los niños milagro.",
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ruins_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 49,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/baby.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "warm",
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Y aquí la leyenda vuelve a aparecer. Hay quienes juraron haber visto, de noche, entre los escombros, a una enfermera de blanco. Limpia. Sin una mancha de polvo. Señalando un hueco entre las piedras.",
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -10
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 6.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ruins_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 50,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ruins_night.png"
+      },
+      {
+       "src": "art/ruins_ghost.png",
+       "blend": "normal",
+       "opacity": 0.92,
+       "fade_in": 1.8,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.58,
+       0.58,
+       1.8
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 51,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Nadie sabe si es verdad. Pero cuentan que, donde ella señalaba… alguien seguía respirando.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -10,
+     "args": {
+      "dur": 6,
+      "bpm": 110
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/baby.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.8
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.06
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "Después del sismo, el hospital se mudó a un edificio nuevo, al norte de la ciudad. Uno pensaría que ella se quedó entre las ruinas.",
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "city",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/newhosp.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      },
+      {
+       "type": "fog",
+       "strength": 0.2,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 52,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "transition": "xfade"
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "Pero no. En el nuevo Hospital Juárez, los pacientes siguen preguntando por la enfermera güerita del uniforme impecable. La que llega de madrugada. La que nadie conoce.",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/newhosp.png"
+      },
+      {
+       "src": "art/newhosp_ghost.png",
+       "blend": "normal",
+       "opacity": 0.9,
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.75,
+       1.8
+      ],
+      "to": [
+       0.6,
+       0.8,
+       2.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.15,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 53,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ward2_bg.png"
+      },
+      {
+       "src": "art/ward2_ghost.png",
+       "blend": "normal",
+       "opacity": 0.92,
+       "fade_in": 1.5,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.43,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.43,
+       0.44,
+       1.85
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 54,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "¿Y el expediente que te prometí al principio?",
+   "pre": 1.2,
+   "music": "tension",
+   "amb": [
+    {
+     "name": "clock",
+     "gain": -6
+    },
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chart84.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.35
+      },
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "FINAL|El expediente",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b078",
+   "text": "Aquella mañana de mil novecientos ochenta y cuatro, después de la tercera noche, don Refugio amaneció sin fiebre. Los doctores no se lo explicaban.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bed12_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.46,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "none"
+    }
+   ]
+  },
+  {
+   "id": "b079",
+   "text": "Inés abrió su expediente para anotar el turno. Y en la hoja de enfermería, a las tres de la mañana, había una línea escrita con una letra perfecta. Inclinada. Antigua.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sheet_final.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/sheet_final.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.3,
+       1.5
+      ],
+      "to": [
+       0.45,
+       0.4,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b080",
+   "text": "Medicamento administrado. Paciente tranquilo. Nadie se quedó solo.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "fx": "eco",
+   "pre": 0.4,
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sheet_final.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.36,
+       0.4,
+       2.0
+      ],
+      "to": [
+       0.6,
+       0.4,
+       2.0
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06,
+       "speed": 3
+      }
+     ],
+     "grade": "candle",
+     "weight": 1.1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/sheet_final.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.47,
+       2.3
+      ],
+      "to": [
+       0.42,
+       0.47,
+       2.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06,
+       "speed": 3
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.9
+    }
+   ]
+  },
+  {
+   "id": "b081",
+   "text": "La firmaba una sola letra. Una E.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sheet_final.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.77,
+       0.37,
+       2.2
+      ],
+      "to": [
+       0.77,
+       0.37,
+       2.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.1
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b082",
+   "text": "Y la fecha… no era de mil novecientos ochenta y cuatro. Era de mil novecientos treinta y cuatro.",
+   "pause": 1.4,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sheet_date.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.3,
+       0.52,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        0,
+        0.4
+       ]
+      }
+     ],
+     "grade": "candle",
+     "text": [
+      {
+       "str": "1934|cincuenta años antes",
+       "style": "big",
+       "at": [
+        2.0,
+        7.5
+       ],
+       "pos": "top"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.3
+    }
+   ]
+  },
+  {
+   "id": "b083",
+   "text": "Inés guardó esa hoja toda su vida. Y cuando contaba esta historia, nunca decía que había visto un fantasma. Decía que había conocido a la mejor enfermera del Hospital Juárez.",
+   "music": "sad",
+   "amb": [
+    {
+     "name": "fire",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ines_old.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ines_old.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.35,
+       1.6
+      ],
+      "to": [
+       0.52,
+       0.35,
+       1.8
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "dust",
+       "strength": 0.6
+      }
+     ],
+     "grade": "candle",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b084",
+   "text": "Así que, si algún día te toca pasar una noche internado, y a las tres de la mañana huele a almidón… no tengas miedo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ward3_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.2,
+       0.6,
+       1.5
+      ],
+      "to": [
+       0.25,
+       0.58,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 55,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b085",
+   "text": "Es Eulalia. Haciendo la ronda que, una vez, dejó a medias.",
+   "pause": 1.6,
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ghost_full.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 56,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.5
+    }
+   ]
+  },
+  {
+   "id": "b086",
+   "text": "¿Has escuchado historias así en algún hospital? ¿Te cuidó alguna vez alguien a quien nadie conocía? Cuéntamelo en los comentarios.",
+   "music": "calm",
+   "amb": [
+    {
+     "name": "room",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corr5_bg.png"
+      },
+      {
+       "src": "art/corr5_flick.png",
+       "blend": "add",
+       "opacity": 0.75,
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.3,
+         "speed": 4
+        }
+       ]
+      },
+      {
+       "src": "art/corr5_ghost.png",
+       "blend": "normal",
+       "opacity": 0.8,
+       "fade_in": 2.0,
+       "appear_at": 0.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 3
+        }
+       ],
+       "vanish_at": 7.0,
+       "fade_out": 2.0
+      }
+     ],
+     "cam": {
+      "from": [
+       0.46,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.4,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 57,
+       "low": true,
+       "speed": 1.0
+      },
+      {
+       "type": "dust",
+       "color": [
+        190,
+        230,
+        220
+       ],
+       "strength": 0.45,
+       "count": 60
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b087",
+   "text": "Y en el próximo video, volvemos a las calles de la vieja Ciudad de México. A un caballero que, a las once de la noche, detenía a quien pasaba con una sola pregunta. ¿Qué hora es? Y de tu respuesta… dependía tu vida.",
+   "pause": 0.8,
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "rain",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 6.0,
+     "gain": -6,
+     "args": {
+      "dur": 8
+     }
+    },
+    {
+     "name": "bell",
+     "at": 13.0,
+     "gain": -6,
+     "args": {
+      "freq": 160
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.3
+      },
+      {
+       "type": "fog",
+       "strength": 0.3,
+       "color": [
+        165,
+        200,
+        190
+       ],
+       "seed": 58,
+       "low": true,
+       "speed": 1.0
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/clock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.1
+      },
+      {
+       "type": "darken",
+       "amount": 0.45
+      }
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|¿Qué hora es?",
+       "style": "big",
+       "at": [
+        1.0,
+        20.0
+       ]
+      }
+     ],
+     "weight": 1,
+     "out": "fade",
+     "out_len": 1.5
+    }
+   ]
+  }
+ ]
+}
