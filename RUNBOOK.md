@@ -53,14 +53,20 @@ ffprobe: 1920x1080, has audio, duration 10:30–13:30; loudness ≈ -14 LUFS (mi
 spread across the video and look at them; subs.srt runs to the end. If something fails, fix it.
 
 ## 6. Host the files (public download links for Metricool)
+GitHub releases cannot be created from these sessions, so the video goes on its own branch (files there must stay
+under GitHub's 100 MB limit):
 ```
-TAG=$(date +%Y-%m-%d)-<slug>
-cp out/final.mp4 <slug>.mp4
-gh release create "$TAG" <slug>.mp4 thumb_a.png --repo benaventezjose/leyendas-mexicanas --title "<video title>" --notes "Video del canal Leyendas Mexicanas"
+cd /home/claude/videos/<slug>
+ffmpeg -y -i out/final.mp4 -c:v libx264 -preset medium -b:v 850k -maxrate 1300k -bufsize 2600k -pix_fmt yuv420p \
+       -c:a aac -b:a 96k -movflags +faststart <slug>.mp4        # must be < 95 MB; if not, lower -b:v and redo
+ffmpeg -y -i thumb_a.png -q:v 2 <slug>.jpg                       # thumbnail as JPG
+BR=video/$(date +%Y-%m-%d)-<slug>
+cd <repo> && git checkout --orphan $BR && git rm -rq --cached . && cp /home/claude/videos/<slug>/<slug>.{mp4,jpg} .
+git add <slug>.mp4 <slug>.jpg && git commit -m "Video <slug>" && git push origin $BR && git checkout -f main
 ```
-Video URL: `https://github.com/benaventezjose/leyendas-mexicanas/releases/download/$TAG/<slug>.mp4`
-(thumbnail likewise). Check with `curl -sIL <url> | grep -iE "^HTTP|content-length"` that it ends in 200 with the
-full size.
+Video URL: `https://raw.githubusercontent.com/benaventezjose/leyendas-mexicanas/$BR/<slug>.mp4` (thumbnail: same
+with .jpg). Check with `curl -sIL <url> | grep -iE "^HTTP|content-length"` that it ends in 200 with the full size.
+(Old video branches pile up; the owner deletes them from GitHub now and then. Mention the count in the report.)
 
 ## 7. Schedule on YouTube through Metricool
 Call createScheduledPost with blogId "7820990" (brand "_scorify", which also holds unrelated Instagram/TikTok
@@ -82,5 +88,5 @@ Then confirm it with getScheduledPosts (brandId 7820990, today, America/Mexico_C
 
 ## 9. Report
 Send the user a short message (SendUserMessage): the title, length, scheduled time, the Metricool planner link,
-the release link, and anything weak or skipped. If the run cannot finish (e.g. Metricool refuses the upload),
-do NOT post anything half-done: report exactly what failed and leave the release in place.
+the video's raw URL, and anything weak or skipped. If the run cannot finish (e.g. Metricool refuses the upload),
+do NOT post anything half-done: report exactly what failed and leave the video branch in place.
