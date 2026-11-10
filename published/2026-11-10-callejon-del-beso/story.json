@@ -1,0 +1,5026 @@
+{
+ "title": "El Callejón del Beso: la leyenda que exige un beso en el tercer escalón",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.24,
+ "key": "D",
+ "seed": 7,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Imagina un callejón tan angosto que, si abres los brazos, tocas las dos paredes al mismo tiempo.",
+   "pre": 0.8,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.4,
+     "gain": -12,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.85,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Arriba, muy arriba, dos balcones casi se besan. Entre uno y otro no cabe ni un metro de aire.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Esa noche, una mano de mujer se estira desde el balcón de la izquierda… y del otro lado, un muchacho la sostiene, como si con eso pudiera detener el tiempo.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "dur": 8,
+      "bpm": 62
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hands_reach.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      },
+      {
+       "src": "art/l_kiss_far.png",
+       "opacity": [
+        0.95,
+        0.95
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Él no ve la sombra que sube por la escalera, detrás de ella.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "sting",
+     "at": 2.6,
+     "gain": -3
+    }
+   ],
+   "music_at": 0.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_interior.png"
+      },
+      {
+       "src": "art/l_father_climb.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.04
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.65,
+       1.15
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/father_portrait_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.8
+       ]
+      }
+     ],
+     "transition": "flash",
+     "dur": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "No ve el brillo de la daga.",
+   "pause": 0.7,
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.4,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dagger_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Cuentan que esa mano nunca se soltó. Y que lo que pasó aquí es la razón por la que, todavía hoy, en Guanajuato, nadie sube el tercer escalón de este callejón sin hacer una cosa.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_steps.png"
+      },
+      {
+       "src": "art/l_step_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.08,
+         "period": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "EL CALLEJÓN DEL BESO|Guanajuato · una leyenda de amor y sangre",
+       "style": "title",
+       "at": [
+        0.3,
+        5.5
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Lo que te pasa si no la haces… te lo cuento al final.",
+   "pause": 0.4,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 2.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.1
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "",
+   "pause": 6.4,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.4,
+     "gain": -10,
+     "args": {
+      "freq": 140
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/moon_sky.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "Guanajuato, Nueva España|siglo XVIII",
+       "style": "date",
+       "at": [
+        0.8,
+        5.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Guanajuato no se construyó en un valle. Se construyó dentro de una herida de la sierra: una cañada estrecha, donde las casas se trepan unas sobre otras por los cerros, como si quisieran escapar hacia arriba.",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gto_panorama.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.55,
+       1.25
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|La ciudad de plata",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.8
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "En el siglo dieciocho, de esas montañas salía tanta plata, que Guanajuato llegó a ser una de las ciudades más ricas de todo el mundo.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "freq": 220
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mine.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "depth": 1.2,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "text": [
+      {
+       "str": "Guanajuato, siglo XVIII|Nueva España",
+       "style": "date",
+       "at": [
+        0.4,
+        4.6
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Arriba, en los socavones, miles de mineros bajaban cada día a la oscuridad. Abajo, en las casonas de cantera, los dueños de esa plata contaban monedas a la luz de las velas.",
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 4.5,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mine.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.62,
+       1.5
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "weight": 1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coins.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.52,
+       0.55,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Y como no había espacio, las calles se volvieron callejones: pasadizos de piedra, con escalones, tan angostos y torcidos que la luz de la luna apenas alcanza a tocar el suelo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_steps.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.3,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rooftops.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "En uno de esos callejones vivía una muchacha llamada Carmen.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_room.png"
+      },
+      {
+       "src": "art/l_carmen_window.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Cuentan que era hermosa, sí. Pero lo que todos recordaban eran sus ojos: oscuros, tristes, como los de alguien que mira la calle desde una jaula.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "weight": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Porque Carmen casi nunca salía de su casa. Su padre no la dejaba.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 2.4,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_facade.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Era un hombre rico, de los que se habían hecho poderosos con la plata. Severo. Celoso. Y con un carácter que hacía temblar a toda la casa.",
+   "music": "tension",
+   "music_at": 3.0,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 4.8,
+     "gain": -4
+    },
+    {
+     "name": "sting",
+     "at": 4.85,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_study.png"
+      },
+      {
+       "src": "art/l_father_back.png",
+       "depth": 1.08
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "weight": 1.3,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/father_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0,
+        0.6
+       ]
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.3,
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Para él, su hija no era una hija. Era un tesoro. Y los tesoros… se guardan bajo llave.",
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 4.2,
+     "gain": -6,
+     "args": {
+      "times": 1
+     }
+    },
+    {
+     "name": "chains",
+     "at": 4.4,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.55,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/house_facade.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.78,
+       1.75
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "text": [
+      {
+       "str": "BAJO LLAVE",
+       "style": "big",
+       "at": [
+        0.3,
+        2.8
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Ya le tenía marido escogido: un noble español, viejo y muy rico, que haría a la familia todavía más poderosa.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/suitor_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.47,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Carmen no lo quería. Pero en esa casa, lo que ella quisiera no le importaba a nadie.",
+   "pause": 0.8,
+   "music": "sad",
+   "music_at": 0.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_room.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Imagina saber que tu vida entera ya está decidida. Que alguien firmó tu futuro sin preguntarte nada. Así vivía Carmen: entre bordados, rezos, y una ventana que daba a un callejón oscuro.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_pov.png"
+      },
+      {
+       "src": "art/l_carmen_window_far.png",
+       "depth": 1.03
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "La única vez que Carmen podía salir era para ir a misa, y siempre vigilada por su dama de compañía: una mujer mayor, de rebozo oscuro, llamada Brígida.",
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.6,
+     "gain": -8,
+     "args": {
+      "freq": 180
+     }
+    },
+    {
+     "name": "bell",
+     "at": 2.2,
+     "gain": -10,
+     "args": {
+      "freq": 180
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/temple_facade.png"
+      },
+      {
+       "src": "art/l_brigida_carmen.png",
+       "depth": 1.06,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.02
+        }
+       ]
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.55,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|Una mirada en el templo",
+       "style": "chapter",
+       "at": [
+        0.5,
+        4.8
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "weight": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Y fue ahí, entre el humo de las velas y el murmullo de los rezos, donde lo vio por primera vez.",
+   "amb": [
+    "room"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.2,
+     "gain": -14,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/temple_interior.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Un muchacho de pie junto a una columna. Sin sombrero de pluma, sin capa fina. Se llamaba Luis. No tenía nada más que su nombre, y unas manos curtidas de minero.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/temple_interior.png"
+      },
+      {
+       "src": "art/l_luis_column.png",
+       "depth": 1.06
+      }
+     ],
+     "cam": {
+      "from": [
+       0.72,
+       0.55,
+       1.5
+      ],
+      "to": [
+       0.7,
+       0.5,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/luis_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.43,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Imagina esa mirada. Dura apenas un segundo. Ella baja los ojos… pero ya es tarde.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 4,
+      "bpm": 74
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Domingo tras domingo, Luis volvió al templo. Y domingo tras domingo, Carmen lo buscó con los ojos, entre la gente.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.3,
+     "gain": -14,
+     "args": {
+      "freq": 180
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/temple_interior.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.4
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Brígida lo notó. Y en lugar de acusarla con su padre… se volvió su cómplice.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brigida_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Escondidas en el rebozo empezaron a viajar cartas: papeles doblados, escritos de noche, que olían a cera y a miedo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letters_table.png"
+      },
+      {
+       "src": "art/l_flame.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.0
+        }
+       ],
+       "blend": "screen"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Luis le escribía que la esperaría toda la vida. Ella le contestaba que su padre jamás lo aceptaría, que era peligroso, que se olvidara de ella. Y en la carta siguiente… le pedía que no la olvidara nunca.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letters_table.png"
+      },
+      {
+       "src": "art/l_flame.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.0
+        }
+       ],
+       "blend": "screen"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/carmen_room.png"
+      },
+      {
+       "src": "art/l_carmen_window.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.45,
+       0.42,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "weight": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Hasta que una tarde… el padre encontró una.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.0,
+     "gain": -8
+    },
+    {
+     "name": "sting",
+     "at": 1.9,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.9,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letters_table.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.5
+      ],
+      "to": [
+       0.42,
+       0.55,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/father_portrait_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        1.0
+       ]
+      }
+     ],
+     "transition": "flash",
+     "dur": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Si vuelves a ver a ese muerto de hambre, te encierro en un convento. O te casas con quien yo diga.",
+   "voice": "em_santa",
+   "speed": 0.84,
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_study.png"
+      },
+      {
+       "src": "art/l_father_back.png",
+       "depth": 1.08
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "shake",
+       "amp": 4,
+       "at": [
+        0.2,
+        0.9
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "«Te encierro en un convento.»|su padre",
+       "style": "quote",
+       "at": [
+        0.3,
+        5.5
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Esa noche, todo el barrio escuchó los gritos.",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 1.2,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_facade.png"
+      },
+      {
+       "src": "art/l_window_red.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Cuentan que el padre arrastró a Carmen hasta su cuarto, y que esa misma semana mandó decir al noble español que la boda se haría pronto. Muy pronto.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 6.0,
+     "gain": -12,
+     "args": {
+      "freq": 200
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/suitor_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Y desde entonces, Carmen ya no salió ni a misa. Las ventanas se cerraron. La puerta también. Y la jaula se hizo más pequeña.",
+   "pause": 0.9,
+   "music": "sad",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 4.0,
+     "gain": -6
+    },
+    {
+     "name": "knock",
+     "at": 4.6,
+     "gain": -10,
+     "args": {
+      "times": 1
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_room.png"
+      },
+      {
+       "src": "art/l_carmen_window.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Cualquier otro se habría rendido. Luis no.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.7,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|Sesenta y ocho centímetros",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.8
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Recorrió el barrio de Carmen piedra por piedra, mirando siempre hacia arriba… hasta que vio algo que nadie más había notado.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.3,
+     "gain": -10,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_steps.png"
+      },
+      {
+       "src": "art/l_luis_walk.png",
+       "depth": 1.12,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "dy": -0.02
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "La casa de enfrente. Su balcón quedaba tan cerca del balcón de ella, que desde abajo parecían uno solo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Dicen que entre uno y otro había apenas sesenta y ocho centímetros.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "68 cm|entre un balcón y otro",
+       "style": "big",
+       "at": [
+        0.4,
+        4.2
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Luis juntó todo lo que tenía. Todo lo que había sacado de la mina en años de trabajo. Y pagó lo que le pidieron por esa casa: un precio de locos.",
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 5.5,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mine.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coins.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Y una noche, cuando Carmen abrió su ventana para respirar un poco de aire… él estaba ahí. Del otro lado. Tan cerca, que podía oír su respiración.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.6,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_carmen_balc.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.42,
+       1.5
+      ],
+      "to": [
+       0.42,
+       0.42,
+       1.65
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_carmen_balc.png"
+      },
+      {
+       "src": "art/l_luis_balc.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "¿Luis?",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_portrait_fear.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.43,
+       1.42
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Si estas historias te ponen la piel chinita, suscríbete al canal. Aquí contamos las leyendas que México se cuenta en voz baja.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rooftops.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Desde esa noche, el callejón se volvió su secreto.",
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_kiss_balc.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Imagina cómo era: la ciudad en silencio, el olor a tierra mojada que baja de los cerros, la luz amarilla de un farol allá abajo. Y dos personas, cada una en su casa, tan cerca que podían sentir el calor de la otra.",
+   "amb": [
+    "night",
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_pov.png"
+      },
+      {
+       "src": "art/l_carmen_window_far.png",
+       "depth": 1.03
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Cuando la ciudad dormía, los dos se asomaban. Hablaban en susurros, para que nadie los oyera. Se tomaban de las manos sobre el vacío.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hands_reach.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.35
+      ],
+      "to": [
+       0.55,
+       0.48,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      },
+      {
+       "src": "art/l_couple_talk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.46,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Y en ese pedacito de aire, entre dos paredes de piedra… se besaban.",
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      },
+      {
+       "src": "art/l_kiss_far.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Él le prometía que juntaría dinero, que se la llevaría lejos de Guanajuato, a donde nadie los conociera. Y ella le creía. Porque en ese callejón, por primera vez, alguien le hablaba de futuro.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/luis_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/carmen_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.44,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Abajo, Brígida vigilaba la escalera, con una vela en la mano. Cada ruido la hacía saltar.",
+   "music": "tension",
+   "music_at": 2.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_interior.png"
+      },
+      {
+       "src": "art/l_brigida.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Un crujido de madera. Un perro que ladra a lo lejos. Unos pasos en la calle, que se detienen… y siguen.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.2,
+     "gain": -14
+    },
+    {
+     "name": "howl",
+     "at": 1.6,
+     "gain": -16
+    },
+    {
+     "name": "footsteps",
+     "at": 3.2,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "sting",
+     "at": 6.2,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.85,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.8,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alley_steps.png"
+      },
+      {
+       "src": "art/l_shadow_watcher.png",
+       "depth": 1.08,
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 1.0
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Durante semanas, el amor de Carmen y Luis vivió así: a sesenta y ocho centímetros de distancia… y a un solo paso de la tragedia.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      },
+      {
+       "src": "art/l_couple_talk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.47,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Pero en una casa así, los secretos no duran.",
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_facade.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Nadie sabe quién se lo dijo. Tal vez un criado. Tal vez un vecino que vio dos sombras juntas en los balcones.",
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_kiss_balc.png"
+      },
+      {
+       "src": "art/l_shadow_watcher_low.png",
+       "depth": 1.15
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|La daga",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.8
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Lo cierto es que una noche, el padre de Carmen no se fue a dormir. Apagó las velas de la casa, se sentó en su estudio, y sacó de un cajón una daga vieja.",
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_study.png"
+      },
+      {
+       "src": "art/l_father_back.png",
+       "depth": 1.08
+      },
+      {
+       "src": "art/l_flame.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.0
+        }
+       ],
+       "blend": "screen"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.52,
+       0.48,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Esperó en la oscuridad. Escuchó la ventana abrirse. Escuchó el murmullo de dos voces.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 2.0,
+     "gain": -12
+    },
+    {
+     "name": "whisper",
+     "at": 3.6,
+     "gain": -12,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_interior.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.3,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_kiss_balc.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Y entonces… subió.",
+   "pause": 0.7,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.2,
+     "gain": -6,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.2,
+     "gain": -8,
+     "args": {
+      "dur": 10,
+      "bpm": 88
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_interior.png"
+      },
+      {
+       "src": "art/l_father_climb.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.02,
+         "dy": -0.03
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Imagina los escalones de madera, uno por uno. La vela apagada. La mano apretando la empuñadura.",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 3.0,
+     "gain": -8,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_interior.png"
+      },
+      {
+       "src": "art/l_father_climb.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.55,
+       0.42,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/dagger_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.5
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Brígida lo vio primero. Quiso gritar, quiso correr a avisar… pero él la apartó de un empujón.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 4.9,
+     "gain": -3
+    },
+    {
+     "name": "sting",
+     "at": 4.9,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_burst.png"
+      },
+      {
+       "src": "art/l_father_door.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/brigida_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.3,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Carmen sintió la puerta abrirse a su espalda. Se dio la vuelta.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.0,
+     "gain": -2
+    },
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -6,
+     "args": {
+      "dur": 4,
+      "bpm": 110
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_room_red.png"
+      },
+      {
+       "src": "art/l_carmen_window.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        0,
+        0.4
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/carmen_portrait_fear.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.43,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Su padre estaba ahí. Con la daga en la mano. Y en los ojos, algo que ya no parecía de este mundo.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 4.0,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 4.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_room_red.png"
+      },
+      {
+       "src": "art/l_father_dagger.png",
+       "depth": 1.04,
+       "anim": [
+        {
+         "type": "scale",
+         "from": 1.0,
+         "to": 1.06,
+         "pivot": [
+          0.5,
+          0.9
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/father_portrait_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.7
+       ]
+      },
+      {
+       "type": "pulse",
+       "bpm": 110,
+       "amp": 0.12
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.25,
+     "dur": 2.4
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Luis, desde su balcón, lo vio todo, sin poder cruzar. Sesenta y ocho centímetros… y de pronto eran un abismo.",
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 2.5,
+     "gain": -6,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low_red.png"
+      },
+      {
+       "src": "art/l_luis_balc.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.6,
+       0.45,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alley_low_red.png"
+      },
+      {
+       "src": "art/l_luis_balc.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.7,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "ash"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "La hoja brilló una sola vez.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 1.6,
+     "gain": -4
+    },
+    {
+     "name": "sting",
+     "at": 2.2,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 2.2,
+     "gain": -2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dagger_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.8
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "dur": 2.2,
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alley_low_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 12,
+       "at": [
+        0,
+        0.8
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "dur": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "",
+   "pause": 3.0,
+   "music": "silence",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/empty_balcony.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.5,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Cuando el padre bajó la mirada, entendió lo que había hecho. Pero ya era tarde.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_room_red.png"
+      },
+      {
+       "src": "art/l_father_dagger.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Carmen se había quedado en el balcón, con el brazo extendido hacia el otro lado del callejón.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_kiss.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Y Luis, del otro lado, seguía sosteniendo su mano.",
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hands_reach.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.75
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Cuentan que no la soltó. Que se quedó ahí, en la oscuridad, y le dio un último beso en la mano… mientras la ciudad entera dormía.",
+   "pause": 1.4,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 6.0,
+     "gain": -12,
+     "args": {
+      "freq": 120
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_kiss.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.3,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/gto_panorama.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "EL ÚLTIMO BESO",
+       "style": "big",
+       "at": [
+        0.4,
+        3.6
+       ]
+      }
+     ],
+     "grade": "cold",
+     "out": "fade",
+     "out_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Lo que pasó después, nadie lo cuenta igual.",
+   "music": "mystery",
+   "amb": [
+    {
+     "name": "wind",
+     "gain": -6
+    },
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gto_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|Lo que queda en el callejón",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.6
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Hay otra versión, que se cuenta menos: que Carmen no murió esa noche, sino que su padre la mandó lejos, a un convento, y que Luis la buscó por todos los caminos de la Nueva España sin encontrarla. Pero la versión que repiten los guanajuatenses… es la de la daga.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/temple_facade.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/dagger_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "weight": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Algunos dicen que el padre terminó sus días encerrado en esa casa, hablando solo, perseguido por el ruido de una ventana que se abre.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 5.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_study.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "De Luis, dicen que la tristeza lo fue apagando. Que volvió a la mina, a lo más hondo de la sierra… y que nadie lo volvió a ver salir.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mine.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "depth": 1.2,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.04
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Y del callejón… dicen que no se quedó vacío.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Vecinos y guías de la ciudad cuentan que, en algunas noches sin luna, se ven dos sombras asomadas a los balcones, inclinadas una hacia la otra.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_ghosts.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "weight": 1.3,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Y que, a veces, cuando el viento baja por la cañada, se oye una voz de mujer que repite un nombre.",
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      },
+      {
+       "src": "art/l_ghosts_close.png",
+       "blend": "screen",
+       "opacity": [
+        0.0,
+        0.8
+       ],
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.006,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Luis…",
+   "voice": "ef_dora",
+   "speed": 0.72,
+   "fx": "eco",
+   "pre": 0.3,
+   "pause": 1.2,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    },
+    {
+     "name": "whisper",
+     "at": 0.4,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carmen_portrait_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.3,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Ahora, lo que dice la historia.",
+   "music": "calm",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/docs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "text": [
+      {
+       "str": "Guanajuato, hoy|Lo que es historia y lo que es leyenda",
+       "style": "date",
+       "at": [
+        0.3,
+        3.8
+       ]
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "El callejón existe. Está en el centro de Guanajuato, a unos pasos de la Plazuela de los Ángeles, y sus balcones de verdad casi se tocan.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plazuela.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "Lo que no existe es un documento que pruebe que Carmen, Luis o su padre vivieron ahí. Su historia se fue contando de boca en boca, de abuelos a nietos, hasta volverse la leyenda más famosa de la ciudad.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/docs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.4
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "weight": 1.2,
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/gto_panorama.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "Pero hay algo que sí es real: en el Guanajuato de la plata, era común que las familias ricas arreglaran el matrimonio de sus hijas para unir fortunas. La leyenda, como tantas otras, se construyó sobre algo que de verdad pasaba.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/suitor_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coins.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b078",
+   "text": "Hoy, Guanajuato es Patrimonio de la Humanidad, y ese callejón angosto es uno de los rincones más visitados de México. Las parejas hacen fila para subir sus escalones y darse un beso bajo los balcones.",
+   "amb": [
+    "city",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gto_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alley_modern.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b079",
+   "text": "Y aquí está lo que te prometí al principio.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_steps.png"
+      },
+      {
+       "src": "art/l_step_glow.png",
+       "blend": "screen"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b080",
+   "text": "La tradición dice que si subes con tu pareja y se besan en el tercer escalón, tendrán siete años de felicidad. Hay quien dice que hasta quince.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_steps.png"
+      },
+      {
+       "src": "art/l_step_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.1,
+         "period": 2.5
+        }
+       ]
+      },
+      {
+       "src": "art/l_couple_steps.png",
+       "depth": 1.05
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.72,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "TERCER ESCALÓN|siete años de felicidad",
+       "style": "big",
+       "at": [
+        4.0,
+        8.0
+       ]
+      }
+     ],
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b081",
+   "text": "Por eso, en ese escalón, nunca falta quien se ría nervioso… y bese a su pareja. Por si acaso.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_modern.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b082",
+   "text": "Pero si pasas por ese escalón con tu pareja… y no la besas…",
+   "pause": 0.4,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2,
+     "gain": -8,
+     "args": {
+      "dur": 5,
+      "bpm": 70
+     }
+    },
+    {
+     "name": "riser",
+     "at": 1.0,
+     "gain": -6,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.8,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.75,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b083",
+   "text": "te esperan siete años de mala suerte.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low_red.png"
+      },
+      {
+       "src": "art/l_ghosts.png",
+       "blend": "screen",
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.7
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "7 AÑOS|de mala suerte",
+       "style": "big",
+       "at": [
+        0.3,
+        3.0
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.25
+    }
+   ]
+  },
+  {
+   "id": "b084",
+   "text": "Dicen que es una forma de honrar a Carmen y a Luis. De devolverles, en cada beso, el que a ellos les quitaron.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_close.png"
+      },
+      {
+       "src": "art/l_kiss_far.png",
+       "opacity": [
+        0.6,
+        0.6
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b085",
+   "text": "Así que, si algún día subes a ese callejón de noche, y sientes que alguien te mira desde arriba…",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alley_low.png"
+      },
+      {
+       "src": "art/l_ghosts.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.6
+       ],
+       "fade_in": 2.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.85,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b086",
+   "text": "no te detengas en el tercer escalón sin besar a quien va contigo. Porque ahí, a sesenta y ocho centímetros… alguien sigue esperando el suyo.",
+   "pause": 1.2,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "sting",
+     "at": -1.5,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/empty_balcony.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "dust"
+     ],
+     "weight": 1.2,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/carmen_portrait_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.25,
+     "dur": 2.4,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b087",
+   "text": "Y tú… ¿te atreverías a subir sin dar el beso? Te leo en los comentarios.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/moon_sky.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b088",
+   "text": "En el próximo video: dos volcanes que fueron amantes. La leyenda del Popocatépetl y la Iztaccíhuatl, el guerrero que todavía vela el sueño de su princesa.",
+   "pause": 1.0,
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.8,
+        0.8
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|Popocatépetl e Iztaccíhuatl",
+       "style": "big",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "weight": 1.0,
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  }
+ ]
+}
