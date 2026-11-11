@@ -1,0 +1,5183 @@
+{
+ "title": "Popocatépetl e Iztaccíhuatl: el guerrero que sigue velando a su princesa",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.26,
+ "key": "E",
+ "seed": 11,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "La nieve le llega a las rodillas. El viento le corta la cara como un filo de obsidiana. Y aun así, el guerrero sigue subiendo.",
+   "pre": 0.8,
+   "music": "dread",
+   "amb": [
+    "wind",
+    {
+     "name": "night",
+     "gain": -12
+    }
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.5,
+     "gain": -6
+    },
+    {
+     "name": "footsteps",
+     "at": 2.0,
+     "gain": -14,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/snow_slope.png"
+      },
+      {
+       "src": "art/l_popo_carry.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.025,
+         "dy": -0.02
+        }
+       ]
+      },
+      {
+       "src": "art/l_snowfall.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.62,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      },
+      {
+       "type": "rain",
+       "strength": 0.18
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "En los brazos lleva a una mujer vestida de blanco. No se mueve. No respira.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 5,
+      "bpm": 58
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carry_close.png"
+      },
+      {
+       "src": "art/l_snowfall.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Cuando llega a la cima, la recuesta sobre un lecho de flores, enciende una antorcha… y se arrodilla junto a ella.",
+   "sfx": [
+    {
+     "name": "fire",
+     "at": 4.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/summit_kneel.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.22,
+         "speed": 2.2
+        }
+       ]
+      },
+      {
+       "src": "art/l_snowfall.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.52,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      },
+      "embers"
+     ],
+     "weight": 1.3
+    },
+    {
+     "layers": [
+      {
+       "src": "art/torch_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Han pasado más de quinientos años. Y cuentan que él… todavía no se ha levantado.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/popo_face_snow.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      },
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.3,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Al oriente de la Ciudad de México hay una montaña que nunca deja de echar humo. Y junto a ella, una mujer de nieve que duerme.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_night.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "POPOCATÉPETL E IZTACCÍHUATL|la leyenda de los volcanes",
+       "style": "title",
+       "at": [
+        3.0,
+        8.5
+       ]
+      }
+     ],
+     "weight": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Al final te voy a contar lo que, según los abuelos, pasará el día que ese humo se apague.",
+   "pause": 0.5,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.8,
+     "gain": -14,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "boom",
+     "at": 4.0,
+     "gain": -7
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_ghost_cloud.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "out": "fade",
+     "out_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "",
+   "pause": 5.6,
+   "music": "calm",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.4,
+     "gain": -12,
+     "args": {
+      "freq": 120
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/valley_dawn.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|La hija del señor de Tlaxcala",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Hace más de quinientos años, antes de que llegaran los españoles, el valle de México tenía otro dueño.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tenochtitlan.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Valle de México|antes de mil quinientos diecinueve",
+       "style": "date",
+       "at": [
+        0.5,
+        5.0
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "En medio de un lago se levantaba Tenochtitlan, la gran ciudad de los mexicas. Sus guerreros eran temidos de un mar al otro, sus templos brillaban sobre el agua, y casi todos los pueblos le pagaban tributo: maíz, cacao, mantas de algodón, plumas preciosas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tenochtitlan.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.35
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tribute_line.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Pero al otro lado de los volcanes, en unas tierras de cerros y barrancas, vivía un pueblo que no quería arrodillarse: Tlaxcala. Los mexicas lo tenían rodeado. No le dejaban pasar sal, ni algodón, ni cacao. Y aun así, los tlaxcaltecas preferían comer sin sal… antes que inclinar la cabeza.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tlaxcala_city.png"
+      },
+      {
+       "src": "art/l_torches_city.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "TLAXCALA|el pueblo que no se arrodilló",
+       "style": "big",
+       "at": [
+        4.0,
+        8.0
+       ]
+      }
+     ],
+     "weight": 1.1
+    },
+    {
+     "layers": [
+      {
+       "src": "art/codex_paper.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tlaxcala_city.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.65,
+       1.45
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Imagina el humo del copal subiendo de los templos, el olor a tortilla en el comal, y en el horizonte, siempre, las dos montañas nevadas vigilando.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tlaxcala_city.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.6,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "embers"
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/copal_temple.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Solo que en esta historia, todavía no eran montañas.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -1.0,
+     "gain": -10,
+     "args": {
+      "dur": 2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "El señor de Tlaxcala tenía una hija. Se llamaba Iztaccíhuatl.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "text": [
+      {
+       "str": "IZTACCÍHUATL|mujer blanca",
+       "style": "big",
+       "at": [
+        0.6,
+        4.6
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Su nombre, en náhuatl, quiere decir mujer blanca. Cuentan que su piel parecía de luna, que su cabello negro le llegaba a la cintura, y que cuando caminaba por el mercado, hasta los vendedores se callaban.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.35
+      ],
+      "to": [
+       0.48,
+       0.45,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/market.png"
+      },
+      {
+       "src": "art/l_izta_walk.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Muchos príncipes vinieron a pedir su mano. Traían jade, mantas bordadas, plumas de quetzal. A todos los rechazó, uno por uno. Porque su corazón ya tenía dueño.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palace_hall.png"
+      },
+      {
+       "src": "art/l_suitors.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "embers"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/izta_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "fireflies"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Era un guerrero joven, de los más valientes de Tlaxcala. Su nombre era Popocatépetl.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/popo_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "text": [
+      {
+       "str": "POPOCATÉPETL|el cerro que humea",
+       "style": "big",
+       "at": [
+        2.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Se veían a escondidas, de noche, junto al agua, bajo un ahuehuete viejo. Él le hablaba de batallas, de los caminos que había recorrido, de los cerros donde la tierra echaba fuego. Ella le hablaba de las estrellas, y le enseñaba a reconocerlas en el reflejo del agua. Nadie más lo sabía. Y nadie más debía saberlo.",
+   "amb": [
+    "crickets",
+    {
+     "name": "river",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lovers_tree.png"
+      },
+      {
+       "src": "art/l_lovers.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "fireflies",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lovers_tree.png"
+      },
+      {
+       "src": "art/l_lovers.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.47,
+       0.8,
+       1.6
+      ],
+      "to": [
+       0.47,
+       0.78,
+       1.8
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "fireflies",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stars_water.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Y una noche, ella le dijo algo que él nunca iba a olvidar.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Si un día no vuelves… yo tampoco voy a querer seguir aquí.",
+   "pause": 0.9,
+   "voice": "ef_dora",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "Si un día no vuelves…|Iztaccíhuatl",
+       "style": "quote",
+       "at": [
+        0.2,
+        4.2
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "",
+   "pause": 5.6,
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.6,
+     "gain": -6
+    },
+    {
+     "name": "boom",
+     "at": 1.6,
+     "gain": -8
+    },
+    {
+     "name": "boom",
+     "at": 2.4,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/war_drums.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|La promesa",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Un día llegaron los mensajeros. La guerra había empezado. Los enemigos de Tlaxcala avanzaban, y el señor necesitaba a sus mejores guerreros.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.2,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/runner_maguey.png"
+      },
+      {
+       "src": "art/l_runner.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.12,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/palace_hall.png"
+      },
+      {
+       "src": "art/l_brazier.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/l_kneeling_warriors.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Popocatépetl se presentó ante él, se arrodilló… y le pidió la mano de su hija.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/popo_kneel_hall.png"
+      },
+      {
+       "src": "art/l_brazier.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "El señor de Tlaxcala lo miró largo rato. Y luego le habló.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Ve a la guerra. Si regresas vencedor, mi hija será tu esposa. Si no regresas… nadie volverá a pronunciar tu nombre.",
+   "pause": 0.8,
+   "voice": "em_santa",
+   "speed": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "text": [
+      {
+       "str": "Si regresas vencedor…|el señor de Tlaxcala",
+       "style": "quote",
+       "at": [
+        0.2,
+        4.4
+       ]
+      }
+     ],
+     "weight": 1.3,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/popo_kneel_hall.png"
+      },
+      {
+       "src": "art/l_brazier.png",
+       "blend": "screen"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Esa noche, Iztaccíhuatl le ató al brazo una cinta tejida por ella misma. Y él le hizo una promesa.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "fireflies",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hands_ribbon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Voy a volver. Te lo juro por el sol.",
+   "pause": 0.8,
+   "voice": "em_santa",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/popo_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "Voy a volver|Popocatépetl",
+       "style": "quote",
+       "at": [
+        0.2,
+        3.6
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Al amanecer, el ejército salió de Tlaxcala. Tambores, caracolas, escudos de plumas brillando bajo el sol, y cientos de guerreros con el cuerpo pintado para la guerra. Ella lo miró desde lo alto del templo hasta que fue un punto en el horizonte. Y se quedó ahí, con el viento en la cara, mucho después de que el polvo del camino se asentara.",
+   "music": "hope",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.3,
+     "gain": -10
+    },
+    {
+     "name": "boom",
+     "at": 1.3,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/army_depart.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/army_depart.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.75,
+       1.7
+      ],
+      "to": [
+       0.55,
+       0.75,
+       1.7
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/izta_temple_top.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Lo que ninguno de los dos sabía es que entre los guerreros iba alguien que también quería a Iztaccíhuatl. Y que no pensaba perderla.",
+   "music": "dread",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rival_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.3,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Si te gusta este tipo de historias, suscríbete. Aquí cada semana contamos una leyenda de México, como nos la contaron los abuelos.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/valley_dawn.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "",
+   "pause": 5.6,
+   "music": "climax",
+   "amb": [
+    "wind",
+    {
+     "name": "fire",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.5,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/battle_sky.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "ash",
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|La mentira",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "La guerra duró meses. Lunas enteras de lluvia, de hambre, de flechas que silbaban en la noche. Muchos guerreros no volvieron. Y en Tlaxcala, cada vez que llegaba un mensajero, Iztaccíhuatl corría a la puerta del palacio, con el corazón en la garganta.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 1.0,
+     "gain": -8
+    },
+    {
+     "name": "whoosh",
+     "at": 2.8,
+     "gain": -9
+    },
+    {
+     "name": "thunder",
+     "at": 2.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/battle_sky.png"
+      },
+      {
+       "src": "art/l_battle.png",
+       "depth": 1.06
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.15
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "ash",
+      "embers",
+      {
+       "type": "lightning",
+       "at": [
+        2.5
+       ]
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/camp_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.65,
+       1.3
+      ],
+      "to": [
+       0.4,
+       0.6,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    },
+    {
+     "layers": [
+      {
+       "src": "art/palace_hall.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Y en medio de la batalla, Popocatépetl peleaba como si cada golpe lo acercara a ella.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 1.5,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/popo_battle.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "ash",
+      "embers",
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        1.5,
+        2.2
+       ]
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Pero una noche, el otro guerrero, el que la quería para él, se escapó del campamento.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camp_night.png"
+      },
+      {
+       "src": "art/l_rival_sneak.png",
+       "depth": 1.06,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.4,
+       0.55,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "embers"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Corrió días enteros, por barrancas y campos de magueyes, hasta llegar a Tlaxcala. Llegó con los pies sangrando y la cara cubierta de polvo.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/runner_maguey.png"
+      },
+      {
+       "src": "art/l_rival_run.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.14,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Y frente al señor de Tlaxcala, frente a Iztaccíhuatl, dijo las palabras que lo cambiaron todo.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 6,
+      "bpm": 80
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palace_hall.png"
+      },
+      {
+       "src": "art/l_brazier.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 1.6
+        }
+       ]
+      },
+      {
+       "src": "art/l_rival_kneel.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Popocatépetl ha muerto. Lo vi caer.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -4
+    }
+   ],
+   "voice": "em_santa",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rival_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "Popocatépetl ha muerto|el otro guerrero",
+       "style": "quote",
+       "at": [
+        0.2,
+        3.4
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.25,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Era mentira. Popocatépetl seguía vivo, y seguía peleando a muchas jornadas de ahí. Pero ella no tenía forma de saberlo. Y el traidor la miraba, esperando que ahora, por fin, ella lo mirara a él.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_shock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/popo_battle.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "ash",
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "weight": 0.8,
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rival_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.52,
+       0.4,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Cuentan que no gritó. Que no lloró delante de nadie. Solo se quitó las flores del cabello… y se fue a su habitación.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_grief.png"
+      },
+      {
+       "src": "art/l_candles.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      "dust"
+     ],
+     "weight": 1.2,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/flowers_floor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Dejó de comer. Dejó de hablar. Pasaba las noches sentada junto a la ventana, mirando el camino por donde él se había ido. Cuentan que la oían murmurar su nombre, despacito, como quien reza. Y que su piel, que siempre había sido clara, se fue poniendo blanca. Blanca como la nieve.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/izta_pale.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.4,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "weight": 1.2,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Los curanderos quemaron copal y hierbas. Los sacerdotes rezaron a los dioses. Nada sirvió.",
+   "amb": [
+    "fire",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/copal_temple.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Una mañana, la encontraron dormida sobre su petate, con las manos sobre el pecho. Ya no despertó. Cuentan que murió de tristeza.",
+   "pause": 1.2,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 2.0,
+     "gain": -10,
+     "args": {
+      "freq": 90
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_bed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.3,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "",
+   "pause": 5.6,
+   "music": "hope",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.8,
+     "gain": -10
+    },
+    {
+     "name": "boom",
+     "at": 1.8,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/return_gate.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|El regreso",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Semanas después, los tambores sonaron otra vez en el camino. El ejército de Tlaxcala volvía. Y al frente, vivo, cubierto de cicatrices, venía Popocatépetl.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/army_return.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.25
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 1.3,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/popo_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Había ganado la guerra. Traía en el brazo la cinta de ella, ya rota y descolorida.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hands_ribbon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Pero al entrar a la ciudad, algo estaba mal. Nadie cantaba. Nadie salió a recibirlo.",
+   "music": "dread",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.5,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/return_gate.png"
+      },
+      {
+       "src": "art/l_crowd_silent.png",
+       "depth": 1.04
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Y entonces la vio.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_bed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.45
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.3,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Dicen que su grito se escuchó hasta Tenochtitlan.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.3,
+     "gain": -3
+    },
+    {
+     "name": "gust",
+     "at": 0.5,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/popo_grief.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0.3,
+        1.6
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "SU GRITO|se escuchó hasta Tenochtitlan",
+       "style": "big",
+       "at": [
+        0.8,
+        4.0
+       ]
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Cuando supo la verdad, buscó al que había mentido. Lo que pasó entre ellos nadie lo cuenta igual. Algunos abuelos ni siquiera quieren decirlo. Unos dicen que lo enfrentó y lo venció. Otros, que el traidor huyó hacia el oriente, lejos, hasta donde nadie volvió a verlo.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 2.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rival_flee.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.65,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "ash",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.3,
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/citlaltepetl.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "rain",
+       "strength": 0.18
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Pero a Popocatépetl ya no le importaba la venganza. Solo quería una cosa: que ella descansara en un lugar digno de ella.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/popo_grief.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "La levantó en brazos. Y caminó con ella hacia las montañas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/procession_valley.png"
+      },
+      {
+       "src": "art/l_popo_carry_small.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "dy": -0.01
+        }
+       ]
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Caminó días y noches, sin comer, sin dormir. No dejó que nadie lo ayudara. Subió entre pinos, entre piedras, hasta donde los árboles ya no crecen y el aire casi no alcanza para respirar. Hasta donde empieza la nieve.",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 3.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/pines_climb.png"
+      },
+      {
+       "src": "art/l_popo_carry_small.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.65,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/snow_slope.png"
+      },
+      {
+       "src": "art/l_popo_carry.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.02,
+         "dy": -0.015
+        }
+       ]
+      },
+      {
+       "src": "art/l_snowfall.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      },
+      {
+       "type": "rain",
+       "strength": 0.18
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Allá arriba hizo un lecho de flores, la recostó, y encendió una antorcha de ocote para que la luz la acompañara.",
+   "sfx": [
+    {
+     "name": "fire",
+     "at": 2.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/summit_kneel.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.22,
+         "speed": 2.2
+        }
+       ]
+      },
+      {
+       "src": "art/l_snowfall.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      },
+      "embers"
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/torch_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Y se arrodilló a su lado. Le tomó la mano, que ya estaba fría. Y se quedó ahí, mirándola, mientras la antorcha ardía. Y ya no se movió.",
+   "pause": 1.0,
+   "music": "silence",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/summit_kneel.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.22,
+         "speed": 2.2
+        }
+       ]
+      },
+      {
+       "src": "art/l_snowfall.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      },
+      "embers"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/torch_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      },
+      {
+       "type": "rain",
+       "strength": 0.18
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Dicen que los dioses, conmovidos, mandaron la nieve. Que la nieve los cubrió despacio, noche tras noche. Y que debajo de ese blanco, sus cuerpos fueron creciendo… hasta volverse montañas.",
+   "music": "hope",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 2.0,
+     "gain": -8,
+     "args": {
+      "dur": 6
+     }
+    },
+    {
+     "name": "boom",
+     "at": 8.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/snow_cover.png"
+      },
+      {
+       "src": "art/l_snowfall.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      },
+      {
+       "type": "rain",
+       "strength": 0.18
+      }
+     ],
+     "weight": 1.2,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/transform.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "transition": "xfade",
+     "transition_len": 1.2,
+     "weight": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Cuando los tlaxcaltecas subieron a buscarlos, ya no encontraron a nadie. Solo dos montañas nuevas, blancas, donde antes no había nada. Ella quedó acostada, dormida para siempre. Él quedó a su lado, de rodillas, con la antorcha encendida. Y por eso, desde entonces, el Popocatépetl echa humo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/snow_cover.png"
+      },
+      {
+       "src": "art/l_snowfall.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.03,
+         "dy": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_night.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/popo_crater_smoke.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "",
+   "pause": 5.6,
+   "music": "mystery",
+   "amb": [
+    "wind",
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_dawn.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|El guardián que humea",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Hasta aquí, la leyenda. Ahora, lo que sí podemos comprobar.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/codex_paper.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Los dos volcanes existen, y llevan nombres en náhuatl. Popocatépetl significa el cerro que humea. Mide más de cinco mil trescientos metros y es la segunda montaña más alta de México.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_dawn.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.4,
+       0.45,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "POPOCATÉPETL|el cerro que humea",
+       "style": "caption",
+       "at": [
+        1.0,
+        6.0
+       ],
+       "pos": "bottom"
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/popo_crater_smoke.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "La Iztaccíhuatl es la tercera. Y si la miras desde la Ciudad de México o desde Puebla, vas a entender por qué le dicen la Mujer Dormida: se distingue la cabeza, el pecho, las rodillas y los pies. Los alpinistas todavía llaman así a cada parte de la montaña.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_sleeping.png"
+      },
+      {
+       "src": "art/l_izta_outline.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.75
+       ],
+       "fade_in": 2.5,
+       "appear_at": 2.0
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "LA MUJER DORMIDA|cabeza · pecho · rodillas · pies",
+       "style": "big",
+       "at": [
+        6.0,
+        10.5
+       ]
+      }
+     ],
+     "weight": 1.4
+    },
+    {
+     "layers": [
+      {
+       "src": "art/izta_sleeping.png"
+      },
+      {
+       "src": "art/l_izta_outline.png",
+       "blend": "screen",
+       "opacity": [
+        0.75,
+        0.75
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.75,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.55,
+       0.42,
+       1.5
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Tlaxcala también es real. Nunca fue conquistada por los mexicas: vivió rodeada por ellos durante generaciones, peleando las llamadas guerras floridas. Esa rivalidad es el fondo de la historia.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/codex_paper.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tlaxcala_city.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Y en mil quinientos diecinueve, Hernán Cortés cruzó entre los dos volcanes, por el paso que hoy lleva su nombre. Desde ahí, los españoles vieron por primera vez Tenochtitlan. Ese mismo año, uno de sus capitanes, Diego de Ordaz, subió hasta el cráter del Popocatépetl, que entonces también humeaba. Y los tlaxcaltecas, los del pueblo de la leyenda, se aliaron con Cortés contra sus viejos enemigos, los mexicas.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cortes_pass.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "rain",
+       "strength": 0.18
+      }
+     ],
+     "text": [
+      {
+       "str": "Paso de Cortés|mil quinientos diecinueve",
+       "style": "date",
+       "at": [
+        0.8,
+        5.5
+       ]
+      }
+     ],
+     "weight": 1.2,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tenochtitlan.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    },
+    {
+     "layers": [
+      {
+       "src": "art/popo_crater_smoke.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.35,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "rain",
+       "strength": 0.18
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/army_depart.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.4,
+       0.6,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "La leyenda tiene muchas versiones. En algunas, ella es hija de un señor mexica, y él, un guerrero tlaxcalteca. En otras, el mentiroso se convirtió en el Pico de Orizaba, para mirarlos de lejos, solo, por toda la eternidad.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/codex_paper.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/citlaltepetl.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Y en mil novecientos cuarenta, el pintor Jesús Helguera pintó al guerrero cargando a su princesa para un calendario. Esa imagen colgó durante décadas en miles de casas, fondas y talleres de todo México.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/calendar_wall.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/calendar_wall.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.7
+      ],
+      "to": [
+       0.2,
+       0.75,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Pero aquí viene lo que te prometí al principio.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "En diciembre de mil novecientos noventa y cuatro, después de décadas de calma, el Popocatépetl despertó. Desde entonces no ha dejado de rugir, de lanzar ceniza, de iluminar el cielo por las noches. Hay días en que la ceniza cae sobre los coches de Puebla y de la Ciudad de México, y cierran los aeropuertos. Millones de personas viven a su alrededor, mirándolo de reojo.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 3.0,
+     "gain": -2
+    },
+    {
+     "name": "thunder",
+     "at": 3.2,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eruption_town.png"
+      },
+      {
+       "src": "art/l_eruption_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.15,
+         "period": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "ash",
+      "embers",
+      {
+       "type": "lightning",
+       "at": [
+        3.0
+       ]
+      },
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        3.0,
+        4.0
+       ]
+      }
+     ],
+     "weight": 1.3,
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ash_city.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "ash",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "none"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/eruption_town.png"
+      },
+      {
+       "src": "art/l_eruption_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.15,
+         "period": 3
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.3,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "ash",
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "En los pueblos de sus faldas, la gente no le dice volcán. Le dice Don Goyo. Y los tiemperos, los que hablan con el tiempo, le suben ofrendas cada doce de marzo: flores, comida, música. Como se visita a un abuelo. Le piden que sea bueno con las cosechas, que mande lluvia y no granizo, y que no se enoje.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/offering_cave.png"
+      },
+      {
+       "src": "art/l_candles.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "text": [
+      {
+       "str": "DON GOYO|el abuelo que humea",
+       "style": "big",
+       "at": [
+        1.5,
+        5.5
+       ]
+      }
+     ],
+     "weight": 1.3,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tiemperos_slope.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.75,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/offering_cave.png"
+      },
+      {
+       "src": "art/l_candles.png",
+       "blend": "screen"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.72,
+       1.7
+      ],
+      "to": [
+       0.55,
+       0.7,
+       1.8
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.07
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Los abuelos dicen que cuando Don Goyo ruge, es porque sigue llorando. Que la ceniza es su tristeza. Y que mientras su antorcha siga encendida, ella puede dormir tranquila.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/popo_crater_smoke.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/izta_sleeping.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Pero el día que ese humo se apague… el día que él por fin se rinda…",
+   "pause": 0.5,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 5,
+      "bpm": 64
+     }
+    },
+    {
+     "name": "riser",
+     "at": 1.0,
+     "gain": -6,
+     "args": {
+      "dur": 3.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.75,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 64,
+       "amp": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "la Mujer Dormida va a despertar. Y va a bajar a buscarlo.",
+   "pause": 1.2,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    },
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/izta_awake.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.4,
+       "color": [
+        210,
+        222,
+        235
+       ]
+      },
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.7
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "DESPERTARÁ|y bajará a buscarlo",
+       "style": "big",
+       "at": [
+        0.4,
+        3.4
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.25,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Así que la próxima vez que veas humo sobre el Popocatépetl, no te asustes. Es él, cuidándola. Lo que debería asustarte… es el día que deje de humear.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_night.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.02
+        },
+        {
+         "type": "sway",
+         "deg": 1.5,
+         "period": 9,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/izta_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Y tú, ¿has visto a la Mujer Dormida? ¿Desde dónde la ves tú? Te leo en los comentarios.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_dawn.png"
+      },
+      {
+       "src": "art/l_clouds.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05
+        }
+       ],
+       "opacity": [
+        0.85,
+        0.85
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "En el próximo video: un hombre que de noche deja de ser hombre. El Nahual, el brujo que se convierte en animal… y que podría estar viviendo en tu propio pueblo.",
+   "pause": 1.0,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 2.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/runner_maguey.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nahual_tease.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|El Nahual",
+       "style": "big",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "night",
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  }
+ ]
+}
