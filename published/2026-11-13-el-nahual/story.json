@@ -1,0 +1,4332 @@
+{
+ "title": "El Nahual: el curandero que de noche se quitaba la piel",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "D",
+ "seed": 12,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "La lumbre del fogón todavía está encendida. Pero en la choza… no hay nadie.",
+   "pre": 0.4,
+   "music": "dread",
+   "amb": [
+    "fire",
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "fire",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 8
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hut_inside.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "embers"
+     ],
+     "transition": "fade",
+     "transition_len": 1.2,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Tomás empuja la puerta de carrizo con el machete. Huele a copal… y a pelo mojado.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.4,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hut_door.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Y entonces lo ve. Junto a las brasas, doblado como ropa antes de dormir… hay algo que no debería estar ahí.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 8,
+      "bpm": 84
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_portrait.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 1.1,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hut_inside.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.72,
+       1.7
+      ],
+      "to": [
+       0.42,
+       0.7,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Afuera, algo aúlla. Y un coyote no aúlla… con voz de hombre.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "sting",
+     "at": 3.11,
+     "gain": -2,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 3.6,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hill_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/beast_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "VOZ DE HOMBRE",
+       "style": "big",
+       "at": [
+        0.3,
+        2.6
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "",
+   "pause": 6.0,
+   "music": "mystery",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "EL NAHUAL|el que se viste de animal",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Esta es la leyenda del nahual. Y antes de que termine, vas a saber qué encontró Tomás junto al fuego… y por qué en algunos pueblos de México todavía se pintan cruces blancas en las puertas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/crosses_doors.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Cuentan que esto pasó en un pueblito de la sierra, de esos que no salen en los mapas. Casas de adobe con techo de teja, magueyes a la orilla del camino… y un cerro negro que, de noche, parecía respirar.",
+   "music": "calm",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/village_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|Las gallinas",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hill_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Ahí vivían Tomás y Lupe, recién casados. Él sembraba maíz y frijol en la ladera. Ella criaba gallinas y guajolotes, y los cuidaba como si fueran de la familia.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/couple_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "weight": 1.2,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lupe_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Lupe tenía la costumbre de dejarle al santito de la casa una veladora y un vaso de agua cada noche. Decía que así nada malo entraba. Pero ese otoño, la veladora empezó a apagarse sola… siempre a la misma hora.",
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 6.5,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/altar_candle.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Una mañana de noviembre, Lupe salió al corral con su rebozo y su olla de maíz… y se quedó helada.",
+   "music": "mystery",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corral_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Las gallinas estaban regadas por el suelo. Sin una mordida. Sin una gota de sangre. Solo plumas… y unas huellas enormes en el lodo.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 5.472,
+     "gain": -3,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dead_hens.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "darken",
+       "amount": 0.2
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tracks_mud.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.62,
+       0.55,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "HUELLAS|más grandes que una mano",
+       "style": "big",
+       "at": [
+        0.3,
+        3.0
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Tomás… ven a ver esto. Esas no son patas de coyote.",
+   "voice": "ef_dora",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lupe_scared.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "Tomás se agachó. Las huellas eran de perro, sí. Pero cada una era tan grande como la palma de su mano. Y la última, junto a la cerca… ya no era de pata. Era la marca de un pie descalzo.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 4.0,
+     "gain": -9,
+     "args": {
+      "dur": 6,
+      "bpm": 70
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/footprint.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.1
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Esa misma semana pasó lo mismo en otras casas. Una vaca amaneció echada, sin fuerzas para levantarse. A los marranos de don Chencho los encontraron temblando en un rincón, con los ojos en blanco.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/village_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Y cada noche, a la misma hora, todos los perros del pueblo se ponían a aullar al mismo tiempo… y luego, de golpe, se callaban.",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 0.5,
+     "gain": -8
+    },
+    {
+     "name": "howl",
+     "at": 1.8,
+     "gain": -10,
+     "pan": -0.5
+    },
+    {
+     "name": "howl",
+     "at": 3.0,
+     "gain": -10,
+     "pan": 0.6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dogs_roofs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.7,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Imagina que estás acostado en tu petate, en la oscuridad completa, y escuchas cómo todos los perros se callan a la vez. Ese silencio… es peor que cualquier aullido.",
+   "amb": [],
+   "music": "silence",
+   "pause": 1.2,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bedroom_dark.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.25
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Una noche, Tomás decidió esperarlo. Afiló el machete en la piedra, apagó el quinqué y se sentó detrás de la puerta del corral.",
+   "music": "tension",
+   "amb": [
+    "crickets",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 2.0,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_wait.png"
+      },
+      {
+       "src": "art/l_lantern_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|Los ojos",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "No vayas, Tomás. Mi abuela dice que a esos animales no se les busca… que ellos lo buscan a uno.",
+   "voice": "ef_dora",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lupe_window.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Si no lo paro yo, mañana se va a llevar algo más que gallinas.",
+   "voice": "em_santa",
+   "speed": 0.88,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_portrait.png"
+      },
+      {
+       "src": "art/l_lantern_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Pasó la medianoche. El frío de la sierra se le metía en los huesos. Y uno por uno, los grillos se fueron callando.",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0.0,
+     "gain": -16,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corral_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Entonces escuchó los pasos. No eran pasos de animal. Eran lentos… pesados… como de alguien que camina en cuatro patas sin estar acostumbrado.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 7
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 8,
+      "bpm": 80
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fence_gap.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 80,
+       "amp": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Por una rendija de la cerca vio la silueta. Un perro negro, más grande que un becerro, con el lomo erizado y la cabeza gacha, olfateando la tierra.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corral_night.png"
+      },
+      {
+       "src": "art/l_beast_walk.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/beast_side.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Y cuando la luna le dio en la cara… Tomás vio sus ojos.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -1.0,
+     "gain": -6,
+     "args": {
+      "dur": 3.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beast_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "No eran ojos de perro. Eran ojos de hombre. Ojos cansados, con párpados, que parpadeaban despacio. Y lo estaban mirando a él.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beast_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.41,
+       1.65
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "OJOS DE HOMBRE",
+       "style": "big",
+       "at": [
+        0.3,
+        3.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Y el animal… sonrió.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.2,
+     "gain": -12,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beast_smile.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Tomás gritó y lanzó el machetazo. Sintió cómo el filo mordía algo duro. El perro soltó un chillido que no era de perro… y se perdió en el monte.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.8,
+     "gain": -3
+    },
+    {
+     "name": "boom",
+     "at": 1.2,
+     "gain": -4
+    },
+    {
+     "name": "howl",
+     "at": 3.2,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/strike.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.52,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 12,
+       "at": [
+        0,
+        1.0
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "weight": 0.8,
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hill_moon.png"
+      },
+      {
+       "src": "art/l_beast_walk.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Sobre la tierra quedó un rastro de gotas oscuras. Y el rastro subía, derechito, cerro arriba… hacia la choza de don Fermín.",
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 2.0,
+     "gain": -10,
+     "args": {
+      "dur": 5,
+      "bpm": 64
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/blood_trail.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hut_hill.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Si estas historias te ponen la piel chinita, suscríbete y quédate con nosotros. Todavía falta lo peor de esta noche.",
+   "pause": 0.6,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Don Fermín era el curandero del pueblo. Un viejo amable, de bigote blanco, que curaba el empacho con hierbas y el susto con huevo y copal. Todos en el pueblo le debían algún favor.",
+   "music": "calm",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/healer_herbs.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|La mano vendada",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fermin_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "A la mañana siguiente, Tomás bajó a la plaza. Y ahí estaba don Fermín, sentado en su banca de siempre… con la mano derecha envuelta en un trapo manchado.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -14,
+     "args": {
+      "freq": 180
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaza_morning.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bandage_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "¿Qué le pasó en la mano, don Fermín?",
+   "voice": "em_santa",
+   "speed": 0.88,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Nada, muchacho. Me corté anoche… partiendo leña.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fermin_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Tomás regresó a su casa sin decir nada. Pero esa tarde notó algo que nunca había visto: cuando don Fermín pasaba por la calle, los perros del pueblo se escondían debajo de las carretas, con la cola entre las patas.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaza_dogs.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Y entonces el viejo lo miró. Con esos mismos ojos. Cansados. Con párpados. Que parpadeaban… despacio.",
+   "music": "dread",
+   "amb": [],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 6,
+      "bpm": 60
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fermin_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.53,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.1
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Uno debe tener cuidado con lo que corta de noche, Tomás. A veces… el filo se regresa.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -3
+    }
+   ],
+   "voice": "em_santa",
+   "speed": 0.78,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fermin_sinister.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.52,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.65
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Para entender a don Fermín hay que ir mucho más atrás. Siglos atrás.",
+   "music": "mystery",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/codex_paper.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "La palabra nahual viene del náhuatl, nahualli. Los estudiosos la traducen como disfraz, como lo que está oculto… o como lo que es mi vestidura.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/codex_paper.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "NAHUALLI|disfraz · lo oculto · mi vestidura",
+       "style": "big",
+       "at": [
+        1.5,
+        6.0
+       ]
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Para los pueblos antiguos de Mesoamérica, cada persona nacía con un tonal: un animal compañero que le tocaba según el día de su nacimiento en el calendario sagrado. Su destino iba amarrado al tuyo. Si a él le pasaba algo… a ti también.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tonal_wheel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "pulse",
+       "bpm": 50,
+       "amp": 0.06
+      }
+     ],
+     "weight": 1.3,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/baby_animal.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Pero unos pocos podían hacer algo más: dejar su forma humana y vestirse con la de su animal. Esos eran los nahuales.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/shadow_transform.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "En muchos pueblos se dice que el nahual escoge el animal que mejor le sirve: perro negro, coyote, guajolote, burro… o hasta un gato que camina en dos patas. Y que lo único que nunca puede cambiar… son los ojos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/animals_row.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.25,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.75,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "En el siglo dieciséis, el fraile franciscano Bernardino de Sahagún recogió lo que contaban los ancianos nahuas. Había nahuales buenos, que cuidaban y protegían a su pueblo… y otros que usaban su poder para hacer daño.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sahagun_desk.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Nueva España, siglo XVI|fray Bernardino de Sahagún",
+       "style": "date",
+       "at": [
+        0.8,
+        5.5
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Y se decía que hasta los dioses tenían nahual. El de Tezcatlipoca, el señor del espejo humeante, era el jaguar: el que camina en la noche sin hacer un solo ruido.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -14,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/jaguar_mirror.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "embers"
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Con la llegada de los españoles, el nahual se volvió brujo, y el brujo se volvió pacto con el diablo. Pero en los pueblos, la gente nunca dejó de contar lo mismo: hay quien de noche se quita lo humano… y sale.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_village.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/beast_side.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Tomás le contó todo a Lupe. Y Lupe fue a ver a su abuela Chabela, que pasaba de los noventa años y recordaba las cosas como las contaban los de antes.",
+   "music": "mystery",
+   "amb": [
+    "fire"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|Las cruces de cal",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "El nahual no se muere con fierro, mija. El nahual se quita la piel junto a la lumbre, da tres maromas y se va de animal. Si le encuentras la piel… échale sal y ceniza. Así ya no se la puede volver a poner.",
+   "voice": "ef_dora",
+   "speed": 0.76,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 1.3,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/salt_ash.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Esa tarde, todo el pueblo pintó cruces blancas de cal en puertas y ventanas. Colgaron tijeras abiertas en forma de cruz. Dejaron veladoras prendidas toda la noche.",
+   "amb": [
+    "night"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/crosses_doors.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.35,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/scissors_candle.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Pero el nahual ya sabía quién lo había herido.",
+   "music": "dread",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 0.8,
+     "gain": -9
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beast_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "darken",
+       "amount": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "A medianoche, Lupe despertó. Algo raspaba la puerta. Despacio. De arriba abajo. Como uñas sobre la madera.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -10,
+     "args": {
+      "dur": 5
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 2.0,
+     "gain": -9,
+     "args": {
+      "dur": 7,
+      "bpm": 90
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bedroom_dark.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/door_scratch.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 90,
+       "amp": 0.1
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.4,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Lupita… ábreme. Soy yo… Tomás.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -2
+    },
+    {
+     "name": "knock",
+     "at": 2.2,
+     "gain": -4,
+     "args": {
+      "times": 3
+     }
+    }
+   ],
+   "voice": "em_santa",
+   "speed": 0.74,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_scratch.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "ÁBREME",
+       "style": "big",
+       "at": [
+        0.3,
+        2.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Lupe miró a su lado. Tomás estaba ahí, dormido junto a ella, respirando hondo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lupe_scared.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "La voz siguió. Imitaba perfecto la voz de su marido. Le decía que tenía frío, que lo dejara entrar. Y cuando entendió que nadie le iba a abrir… se rió.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_outside.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 0.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "En la mañana, sobre la cruz de cal, había cuatro rasguños profundos. Como si algo hubiera querido borrarla… y no hubiera podido.",
+   "music": "mystery",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cross_scratched.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Y no creas que esto es cosa del pasado. En Tlaxcala, en las faldas del volcán La Malinche, todavía se habla de nahuales y de tlahuelpuchis, las brujas que vuelan de noche como bolas de lumbre.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/malinche_lights.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "Tlaxcala|faldas de La Malinche",
+       "style": "date",
+       "at": [
+        0.8,
+        5.0
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Y en el año dos mil veintidós, en Cocoyoc, Morelos, unos vecinos escucharon ruidos extraños en la madrugada. ¿Y sabes qué hicieron? Pintaron cruces blancas en sus puertas y ventanas. Igual que en el pueblo de Tomás.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cocoyoc_street.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Cocoyoc, Morelos, 2022|vecinos pintan cruces en sus puertas",
+       "style": "date",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Tomás entendió que no había otra salida. Antes de salir, Lupe le amarró al cuello una cruz de palma bendita y le habló al oído.",
+   "music": "tension",
+   "amb": [
+    "fire"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/village_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|La piel junto al fogón",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lupe_window.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Si te habla, no le contestes. Y si te llama por tu nombre… menos.",
+   "voice": "ef_dora",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lupe_scared.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "La noche siguiente, cuando todos los perros se callaron a la vez, salió de su casa y subió el cerro con un costal de sal y una jícara llena de ceniza.",
+   "music": "tension",
+   "amb": [
+    "wind",
+    {
+     "name": "night",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 1.0,
+     "gain": -12,
+     "args": {
+      "dur": 10
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/path_hill.png"
+      },
+      {
+       "src": "art/l_lantern_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tomas_climb.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "La choza de don Fermín estaba al final de una vereda, entre magueyes. Por las rendijas del carrizo salía una luz roja, como de brasas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hut_hill.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Tomás se asomó. El viejo estaba de pie frente al fogón, rezando algo en una lengua muy antigua, una lengua que ya nadie en el pueblo hablaba.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 8
+     }
+    },
+    {
+     "name": "fire",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 8
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fermin_ritual.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Don Fermín se quitó el sombrero. Luego la camisa. Y luego… siguió quitándose cosas que no son ropa.",
+   "pause": 0.9,
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fermin_back.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "La sombra en la pared se dobló. Una maroma. Dos. Tres. Y la sombra ya no era de hombre: tenía orejas largas, hocico, y una cola que barría el suelo.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 1.6,
+     "gain": -8
+    },
+    {
+     "name": "boom",
+     "at": 2.7,
+     "gain": -7
+    },
+    {
+     "name": "sting",
+     "at": 5.635,
+     "gain": -1,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/shadow_transform.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        1.5,
+        2.0
+       ]
+      },
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        2.6,
+        3.1
+       ]
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/shadow_dog.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "TRES MAROMAS",
+       "style": "big",
+       "at": [
+        0.3,
+        2.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "El perro negro salió por la puerta del fondo, cojeando de la pata derecha… y se perdió en la noche.",
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 2.5,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hill_moon.png"
+      },
+      {
+       "src": "art/l_beast_walk.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Tomás entró. La lumbre seguía encendida. Y junto a las brasas, doblada con mucho cuidado, como quien deja la ropa antes de dormirse… estaba la piel de don Fermín. Vacía. Todavía tibia.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 7.306,
+     "gain": -1,
+     "scene": 1
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 12,
+      "bpm": 96
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hut_inside.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "embers"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/skin_by_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "SU PIEL",
+       "style": "big",
+       "at": [
+        0.4,
+        3.0
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Le temblaban las manos. Pero hizo lo que le dijo la abuela: le echó sal. Le echó ceniza. Y salió corriendo cerro abajo, sin voltear.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.2,
+     "gain": -10
+    },
+    {
+     "name": "footsteps",
+     "at": 4.5,
+     "gain": -8,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/salt_ash.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 1.2,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/path_hill.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Antes del amanecer, se escuchó en todo el pueblo un aullido largo, desesperado. Venía de la choza del curandero. Y entre los aullidos… una voz.",
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 0.6,
+     "gain": -4
+    },
+    {
+     "name": "howl",
+     "at": 4.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hut_hill.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Pellejito… pellejito… ¿qué no me conoces?",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -2
+    }
+   ],
+   "voice": "em_santa",
+   "speed": 0.74,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beast_door.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.6
+       ]
+      },
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "¿QUÉ NO ME CONOCES?",
+       "style": "big",
+       "at": [
+        0.4,
+        3.4
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Toda la madrugada se oyó lo mismo. Y cuando el sol por fin salió detrás del cerro, el aullido se apagó.",
+   "music": "sad",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dawn_hill.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Dicen que nunca encontraron a don Fermín. En la choza solo quedó su ropa, un puño de sal… y un montón de pelo negro junto a la lumbre apagada.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hut_empty_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "La choza se vino abajo con las lluvias de ese año. Nadie quiso levantarla. Y dicen que hasta el día de hoy, en ese pedazo de cerro, no crece ni el maguey.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hut_ruin.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Pero esa no es la última parte de la historia.",
+   "music": "dread",
+   "amb": [
+    "night"
+   ],
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/village_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Años después, Lupe contaba que, algunas noches, un perro negro, cojo de la pata derecha, se sentaba en el camino frente a su casa. No ladraba. No se acercaba a las cruces. Solo miraba. Y parpadeaba despacio.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_dog.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lupe_window.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Porque un nahual que pierde su piel… no se muere. Se queda esperando. Buscando otra.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -1
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beast_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.43,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.43,
+       1.8
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "BUSCANDO OTRA",
+       "style": "big",
+       "at": [
+        0.4,
+        3.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Así que si esta noche, de regreso a casa, ves un perro a la orilla del camino que te mira sin moverse… fíjate bien en sus ojos. Y si te llama por tu nombre… no le contestes.",
+   "pause": 1.6,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 10,
+      "bpm": 60
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 6.0,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_dog.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.1
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "¿En tu pueblo también se cuentan historias de nahuales? ¿En qué animal se convierten allá: perro, guajolote, coyote? Te leo en los comentarios.",
+   "music": "mystery",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/village_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "En el próximo video viajamos a Yucatán, a la sombra de una ceiba, donde una mujer hermosa se peina el cabello y llama a los hombres que caminan solos de noche. Se llama la Xtabay… y el que la sigue, no regresa igual.",
+   "pause": 1.0,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_tease.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|La Xtabay",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night",
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  }
+ ]
+}
