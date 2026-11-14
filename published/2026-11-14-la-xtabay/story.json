@@ -1,0 +1,4015 @@
+{
+ "title": "La Xtabay: la mujer de la ceiba que llama a los hombres que caminan solos",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "E",
+ "seed": 21,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "La voz sale de entre los árboles. Es suave… es dulce… y dice tu nombre.",
+   "pre": 0.4,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_path.png"
+      },
+      {
+       "src": "art/l_brush_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.2,
+         "period": 7,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Lencho se detiene en medio del camino blanco. Ya no se oyen los grillos. Ya no se oye nada.",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_path.png"
+      },
+      {
+       "src": "art/l_lencho_walk.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Ahí, bajo la ceiba más grande del monte, hay una mujer de espaldas. Lleva un huipil blanco… y se peina un cabello negro que le llega hasta los tobillos.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 3.0,
+     "gain": -10,
+     "args": {
+      "dur": 8,
+      "bpm": 70
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ceiba_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.55,
+       0.58,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_back.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.4,
+       1.35
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Ven… acércate. Te estaba esperando.",
+   "voice": "ef_dora",
+   "speed": 0.74,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_profile.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Y Lencho, que tenía mujer, que tenía casa, que había jurado no volver a beber… da el primer paso.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 5.327,
+     "gain": -2,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 5.427,
+     "gain": -3,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lencho_scared.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 1.3
+    },
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.65
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.15,
+     "dur": 2.0,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "",
+   "pause": 6.0,
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "LA XTABAY|la mujer de la ceiba",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Esta es la leyenda de la Xtabay, la más temida de Yucatán. Y antes de que termine, vas a saber qué tenía Lencho apretado en el puño… cuando por fin lo encontraron.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fist_closed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Cuentan que esto pasó hace más de cien años, en los tiempos en que Yucatán vivía del henequén, el oro verde. Las haciendas se llenaban de pencas grises, y las chimeneas echaban humo de sol a sol.",
+   "music": "calm",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hacienda.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.52,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|El camino blanco",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/henequen.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Yucatán, hacia 1910|tiempos del henequén",
+       "style": "date",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "En un pueblito cerca de Valladolid vivía Lorenzo, al que todos llamaban Lencho. Cortaba pencas desde que salía el sol, con las manos rajadas por las espinas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lencho_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/henequen.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.6,
+       1.5
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "El trabajo era duro y la paga, poca. Los peones vivían endeudados con la tienda de raya, y muchos buscaban en el aguardiente lo que no encontraban en ningún otro lado.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/henequen.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cantina.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Su mujer, Candelaria, lo esperaba cada noche en la casita de paja, con la hamaca colgada y una vela encendida frente a la Virgen.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casa_maya.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/candelaria_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Lencho era bueno. Pero los sábados, cuando pagaban la raya, se iba a la cantina del pueblo vecino… y regresaba solo, de madrugada, por el camino del monte.",
+   "amb": [
+    "room",
+    {
+     "name": "fire",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cantina.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/monte_path.png"
+      },
+      {
+       "src": "art/l_lencho_walk.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "No te vayas por el monte, Lencho. Ahí está la ceiba. Ahí está ella.",
+   "amb": [
+    "crickets"
+   ],
+   "voice": "ef_dora",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candelaria_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "¿Ella quién, mujer? Esos son cuentos de las abuelas.",
+   "voice": "em_santa",
+   "speed": 0.88,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lencho_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Candelaria no contestó. Solo apretó el rosario… y miró hacia la oscuridad, como si alguien la estuviera escuchando.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candelaria_door.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.48,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Porque en ese pueblo todos sabían que, de vez en cuando, un hombre salía de noche… y ya no regresaba.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 4.0,
+     "gain": -6
+    },
+    {
+     "name": "owl",
+     "at": 1.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ceiba_night.png"
+      },
+      {
+       "src": "art/l_xtabay_back.png",
+       "blend": "normal",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "La abuela Nicolasa, la más vieja del pueblo, se lo contó a Lencho una noche junto al fogón. Hablaba despacio, en maya y en español, mientras las brasas tronaban.",
+   "music": "sad",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|Las dos mujeres",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Hace mucho, mucho tiempo, en este mismo pueblo, vivían dos mujeres. Las dos eran hermosas. Pero tenían el corazón al revés de como se veían.",
+   "voice": "ef_dora",
+   "speed": 0.76,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_portrait.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "La primera se llamaba Xkeban. La gente la señalaba en la calle. Decían que era una mujer de mala vida, que se entregaba al amor sin casarse, y las señoras se persignaban al verla pasar.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xkeban_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "XKEBAN|la mujer señalada",
+       "style": "big",
+       "at": [
+        0.6,
+        3.6
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/village_old.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Pero Xkeban tenía un corazón enorme. Lo poco que le regalaban se lo daba a los pobres. Curaba a los enfermos que nadie quería tocar. Y recogía a los perros heridos del camino.",
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xkeban_kind.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      "fireflies"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Y cuando los hombres del pueblo se burlaban de ella, Xkeban no les contestaba. Solo sonreía, y seguía su camino con sus perros detrás.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xkeban_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "La segunda se llamaba Utz Colel. Era decente, decían. Nunca había tenido novio. Caminaba muy derecha, con el cabello bien recogido… y todo el pueblo la admiraba.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/utz_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "text": [
+      {
+       "str": "UTZ COLEL|la mujer decente",
+       "style": "big",
+       "at": [
+        0.6,
+        3.6
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Pero Utz Colel era fría como el agua del cenote. Despreciaba a los pobres. Si un enfermo le pedía ayuda, le daba la espalda. Y por dentro… la envidia se la estaba comiendo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/utz_disdain.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.48,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/utz_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.4,
+       1.5
+      ],
+      "to": [
+       0.48,
+       0.38,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "weight": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Un día, Xkeban dejó de salir de su casa. Pasaron los días y nadie preguntó por ella. Hasta que un perfume dulce, delicioso, empezó a llenar todo el pueblo.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/village_old.png"
+      },
+      {
+       "src": "art/l_wisp.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": -0.02
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "La encontraron dormida para siempre en su hamaca. Pero su cuerpo no olía a muerte. Olía a flores. Y sus perros la estaban cuidando, echados alrededor, sin dejar que nadie se acercara.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xkeban_hammock.png"
+      },
+      {
+       "src": "art/l_wisp.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": -0.02
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Solo los pobres la enterraron. Y al día siguiente, sobre su tumba, había brotado una enredadera de flores blancas que nadie había sembrado: el xtabentún.",
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xkeban_grave.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/xtabentun_flower.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "XTABENTÚN|la flor de Xkeban",
+       "style": "big",
+       "at": [
+        0.5,
+        4.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Poco después murió Utz Colel. El pueblo entero fue a su entierro, con cantos y con velas. Pero de su cuerpo salía un olor tan podrido que nadie aguantaba estar cerca.",
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/utz_funeral.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Le llevaron flores. Al amanecer, las flores habían desaparecido. Y en su lugar creció el tzacam: un cactus lleno de espinas, con una flor que huele mal.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/utz_grave.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tzacam.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "text": [
+      {
+       "str": "TZACAM|la flor de Utz Colel",
+       "style": "big",
+       "at": [
+        0.5,
+        4.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Y entonces Utz Colel, desde la tumba, se llenó de rabia. Ella había sido buena, decía. ¿Por qué a la otra le tocaban las flores?",
+   "voice": "ef_dora",
+   "speed": 0.76,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_portrait.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Cuentan que llamó a los espíritus malos del monte, y les pidió volver. Volver a ser mujer. Para hacer con el amor lo mismo que había hecho Xkeban…",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -8,
+     "args": {
+      "dur": 5
+     }
+    },
+    {
+     "name": "riser",
+     "at": 3.0,
+     "gain": -10,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/utz_pact.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 0.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.1
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Pero ella no sabía amar. Así que volvió para otra cosa. Para atraer a los hombres que caminan solos… y llevárselos.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 4.696,
+     "gain": -2,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 4.796,
+     "gain": -4,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/utz_pact.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 0.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_bust.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 7,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "LA XTABAY",
+       "style": "big",
+       "at": [
+        0.3,
+        3.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.2,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Por eso, mijo, si oyes que una mujer te llama desde la ceiba… no la mires. No le contestes. Y sobre todo… no la sigas.",
+   "music": "mystery",
+   "voice": "ef_dora",
+   "speed": 0.76,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_portrait.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Y si a ti también te contaron esta historia de niño, suscríbete y activa la campanita, porque aquí seguimos contando las leyendas que México no quiere olvidar.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Lencho se rió de la abuela. Y el sábado siguiente, como siempre, se fue a la cantina.",
+   "music": "calm",
+   "amb": [
+    "room",
+    {
+     "name": "fire",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cantina.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|La ceiba",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Esa noche bebió más que nunca. Bebió por las espinas, por la raya que no alcanzaba, por el patrón de la hacienda. Y cuando salió, ya pasaba de la medianoche.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 9.0,
+     "gain": -10,
+     "args": {
+      "freq": 180
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lencho_drunk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cantina_out.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "El camino blanco brillaba bajo la luna. A los lados, el monte bajo, los chacás de tronco rojo, los zapotes… y el silencio.",
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_path.png"
+      },
+      {
+       "src": "art/l_lencho_walk.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "ease": "linear"
+        }
+       ]
+      },
+      {
+       "src": "art/l_brush_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.2,
+         "period": 7,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Entonces lo olió. Un perfume dulce, como de flores blancas. Como de xtabentún.",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabentun_night.png"
+      },
+      {
+       "src": "art/l_wisp.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": -0.02
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Y la vio.",
+   "pre": 0.8,
+   "pause": 1.2,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.2,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ceiba_night.png"
+      },
+      {
+       "src": "art/l_xtabay_back.png",
+       "blend": "normal",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Estaba bajo la ceiba, en el claro, con la luna encima. Se peinaba despacio, mechón por mechón, con un peine hecho de espinas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_back.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/comb_spines.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Lorenzo… ¿por qué caminas solo? Ven conmigo. Aquí no hace frío.",
+   "voice": "ef_dora",
+   "speed": 0.74,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_profile.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Lencho nunca le había dicho su nombre. Nadie en ese monte sabía su nombre. Pero las piernas ya no le obedecían.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 8,
+      "bpm": 90
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lencho_scared.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "La mujer se volteó. Era la más hermosa que había visto en su vida. Los ojos grandes, negros, brillantes como el agua de un cenote de noche.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_bust.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.36,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Ella empezó a caminar hacia adentro del monte. Y él la siguió.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -12,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_dense.png"
+      },
+      {
+       "src": "art/l_xtabay_front.png",
+       "blend": "normal",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        }
+       ],
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Detrás de él, el camino blanco se fue quedando lejos. La luz de la luna ya no alcanzaba a entrar entre las ramas. Y el perfume se hacía cada vez más fuerte, tan dulce que mareaba.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_path.png"
+      },
+      {
+       "src": "art/l_wisp.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": -0.02
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/xtabentun_night.png"
+      },
+      {
+       "src": "art/l_wisp.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": -0.02
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Las ramas le rasgaban la camisa. Las espinas le abrían la piel. Pero él no sentía nada. Solo oía su risa, cada vez más cerca… y cada vez más lejos.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -9,
+     "pan": -0.6,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 7.0,
+     "gain": -9,
+     "pan": 0.6,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_dense.png"
+      },
+      {
+       "src": "art/l_brush_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.2,
+         "period": 7,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.7,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "shake",
+       "amp": 3,
+       "at": [
+        0,
+        20
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lencho_scared.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.4,
+     "weight": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Hasta que llegaron otra vez a la ceiba. La misma ceiba. Habían caminado en círculo toda la noche.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 3.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ceiba_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Ella se detuvo entre las raíces enormes, que salían de la tierra como paredes. Le tendió los brazos. Y Lencho, temblando, se acercó.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 9,
+      "bpm": 110
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/roots.png"
+      },
+      {
+       "src": "art/l_xtabay_front.png",
+       "blend": "normal",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        }
+       ],
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Entonces notó algo. El cabello de la mujer se movía solo. No había viento. Y el cabello se movía… como se mueven las serpientes.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -8,
+     "args": {
+      "dur": 5
+     }
+    },
+    {
+     "name": "riser",
+     "at": 4.0,
+     "gain": -8,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hair_snakes.png"
+      },
+      {
+       "src": "art/l_tendrils.png",
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 3,
+         "period": 3.5,
+         "pivot": [
+          0.5,
+          0.2
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Ella abrió la boca para besarlo. Y su boca siguió abriéndose…",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.824,
+     "gain": -1,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 2.924,
+     "gain": -2,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_bust.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.8
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.8
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "NO LA SIGAS",
+       "style": "big",
+       "at": [
+        0.3,
+        2.4
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.15,
+     "dur": 2.6
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "En el pueblo, Candelaria despertó de golpe. La vela frente a la Virgen se había apagado sola.",
+   "music": "silence",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 3.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/house_inside_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Hasta aquí, la leyenda. Pero, ¿de dónde viene la Xtabay?",
+   "music": "mystery",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/codex.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "darken",
+       "amount": 0.55
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|Lo que dice la historia",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Su nombre recuerda a Ixtab, una diosa maya que aparece en un texto atribuido a fray Diego de Landa, escrito hacia mil quinientos sesenta y seis. Durante mucho tiempo se le relacionó con la muerte. Hoy, algunos investigadores proponen que era una diosa de la caza: la señora del lazo, la que atrapa.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/landa_book.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Relación de las cosas de Yucatán|atribuida a fray Diego de Landa, hacia 1566",
+       "style": "date",
+       "at": [
+        0.5,
+        5.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/codex.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.4
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Y está la ceiba, el yaxché, el árbol sagrado de los mayas. Para ellos, sus raíces bajaban al inframundo, su tronco estaba en la tierra de los vivos y sus ramas tocaban el cielo. Todavía hoy, en muchos pueblos de Yucatán, nadie se atreve a cortar una ceiba vieja.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ceiba_sacred.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.3,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Por eso la Xtabay espera ahí. En el árbol que une a los vivos con los muertos. Dicen que sus víctimas se quedan atrapadas bajo esas raíces, en lo más hondo de la tierra.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/roots.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Antonio Mediz Bolio escribió sobre la Xtabay en mil novecientos veintidós, en su libro La tierra del faisán y del venado. Y la versión de las dos mujeres, con sus dos flores, parece haber tomado forma a principios del siglo veinte. Hoy es la que se cuenta en casi todas las casas de Yucatán.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/old_book.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "La tierra del faisán y del venado|Antonio Mediz Bolio, 1922",
+       "style": "date",
+       "at": [
+        0.5,
+        5.5
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Las flores son reales. El xtabentún es una enredadera de flores blancas. Con la miel de las abejas que la visitan, y con anís, se hace un licor dulce que todavía se vende en Yucatán… y que lleva su nombre.",
+   "music": "calm",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabentun_flower.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bottle.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "El tzacam también existe: un cactus pequeño, redondo, cubierto de espinas. Y dicen que con esas espinas se peina la Xtabay.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tzacam.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/comb_spines.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "En Quintana Roo se cuenta que la Xtabay no castiga a cualquiera, sino a los borrachos, a los ladrones y a los hombres violentos. Por eso las abuelas todavía la usan para advertir a los muchachos: no andes solo de noche… y no vuelvas tomado.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Y algunos estudiosos dicen algo más: que antes de la Colonia, la Xtabay era un espíritu del monte, guardiana de los árboles y de los animales. Que fueron los siglos los que la convirtieron en demonio.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_guardian.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "fireflies",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Pero volvamos a Lencho. Al amanecer, Candelaria salió con los hombres del pueblo a buscarlo por el camino blanco.",
+   "music": "sad",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/search_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.52,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|Lo que tenía en el puño",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Gritaban su nombre entre los árboles. Lorenzo. Lorenzo. Y el monte no contestaba. Solo, a veces, algo se movía entre las ramas… algo blanco, que desaparecía en cuanto volteaban.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_dense.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/monte_dense.png"
+      },
+      {
+       "src": "art/l_xtabay_front.png",
+       "blend": "normal",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        }
+       ],
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "cut",
+     "dur": 1.6,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/monte_dense.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.5
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "dur": 1.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Lo buscaron un día entero. Y otro. Y otro. Al tercer día, uno de los muchachos sintió un perfume dulce… y siguió el olor hasta la ceiba.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_path_day.png"
+      },
+      {
+       "src": "art/l_wisp.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": -0.02
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Ahí, entre las raíces, estaba el sombrero de Lencho. Y más adentro, donde las raíces se juntan y no entra la luz… estaba él.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 6.5,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/roots_hat.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Tenía los ojos abiertos y la camisa rota, con la piel llena de rasguños finos, como de espinas. Y en la cara, una sonrisa que nadie quiso volver a mirar.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -10,
+     "args": {
+      "dur": 8,
+      "bpm": 56
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/roots_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "pulse",
+       "bpm": 50,
+       "amp": 0.1
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Candelaria le abrió la mano, que tenía apretada con todas sus fuerzas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fist_closed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Adentro había una espina de tzacam. Y enredado en ella… un cabello negro, larguísimo. Tan largo que, al jalarlo, parecía no terminar nunca.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 3.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fist_open.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "text": [
+      {
+       "str": "UN CABELLO NEGRO",
+       "style": "big",
+       "at": [
+        3.0,
+        6.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Dicen que Candelaria quemó ese cabello en el fogón. Y que esa noche, desde el monte, se oyó una risa de mujer.",
+   "amb": [
+    "fire",
+    {
+     "name": "night",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 5.0,
+     "gain": -6,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candelaria_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Desde entonces, en ese pueblo nadie regresa solo de la cantina. Y cuando un hombre siente, de noche, un perfume dulce en el camino… se persigna, baja la mirada y camina más rápido.",
+   "music": "mystery",
+   "amb": [
+    "night"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_path.png"
+      },
+      {
+       "src": "art/l_lencho_walk.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "ease": "linear"
+        }
+       ]
+      },
+      {
+       "src": "art/l_brush_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.2,
+         "period": 7,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "Porque la Xtabay sigue ahí. Bajo la ceiba. Peinándose.",
+   "pause": 0.6,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_back.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "¿Por qué caminas solo?",
+   "pause": 1.4,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "voice": "ef_dora",
+   "speed": 0.74,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xtabay_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.75
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.15,
+     "grade": "night",
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Y ahora dime tú: ¿en tu familia se cuenta la leyenda de la Xtabay? ¿O alguien que conoces dice que la vio? Cuéntamelo en los comentarios.",
+   "music": "mystery",
+   "amb": [
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "En el próximo video nos quedamos en Yucatán. Porque en la milpa, de noche, alguien avienta piedritas, esconde las herramientas y se ríe como niño. Son los aluxes… y no les gusta que te olvides de ellos.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/aluxes_tease.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|Los Aluxes",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Hasta la próxima leyenda. Y si hueles flores en la oscuridad… no voltees.",
+   "pause": 1.0,
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ceiba_night.png"
+      },
+      {
+       "src": "art/l_xtabay_back.png",
+       "blend": "normal",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  }
+ ]
+}
