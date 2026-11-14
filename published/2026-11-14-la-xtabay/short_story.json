@@ -1,0 +1,141 @@
+{
+ "title": "La Xtabay short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.25,
+ "key": "A",
+ "seed": 14,
+ "grade": "night",
+ "outro": 2.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "La voz sale de entre los árboles. Es suave… es dulce… y dice tu nombre.",
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "crickets"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": -0.6,
+     "gain": -6,
+     "args": {
+      "dur": 2.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Cuentan que, bajo la ceiba más grande del monte, una mujer de huipil blanco se peina un cabello negro hasta los tobillos.",
+   "pause": 0.35,
+   "music": "mystery"
+  },
+  {
+   "id": "b003",
+   "text": "Lencho volvía solo de la cantina, por el camino del monte. Su mujer se lo había advertido.",
+   "pause": 0.35,
+   "music": "tension"
+  },
+  {
+   "id": "b004",
+   "text": "Entonces olió un perfume dulce, como de flores blancas. Y la vio.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.5,
+     "gain": -8,
+     "args": {
+      "dur": 2.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 3.9,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Lorenzo, ven conmigo.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "fx": "eco",
+   "pause": 0.1
+  },
+  {
+   "id": "b006",
+   "text": "Nadie en ese monte sabía su nombre. La siguió toda la noche… y volvieron a la misma ceiba.",
+   "pause": 0.35,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 2.5,
+     "gain": -12,
+     "args": {
+      "dur": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Entonces el cabello de ella se movió solo… como se mueven las serpientes. Y su boca siguió abriéndose…",
+   "pause": 0.35,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -4
+    },
+    {
+     "name": "riser",
+     "at": 3.2,
+     "gain": -9,
+     "args": {
+      "dur": 2.4
+     }
+    },
+    {
+     "name": "boom",
+     "at": 5.7,
+     "gain": -2
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "¿Qué apretaba Lencho en el puño cuando lo encontraron?",
+   "pre": 0.4,
+   "pause": 0.35,
+   "music": "sad",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 3,
+      "bpm": 70
+     }
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "La Xtabay completa ya está en el canal. Suscríbete.",
+   "pause": 0.3,
+   "music": "calm"
+  }
+ ]
+}
