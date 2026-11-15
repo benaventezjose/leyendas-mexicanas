@@ -1,0 +1,4084 @@
+{
+ "title": "Los Aluxes: los duendes mayas que cobran cuando te olvidas de ellos",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "D",
+ "seed": 33,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Tac… tac… tac. Algo cae sobre el techo de palma. Son piedritas. Pequeñas, redondas… y vienen de la milpa.",
+   "pre": 0.4,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 0.2,
+     "gain": -8,
+     "args": {
+      "times": 3
+     }
+    },
+    {
+     "name": "knock",
+     "at": 2.2,
+     "gain": -10,
+     "args": {
+      "times": 2
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/champa_inside.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.62,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Eusebio se levanta de la hamaca con el machete en la mano. Afuera, la luna pinta de plata las cañas del maíz. Y entre las cañas… se oye una risa. Una risa de niño.",
+   "amb": [
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 6.0,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_scared.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/milpa_night.png"
+      },
+      {
+       "src": "art/l_corn_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.4,
+         "period": 6,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Pero en tres kilómetros a la redonda no hay ningún niño. Solo está él… y la casita de piedra que construyó su abuelo, al borde del monte.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 3.0,
+     "gain": -10,
+     "args": {
+      "dur": 7,
+      "bpm": 72
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casita_alux.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.58,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Ya te olvidaste de mí.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.948,
+     "gain": -4,
+     "scene": 1
+    }
+   ],
+   "voice": "ef_dora",
+   "speed": 0.96,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alux_peek.png"
+      },
+      {
+       "src": "art/l_eyes_gold.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alux_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0,
+        0.4
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Eusebio voltea. A la altura de su rodilla, entre el maíz, dos ojitos amarillos lo están mirando.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 5.193,
+     "gain": -2,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 5.293,
+     "gain": -3,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alux_peek.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.75
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 1.3
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alux_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.15,
+     "dur": 2.0,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "",
+   "pause": 6.0,
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "LOS ALUXES|los guardianes de la milpa",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Esta es la leyenda de los aluxes, los pequeños dueños del monte de Yucatán. Y antes de que termine, vas a saber qué encontraron, muchos años después, dentro de esa casita de piedra que nadie se atrevía a abrir.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casita_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Cuentan que todo empezó con el abuelo, don Anastasio Chan, un milpero del sur de Yucatán, allá por los cerros de Tekax. Su milpa era la más verde del pueblo. Nunca se secaba, ni en los años de sequía.",
+   "music": "calm",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/milpa_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.52,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|El barro virgen",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/abuelo_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Sur de Yucatán, hacia 1950|los cerros de Tekax",
+       "style": "date",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Los vecinos decían que tenía suerte. Pero don Anastasio sabía que no era suerte. Era un trato.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuelo_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Una noche, siete semanas antes del Viernes Santo, fue a buscar al jmen del pueblo, el sacerdote maya que todavía sabía hablar con los vientos y con los dueños del monte.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hmen_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Juntos sacaron barro virgen, barro que nadie había tocado, de la orilla de un cenote escondido.",
+   "amb": [
+    "drips",
+    {
+     "name": "night",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/barro_pit.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Y cada viernes, rezando en maya, el jmen fue dando forma a un muñequito. Primero los pies. Luego las manos. Luego una carita de viejo, con barba… y un sombrerito.",
+   "amb": [
+    "room",
+    {
+     "name": "fire",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hands_clay.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/clay_figure.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "La última noche, don Anastasio dejó caer sobre el barro unas gotas de sangre de la palma de su mano. Así, dicen, el muñeco queda atado a su dueño.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 6,
+      "bpm": 60
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palm_blood.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Y al amanecer… el muñeco ya no estaba en la mesa.",
+   "pause": 1.0,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 1.5,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/altar_empty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Lo encontraron en la milpa, sentado dentro de una casita de piedra que el abuelo le había levantado al borde del monte, con su techito de palma y su puertita mirando hacia el maíz.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casita_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Desde esa noche, la milpa tuvo guardián.",
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 0.5,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alux_roof.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.0
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Cuentan que los aluxes miden lo que un niño de tres años. Que tienen cara de viejito, sandalias, sombrero… y que casi nunca se dejan ver. Se oyen. Se oyen silbar, reír, correr entre las hojas.",
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 4.0,
+     "gain": -12,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alux_full.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|Los dueños del monte",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/milpa_night.png"
+      },
+      {
+       "src": "art/l_alux_walk.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "ease": "linear"
+        }
+       ]
+      },
+      {
+       "src": "art/l_corn_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.4,
+         "period": 6,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "De día son barro. De noche… caminan.",
+   "pre": 0.3,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.2,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clay_figure.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "DE NOCHE|caminan",
+       "style": "big",
+       "at": [
+        1.2,
+        4.0
+       ]
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "El alux de don Anastasio cuidaba la milpa como un perro bravo. Al ladrón que se metía a robar elotes lo recibían con una lluvia de piedritas que salían de ningún lado.",
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 1.5,
+     "gain": -8,
+     "args": {
+      "times": 4
+     }
+    },
+    {
+     "name": "whoosh",
+     "at": 1.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/thief_stones.png"
+      },
+      {
+       "src": "art/l_stones.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dy": 0.1,
+         "ease": "in"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Y si un animal del monte se acercaba al maíz, al otro día amanecía lejos, como espantado, sin querer volver.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_dense.png"
+      },
+      {
+       "src": "art/l_eyes_gold.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Dicen también que un alux bien cuidado llama a la lluvia cuando la milpa tiene sed, y que espanta los malos vientos, esos aires del monte que enferman a la gente.",
+   "amb": [
+    "rain",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/milpa_night.png"
+      },
+      {
+       "src": "art/l_corn_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.4,
+         "period": 6,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "rain",
+       "strength": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Pero un alux no se cuida solo. Hay que darle de comer.",
+   "music": "calm",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuelo_offering.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Antes de sembrar, don Anastasio le dejaba una jícara de sacab, la bebida de maíz y miel. Y después de la cosecha, los primeros elotes eran para él. Antes que para la familia. Antes que para nadie.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ofrenda_jicara.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/casita_alux.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Su nieto, Eusebio, creció escuchando las reglas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_young.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Nunca le faltes con su comida. Nunca le quites nada de su casita. Y nunca, nunca, abras esa puerta.",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuelo_candle.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Si el alux se queda con hambre, deja de cuidar. Y empieza a cobrar.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.0,
+     "gain": -6
+    }
+   ],
+   "voice": "em_santa",
+   "speed": 0.78,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuelo_candle.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Si te gustan estas historias de nuestra tierra, suscríbete y activa la campanita. Cada semana te traigo una leyenda nueva.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Don Anastasio murió viejo, en su hamaca, con la milpa todavía verde. Y Eusebio, que tenía veinte años, se fue a buscar trabajo a la costa de Quintana Roo, donde estaban construyendo una ciudad nueva en medio de la selva y del mar: Cancún.",
+   "music": "sad",
+   "amb": [
+    "sea",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuelo_hammock.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|El olvido",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cancun_build.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Cancún, principios de los setenta|una ciudad nueva sobre la selva",
+       "style": "date",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Trabajaba de sol a sol cargando block y cemento, con el mar más azul que había visto en su vida a un lado… y la selva, oscura y callada, al otro.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cancun_build.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Allá oyó por primera vez una historia que los albañiles mayas contaban en voz baja, junto a la fogata.",
+   "amb": [
+    "fire",
+    {
+     "name": "sea",
+     "gain": -8
+    }
+   ],
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/workers_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Decían que en un puente cerca de donde hoy está el aeropuerto, las cosas no salían. Las herramientas desaparecían en la noche. Los fierros amanecían doblados. Y lo que se levantaba de día… amanecía en el suelo.",
+   "amb": [
+    "night",
+    {
+     "name": "sea",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 3.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bent_rebar.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Hasta que un maestro de obra dijo lo que todos pensaban: son los aluxes. Esta tierra tiene dueño, y nadie le pidió permiso.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/workers_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Cuentan que hicieron una ceremonia, que les dejaron ofrendas y que les construyeron, debajo del puente, una casita en forma de pirámide. Y que desde entonces, el puente sigue en pie.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge_shrine.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Eusebio se rio de esa historia. Pasó siete años en la costa. Y en siete años, nunca mandó a nadie a llevarle su jícara al alux del abuelo.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/casita_overgrown.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Regresó al pueblo casado, con su mujer, Juana, y con un hijo de siete años, Mateo. Volvió a abrir la milpa del abuelo. Tumbó el monte, quemó, sembró. Pero no pidió permiso. Y no dejó nada en la casita de piedra.",
+   "music": "tension",
+   "amb": [
+    "wind",
+    {
+     "name": "fire",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/milpa_burn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      "ash"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|Las piedritas",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/juana_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Eusebio, ¿y la jícara del alux? Tu abuelo nunca la olvidaba.",
+   "voice": "ef_dora",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/juana_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Mi abuelo creía en cuentos, Juana. El maíz crece con lluvia, no con muñecos de barro.",
+   "voice": "em_santa",
+   "speed": 0.88,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Esa misma noche empezaron las piedritas.",
+   "pause": 0.8,
+   "music": "dread",
+   "amb": [
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 0.6,
+     "gain": -6,
+     "args": {
+      "times": 3
+     }
+    },
+    {
+     "name": "knock",
+     "at": 2.0,
+     "gain": -8,
+     "args": {
+      "times": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alux_roof.png"
+      },
+      {
+       "src": "art/l_stones.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dy": 0.1,
+         "ease": "in"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "PIEDRITAS|toda la noche",
+       "style": "big",
+       "at": [
+        0.8,
+        3.6
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Primero en el techo, toda la noche. Luego en la puerta. Luego, en la mañana, encontraron huellitas en la ceniza del fogón. Huellitas de pie descalzo… del tamaño de un dedo de la mano.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 6.713,
+     "gain": -6,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/champa_inside.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 2.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/footprints_ash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "La coa de Eusebio apareció colgada en lo más alto de un árbol de ramón. Las gallinas amanecían encerradas dentro de la olla del nixtamal. Y el maíz… el maíz tierno amanecía mordido, mazorca por mazorca, con dientes pequeñitos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tool_tree.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.35,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/corn_bitten.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Juana empezó a dejar tortillas en la puerta, a escondidas de su marido. Al otro día, las tortillas seguían ahí… intactas. No era eso lo que el alux quería. Quería que se lo diera su dueño.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/juana_door.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Eusebio se puso a velar con la escopeta. Y una madrugada lo vio: un hombrecito sentado en el techo de su casita de piedra, columpiando las piernas, mirándolo… y riéndose.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 4.0,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_gun.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alux_roof.png"
+      },
+      {
+       "src": "art/l_eyes_gold.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Eusebio disparó.",
+   "pause": 0.6,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -1
+    },
+    {
+     "name": "sting",
+     "at": 0.05,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alux_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 12,
+       "at": [
+        0,
+        0.7
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.6,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Y en ese instante, todas las piedritas del monte cayeron al mismo tiempo sobre la casa.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 0.2,
+     "gain": -2,
+     "args": {
+      "times": 10
+     }
+    },
+    {
+     "name": "thunder",
+     "at": 0.8,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/champa_out.png"
+      },
+      {
+       "src": "art/l_stones.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dy": 0.1,
+         "ease": "in"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0.3,
+        3.0
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Dos días después, Eusebio cayó en cama con una calentura que ningún doctor supo curar. Temblaba en la hamaca, con los ojos abiertos, y repetía una sola frase.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_fever.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Ya no está enojado conmigo… está enojado con el niño.",
+   "pause": 0.9,
+   "voice": "em_santa",
+   "speed": 0.88,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_fever.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Esa noche, Juana despertó y la hamaca de Mateo estaba vacía.",
+   "pause": 0.8,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 1.6,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hammock_empty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "VACÍA",
+       "style": "big",
+       "at": [
+        1.5,
+        4.0
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "La puerta estaba abierta. Y afuera, a la luz de la luna, se veían dos figuras entre el maíz: una era su hijo. La otra, más pequeña, lo llevaba de la mano hacia el monte.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 12,
+      "bpm": 96
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/juana_scared.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/mateo_corn.png"
+      },
+      {
+       "src": "art/l_corn_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.4,
+         "period": 6,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.3
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Ven a jugar… ven a jugar conmigo.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -4
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -6
+    }
+   ],
+   "voice": "ef_dora",
+   "speed": 0.96,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alux_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.15,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Juana corrió gritando su nombre. Pero cuando llegó al borde de la milpa… ya no había nadie. Solo el monte negro. Y una risita que se alejaba.",
+   "pause": 1.2,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.5,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/monte_dense.png"
+      },
+      {
+       "src": "art/l_brush_fg.png",
+       "depth": 1.35,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 1.2,
+         "period": 7,
+         "pivot": [
+          0.5,
+          1.0
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Fueron a buscar al jmen, don Pastor, que ya era muy viejo. No hizo preguntas. Miró la casita de piedra, cubierta de hierba, y movió la cabeza.",
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hmen_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|La ofrenda",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Siete años sin comer. Siete años solo. No se llevó al niño para hacerle daño… se lo llevó para tener con quién jugar.",
+   "voice": "em_santa",
+   "speed": 0.76,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hmen_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Esa misma noche armaron una mesa en medio de la milpa. Pusieron velas, copal, tortillas de maíz nuevo, una jícara de sacab y otra de balché. Y el jmen empezó a rezar, en maya, hacia los cuatro rumbos del monte.",
+   "amb": [
+    "night",
+    {
+     "name": "fire",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -14,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ritual_altar.png"
+      },
+      {
+       "src": "art/l_copal.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.75
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dy": -0.04,
+         "ease": "linear"
+        }
+       ]
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ritual_wide.png"
+      },
+      {
+       "src": "art/l_copal.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.75
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dy": -0.04,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Eusebio, temblando de fiebre, se arrodilló frente a la casita y pidió perdón. Por el olvido. Por el disparo. Por los siete años.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_kneel.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Perdóname. Aquí está tu comida. Devuélveme a mi hijo.",
+   "voice": "em_santa",
+   "speed": 0.88,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/eusebio_scared.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Durante horas no pasó nada. El copal se consumió. Las velas se fueron apagando, una por una. Y justo antes del amanecer, el viento se detuvo.",
+   "music": "silence",
+   "amb": [],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -8,
+     "args": {
+      "dur": 8,
+      "bpm": 56
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ritual_altar.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Tac.",
+   "pre": 0.6,
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 0.0,
+     "gain": -2,
+     "args": {
+      "times": 1
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ofrenda_jicara.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.65
+      ],
+      "ease": "inout"
+     },
+     "dur": 2.0,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Una sola piedrita cayó dentro de la jícara vacía. El sacab ya no estaba.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ofrenda_jicara.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.85
+      ],
+      "ease": "in"
+     },
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Y del otro lado de la casita, acurrucado en la hierba, dormía Mateo. Tenía los pies llenos de barro… y las manos llenas de granos de maíz.",
+   "music": "hope",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mateo_found.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "No recordaba nada. Solo decía que había jugado toda la noche con un señor chiquito… que le enseñó a hacer bailar su trompo como nadie.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/trompo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Y que el señor chiquito se quedó con el trompo.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.6,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/trompo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "La fiebre de Eusebio se fue esa misma semana. Y nunca más, en toda su vida, olvidó la jícara de sacab.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casita_alux.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Hasta aquí, la leyenda. Ahora, lo que sí es historia.",
+   "music": "calm",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ruins_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO VI|Lo que dice la historia",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "La creencia en los aluxes, que en algunos pueblos llaman aruxes, sigue viva en toda la península: en Yucatán, en Campeche y en Quintana Roo. Muchos campesinos mayas todavía piden permiso al monte antes de sembrar, y ofrecen la primicia del maíz.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/milpa_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ofrenda_jicara.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Una de las historias más antiguas cuenta que los aluxes fueron seres que los dioses dejaron sin terminar. Escapaban del cielo de noche, y cuando el sol los sorprendía, se quedaban hechos piedra. Por eso, dicen, solo cobran vida en la oscuridad.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stone_figures.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Y en las milpas, cuando el arado saca de la tierra figuritas de barro de los antiguos mayas, hay quien no se las lleva a su casa. Las deja donde estaban. Por si acaso.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/figurines.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Los estudiosos de la cultura maya ven en los aluxes algo más que duendes traviesos: son parte de una manera antigua de entender el monte, donde cada cerro, cada cenote y cada milpa tiene un dueño al que hay que respetar.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ruins_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Todavía hoy, en casas, ranchos y hasta en grandes obras de la península, hay quien construye una pequeña casita para los aluxes. No cuesta nada. Y nadie quiere averiguar qué pasa si no se hace.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casita_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bridge_shrine.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "¿Y la casita de piedra? Sigue ahí, al borde de la milpa de los Chan. Eusebio murió muy viejo. Y fue Mateo, ya con el pelo blanco, el que un día encontró la puertita caída por las lluvias.",
+   "music": "tension",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casita_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Muchos años después",
+       "style": "date",
+       "at": [
+        0.5,
+        4.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Se agachó. Miró adentro.",
+   "pause": 1.0,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 6,
+      "bpm": 80
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casita_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.65
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Ahí estaba el muñequito de barro del abuelo, con su barba y su sombrero, sentado en la oscuridad. Tenía los pies cubiertos de lodo fresco… aunque no había llovido en semanas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clay_inside.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Y en su manita de barro, apretado… tenía un trompo de madera. El mismo trompo que Mateo perdió aquella noche, cuando tenía siete años.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 3.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/clay_trompo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "EL TROMPO",
+       "style": "big",
+       "at": [
+        2.5,
+        5.5
+       ]
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Y la pintura del trompo… estaba gastada, como si alguien lo hubiera hecho bailar todas las noches durante cincuenta años.",
+   "pause": 1.4,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alux_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.65
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.15,
+     "grade": "night",
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Y ahora dime tú: ¿en tu pueblo se cuenta de los aluxes? ¿Alguien de tu familia les deja ofrenda? Cuéntamelo en los comentarios.",
+   "music": "mystery",
+   "amb": [
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "En el próximo video dejamos Yucatán. Porque hay una mano, una mano peluda, que sale de debajo de la cama cuando apagas la luz. Es la leyenda de la Mano Peluda… y nunca deberías dejar el brazo colgando fuera del colchón.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mano_tease.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|La Mano Peluda",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "Hasta la próxima leyenda. Y si de noche oyes piedritas en el techo… deja algo de comer afuera.",
+   "pause": 1.0,
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casita_alux.png"
+      },
+      {
+       "src": "art/l_eyes_gold.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.0
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  }
+ ]
+}
