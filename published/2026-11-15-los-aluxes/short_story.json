@@ -1,0 +1,139 @@
+{
+ "title": "Los Aluxes short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.25,
+ "key": "D",
+ "seed": 15,
+ "grade": "night",
+ "outro": 3.5,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Tac, tac, tac. Piedritas sobre el techo de palma. Y entre el maíz… una risa de niño.",
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "crickets"
+   ],
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "times": 3
+     }
+    },
+    {
+     "name": "sting",
+     "at": 5.5,
+     "gain": -4
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Cuentan que en el sur de Yucatán, un abuelo hizo con barro virgen un alux para cuidar su milpa.",
+   "pause": 0.35,
+   "music": "mystery"
+  },
+  {
+   "id": "b003",
+   "text": "Solo pedía su jícara de sacab. Y una regla: nunca olvidarlo.",
+   "pause": 0.35
+  },
+  {
+   "id": "b004",
+   "text": "Pero el nieto, Eusebio, se fue siete años… y lo olvidó.",
+   "pause": 0.35,
+   "music": "tension"
+  },
+  {
+   "id": "b005",
+   "text": "Al volver, empezaron las piedritas. Huellitas del tamaño de un dedo. Y el maíz, mordido con dientes pequeñitos.",
+   "pause": 0.35,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Eusebio le disparó. Y una noche, la hamaca de su hijo estaba vacía.",
+   "pause": 0.3,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.15,
+     "gain": -3
+    },
+    {
+     "name": "riser",
+     "at": 2.0,
+     "gain": -9,
+     "args": {
+      "dur": 3.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Ven a jugar conmigo.",
+   "voice": "ef_dora",
+   "speed": 0.85,
+   "fx": "eco",
+   "pause": 0.15,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Entre el maíz, una figura pequeñita lo llevaba de la mano… hacia el monte.",
+   "pause": 0.35,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 4,
+      "bpm": 80
+     }
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "¿Volverá a verlo? La historia completa de Los Aluxes ya está en el canal. Suscríbete.",
+   "pre": 0.3,
+   "pause": 0.3,
+   "music": "sad",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -5
+    }
+   ]
+  }
+ ]
+}
