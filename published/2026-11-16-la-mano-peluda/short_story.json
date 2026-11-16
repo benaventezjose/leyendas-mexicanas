@@ -1,0 +1,141 @@
+{
+ "title": "La Mano Peluda short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.25,
+ "key": "E",
+ "seed": 16,
+ "grade": "night",
+ "outro": 2.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Tres de la mañana. Un niño duerme con el brazo fuera de la cama. Y debajo del colchón… algo se mueve.",
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "clock"
+   ],
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 6.9,
+     "gain": -4
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Cuentan que en una casona vieja de Puebla, la abuela Refugio le dio a Julián tres reglas.",
+   "pause": 0.3,
+   "music": "mystery",
+   "amb": [
+    "room",
+    "crickets"
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Nunca dejes el brazo fuera de la cama. Nunca saques el pie. Y si se te cae algo de noche… ahí se queda.",
+   "voice": "ef_dora",
+   "speed": 0.9,
+   "pause": 0.3
+  },
+  {
+   "id": "b004",
+   "text": "Porque ahí cobra la Mano Peluda: la mano de un prestamista cruel, que sale de su tumba.",
+   "pause": 0.3,
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.9,
+     "gain": -4
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "La primera noche, algo rascó bajo las tablas. La segunda, una canica rodó sola… y cinco dedos negros se la llevaron.",
+   "pause": 0.3,
+   "amb": [
+    "rain"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 2.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 6.0,
+     "gain": -4
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "La tercera noche, la vela se apagó. Un roce de pelo áspero. Y la mano… lo toma de la muñeca.",
+   "pause": 0.2,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.3,
+     "gain": -6
+    },
+    {
+     "name": "heartbeat",
+     "at": 2.0,
+     "gain": -8,
+     "args": {
+      "dur": 5,
+      "bpm": 90
+     }
+    },
+    {
+     "name": "riser",
+     "at": 3.5,
+     "gain": -9,
+     "args": {
+      "dur": 3.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "¿Qué me traes?",
+   "voice": "em_santa",
+   "speed": 0.8,
+   "fx": "eco",
+   "pause": 0.3,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "¿Qué hizo Julián? La historia completa de La Mano Peluda ya está en el canal. Suscríbete.",
+   "pre": 0.3,
+   "pause": 0.3,
+   "music": "sad"
+  }
+ ]
+}
