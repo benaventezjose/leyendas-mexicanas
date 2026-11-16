@@ -1,0 +1,4210 @@
+{
+ "title": "La Mano Peluda: nunca dejes el brazo fuera de la cama",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "E",
+ "seed": 41,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Tres de la mañana. Una casona vieja de Puebla. Un niño duerme… con el brazo colgando fuera de la cama.",
+   "pre": 0.4,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "clock",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bedroom_wide.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.42,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "transition": "fade",
+     "transition_len": 1.2,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Debajo del colchón, en esa oscuridad donde nunca llega la luz… algo se mueve.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 5.127,
+     "gain": -12,
+     "scene": 1,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bed_arm.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/under_bed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Primero, un roce. Pelo áspero… en las yemas de los dedos.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 7,
+      "bpm": 78
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_under.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.25
+      ],
+      "to": [
+       0.42,
+       0.55,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Y entonces… una mano lo toma de la muñeca.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.538,
+     "gain": -2,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 2.638,
+     "gain": -3,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_under.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.55,
+       1.6
+      ],
+      "to": [
+       0.42,
+       0.55,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.6
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hand_grab.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 2.0,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "",
+   "pause": 5.0,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "LA MANO PELUDA|nunca dejes el brazo fuera de la cama",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "A la mañana siguiente, su abuela encontró la cama vacía. Y lo que el niño traía apretado en el puño… todavía se cuenta en voz baja en Puebla.",
+   "music": "tension",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bed_empty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fist_closed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Esta es la leyenda de la Mano Peluda. Y antes de que termine, vas a saber qué era… y por qué esa mano sigue regresando.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_crawl_street.png"
+      },
+      {
+       "src": "art/l_hand_crawl.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.1,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Julián tenía diez años cuando sus papás lo mandaron a pasar el verano con su abuela Refugio, en Puebla de los Ángeles. Era de la Ciudad de México, hijo único, y nunca había dormido lejos de su casa.",
+   "music": "calm",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/puebla_road.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|Las tres reglas",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/julian_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Puebla, verano de 1962|el centro histórico",
+       "style": "date",
+       "at": [
+        0.5,
+        4.5
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "La casa estaba en una calle empedrada, cerca de la catedral. Fachada de azulejos de talavera, balcones de hierro, y un zaguán tan grande que por ahí, decían, entraban antes los carruajes.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/puebla_street.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/zaguan.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Adentro, un patio con macetas de geranios, una fuente seca… y cuartos altísimos, con vigas de madera negra y olor a humedad.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/patio_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "La abuela Refugio era una mujer pequeña, de rebozo gris y trenzas blancas. Lo recibió con chocolate caliente y pan de dulce. Pero esa primera noche, antes de apagar la vela, se sentó en la orilla de su cama y le dijo algo que Julián nunca olvidó.",
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/abuela_bedside.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Mijo, aquí hay tres reglas. Nunca dejes el brazo fuera de la cama. Nunca saques el pie. Y si se te cae algo de noche… ahí se queda hasta que salga el sol.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_close.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Nunca dejes el brazo fuera de la cama|abuela Refugio",
+       "style": "quote",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "Julián se rio. Tenía diez años, no cinco. Le preguntó por qué.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/julian_bed.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Porque en esta casa… cobra la Mano Peluda.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.2,
+     "gain": -6
+    }
+   ],
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_close.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.75
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Ella apagó la vela y se fue. Y en la oscuridad, Julián escuchó algo que no supo explicar. Debajo de las tablas del piso… algo rascaba. Despacio. Como uñas largas contra la madera.",
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "clock",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.4,
+     "gain": -12
+    },
+    {
+     "name": "whisper",
+     "at": 6.0,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candle_smoke.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "weight": 0.6,
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/floor_scratch.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.4,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Se tapó hasta la cabeza. Y por primera vez en su vida… durmió hecho bolita, con las manos bien metidas bajo la cobija.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/julian_covers.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "En la mañana, cuando se agachó a buscar sus huaraches, vio algo en las tablas, debajo de la cama. Cinco rayas largas, paralelas, frescas. Como si alguien hubiera arañado el piso… desde abajo.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 8.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/floor_scratch.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.52,
+       0.5,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Al día siguiente, mientras molía el chile para el mole en el metate, la abuela le contó de dónde venía esa mano. Y como en toda buena leyenda… hay más de una versión.",
+   "music": "mystery",
+   "amb": [
+    "room",
+    {
+     "name": "fire",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/kitchen_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|Lo que cuentan",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "La más antigua nos lleva a los tiempos de la Colonia, cuando en la Nueva España funcionaba el Tribunal del Santo Oficio, la Inquisición, establecido en la capital del virreinato en mil quinientos setenta y uno.",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/virreinato_plaza.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Nueva España, siglos de la Colonia|el Santo Oficio llegó en 1571",
+       "style": "date",
+       "at": [
+        0.5,
+        5.0
+       ]
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Cuentan que un hombre pobre fue acusado de robar en la casa de un señor muy rico. Él juró que era inocente. Nadie le creyó.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/accused.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "El castigo fue terrible: le cortaron la mano. Y poco después, el hombre murió… y lo enterraron sin nombre, en un camposanto a las afueras.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.6,
+     "gain": -6
+    },
+    {
+     "name": "bell",
+     "at": 6.0,
+     "gain": -10,
+     "args": {
+      "freq": 160
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/block_axe.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 0.8,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/camposanto.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Pero dicen que antes de morir hizo un juramento: que su mano volvería a buscar a los que lo acusaron. Y que nunca descansaría.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camposanto.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Desde entonces, la mano camina sola. Grande, el doble que la de un hombre. Negra, cubierta de pelo duro, con uñas largas y amarillas. Sale de las grietas, de debajo de las puertas… y de debajo de las camas.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 12.835,
+     "gain": -3,
+     "scene": 2
+    },
+    {
+     "name": "boom",
+     "at": 12.935,
+     "gain": -4,
+     "scene": 2
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "LA MANO|el doble que la de un hombre",
+       "style": "big",
+       "at": [
+        2.0,
+        5.0
+       ]
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/door_gap.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hand_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Algunos dicen que deja un rastro de tierra mojada por donde pasa. Otros, que también sale de las paredes, y por eso nunca hay que dormir pegado al muro. Y en Colombia, donde también se cuenta, aseguran que sus uñas están envenenadas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/door_gap.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.2
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Pero la abuela Refugio conocía otra versión. La de Puebla.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Hace más de cien años, contaba, cerca del mercado, había una casa de empeño. El dueño era un hombre bajito, gordo… y tan velludo que hasta los dedos tenía cubiertos de pelo negro. Le decían el Peludo.",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 8.23,
+     "gain": -8,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/empeno_ext.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/peludo_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "EL PELUDO",
+       "style": "big",
+       "at": [
+        3.0,
+        6.0
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Era cruel. Prestaba poco y cobraba mucho. Si alguien se atrasaba un día, se quedaba con todo: el anillo de bodas, la máquina de coser, la cobija del niño enfermo.",
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 4.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/empeno_int.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/peludo_hands.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Y la gente, al salir de su tienda, le decía en voz baja: que Dios te seque esa mano.",
+   "amb": [
+    "rain"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/empeno_woman.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "rain",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "Que Dios te seque esa mano|lo que decía la gente",
+       "style": "quote",
+       "at": [
+        2.5,
+        6.5
+       ]
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Cuando el Peludo murió, nadie fue a su entierro. Ni un vecino, ni un cura. Pero semanas después, el panteonero contó algo que hizo temblar a media ciudad.",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 2.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/panteon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/panteonero.png"
+      },
+      {
+       "src": "art/l_lantern_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "De su tumba sale una mano. Peluda. Rasca la tierra desde adentro… y se va caminando sobre los dedos, rumbo a la ciudad.",
+   "music": "tension",
+   "voice": "em_santa",
+   "speed": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/panteonero.png"
+      },
+      {
+       "src": "art/l_lantern_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.6
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "weight": 0.8,
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/grave_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Dicen que la mano sigue cobrando. Que todavía busca lo que le deben. Y que entra a las casas de noche, cuando todos duermen… y se lleva lo primero que encuentra fuera de la cama.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 10.993,
+     "gain": -3,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 11.093,
+     "gain": -4,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_crawl_street.png"
+      },
+      {
+       "src": "art/l_hand_crawl.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.1,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hand_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.65
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Si te gustan estas historias, suscríbete y activa la campanita. Aquí te contamos las leyendas de México… con la luz apagada.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.6,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Esa noche llovió. Truenos sobre las cúpulas, agua corriendo por las canaletas del patio. Y Julián, por terco, dejó junto a la cama una canica de vidrio. La azul. Su favorita.",
+   "music": "tension",
+   "amb": [
+    "rain",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 1.4,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/storm_domes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "lightning",
+       "at": [
+        1.5,
+        4.5
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|La canica",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/marble_bed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "A medianoche, la canica rodó. Sola. Tac… tac… tac… sobre las tablas. Y se detuvo justo debajo de la cama.",
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 2.8,
+     "gain": -10,
+     "args": {
+      "times": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/marble_floor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Julián se asomó por la orilla. Estaba ahí, brillando apenas, al alcance de la mano. Solo tenía que estirar el brazo.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -9,
+     "args": {
+      "dur": 8,
+      "bpm": 84
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/julian_peek.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/marble_under.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Y entonces recordó la tercera regla. Si se te cae algo de noche… ahí se queda.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_close.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "vignette": 0.75
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Se quedó quieto. Y en ese momento, desde la oscuridad, otra cosa se acercó a la canica. Algo negro, lento, con cinco patas largas… que no eran patas.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/marble_under.png"
+      },
+      {
+       "src": "art/l_hand_reach.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": -0.03,
+         "ease": "out"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.52,
+       0.55,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Eran dedos. La mano tomó la canica… y se la llevó de vuelta a la oscuridad.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -3
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_marble.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 7,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "weight": 1.0,
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/under_bed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "night",
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Al día siguiente Julián no dijo nada. Pero esa mañana, recorriendo la casa, notó algo en cada cuarto: todas las camas estaban lejos de las paredes. Y ninguna tenía nada debajo. Ni una caja. Ni un zapato. Nada que una mano pudiera agarrar.",
+   "music": "sad",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bedroom_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Esa tarde, buscando un trompo en el ropero de la abuela, encontró una fotografía vieja: dos niños en el patio de esa misma casa. Una niña de trenzas… y un niño un poco más grande.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/patio_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "weight": 0.6,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/old_photo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "La abuela la tomó con las manos temblorosas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_photo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Esa soy yo. Y ese es mi hermano Chucho. Él tampoco creía en las reglas.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_photo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Le contó que una noche Chucho durmió con el brazo afuera. Que a la mañana siguiente lo encontraron en el patio, sentado junto a la fuente, con la mirada perdida. Y que desde ese día… nunca volvió a hablar.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 5.0,
+     "gain": -12,
+     "args": {
+      "freq": 140
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chucho_fountain.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "En su muñeca, dijo la abuela, tenía cinco marcas moradas. Como dedos.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 2.0,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wrist_marks.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CINCO MARCAS|como dedos",
+       "style": "big",
+       "at": [
+        2.0,
+        5.5
+       ]
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "La tercera noche, la tormenta tumbó la luz en todo el barrio. La abuela le dejó una vela en el buró… y algo más. Una moneda de plata, vieja, debajo de la almohada.",
+   "music": "tension",
+   "amb": [
+    "rain",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 0.7,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/storm_domes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "lightning",
+       "at": [
+        0.8,
+        3.0
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|La moneda",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "weight": 0.8,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coin_pillow.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Si te agarra, mijo, no jales. Ábrele la mano y dale la moneda. Lo único que quiere es cobrar.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_bedside.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.48,
+       1.3
+      ],
+      "to": [
+       0.42,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "No jales. Dale la moneda|abuela Refugio",
+       "style": "quote",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Julián quiso preguntarle cómo sabía eso. Pero la abuela ya había cerrado la puerta. Y por la rendija de abajo, durante un largo rato, se vio la luz de su vela… quieta. Como si ella se hubiera quedado del otro lado, escuchando.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_candle.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Julián se durmió contando relámpagos. Y en algún momento de la noche, dormido, se dio la vuelta… y su brazo resbaló fuera del colchón.",
+   "music": "dread",
+   "amb": [
+    "rain",
+    {
+     "name": "clock",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bedroom_wide.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      },
+      {
+       "src": "art/l_window_rain.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.7
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dy": 0.05,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.42,
+       0.58,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      {
+       "type": "lightning",
+       "at": [
+        2.0
+       ]
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bed_arm.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "La vela se apagó.",
+   "pre": 0.4,
+   "pause": 1.2,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.2,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candle_smoke.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Primero, el roce. Pelo áspero en las yemas de los dedos. Luego, el frío. Un frío de tierra mojada… de tumba.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 9,
+      "bpm": 96
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_under.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.42,
+       0.55,
+       1.65
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Y la mano lo tomó de la muñeca. Fuerte. Con una fuerza que no era de este mundo.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": -0.1,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_grab.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        1.0
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Jaló. Julián sintió que su hombro bajaba por la orilla de la cama, que el piso ya no estaba ahí, que debajo del colchón había un hueco mucho más grande que el cuarto… un hueco que olía a monedas viejas y a vela apagada.",
+   "amb": [
+    "drips",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 3.0,
+     "gain": -8,
+     "args": {
+      "dur": 6
+     }
+    },
+    {
+     "name": "coins",
+     "at": 9.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/julian_pulled.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        0,
+        2.0
+       ]
+      }
+     ],
+     "weight": 0.9,
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/abyss.png"
+      },
+      {
+       "src": "art/l_coins.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dy": 0.06,
+         "ease": "linear"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "weight": 1.3,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Y desde el fondo, una voz ronca, como de alguien que habla con la boca llena de tierra:",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abyss.png"
+      },
+      {
+       "src": "art/l_coins.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dy": 0.06,
+         "ease": "linear"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.75
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "¿Qué me traes?",
+   "pre": 0.3,
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "voice": "em_santa",
+   "speed": 0.7,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hand_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.48,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        0,
+        0.4
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "¿Qué me traes?",
+       "style": "whisper",
+       "at": [
+        0.3,
+        3.0
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Julián quiso gritar, quiso jalar con todas sus fuerzas. Pero recordó a la abuela. No jales. Con la otra mano buscó debajo de la almohada… y apretó la moneda.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/julian_pulled.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coin_pillow.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Abrió los dedos. Y la dejó caer en esa palma enorme, peluda, helada.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coin_give.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "LA MONEDA",
+       "style": "big",
+       "at": [
+        2.5,
+        5.0
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "La mano se detuvo. Hubo un silencio largo. Se oyó el tintineo de una moneda contra otras monedas, muy abajo… y la mano lo soltó.",
+   "pause": 1.4,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 4.0,
+     "gain": -6
+    },
+    {
+     "name": "boom",
+     "at": 7.5,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abyss.png"
+      },
+      {
+       "src": "art/l_coins.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "drift",
+         "dy": 0.06,
+         "ease": "linear"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "out": "fade",
+     "out_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Lo encontraron al amanecer. No en su cama, sino debajo de ella, dormido sobre las tablas, hecho bolita. La abuela lo sacó de ahí llorando, rezando.",
+   "music": "sad",
+   "amb": [
+    "city",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dawn_room.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|La deuda",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/julian_floor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.78,
+       1.45
+      ],
+      "to": [
+       0.45,
+       0.8,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "En la muñeca tenía cinco marcas moradas. Y en el otro puño, apretado con fuerza, traía algo que no era suyo.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wrist_marks.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "weight": 1.0,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fist_closed.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Un papelito amarillo, frágil, casi deshecho. Una boleta de empeño. Con el nombre de una casa que había cerrado hacía muchísimos años… y el nombre de la mujer que había empeñado ahí su anillo de bodas: la mamá de la abuela Refugio.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 13.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/boleta.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "LA BOLETA",
+       "style": "big",
+       "at": [
+        1.5,
+        4.5
+       ]
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "La abuela se sentó en la cama y lloró en silencio. Su mamá nunca se lo había contado. Fueron años de hambre, dijo. Empeñó el anillo para comprar medicina… y nunca pudo recuperarlo.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_photo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "La deuda que nadie pagó. La que el Peludo, desde su tumba, seguía viniendo a cobrar a esa casa… noche tras noche.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/peludo_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 0.8,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hand_crawl_street.png"
+      },
+      {
+       "src": "art/l_hand_crawl.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.1,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Julián volvió a su casa al terminar el verano. Creció, se hizo viejo, y contó esta historia muchas veces. Pero siempre la terminaba igual.",
+   "music": "mystery",
+   "amb": [
+    "night"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/julian_old.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Porque en la boleta, escrito con tinta roja, todavía se alcanzaba a leer… abono uno… de tres.",
+   "pause": 1.4,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 7.223,
+     "gain": -3,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 7.323,
+     "gain": -2,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/boleta_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.75
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "ABONO 1 DE 3",
+       "style": "big",
+       "at": [
+        4.0,
+        8.0
+       ]
+      }
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hand_scare.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.8,
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Lo que sí es historia es esto: la Mano Peluda es uno de los miedos más compartidos de México, y también de Colombia y de otros países. Generaciones de abuelas la usaron para que los niños no se levantaran de noche.",
+   "music": "calm",
+   "amb": [
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Y en mil novecientos noventa y cinco, su nombre se volvió famoso en todo el país: así se llamó un programa de radio nocturno donde la gente llamaba para contar sus experiencias de miedo. Estuvo al aire más de veinte años, y para muchos, escucharlo con la luz apagada era casi un ritual.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/radio_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "1995|un programa de radio nocturno",
+       "style": "date",
+       "at": [
+        0.8,
+        5.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Así que esta noche, cuando apagues la luz… revisa dónde quedó tu brazo.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bed_arm.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Y tú, ¿de niño te asustaron con la Mano Peluda? ¿Dormías con los pies bien tapados? Cuéntamelo en los comentarios.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "En el próximo video nos vamos al centro de la Ciudad de México, a una calle que todavía recuerda a una mujer tan hermosa que, para que nadie más muriera por ella, prefirió perder su belleza. Es la leyenda de la Calle de la Quemada.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/quemada_tease.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|La Calle de la Quemada",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Hasta la próxima leyenda. Y si de noche sientes un roce en los dedos… no jales.",
+   "pause": 1.0,
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/under_bed.png"
+      },
+      {
+       "src": "art/l_hand_reach.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": -0.03,
+         "ease": "out"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  }
+ ]
+}
