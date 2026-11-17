@@ -1,0 +1,150 @@
+{
+ "title": "La Calle de la Quemada short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.25,
+ "key": "D",
+ "seed": 17,
+ "grade": "night",
+ "outro": 2.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Una noche sin luna, un hombre corre por el empedrado. Empuja una puerta… y ahí lo espera una mujer con un velo blanco.",
+   "pause": 0.25,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.2,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "door",
+     "at": 3.6,
+     "gain": -6
+    },
+    {
+     "name": "sting",
+     "at": 5.6,
+     "gain": -4
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Cuentan que en la vieja Ciudad de México vivía Beatriz: la joven más hermosa de la Nueva España.",
+   "pause": 0.3,
+   "music": "mystery",
+   "amb": [
+    "night",
+    "crickets"
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Hasta que llegó don Martín, un marqués que no soportaba que nadie más la mirara.",
+   "pause": 0.3,
+   "music": "tension"
+  },
+  {
+   "id": "b004",
+   "text": "Ningún hombre volverá a pararse bajo tu balcón, Beatriz.",
+   "voice": "em_santa",
+   "speed": 0.82,
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -5
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Y empezaron los duelos. Una guitarra rota. Un sombrero manchado de rojo. Los hombres que la miraban… caían uno tras otro.",
+   "pause": 0.3,
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.2,
+     "gain": -6
+    },
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -4
+    },
+    {
+     "name": "bell",
+     "at": 6.0,
+     "gain": -10,
+     "args": {
+      "freq": 160
+     }
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Mientras seas así de hermosa… siempre habrá alguien a quien tenga que matar.",
+   "voice": "em_santa",
+   "speed": 0.8,
+   "pause": 0.3,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 5,
+      "bpm": 80
+     }
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Esa noche, Beatriz se miró al espejo… y tomó una decisión que nadie esperaba. ¿Qué había detrás del velo?",
+   "pause": 0.3,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 1.0,
+     "gain": -9,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "sting",
+     "at": 6.0,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "La historia completa, La Calle de la Quemada, ya está en el canal. Suscríbete.",
+   "pre": 0.3,
+   "pause": 0.3,
+   "music": "sad"
+  }
+ ]
+}
