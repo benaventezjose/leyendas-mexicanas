@@ -1,0 +1,4611 @@
+{
+ "title": "La Calle de la Quemada",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "D",
+ "seed": 52,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Ciudad de México. Una noche sin luna, hace más de cuatrocientos cincuenta años.",
+   "pre": 0.5,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Un hombre corre por el empedrado, con la capa abierta y el corazón en la garganta.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 6
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -10,
+     "args": {
+      "dur": 6,
+      "bpm": 100
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_run.png"
+      },
+      {
+       "src": "art/l_martin_run.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.0,
+         "dy": -0.02,
+         "ease": "linear"
+        },
+        {
+         "type": "scale",
+         "from": 0.8,
+         "to": 1.15,
+         "pivot": [
+          0.5,
+          0.95
+         ],
+         "ease": "in"
+        },
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 0.5
+        }
+       ]
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Sube una escalera. Empuja una puerta. Y ahí, en la penumbra, junto a la ventana… lo espera una mujer cubierta con un velo blanco.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 2.2,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.4,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 0.8,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/veiled_chair.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Él estira la mano. Ella no se mueve. Y cuando por fin levanta el velo…",
+   "pause": 0.6,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.871,
+     "gain": -8,
+     "scene": 1,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 4.371,
+     "gain": -2,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 4.371,
+     "gain": -3,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veil_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 80,
+       "amp": 0.08
+      }
+     ],
+     "weight": 1.3
+    },
+    {
+     "layers": [
+      {
+       "src": "art/veil_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.6
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.6
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "",
+   "pause": 5.2,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      },
+      {
+       "src": "art/l_ghost_veil.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "LA CALLE DE LA QUEMADA|la mujer detrás del velo",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Lo que él vio debajo de ese velo le cambió el nombre a una calle para siempre. Y lo que dijo después… todavía divide a quienes cuentan esta historia.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veiled_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Esta es la leyenda de la Calle de la Quemada. Quédate hasta el final: vas a saber qué había detrás del velo… y por qué hay quien jura que ella todavía camina por ahí.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_ghost_veil.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Corría el año de mil quinientos cincuenta. La Ciudad de México apenas tenía treinta años de haber sido levantada sobre las ruinas de Tenochtitlan.",
+   "music": "calm",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaza_1550.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|La más hermosa",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/plaza_1550.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.7,
+       0.45,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Ciudad de México, 1550|capital de la Nueva España",
+       "style": "date",
+       "at": [
+        0.4,
+        4.6
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Era una ciudad de canales y calzadas, de iglesias a medio construir, donde de noche no había más luz que la de algunos faroles y la de la luna. Al anochecer las calles se vaciaban. Y cualquiera que caminara solo… sabía que estaba arriesgando la vida.",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Ese mismo año llegó desde España un nuevo virrey, don Luis de Velasco. Y con él, cuentan, llegaron también muchas familias que buscaban fortuna en la Nueva España.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palacio.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Entre ellas venía don Gonzalo Espinosa de Guevara, un hombre rico y severo… con su única hija.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gonzalo_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Don Gonzalo había hecho fortuna y quería una sola cosa para su hija: un buen matrimonio, con un hombre de nombre y de dinero.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gonzalo_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "Se llamaba Beatriz. Tenía veinte años, el cabello negro como la noche y unos ojos que, decían, nadie podía mirar sin quedarse callado.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Pero no era solo su belleza. Beatriz visitaba hospitales, llevaba comida a los pobres y daba limosna en la puerta de los templos. En toda la ciudad se hablaba de ella como de un ángel.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/charity.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_soft.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Su padre compró una casona de cantera, con balcones de hierro, a unas cuadras de la Plaza Mayor. Y desde la primera semana… empezaron a llegar los pretendientes.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casona.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Jóvenes de buena familia se paraban bajo su balcón con guitarras. Le mandaban flores, versos, regalos. Uno tras otro.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -18,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_night.png"
+      },
+      {
+       "src": "art/l_serenade.png",
+       "depth": 1.06
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Y ella, con una sonrisa amable, los rechazaba a todos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_balcony.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Pero había alguien que la miraba desde lejos. Desde la sombra de un portal, noche tras noche, sin acercarse nunca.",
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 2.0,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_portal.png"
+      },
+      {
+       "src": "art/l_watcher.png",
+       "depth": 1.05,
+       "opacity": [
+        0,
+        1
+       ],
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.65,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Y no era un pretendiente cualquiera.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 1.2,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/watcher_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Una noche, el virrey dio un baile en su palacio. Velas por cientos, música de vihuelas, vestidos de seda llegados de Sevilla.",
+   "music": "calm",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ballroom.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|El marqués",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Ahí, entre la gente, Beatriz lo vio por primera vez. Alto, de barba fina, con una espada al cinto y un sombrero de plumas negras.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ballroom_couple.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/martin_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Se llamaba don Martín de Scópoli, marqués de Piamonte y Franteschelo. Un noble italiano, rico, elegante… y acostumbrado a obtener todo lo que quería.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/martin_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Don Martín de Scópoli|marqués de Piamonte",
+       "style": "big",
+       "at": [
+        0.8,
+        5.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Bailaron una sola pieza. Al día siguiente llegó la primera carta. Y después otra. Y otra más.",
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letters.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Cuentan que esas cartas hablaban de su belleza. De sus ojos, de su piel, de su cabello. Siempre de su belleza. Y Beatriz, enamorada, no se dio cuenta de que en ninguna carta… Martín hablaba de su alma.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letters.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.65
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Por primera vez, Beatriz no rechazó a un pretendiente. Por primera vez… se enamoró.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_soft.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Pero muy pronto descubrió algo que la llenó de miedo. Martín no soportaba que nadie más la mirara.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/martin_jealous.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.08
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Si un hombre la saludaba en misa, Martín lo seguía con los ojos hasta la puerta. Si alguien le sonreía en la calle, él apretaba la empuñadura de su espada.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_mass.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/sword_hilt.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 80,
+       "amp": 0.1
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Y una noche, frente a la casona, le dijo algo que ella nunca pudo olvidar.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casona.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Ningún hombre volverá a pararse bajo tu balcón, Beatriz. Te lo juro por mi nombre.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 3.8,
+     "gain": -6
+    }
+   ],
+   "voice": "em_santa",
+   "speed": 0.82,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/martin_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.12
+      }
+     ],
+     "text": [
+      {
+       "str": "Te lo juro por mi nombre|don Martín",
+       "style": "quote",
+       "at": [
+        1.0,
+        5.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Si te gustan estas historias de la vieja Ciudad de México, suscríbete y activa la campanita. Cada día te traigo una leyenda nueva.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "La primera vez fue un joven que llevaba semanas cantándole serenatas. Una noche, a media canción, una figura salió de la oscuridad.",
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/balcony_night.png"
+      },
+      {
+       "src": "art/l_serenade.png",
+       "depth": 1.06
+      },
+      {
+       "src": "art/l_watcher.png",
+       "depth": 1.05,
+       "opacity": [
+        0,
+        1
+       ],
+       "fade_in": 1.5
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|Las noches de los duelos",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Una capa negra. Un sombrero de plumas. Y el brillo de una espada a la luz del farol.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 2.5,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/duel_street.png"
+      },
+      {
+       "src": "art/l_duel.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 1.2
+        }
+       ]
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Se oyó el choque del acero. Un grito. Y después… nada.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    },
+    {
+     "name": "boom",
+     "at": 0.05,
+     "gain": -5
+    },
+    {
+     "name": "whoosh",
+     "at": 1.8,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/swords.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 7,
+       "at": [
+        0.0,
+        0.4
+       ]
+      },
+      "embers"
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "weight": 0.8,
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.3,
+     "weight": 1.2,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "A la mañana siguiente, los vecinos encontraron en el empedrado una guitarra rota… y un sombrero manchado de rojo.",
+   "music": "sad",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fallen.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Al joven lo enterraron esa misma semana. Nadie supo decir quién lo había retado.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "freq": 150
+     }
+    },
+    {
+     "name": "bell",
+     "at": 4.5,
+     "gain": -10,
+     "args": {
+      "freq": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_ext.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Pocas semanas después, pasó otra vez. Un caballero que se había quitado el sombrero al ver pasar a Beatriz. Lo encontraron al amanecer, frente a la Plaza Mayor.",
+   "music": "dread",
+   "amb": [
+    "night"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/duel_street.png"
+      },
+      {
+       "src": "art/l_duel.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 1.2
+        }
+       ]
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fallen_lantern.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Y luego otro. Y otro más.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -4
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/swords.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0.0,
+        0.4
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.1,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Cuentan que fueron cinco, quizá más. Hombres que solo habían cometido un error: mirar a Beatriz demasiado tiempo.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "freq": 140
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_ext.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "La ciudad empezó a murmurar. Que había un duelista que salía de noche. Que siempre peleaba cerca de la casa de los Espinosa. Que todos los muertos… tenían algo que ver con Beatriz.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_whispers.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "La justicia buscaba al culpable. Pero nadie se atrevía a señalar a un marqués.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palacio_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Beatriz escuchaba las campanas de los entierros desde su ventana. Y cada vez que sonaban, sabía, en el fondo de su alma, quién había empuñado esa espada.",
+   "music": "sad",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.4,
+     "gain": -12,
+     "args": {
+      "freq": 140
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_sad.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Una tarde, lo enfrentó.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/confront.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Martín, por Dios, ya basta. Están muriendo por mí. Esos hombres tenían madre, tenían nombre.",
+   "voice": "ef_dora",
+   "speed": 0.82,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_fear.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Él la miró sin parpadear. Y le contestó con una calma que le heló la sangre.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/martin_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Mientras seas así de hermosa, Beatriz… siempre habrá alguien a quien tenga que matar.",
+   "pause": 1.2,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.2,
+     "gain": -4
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -8,
+     "args": {
+      "dur": 6,
+      "bpm": 70
+     }
+    }
+   ],
+   "voice": "em_santa",
+   "speed": 0.82,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/martin_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.75
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.14
+      }
+     ],
+     "text": [
+      {
+       "str": "Siempre habrá alguien|a quien tenga que matar",
+       "style": "big",
+       "at": [
+        1.2,
+        6.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Esa noche, Beatriz no durmió. Se sentó frente al espejo, con una vela encendida, y se miró como nunca antes se había mirado.",
+   "music": "dread",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mirror.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|El brasero",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Esa cara que todos admiraban… era la misma que estaba llenando de cruces el cementerio.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mirror_close.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Pensó en entrar a un convento. Pensó en huir. Pero sabía que Martín la buscaría donde fuera. Y que mientras existiera esa cara… siempre habría alguien más.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.6,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Mi cara… mi cara es la que los mata.",
+   "pause": 1.0,
+   "voice": "ef_dora",
+   "speed": 0.82,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/beatriz_sad.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.65
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Pasaron los días. Don Gonzalo salió de viaje. Y una noche, Beatriz mandó a dormir a todos los criados. Se quedó sola en la casona.",
+   "amb": [
+    "room",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casona.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/corridor.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "En su cuarto pidió que le dejaran un brasero de carbón, como los que se usaban en las noches frías. Lo encendió. Y se quedó mirando cómo las brasas se ponían rojas.",
+   "sfx": [
+    {
+     "name": "fire",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 14
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brasero_room.png"
+      },
+      {
+       "src": "art/l_coals_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 1.1
+        },
+        {
+         "type": "pulse",
+         "amp": 0.03,
+         "period": 3,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coals.png"
+      },
+      {
+       "src": "art/l_coals_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 1.1
+        },
+        {
+         "type": "pulse",
+         "amp": 0.03,
+         "period": 3,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Se arrodilló frente a una imagen de Santa Lucía, la santa de los ojos. Rezó en voz baja. Pidió perdón… y pidió valor.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.5,
+     "gain": -14,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/altar.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Lo que pasó después, nadie lo vio. Cuentan que decidió que su belleza tenía que desaparecer… para que nadie más muriera por ella.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/shadow_wall.png"
+      },
+      {
+       "src": "art/l_coals_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 1.1
+        },
+        {
+         "type": "pulse",
+         "amp": 0.03,
+         "period": 3,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.1
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Y que se acercó al fuego.",
+   "pause": 0.4,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.5,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coals.png"
+      },
+      {
+       "src": "art/l_coals_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.25,
+         "speed": 1.1
+        },
+        {
+         "type": "pulse",
+         "amp": 0.03,
+         "period": 3,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.8
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "blood",
+     "out": "fade",
+     "out_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "",
+   "pause": 2.0,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -2
+    },
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/black.png"
+      }
+     ],
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.1,
+     "dur": 2.4
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Esa noche, un grito despertó a toda la calle.",
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Los criados subieron corriendo. Encontraron el brasero volcado, el cuarto lleno de humo… y a Beatriz en el suelo, con las manos sobre la cara, rezando todavía.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.0,
+     "gain": -4
+    },
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_burst.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Llamaron a los médicos. Pasaron días de fiebre. Beatriz sobrevivió. Pero su rostro… ya no era el mismo.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sickbed.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Cuando pudo levantarse, pidió un velo blanco. Se lo puso sobre la cabeza, se sentó junto a la ventana… y pidió una sola cosa: que llamaran a Martín.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veiled_chair.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Y aquí regresamos al principio. Al hombre que corre por el empedrado, con la capa abierta.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -6,
+     "args": {
+      "dur": 6
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -10,
+     "args": {
+      "dur": 6,
+      "bpm": 110
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_run.png"
+      },
+      {
+       "src": "art/l_martin_run.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.0,
+         "dy": -0.02,
+         "ease": "linear"
+        },
+        {
+         "type": "scale",
+         "from": 0.8,
+         "to": 1.15,
+         "pivot": [
+          0.5,
+          0.95
+         ],
+         "ease": "in"
+        },
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 0.5
+        }
+       ]
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|Detrás del velo",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Martín había escuchado lo que se decía en toda la ciudad. Que la hermosa Beatriz… se había quemado la cara.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/martin_portrait.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Subió la escalera. Empujó la puerta. Y la encontró ahí, junto a la ventana, cubierta con el velo blanco.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 2.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.4,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "weight": 0.8,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/veiled_chair.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "weight": 1.2,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Ella habló primero. Con una voz tranquila, casi dulce.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veil_hand.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Ya no hay nada que mirar, Martín. Ya nadie tiene que morir por mí.",
+   "pause": 1.0,
+   "voice": "ef_dora",
+   "speed": 0.82,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veiled_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Ya nadie tiene que morir por mí|Beatriz",
+       "style": "quote",
+       "at": [
+        1.0,
+        5.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Y entonces se quitó el velo.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -1.0,
+     "gain": -10,
+     "args": {
+      "dur": 2.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 2.0,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veil_lift.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.1
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Lo que Martín vio fue un rostro marcado por el fuego. La piel que todos habían admirado… ya no estaba. Pero los ojos… los ojos eran los mismos.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veiled_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.8
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Y el marqués, el hombre que había llenado de sangre las calles de la ciudad… cayó de rodillas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/kneel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Lloró como un niño. Le tomó las manos. Y le dijo las palabras que todavía se repiten en el centro de la ciudad.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hands_hold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "Beatriz… yo no te amaba por tu cara. Te amo por tu alma.",
+   "pause": 1.0,
+   "music": "hope",
+   "voice": "em_santa",
+   "speed": 0.82,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/kneel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Te amo por tu alma|don Martín",
+       "style": "quote",
+       "at": [
+        1.0,
+        5.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Unos dicen que esas palabras fueron la prueba de un amor verdadero. Otros dicen que llegaron demasiado tarde.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hands_hold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Cuentan que se casaron poco después, en una boda sencilla, sin músicos y sin baile. Y que desde ese día, Beatriz nunca volvió a salir a la calle sin un velo negro sobre el rostro.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wedding.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/veil_black.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Los vecinos la veían pasar del brazo del marqués, despacio, por la misma calle donde habían caído tantos hombres. Y empezaron a llamarla de una sola forma.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_day.png"
+      },
+      {
+       "src": "art/l_couple_walk.png",
+       "depth": 1.08,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "La Quemada. Y la calle donde vivía… se convirtió en la Calle de la Quemada.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.6,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_sign.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "LA QUEMADA|así la llamó la ciudad",
+       "style": "big",
+       "at": [
+        0.8,
+        5.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Pero ahora piensa en esto. Martín nunca pagó por los hombres que mató. Nadie lo juzgó. Nadie lo castigó. La única que pagó… fue ella.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/martin_jealous.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.08
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/veil_black.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "Por eso hoy, muchos ya no la cuentan como una historia de amor. La cuentan como una advertencia: sobre los celos, sobre la violencia que se disfraza de pasión… y sobre todo lo que una mujer tuvo que cargar por culpa de otro.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_ghost_veil.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "Lo que sí es historia es esto. Don Luis de Velasco existió: gobernó la Nueva España de mil quinientos cincuenta a mil quinientos sesenta y cuatro, y murió en la Ciudad de México siendo virrey.",
+   "music": "calm",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chronicle.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "LO QUE DICE LA HISTORIA|",
+       "style": "chapter",
+       "at": [
+        0.6,
+        4.5
+       ]
+      },
+      {
+       "str": "1550 – 1564|el virrey Luis de Velasco",
+       "style": "date",
+       "at": [
+        5.0,
+        9.5
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "De Beatriz y del marqués, en cambio, no hay documentos que prueben que vivieron. Su historia pasó de boca en boca durante siglos, hasta que los cronistas de la ciudad la escribieron, a finales del siglo diecinueve y principios del veinte.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chronicle_page.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b078",
+   "text": "En mil novecientos diez, un escritor estadounidense la incluyó en un libro de leyendas de la Ciudad de México, y así la conocieron lectores de todo el mundo. Algunas versiones dicen que la boda fue en el templo de la Profesa… aunque ese templo se levantó mucho después.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chronicle.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b079",
+   "text": "La calle sí existe. Durante mucho tiempo se llamó así, la Calle de la Quemada. Hoy forma parte de la calle de Jesús María, en el Centro Histórico, a unas cuadras al oriente del Zócalo.",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Calle de Jesús María|Centro Histórico, Ciudad de México",
+       "style": "date",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "none"
+    }
+   ]
+  },
+  {
+   "id": "b080",
+   "text": "Y hay vecinos que dicen que, en noches sin luna, una mujer con velo negro camina despacio por esa calle. Que no hace ruido al pisar. Y que si alguien la sigue… ella se detiene.",
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -10,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_ghost_veil.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 0.7
+        }
+       ]
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b081",
+   "text": "Y empieza a levantar el velo.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -0.561,
+     "gain": -8,
+     "scene": 1,
+     "args": {
+      "dur": 2.0
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.439,
+     "gain": -2,
+     "scene": 1
+    },
+    {
+     "name": "boom",
+     "at": 1.439,
+     "gain": -3,
+     "scene": 1
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ghost_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.1
+      }
+     ],
+     "weight": 1.0,
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ghost_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.7
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.1,
+     "dur": 1.4,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b082",
+   "text": "No mires lo que hay debajo… mira sus ojos.",
+   "pause": 1.0,
+   "voice": "ef_dora",
+   "speed": 0.72,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veiled_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.6
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.85
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b083",
+   "text": "Y tú, ¿qué crees? ¿Fue una historia de amor… o una historia de miedo? ¿Martín merecía el perdón de Beatriz? Te leo en los comentarios.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b084",
+   "text": "En el próximo video nos vamos a Coyoacán, a un callejón angosto donde un viejo árbol de aguacate guarda un secreto… y donde, dicen, pasada la medianoche, alguien te pregunta la hora. Es la leyenda del Callejón del Aguacate.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/aguacate.png"
+      },
+      {
+       "src": "art/l_lamp_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 1.4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|El Callejón del Aguacate",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b085",
+   "text": "Hasta la próxima leyenda. Y si una noche alguien con velo te pide que te acerques… no le pidas que se lo quite.",
+   "pause": 1.0,
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_night.png"
+      },
+      {
+       "src": "art/l_ghost_veil.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.005,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 0.7
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon",
+     "out": "fade",
+     "out_len": 2.0
+    }
+   ]
+  }
+ ]
+}
