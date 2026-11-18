@@ -1,0 +1,155 @@
+{
+ "title": "El Callejón del Aguacate short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.22,
+ "key": "E",
+ "seed": 23,
+ "grade": "night",
+ "outro": 2.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "¿Juegas conmigo?",
+   "voice": "ef_dora",
+   "speed": 0.9,
+   "fx": "eco",
+   "pre": 0.15,
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 2
+     }
+    },
+    {
+     "name": "sting",
+     "at": 0.05,
+     "gain": -4
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Pasada la medianoche, en un callejón de Coyoacán, volteas. No hay nadie. Solo un trompo de madera… girando solo.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.3,
+     "gain": -10,
+     "args": {
+      "dur": 2.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Cuentan que ahí, junto a un aguacate enorme, vivía un soldado de la Revolución. Solo. Con el pecho lleno de medallas.",
+   "pause": 0.3,
+   "music": "mystery",
+   "amb": [
+    "night",
+    "crickets"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -8
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Y un niño de siete años no dejaba de seguirlo.",
+   "pause": 0.3
+  },
+  {
+   "id": "b005",
+   "text": "Señor… ¿juega conmigo? Nomás un ratito.",
+   "voice": "ef_dora",
+   "speed": 0.95,
+   "pause": 0.3,
+   "music": "tension"
+  },
+  {
+   "id": "b006",
+   "text": "Volvía todos los días. Y cada vez, al soldado le temblaban más las manos.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -9,
+     "args": {
+      "dur": 4,
+      "bpm": 75
+     }
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Vete a tu casa, niño. No me hables.",
+   "voice": "em_santa",
+   "speed": 0.8,
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.0,
+     "gain": -7
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Hasta que, una tarde gris, el soldado se detuvo bajo el aguacate… lo miró un largo rato… y levantó la mano.",
+   "pause": 0.4,
+   "music": "climax",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 1.5,
+     "gain": -9,
+     "args": {
+      "dur": 5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 6.6,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "La historia completa, El Callejón del Aguacate, ya está en el canal. Suscríbete.",
+   "pre": 0.3,
+   "pause": 0.3,
+   "music": "sad"
+  }
+ ]
+}
