@@ -1,0 +1,177 @@
+{
+ "title": "La Pascualita short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.22,
+ "key": "D",
+ "seed": 31,
+ "grade": "night",
+ "outro": 1.6,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Todavía estoy esperando.",
+   "voice": "ef_dora",
+   "speed": 0.95,
+   "fx": "eco",
+   "pre": 0.15,
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 2
+     }
+    },
+    {
+     "name": "sting",
+     "at": 0.05,
+     "gain": -4
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Pasada la medianoche, en Chihuahua, una novia te mira desde un aparador. Volteas un segundo… y ahora te está mirando a ti.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.3,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "sting",
+     "at": 6.74,
+     "gain": -5
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Cuentan que Pascuala Esparza vendía vestidos de novia en La Popular. Y su hija se iba a casar.",
+   "pause": 0.3,
+   "music": "mystery",
+   "amb": [
+    "night",
+    "crickets"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -8
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Pero entre las flores del ramo, algo se movía. Una araña negra… con una mancha roja.",
+   "pause": 0.3,
+   "music": "tension",
+   "amb": [
+    "room"
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -9,
+     "args": {
+      "dur": 5,
+      "bpm": 75
+     }
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "En la catedral, un piquete en la muñeca. Y antes de decir que sí… la novia se desplomó.",
+   "pause": 0.35,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.2,
+     "gain": -12,
+     "args": {
+      "freq": 160
+     }
+    },
+    {
+     "name": "sting",
+     "at": 4.88,
+     "gain": -3
+    },
+    {
+     "name": "whoosh",
+     "at": 4.8,
+     "gain": -7
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Pascuala cerró la tienda. Y una madrugada, un hombre con un maletín negro salió por la puerta de atrás.",
+   "pause": 0.3,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 4.0,
+     "gain": -8
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Meses después, en el aparador, había una novia… con la cara de su hija.",
+   "pause": 0.4,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 3.49,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Pero ¿qué hay debajo de ese vestido?",
+   "voice": "em_alex",
+   "pause": 0.35
+  },
+  {
+   "id": "b009",
+   "text": "La historia completa, La Pascualita, ya está en el canal. Suscríbete.",
+   "pre": 0.3,
+   "pause": 0.3,
+   "music": "sad"
+  }
+ ]
+}
