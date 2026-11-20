@@ -1,0 +1,186 @@
+{
+ "title": "El Cadejo short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.22,
+ "key": "D",
+ "seed": 41,
+ "grade": "night",
+ "outro": 1.3,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Tomás, vente conmigo.",
+   "voice": "em_santa",
+   "speed": 0.85,
+   "fx": "eco",
+   "pre": 0.15,
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "night",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.05,
+     "gain": -4
+    },
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Medianoche. Detrás de ti suenan unos pasos… que no son de persona. Son pezuñas.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 1.3,
+     "gain": -12,
+     "args": {
+      "dur": 2.5
+     }
+    },
+    {
+     "name": "hooves",
+     "at": 5.6,
+     "gain": -9,
+     "args": {
+      "dur": 2,
+      "distance": 0.3,
+      "bpm": 60
+     }
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Cuentan que Tomás, un joven marimbista de Comitán, volvía solo por el camino viejo. Su abuela le decía: no le hables, no corras… y fíjate de qué color es.",
+   "pause": 0.3,
+   "music": "mystery",
+   "amb": [
+    "crickets",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -8
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Aquella noche, junto a la cruz, los grillos se callaron. Un perro blanco se puso a caminar a su lado… sin dejar de mirar hacia atrás.",
+   "pause": 0.3,
+   "amb": [
+    "night",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 1.5,
+     "gain": -10
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "En el puente olía a azufre. Una cadena. Dos ojos rojos. Un perro negro… con pezuñas en lugar de patas.",
+   "pause": 0.3,
+   "music": "tension",
+   "amb": [
+    "river",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 2.2,
+     "gain": -8
+    },
+    {
+     "name": "whoosh",
+     "at": 3.4,
+     "gain": -7
+    },
+    {
+     "name": "sting",
+     "at": 3.46,
+     "gain": -3
+    },
+    {
+     "name": "heartbeat",
+     "at": 4.2,
+     "gain": -9,
+     "args": {
+      "dur": 4,
+      "bpm": 80
+     }
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Y Tomás, sin querer, dio un paso hacia él.",
+   "pause": 0.3,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Entonces el perro blanco se lanzó contra la bestia… y lo que encontraron en ese puente al amanecer, nadie lo ha podido explicar.",
+   "pause": 0.4,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": -0.1,
+     "gain": -7
+    },
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -3
+    },
+    {
+     "name": "boom",
+     "at": 0.05,
+     "gain": -6
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "La historia completa, El Cadejo, ya está en el canal. Suscríbete.",
+   "pause": 0.3,
+   "music": "sad",
+   "amb": [
+    "wind"
+   ]
+  }
+ ]
+}
