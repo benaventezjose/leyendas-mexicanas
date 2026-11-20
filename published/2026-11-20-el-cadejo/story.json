@@ -1,0 +1,5293 @@
+{
+ "title": "El Cadejo",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "D",
+ "seed": 93,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Camino real de Comitán, en los Altos de Chiapas. Medianoche.",
+   "pre": 0.6,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -9
+    }
+   ],
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 1.0,
+     "gain": -16
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_night.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Camino real de Comitán, Chiapas|medianoche",
+       "style": "date",
+       "at": [
+        0.6,
+        4.5
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Imagina que vas caminando solo, de regreso a tu pueblo. La luna se esconde detrás de las nubes. Solo se oyen tus pasos sobre la tierra.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 7
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_night2.png"
+      },
+      {
+       "src": "art/l_tomas_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 0.9
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_night2.png"
+      },
+      {
+       "src": "art/l_tomas_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 0.9
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.55,
+       1.42
+      ],
+      "to": [
+       0.47000000000000003,
+       0.53,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Y entonces escuchas otros pasos detrás de ti. Pero no suenan como pasos de persona. Suenan duros. Pequeños. Como pezuñas de cabra… sobre la piedra.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 2.5,
+     "gain": -10,
+     "args": {
+      "dur": 6,
+      "distance": 0.4,
+      "bpm": 60
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 8,
+      "bpm": 80
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hooves.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.06
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hooves.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.6,
+       1.5699999999999998
+      ],
+      "to": [
+       0.42,
+       0.58,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.06
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Te das la vuelta. Y a diez pasos, en medio del camino, hay un perro negro, grande como un becerro, con dos brasas rojas en lugar de ojos.",
+   "pause": 0.6,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 4.484,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 7.984,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 7.984,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_fog.png"
+      },
+      {
+       "src": "art/l_black.png",
+       "depth": 1.12,
+       "opacity": [
+        0,
+        1.0
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "scale",
+         "from": 1.0,
+         "to": 1.05,
+         "pivot": [
+          0.5,
+          0.85
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/black_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.5
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "",
+   "pause": 5.2,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "EL CADEJO|el perro que te sigue de noche",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Y a tu lado, pegado a tu pierna, sin que sepas desde cuándo… hay otro perro. Blanco. Que no te quita los ojos de encima.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/white_close.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Uno de los dos te quiere llevar. El otro te quiere llevar a casa. El problema es que, en la oscuridad… a veces no sabes cuál es cuál.",
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 1.5,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/moon_two.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/moon_two.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Lo que encontraron en el puente a la mañana siguiente nadie lo ha podido explicar. Y lo que el muchacho confesó antes de morir… lo vas a saber al final.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bridge.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Cuentan que esto le pasó a Tomás, un muchacho de diecinueve años que tocaba la marimba en un pueblo cerca de Comitán, allá por los años cuarenta.",
+   "music": "calm",
+   "amb": [
+    "crickets",
+    {
+     "name": "fire",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fiesta.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|El camino viejo",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tomas_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Tomás tocaba en todas las fiestas. Bodas, novenarios, fiestas de santos. Y siempre volvía tarde, caminando, por el camino viejo que cruza el monte entre los pinos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/marimba.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Su abuela, doña Chabela, lo esperaba despierta junto al fogón. Y cada noche, antes de que saliera, le decía lo mismo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/kitchen.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Mijo, si de regreso te sale un perro en el camino, no le hables, no le tires piedras y no corras. Y fíjate bien de qué color es.",
+   "voice": "ef_dora",
+   "speed": 0.76,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Fíjate bien de qué color es.|doña Chabela",
+       "style": "quote",
+       "at": [
+        3.5,
+        8.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/abuela.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "Tomás se reía. Le decía que ya estaba grande para cuentos de perros. Pero la abuela no se reía. Nunca se reía cuando hablaba del Cadejo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_smile.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/abuela.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Porque en el sur de México y en toda Centroamérica, desde Chiapas hasta Costa Rica, los viejos cuentan que de noche, por los caminos, andan dos perros que no son perros.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/map.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.4,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/map.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48000000000000004,
+       0.55,
+       1.42
+      ],
+      "to": [
+       0.32,
+       0.53,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Los arrieros lo conocían bien. Los que llevaban café y mercancía por las veredas de la sierra, de pueblo en pueblo, decían que más de una vez un perro blanco les había salido al camino. Que los acompañaba un buen trecho… y luego, sin más, desaparecía.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "dur": 8,
+      "distance": 0.8
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/arrieros.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/arrieros.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.55,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.53,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "dust"
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Uno es blanco. Dicen que lo mandó Dios para cuidar a los que andan solos de noche. A los arrieros, a los caminantes… y a los borrachos que no encuentran el camino a casa.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/white_full.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "EL BLANCO|cuida",
+       "style": "big",
+       "at": [
+        1.0,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/drunk.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "El otro es negro. Tiene los ojos rojos como carbones, a veces arrastra una cadena, y dicen que huele a azufre. A ese, cuentan, lo mandó el Diablo.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 5.746,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/black_full.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.06
+      }
+     ],
+     "text": [
+      {
+       "str": "EL NEGRO|lleva",
+       "style": "big",
+       "at": [
+        1.0,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/chain.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Y los dos, dicen, buscan a la misma persona.",
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/moon_two.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Aquella noche de octubre, la fiesta terminó pasada la medianoche. Tomás guardó las baquetas, se despidió de los músicos y tomó el camino viejo. Solo.",
+   "music": "calm",
+   "amb": [
+    "crickets",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fiesta.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|El perro blanco",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_night3.png"
+      },
+      {
+       "src": "art/l_tomas_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 0.9
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Le habían ofrecido quedarse. Le habían ofrecido una lámpara. Dijo que no. Que conocía el camino de memoria.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Al día siguiente tenía que ayudar a su tío en la milpa. Así que caminó. Silbando los sones que había tocado esa noche, con el morral de las baquetas apretado contra el pecho. A lo lejos, de vez en cuando, ladraba el perro de algún rancho.",
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 6.0,
+     "gain": -22
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/milpa.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/milpa.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.55,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.53,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Los primeros kilómetros fueron tranquilos. Grillos. El viento en los pinos. El olor de la tierra mojada por la lluvia de la tarde.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.3,
+     "gain": -14,
+     "args": {
+      "dur": 8
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/pines_bg.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.7,
+       0.5,
+       1.15
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Hasta que, al llegar a la cruz de madera que marca la mitad del camino, los grillos se callaron. Todos. Al mismo tiempo.",
+   "amb": [
+    "wind"
+   ],
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cross_road.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Tomás se detuvo. Y fue entonces cuando lo vio.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 5,
+      "bpm": 90
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_fear.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 80,
+       "amp": 0.06
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Sentado junto a la cruz, quieto como una estatua, había un perro blanco. Muy blanco. Tanto, que parecía brillar con una luz que no venía de ningún lado.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.5,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cross_road.png"
+      },
+      {
+       "src": "art/l_white.png",
+       "depth": 1.12,
+       "blend": "normal",
+       "opacity": [
+        0,
+        1.0
+       ],
+       "fade_in": 1.8,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 3
+        }
+       ]
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cross_road.png"
+      },
+      {
+       "src": "art/l_white.png",
+       "depth": 1.12,
+       "blend": "normal",
+       "opacity": [
+        0,
+        1.0
+       ],
+       "fade_in": 1.8,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 3
+        }
+       ]
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.6,
+       1.5699999999999998
+      ],
+      "to": [
+       0.42,
+       0.58,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "No ladró. No gruñó. Solo se levantó despacio… y se puso a caminar a su lado.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/white_close.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_walk_two.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Tomás pensó en espantarlo. Pero recordó la voz de su abuela. No le hables. No le tires piedras. No corras. Y siguió caminando.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -18,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_walk_two.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.55
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "El perro caminaba exactamente a su paso. Si Tomás se detenía, el perro se detenía. Si apuraba el paso, el perro también. Y nunca, ni una sola vez, dejaba de mirar hacia atrás.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -14,
+     "args": {
+      "dur": 10
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_walk_two.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/white_look.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Como si estuviera vigilando algo. Algo que venía detrás de ellos.",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_fog.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Si te gustan estas historias, suscríbete y activa la campanita. Cada semana traemos una leyenda nueva de algún rincón de México.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Cerca del puente del arroyo, el perro blanco se detuvo de golpe. Bajó la cabeza. Y por primera vez… gruñó.",
+   "music": "tension",
+   "amb": [
+    "river",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge2.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|Las pezuñas",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/white_growl.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 4,
+       "at": [
+        0.5,
+        1.2
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Tomás sintió el olor antes que nada. Un olor a cerillo quemado, a huevo podrido, que le picaba la garganta. Azufre.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge_far.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.02,
+         "dy": -0.05,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "AZUFRE|",
+       "style": "big",
+       "at": [
+        4.5,
+        7.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Y luego el ruido. Tac… tac… tac. Algo caminaba sobre las tablas del puente. Algo pesado, que pisaba con pezuñas.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.8,
+     "gain": -8,
+     "args": {
+      "dur": 7,
+      "distance": 0.3,
+      "bpm": 50
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hooves.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.5
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hooves.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.6,
+       1.62
+      ],
+      "to": [
+       0.52,
+       0.58,
+       1.7400000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Tomás miró al perro blanco. Pero el perro blanco no lo miraba a él. Tenía los ojos fijos en la neblina, y temblaba. No de miedo. De rabia.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/white_growl.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 3,
+       "at": [
+        2.0,
+        3.5
+       ]
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/white_growl.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.62
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.7400000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 3,
+       "at": [
+        2.0,
+        3.5
+       ]
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Y detrás del sonido, como un arrastre, el tintineo de una cadena.",
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 0.3,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chain.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Del otro lado del puente, entre la neblina, se encendieron dos puntos rojos. Luego se acercaron.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -10,
+     "args": {
+      "dur": 7,
+      "bpm": 95
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge_far.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 80,
+       "amp": 0.08
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Era un perro negro, más grande que cualquier perro que Tomás hubiera visto. El pelo le colgaba en greñas enredadas. Y donde debían estar las patas… había pezuñas.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.0,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/black_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    },
+    {
+     "layers": [
+      {
+       "src": "art/black_full.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.06
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/black_full.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.6,
+       1.52
+      ],
+      "to": [
+       0.42,
+       0.58,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.06
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Por eso, dicen, se llama Cadejo. En el español antiguo, un cadejo es un mechón de pelo enredado. Una greña. Así es su pelo. Y así, dicen, es su alma.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/black_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CADEJO|mechón de pelo enredado",
+       "style": "big",
+       "at": [
+        1.0,
+        5.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/black_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "El perro negro no se movió. Solo miró a Tomás. Y Tomás sintió algo muy extraño. Ganas de ir hacia él. De cruzar el puente. De seguirlo al monte, lejos del camino.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_trance.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "pulse",
+       "bpm": 50,
+       "amp": 0.06
+      }
+     ],
+     "grade": "blood",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tomas_trance.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.52
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "pulse",
+       "bpm": 50,
+       "amp": 0.06
+      }
+     ],
+     "grade": "blood",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Tomás… ven… ya es tarde… vente conmigo…",
+   "voice": "em_santa",
+   "speed": 0.7,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/black_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "Tomás… vente conmigo…|",
+       "style": "whisper",
+       "at": [
+        0.5,
+        5.0
+       ]
+      }
+     ],
+     "grade": "blood",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/black_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.62
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.7400000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "blood",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Dio un paso. Luego otro. Las piernas se le movían solas.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.2,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge_steps.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Cuentan que a quien sigue al Cadejo negro lo encuentran días después, perdido en el monte, sin saber quién es, con la mirada vacía. Dicen que ya nunca vuelve a ser el mismo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lost_man.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lost_man.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Y entonces, algo blanco pasó junto a él como un relámpago.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.0,
+     "gain": -4
+    },
+    {
+     "name": "boom",
+     "at": 0.1,
+     "gain": -6
+    }
+   ],
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/white_leap.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "El perro blanco se plantó en medio del puente, entre Tomás y la bestia. El pelo erizado. Los dientes al aire.",
+   "music": "climax",
+   "amb": [
+    "river",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/standoff.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|La pelea",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "El Cadejo negro abrió el hocico. Y lo que salió no fue un ladrido. Fue un sonido largo, ronco, como un hombre riéndose en el fondo de un pozo.",
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 0.8,
+     "gain": -6
+    },
+    {
+     "name": "sting",
+     "at": 9.208,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 9.208,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/black_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.1
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/red_flash.png"
+      }
+     ],
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.1,
+     "dur": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Los dos animales se lanzaron uno contra el otro.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.2,
+     "gain": -4
+    },
+    {
+     "name": "thunder",
+     "at": 0.4,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fight.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0.2,
+        2.5
+       ]
+      },
+      {
+       "type": "lightning",
+       "at": [
+        0.4
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Tomás no vio la pelea. Solo vio sombras. Una blanca y una negra, rodando sobre las tablas, en la neblina. Chispas, como cuando se golpea un pedernal. Gruñidos que hacían temblar el puente.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 1.0,
+     "gain": -8
+    },
+    {
+     "name": "boom",
+     "at": 4.0,
+     "gain": -8
+    },
+    {
+     "name": "thunder",
+     "at": 7.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fight2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        1.0,
+        3.0
+       ]
+      },
+      "embers"
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fight.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.4
+      ],
+      "to": [
+       0.4,
+       0.5,
+       1.6
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0.0,
+        2.0
+       ]
+      },
+      {
+       "type": "lightning",
+       "at": [
+        0.8
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Y escuchó, clarita, la voz de su abuela dentro de su cabeza. No corras. No corras.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "No corrió. Se quedó ahí, temblando, con las manos juntas, rezando lo único que se sabía completo. El Padre Nuestro.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -16,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_pray.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "No supo cuánto tiempo pasó. Un minuto. Una hora. Hasta que, de repente… silencio.",
+   "music": "silence",
+   "amb": [
+    "river"
+   ],
+   "pause": 1.2,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fight2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "out": "fade",
+     "out_len": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bridge.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "La neblina se abrió. El puente estaba vacío. No había perro negro. No había perro blanco. Solo el olor a azufre, cada vez más débil, y el agua del arroyo corriendo abajo.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge2.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bridge2.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.5,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.48,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Tomás cruzó el puente corriendo, ahora sí. Y no se detuvo hasta ver el fogón encendido de su casa.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.0,
+     "gain": -8,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "amb": [
+    "night"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_night2.png"
+      },
+      {
+       "src": "art/l_tomas_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 0.9
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.65,
+       0.55,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/house.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "La abuela Chabela estaba en la puerta. Como si lo hubiera estado esperando. Lo miró de arriba abajo y solo le preguntó una cosa.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela_door.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "¿De qué color era el que te trajo?",
+   "voice": "ef_dora",
+   "speed": 0.76,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "¿De qué color era el que te trajo?|doña Chabela",
+       "style": "quote",
+       "at": [
+        0.4,
+        4.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Blanco, abuela. Era blanco.",
+   "voice": "em_santa",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tomas_fear.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "La abuela cerró los ojos y se persignó. Luego puso un plato de tortillas afuera de la puerta, del lado del camino.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_plate.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Esto es para él. Para que sepa que se lo agradecemos.",
+   "voice": "ef_dora",
+   "speed": 0.76,
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/abuela.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Al amanecer, Tomás volvió al puente con su tío y dos vecinos.",
+   "music": "mystery",
+   "amb": [
+    "river",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.5,
+     "gain": -18,
+     "args": {
+      "freq": 300
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bridge_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|El mechón blanco",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Las tablas estaban rayadas, como arañadas por garras enormes. Y en el lodo de la orilla había huellas de perro… y, mezcladas con ellas, huellas de pezuñas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/prints.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.4
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "PEZUÑAS|",
+       "style": "big",
+       "at": [
+        6.0,
+        9.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/prints.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.55,
+       1.52
+      ],
+      "to": [
+       0.52,
+       0.53,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Pero lo que nadie supo explicar fue lo que había al final del puente. Un círculo de hierba quemada, negra, como si ahí hubiera caído un rayo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/burnt.png"
+      },
+      {
+       "src": "art/l_smoke.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.02,
+         "dy": -0.05,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "ash"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Y en medio, enredado entre la hierba… un mechón de pelo blanco.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.5,
+     "gain": -10
+    }
+   ],
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fur_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Cuando volvieron a la casa, el plato de tortillas de la puerta estaba vacío. Limpio. Como lamido.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plate_empty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "La abuela no dijo nada. Solo sonrió, por primera vez en mucho tiempo. Y guardó el mechón blanco en una cajita de madera, junto a la imagen de la Virgen.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/altar_box.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/altar_box.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.18,
+         "speed": 2.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Tomás vivió muchos años. Nunca dejó de tocar la marimba. Pero nunca más volvió a tomar el camino viejo de noche. Y todas las noches de su vida, hasta la última, dejó un plato de tortillas en la puerta.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/old_tomas.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/door_plate.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Antes de morir, le contó a su nieta lo único que nunca le había dicho a nadie.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/old_tomas.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Que desde aquella noche, cada vez que caminaba solo, escuchaba detrás de él unos pasos suaves. De perro. Siempre. Toda la vida.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 8
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_night3.png"
+      },
+      {
+       "src": "art/l_tomas_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 0.9
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_night3.png"
+      },
+      {
+       "src": "art/l_tomas_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 0.9
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.55,
+       1.4700000000000002
+      ],
+      "to": [
+       0.47000000000000003,
+       0.53,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Y que nunca, ni una sola vez, se atrevió a voltear… para ver de qué color era.",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 1.782,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 5.282,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 5.282,
+     "gain": -3
+    }
+   ],
+   "pause": 1.2,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_fog.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/black_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.55
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        0,
+        0.5
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.1,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Ahora, lo que sí es historia.",
+   "music": "calm",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/book.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "LO QUE DICE LA HISTORIA|",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "La leyenda del Cadejo se cuenta en Chiapas y en otros lugares del sureste mexicano, y también en Guatemala, El Salvador, Honduras, Nicaragua y Costa Rica. En cada lugar cambia un poco.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/map.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/map.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.55,
+       1.42
+      ],
+      "to": [
+       0.47000000000000003,
+       0.53,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "En unos pueblos solo existe el negro. En otros, el blanco cuida a las mujeres que vuelven tarde, o a los borrachos, para que nadie les robe ni les haga daño. Y en algunos se dice que, si el Cadejo te lame, ya no te deja nunca.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/drunk.png"
+      },
+      {
+       "src": "art/l_white_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.04,
+         "period": 4,
+         "pivot": [
+          0.5,
+          0.75
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/moon_two.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "La palabra sí es real. El diccionario la registra: cadejo es una porción de cabello enredado. Y en mil novecientos treinta, el escritor guatemalteco Miguel Ángel Asturias, que años después ganaría el Premio Nobel de Literatura, publicó en Madrid sus Leyendas de Guatemala.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/book.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Leyendas de Guatemala|Miguel Ángel Asturias, 1930",
+       "style": "date",
+       "at": [
+        5.0,
+        10.0
+       ]
+      }
+     ],
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/book.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.5,
+       1.4700000000000002
+      ],
+      "to": [
+       0.47000000000000003,
+       0.48,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "En una de ellas, el Cadejo nace de la trenza de una joven novicia, en un convento. De un mechón de pelo… nace la bestia.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/braid_scene.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Algunos investigadores ven en el Cadejo una mezcla de dos mundos: los perros negros de las leyendas que llegaron de España, y el perro de los pueblos mesoamericanos, que acompañaba a las almas en su camino al Mictlán, el lugar de los muertos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/xolo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      "embers"
+     ],
+     "grade": "warm",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/xolo.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      "embers"
+     ],
+     "grade": "warm",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Un perro que te acompaña en el camino. Para cuidarte… o para llevarte.",
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/moon_two.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "Y tú, ¿has oído pasos detrás de ti en un camino de noche? ¿En tu pueblo cuentan del Cadejo blanco o del negro? Te leo en los comentarios.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8,
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.3199999999999998
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.7,
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "En el próximo video entraremos a un convento de la Ciudad de México, el de La Concepción, donde una joven novicia fue encerrada contra su voluntad. Y lo que sus compañeras encontraron una mañana en el huerto todavía se cuenta en voz baja.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "freq": 200
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/convent.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|La Monja de La Concepción",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/convent.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "Hasta la próxima leyenda. Y si alguna noche, caminando solo, escuchas detrás de ti unos pasos suaves… no voltees.",
+   "pause": 1.0,
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_night2.png"
+      },
+      {
+       "src": "art/l_tomas_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 0.9
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_night2.png"
+      },
+      {
+       "src": "art/l_tomas_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.04,
+         "ease": "linear"
+        },
+        {
+         "type": "float",
+         "amp": 0.002,
+         "period": 0.9
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.55,
+       1.5699999999999998
+      ],
+      "to": [
+       0.42,
+       0.53,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "out": "fade",
+     "out_len": 2.0,
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  }
+ ]
+}

@@ -99,10 +99,16 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6637387740185578598",
       "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-2043465312801242011",
       "short_published": "2026-11-20 13:00"
+    },
+    {
+      "slug": "el-cadejo",
+      "title": "El Cadejo: el perro blanco y el perro negro que te siguen de noche | Leyenda de Chiapas",
+      "published": "2026-11-20 14:00",
+      "published_slot": "14:00",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-2265292854815666797"
     }
   ],
   "backlog": [
-    "El Cadejo",
     "La Monja del convento de La Concepción",
     "La Casa de los Azulejos y el hijo que no hacía casa",
     "El Hombre Caimán (Oaxaca)",
