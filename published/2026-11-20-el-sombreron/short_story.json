@@ -1,0 +1,207 @@
+{
+ "title": "El Sombrerón short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.22,
+ "key": "E",
+ "seed": 32,
+ "grade": "night",
+ "outro": 1.6,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Asómate, que te vengo a cantar.",
+   "voice": "em_santa",
+   "speed": 0.95,
+   "fx": "eco",
+   "pre": 0.15,
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "wind",
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 2
+     }
+    },
+    {
+     "name": "sting",
+     "at": 0.05,
+     "gain": -4
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Tres de la mañana, en Chiapas. Una guitarra suena debajo de tu ventana… y al amanecer, el cabello de tu hija está trenzado.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.2,
+     "gain": -12,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "sting",
+     "at": 5.1,
+     "gain": -5
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Cuentan que baja de la sierra con sus mulas. Un hombrecito de negro, con un sombrero que le tapa la cara.",
+   "pause": 0.3,
+   "music": "mystery",
+   "amb": [
+    "night",
+    "crickets"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -8
+    },
+    {
+     "name": "hooves",
+     "at": 0.3,
+     "gain": -10,
+     "args": {
+      "dur": 5,
+      "distance": 0.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Inés tenía el cabello hasta las rodillas. Una mañana, las mulas amanecieron amarradas a su casa.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 3.2,
+     "gain": -10,
+     "args": {
+      "times": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Empezaron las serenatas. Inés dejó de comer… en su plato solo había tierra.",
+   "pause": 0.3,
+   "music": "tension",
+   "amb": [
+    "room"
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.3,
+     "gain": -9,
+     "args": {
+      "dur": 5,
+      "bpm": 75
+     }
+    },
+    {
+     "name": "sting",
+     "at": 3.96,
+     "gain": -3
+    },
+    {
+     "name": "whoosh",
+     "at": 3.9,
+     "gain": -7
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Su madre encendió un cerillo. Sobre la almohada, un sombrero inmenso. Y debajo del ala… dos ojos como brasas.",
+   "pause": 0.35,
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 3.4,
+     "gain": -9,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 6.94,
+     "gain": -3
+    },
+    {
+     "name": "whoosh",
+     "at": 6.88,
+     "gain": -7
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Entonces tomó las tijeras. Y afuera, todos los caballos relincharon a la vez.",
+   "pause": 0.4,
+   "music": "climax",
+   "amb": [
+    "wind",
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 2.2,
+     "gain": -6
+    },
+    {
+     "name": "hooves",
+     "at": 2.3,
+     "gain": -8,
+     "args": {
+      "dur": 3,
+      "bpm": 120
+     }
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Pero el Sombrerón no se rinde tan fácil.",
+   "pause": 0.35,
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.0,
+     "gain": -10
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "La historia completa, El Sombrerón, ya está en el canal. Suscríbete.",
+   "pre": 0.3,
+   "pause": 0.3,
+   "music": "sad",
+   "sfx": []
+  }
+ ]
+}
