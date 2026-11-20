@@ -1,0 +1,5118 @@
+{
+ "title": "La Monja de La Concepción",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "E",
+ "seed": 117,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Ciudad de México. Huerto del convento de La Concepción. Las tres de la mañana.",
+   "pre": 0.6,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -9
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.5,
+     "gain": -14,
+     "args": {
+      "freq": 180
+     }
+    },
+    {
+     "name": "bell",
+     "at": 4.5,
+     "gain": -16,
+     "args": {
+      "freq": 180
+     }
+    },
+    {
+     "name": "bell",
+     "at": 7.5,
+     "gain": -18,
+     "args": {
+      "freq": 180
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_fog.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Convento de La Concepción|Ciudad de México, siglo dieciséis",
+       "style": "date",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Imagina que eres una novicia y no puedes dormir. Desde la ventana de tu celda ves el huerto, los surcos de hierbas, el pozo… y el viejo durazno.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cell_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/huerto.png"
+      },
+      {
+       "src": "art/l_moon_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.05,
+         "period": 5,
+         "pivot": [
+          0.48,
+          0.45
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Debajo del durazno hay alguien. Una monja. De pie, inmóvil, con el velo negro moviéndose aunque no corre ni una gota de viento.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 8,
+      "bpm": 80
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -18,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_fog.png"
+      },
+      {
+       "src": "art/l_ghost_nun.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.95
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.1,
+         "speed": 0.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.48,
+       0.62,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.06
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Y entonces levanta la cara hacia tu ventana. Y no tiene ojos. Solo dos huecos negros… que te están mirando.",
+   "pause": 0.6,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 4.534,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 8.034,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 8.034,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "¿Por qué no volviste?",
+   "voice": "ef_dora",
+   "speed": 0.7,
+   "fx": "eco",
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/nun_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.1
+      }
+     ],
+     "text": [
+      {
+       "str": "¿Por qué no volviste?|",
+       "style": "whisper",
+       "at": [
+        0.3,
+        3.5
+       ]
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "",
+   "pause": 5.2,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "LA MONJA|de La Concepción",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Las monjas de La Concepción la vieron durante años. Sabían quién era. Y sabían a quién seguía esperando.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/nuns_line.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Lo que encontraron debajo de su almohada, y quién tocó una noche la puerta del convento preguntando por ella… lo vas a saber al final.",
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 2.5,
+     "gain": -8,
+     "args": {
+      "times": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/convent_gate.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.62,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/convent_gate.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.62,
+       1.52
+      ],
+      "to": [
+       0.52,
+       0.6,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Cuentan que esta historia ocurrió hacia mil quinientos sesenta, en la Ciudad de México, apenas cuarenta años después de la caída de Tenochtitlan.",
+   "music": "calm",
+   "amb": [
+    "city",
+    {
+     "name": "wind",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaza_1560.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|La hermana de los Ávila",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "La ciudad nueva crecía sobre las ruinas de la vieja. Iglesias a medio construir, canales, casas de piedra de los conquistadores y de sus hijos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ciudad_noche.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ciudad_noche.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.5,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.48,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "En una de esas casas, de las más ricas, vivía una muchacha llamada María de Ávila.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casa_avila.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/maria_lady.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Era hermosa, dicen. Y era muy rica. Pero no mandaba en su vida. Porque sus padres habían muerto y quienes decidían por ella eran sus dos hermanos mayores. Alonso y Gil.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/maria_soft.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/brothers.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Alonso y Gil de Ávila|",
+       "style": "date",
+       "at": [
+        1.0,
+        5.0
+       ]
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "Los Ávila eran hijos de conquistadores. Orgullosos, poderosos, acostumbrados a que nadie les dijera que no. Para ellos, su hermana solo podía casarse con alguien de su misma sangre y de su misma fortuna.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alonso.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/gil.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Pero el corazón no pregunta apellidos.",
+   "pause": 0.8,
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/maria_lady.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "María se enamoró de un joven llamado Arrutia. Un mestizo, dicen unas versiones. Un muchacho sin fortuna, dicen otras. Simpático, de buena conversación, con una sonrisa que abría todas las puertas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/arrutia_smile.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/arrutia.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Se veían a escondidas. Él pasaba de noche bajo su balcón. Ella dejaba caer cartas atadas con un listón. Y se juraron lo que se juran los enamorados. Que nada ni nadie los iba a separar.",
+   "amb": [
+    "night"
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/courtship.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/letter.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.62,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Yo te espero, Arrutia. Aunque me cueste la vida, yo te espero.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/maria_soft.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Yo te espero.|María de Ávila",
+       "style": "quote",
+       "at": [
+        0.4,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Pero en una ciudad tan pequeña, los secretos duran poco. Una criada habló. Y una noche, los hermanos Ávila esperaron a Arrutia en la oscuridad.",
+   "music": "tension",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -9
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ciudad_noche.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|La carta",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ciudad_noche.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.55,
+       1.3199999999999998
+      ],
+      "to": [
+       0.42,
+       0.53,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.7,
+     "grade": "night",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "No lo golpearon. No lo amenazaron. Hicieron algo peor. Pusieron sobre la mesa una bolsa llena de monedas de oro.",
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 4.5,
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.62,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Toma esto y vete. Vete lejos, y no vuelvas a acercarte a nuestra hermana.",
+   "voice": "em_santa",
+   "speed": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/alonso_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.06
+      }
+     ],
+     "text": [
+      {
+       "str": "Vete lejos.|Alonso de Ávila",
+       "style": "quote",
+       "at": [
+        0.4,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Arrutia miró el oro mucho tiempo. Pensó en María. Pensó en su pobreza. Y tomó la bolsa.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/arrutia_shock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coins.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.65,
+       1.35
+      ],
+      "to": [
+       0.6,
+       0.66,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Esa misma semana salió rumbo al puerto de Veracruz. Algunos dicen que se embarcó hacia España. Otros, que se quedó en la costa, haciendo negocios con el dinero de los Ávila.",
+   "amb": [
+    "sea",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/veracruz.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/veracruz.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.55,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.53,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "A María solo le dejó una carta. Corta. Fría. Con letra apurada.",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letter_close.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Asuntos de mi oficio me obligan a partir lejos de esta ciudad. No me esperéis. Que Dios os guarde.",
+   "voice": "em_santa",
+   "speed": 0.86,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letter_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.4,
+       1.4
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.5
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "No me esperéis.|",
+       "style": "whisper",
+       "at": [
+        3.5,
+        7.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "María leyó la carta una vez. Y otra. Y otra más. No lloró delante de nadie. Pero esa noche, la criada la escuchó hablar sola en su cuarto, hasta el amanecer.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 5.0,
+     "gain": -18,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/maria_sad.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/maria_sad.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Va a volver. Sé que va a volver.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/maria_fear.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Durante semanas, María se asomó al balcón cada noche, a la misma hora, esperando oír sus pasos en la calle empedrada. Los pasos nunca llegaron.",
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0.5,
+     "gain": -18,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/courtship.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/courtship.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.52
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Los hermanos decidieron que eso tenía que terminar. Y para una muchacha de buena familia, en aquel tiempo, solo había dos caminos. El matrimonio… o el convento.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 6.0,
+     "gain": -12,
+     "args": {
+      "freq": 160
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brothers.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/convent_ext.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Si te gustan estas historias, suscríbete y activa la campanita. Cada semana traemos una leyenda nueva de algún rincón de México.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "El convento de La Concepción era el más antiguo de la ciudad. Muros altos, rejas en las ventanas, un torno de madera para recibir lo que llegaba de afuera. Quien entraba ahí, entraba para siempre.",
+   "music": "mystery",
+   "amb": [
+    "room",
+    {
+     "name": "drips",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/convent_ext.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|El durazno",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cloister.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "A María le cortaron el cabello. Le quitaron sus vestidos de seda y le pusieron el hábito blanco, el manto azul y el velo. Y la puerta se cerró detrás de ella.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 9.5,
+     "gain": -4
+    },
+    {
+     "name": "boom",
+     "at": 9.6,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chapel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Las otras monjas la recordaban como una novicia callada, obediente, que cumplía con todo. Rezaba en el coro. Bordaba. Ayudaba en la cocina.",
+   "amb": [
+    "room"
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -18,
+     "args": {
+      "freq": 300
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/nuns_line.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_pray.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Pero había algo que todas notaban. Cada tarde, cuando terminaban las labores, María salía sola al huerto y se sentaba debajo del durazno. Mirando hacia la puerta.",
+   "music": "sad",
+   "amb": [
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/durazno_bloom.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "El durazno era el árbol más viejo del huerto. Las monjas decían que lo habían plantado las primeras hermanas del convento, y que daba los frutos más dulces de toda la ciudad.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/durazno_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/durazno_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.45,
+       1.37
+      ],
+      "to": [
+       0.47000000000000003,
+       0.43,
+       1.4900000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Cada vez que sonaba la campana del torno, María levantaba la cabeza. Cada vez que llegaba una carta, preguntaba si era para ella. Nunca lo era.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.6,
+     "gain": -10,
+     "args": {
+      "freq": 420
+     }
+    },
+    {
+     "name": "bell",
+     "at": 1.6,
+     "gain": -12,
+     "args": {
+      "freq": 420
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/bells.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_sad.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Pasaron los meses. Dejó de comer. Dejó de dormir. Por las noches, las monjas de las celdas vecinas la escuchaban rezar en voz baja. Y a veces, entre los rezos, un nombre.",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -14
+    }
+   ],
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cell_nun.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cell_nun.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.6,
+       1.4700000000000002
+      ],
+      "to": [
+       0.37,
+       0.58,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Arrutia… Arrutia…",
+   "voice": "ef_dora",
+   "speed": 0.7,
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cell_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Arrutia…|",
+       "style": "whisper",
+       "at": [
+        0.3,
+        3.5
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "La madre abadesa le habló con dulzura. Le dijo que pusiera su pena en manos de Dios. Que el mundo de afuera ya no existía para ella. María bajó la cabeza y no respondió.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corridor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_pray.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Esa noche hubo luna llena. Y a la mañana siguiente, la monja que abría el huerto para sacar agua del pozo encontró a María.",
+   "music": "silence",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 5.5,
+     "gain": -14,
+     "args": {
+      "freq": 200
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto.png"
+      },
+      {
+       "src": "art/l_moon_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.05,
+         "period": 5,
+         "pivot": [
+          0.48,
+          0.45
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/huerto_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.48,
+       0.6,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Al pie del durazno. Sin vida. Con el velo caído sobre la hierba y los duraznos regados a su alrededor.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.3,
+     "gain": -10
+    }
+   ],
+   "pause": 1.0,
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fallen_peaches.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Dicen que María, en su desesperación, se quitó la vida. Que pidió perdón a Dios y que en sus últimas palabras volvió a llamar al hombre que la había abandonado.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/durazno_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "ash",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/durazno_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "ash",
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Nunca supo que Arrutia no se fue por trabajo. Que sus propios hermanos lo habían comprado.",
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/coins.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "La enterraron en el convento, en silencio, como se hacía entonces con estas desgracias. Y las monjas creyeron que ahí terminaba todo.",
+   "music": "dread",
+   "amb": [
+    "room",
+    {
+     "name": "drips",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chapel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|La que espera",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Unas semanas después, una novicia que no podía dormir se asomó a la ventana de su celda. Era pasada la medianoche. El huerto estaba blanco de luna.",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -9
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cell.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.4,
+       1.1
+      ],
+      "to": [
+       0.65,
+       0.4,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/huerto.png"
+      },
+      {
+       "src": "art/l_moon_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "pulse",
+         "amp": 0.05,
+         "period": 5,
+         "pivot": [
+          0.48,
+          0.45
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Y debajo del durazno había una monja de pie. Inmóvil. Mirando hacia la puerta del convento.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 6,
+      "bpm": 85
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_fog.png"
+      },
+      {
+       "src": "art/l_ghost_nun_far.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.48,
+       0.6,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 70,
+       "amp": 0.06
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "La novicia reconoció la forma de sus hombros. La manera de inclinar la cabeza. Era María.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.55,
+       1.35
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Corrió a despertar a la abadesa. Cuando volvieron juntas a la ventana, el huerto estaba vacío. Pero en el aire flotaba un olor dulce. A duraznos maduros. Y eso que no era temporada.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.3,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corridor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/huerto_fog.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Desde entonces, la vieron muchas veces. Siempre de noche. Siempre debajo del durazno. A veces caminando entre los arcos del claustro, sin hacer ruido. Y a veces, las que pasaban cerca la escuchaban.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 6.0,
+     "gain": -16,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cloister.png"
+      },
+      {
+       "src": "art/l_ghost_nun_far.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.7
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.08,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/durazno_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      "ash"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "¿Por qué no volviste? Yo te esperé… ¿Por qué no volviste?",
+   "voice": "ef_dora",
+   "speed": 0.7,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/nun_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.1
+      }
+     ],
+     "text": [
+      {
+       "str": "¿Por qué no volviste?|",
+       "style": "whisper",
+       "at": [
+        0.3,
+        4.0
+       ]
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.62
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.7400000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.1
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Las monjas rezaron misas por su alma. Rociaron agua bendita en el huerto. Pero ella siguió ahí. Esperando.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chapel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/huerto.png"
+      },
+      {
+       "src": "art/l_ghost_nun_far.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Y mientras tanto, afuera de los muros, la desgracia alcanzó a los hermanos Ávila.",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 4.534,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 8.034,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 8.034,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "En mil quinientos sesenta y seis, Alonso y Gil fueron acusados de conspirar contra el rey, junto con Martín Cortés, el hijo del conquistador. Los encerraron, los juzgaron en pocos días y los condenaron a muerte.",
+   "music": "climax",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ciudad_noche.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Ciudad de México, 1566|la conjura de Martín Cortés",
+       "style": "date",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/alonso_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.06
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Una mañana de agosto, frente a una multitud, en la Plaza Mayor, los dos hermanos fueron ejecutados. Sus casas fueron derribadas. Y cuentan que en el terreno sembraron sal, para que ahí no volviera a crecer nada.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "freq": 140
+     }
+    },
+    {
+     "name": "boom",
+     "at": 4.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/scaffold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      "ash"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/solar_sal.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "En el convento, dicen, esa noche María no apareció debajo del durazno. Fue la única noche en años.",
+   "music": "silence",
+   "amb": [
+    "wind"
+   ],
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_fog.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Pasaron muchos años. Y una noche de lluvia, alguien tocó la puerta del convento de La Concepción.",
+   "music": "mystery",
+   "amb": [
+    "rain",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 5.0,
+     "gain": -6,
+     "args": {
+      "times": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/convent_gate.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.62,
+       0.62,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      },
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|El que volvió",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Era un hombre ya maduro, bien vestido, con el pelo gris en las sienes. Pidió hablar con la hermana María de Ávila.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/arrutia.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.25
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "La portera contó después que nunca había visto a un hombre tan pálido, ni unas manos que temblaran tanto.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/convent_gate.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.62,
+       1.3
+      ],
+      "to": [
+       0.62,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Era Arrutia. Había hecho fortuna. Y al saber que los Ávila estaban muertos, volvió a buscarla. Para cumplir, por fin, lo que le había prometido.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/arrutia_smile.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/arrutia_smile.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "La monja portera tardó en responder. Luego, del otro lado de la reja, le contó la verdad. La carta. La espera. El durazno.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/reja.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/reja.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.45,
+       1.42
+      ],
+      "to": [
+       0.47000000000000003,
+       0.43,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Y le entregó lo que habían encontrado debajo de la almohada de María. Su carta. La misma carta fría con la que él se había despedido.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.5,
+     "gain": -16
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letter_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Pero al reverso, con la letra temblorosa de María, había tres palabras.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -14,
+     "args": {
+      "dur": 5,
+      "bpm": 70
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letter.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.62,
+       1.3
+      ],
+      "to": [
+       0.4,
+       0.62,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Yo te esperé.",
+   "voice": "ef_dora",
+   "speed": 0.72,
+   "fx": "eco",
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/letter_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "YO TE ESPERÉ|",
+       "style": "big",
+       "at": [
+        0.2,
+        3.8
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Arrutia no dijo nada. Pidió, por caridad, que lo dejaran ver el huerto aunque fuera desde la reja. Se lo permitieron.",
+   "amb": [
+    "rain"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/arrutia_shock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/huerto_fog.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.48,
+       0.58,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "rain",
+       "strength": 0.25
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Las monjas que estaban en el coro contaron después que, esa noche, escucharon en el huerto la voz de un hombre llorando. Y luego, muy clara, la voz de una mujer.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 4.0,
+     "gain": -14,
+     "args": {
+      "dur": 6
+     }
+    }
+   ],
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chapel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/chapel.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Llegaste tarde.",
+   "voice": "ef_dora",
+   "speed": 0.7,
+   "fx": "eco",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 4.534,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 8.034,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 8.034,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_ghost.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.48,
+       0.55,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "A la mañana siguiente, la reja estaba abierta. Arrutia no estaba. Nadie lo vio salir. Nunca más se supo de él. Solo encontraron, al pie del durazno, su sombrero empapado… y un durazno maduro, en pleno invierno.",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 13.0,
+     "gain": -10
+    }
+   ],
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.48,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fallen_peaches.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Ahora, lo que sí es historia.",
+   "music": "calm",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/book.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "LO QUE DICE LA HISTORIA|",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "El convento de La Concepción existió de verdad. Fue el primer convento de monjas de la Nueva España, un convento de clausura, donde las religiosas hablaban con el mundo solo a través de rejas y del torno. Se fundó a mediados del siglo dieciséis en un terreno que donó el conquistador Andrés de Tapia, con el apoyo del obispo fray Juan de Zumárraga.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/convent_ext.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/reja.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bells.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "Una inundación en mil seiscientos veintinueve lo dejó casi en ruinas, y fue reconstruido. Las obras terminaron en mil seiscientos cincuenta y cinco. Con las Leyes de Reforma, en mil ochocientos sesenta y uno, las monjas tuvieron que salir y el terreno se dividió.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cloister.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cloister.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.55,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.53,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Hoy queda la iglesia, en la calle de Belisario Domínguez, frente a la Plaza de la Concepción, en el Centro Histórico. Del huerto y del durazno no queda nada.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/concepcion_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/concepcion_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.45,
+       1.37
+      ],
+      "to": [
+       0.37,
+       0.43,
+       1.4900000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Los hermanos Ávila también fueron reales. Alonso de Ávila y su hermano Gil González fueron acusados de conspirar para hacer rey de la Nueva España a Martín Cortés, y fueron decapitados en la Plaza Mayor en agosto de mil quinientos sesenta y seis. Martín Cortés fue enviado preso a España.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/scaffold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Alonso y Gil González de Ávila|ejecutados en 1566",
+       "style": "date",
+       "at": [
+        2.0,
+        8.0
+       ]
+      }
+     ],
+     "grade": "sepia",
+     "weight": 0.3333333333333333
+    },
+    {
+     "layers": [
+      {
+       "src": "art/scaffold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.3333333333333333,
+     "transition": "xfade",
+     "transition_len": 0.7
+    },
+    {
+     "layers": [
+      {
+       "src": "art/scaffold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.5,
+       1.54
+      ],
+      "to": [
+       0.58,
+       0.48,
+       1.6600000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.3333333333333333,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Lo de María, en cambio, es leyenda. Los documentos no dicen con claridad que aquella hermana existiera, ni hay registro de Arrutia. La historia pasó de boca en boca y luego a los libros de leyendas de la ciudad, con variantes. En algunas, ella aparece en el huerto. En otras, ronda la esquina de la iglesia… y asusta a las parejas de enamorados.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/book.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/book.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.5,
+       1.4700000000000002
+      ],
+      "to": [
+       0.47000000000000003,
+       0.48,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_sad.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nun_sad.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.7,
+     "grade": "moon",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Una mujer que esperó toda la vida. Y que, según dicen, todavía espera.",
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/durazno_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Y tú, ¿esperarías a alguien toda la vida? ¿Has pasado de noche frente a la iglesia de La Concepción? Te leo en los comentarios.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "En el próximo video entraremos a la Casa de los Azulejos, en el corazón de la Ciudad de México, y conoceremos al hijo al que su padre le dijo que nunca haría casa. Y cómo le respondió.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/casa_avila.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|La Casa de los Azulejos",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/casa_avila.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "Hasta la próxima leyenda. Y si alguna noche pasas por esa calle tomado de la mano de alguien… no le prometas nada que no vayas a cumplir. Ella todavía está escuchando.",
+   "pause": 1.0,
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huerto_fog.png"
+      },
+      {
+       "src": "art/l_ghost_nun_far.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.48,
+       0.58,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/huerto_fog.png"
+      },
+      {
+       "src": "art/l_ghost_nun_far.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5599999999999999,
+       0.58,
+       1.5699999999999998
+      ],
+      "to": [
+       0.39999999999999997,
+       0.5599999999999999,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "out": "fade",
+     "out_len": 2.0,
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  }
+ ]
+}
