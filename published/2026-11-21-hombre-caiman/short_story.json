@@ -1,0 +1,21 @@
+{
+ "title": "El Hombre Caimán short", "voice": "em_alex", "speed": 0.88, "sentence_gap": 0.22,
+ "key": "D", "seed": 214, "grade": "night", "outro": 1.3, "music_gain": -15, "amb_gain": -21, "sfx_gain": -9,
+ "beats": [
+  {"id": "b001", "text": "Te estaba esperando.", "voice": "ef_dora", "speed": 0.8, "fx": "eco", "pre": 0.15, "pause": 0.35,
+   "music": "dread", "amb": ["night", "crickets"],
+   "sfx": [{"name": "sting", "at": 0.05, "gain": -4}, {"name": "whisper", "at": 0.0, "gain": -12, "args": {"dur": 2}}]},
+  {"id": "b002", "text": "Luna llena. Estás en la orilla de una laguna de Oaxaca… y en medio del agua se abren dos ojos dorados.", "pause": 0.3,
+   "sfx": [{"name": "splash", "at": 2.5, "gain": -10}, {"name": "whoosh", "at": 5.7, "gain": -7}, {"name": "sting", "at": 5.9, "gain": -3}]},
+  {"id": "b003", "text": "Cuentan que una sequía terrible tenía muriéndose de hambre a los chontales. Las lagunas se volvieron lodo.", "pause": 0.3,
+   "music": "mystery", "amb": ["wind"], "sfx": [{"name": "boom", "at": 0.0, "gain": -8}]},
+  {"id": "b004", "text": "Su joven rey cruzó los manglares, solo, para pedirle la paz al rey de los huaves. Y el viejo le puso una condición: casarse con su hija.", "pause": 0.3,
+   "music": "tension", "amb": ["night", "crickets"], "sfx": [{"name": "splash", "at": 1.0, "gain": -12}, {"name": "heartbeat", "at": 6.0, "gain": -11, "args": {"dur": 3, "bpm": 70}}]},
+  {"id": "b005", "text": "Pero nadie le dijo que la princesa había nacido de la laguna. La noche de la boda, el viejo la llamó por su nombre… y del agua salió una cabeza cubierta de escamas.", "pause": 0.3,
+   "music": "dread", "amb": ["night", "wind"], "sfx": [{"name": "riser", "at": 4.0, "gain": -9}, {"name": "splash", "at": 7.5, "gain": -6}, {"name": "boom", "at": 7.8, "gain": -5}]},
+  {"id": "b006", "text": "Una lagarta. Con la boca llena de dientes. Y detrás del rey, todo su pueblo… esperando.", "pause": 0.3,
+   "sfx": [{"name": "sting", "at": 0.0, "gain": -3}, {"name": "heartbeat", "at": 2.0, "gain": -10, "args": {"dur": 4, "bpm": 80}}]},
+  {"id": "b007", "text": "¿Qué hizo el rey?", "pause": 0.5, "sfx": [{"name": "whisper", "at": 0.0, "gain": -12, "args": {"dur": 2}}]},
+  {"id": "b008", "text": "La historia completa, El Hombre Caimán, ya está en el canal. Suscríbete.", "pause": 0.3, "music": "sad", "amb": ["wind"]}
+ ]
+}
