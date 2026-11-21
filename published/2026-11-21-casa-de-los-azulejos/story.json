@@ -1,0 +1,5660 @@
+{
+ "title": "La Casa de los Azulejos",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "D",
+ "seed": 131,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Ciudad de México. Diciembre de mil ochocientos veintiocho. Afuera, la ciudad arde.",
+   "pre": 0.6,
+   "music": "dread",
+   "amb": [
+    "fire",
+    {
+     "name": "city",
+     "gain": -8
+    },
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "freq": 170
+     }
+    },
+    {
+     "name": "bell",
+     "at": 3.5,
+     "gain": -16,
+     "args": {
+      "freq": 170
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/riot_night.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "text": [
+      {
+       "str": "Ciudad de México|diciembre de 1828",
+       "style": "date",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Imagina una casa enorme, cubierta de azulejos azules y blancos que brillan con la luz de los incendios. Adentro, todos duermen. Todos… menos uno.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_red.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.02
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tile_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Un hombre entra por una ventana del entresuelo. Lleva capa de militar. Y en la mano, algo que brilla.",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -16
+    }
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.5,
+     "gain": -10
+    },
+    {
+     "name": "whoosh",
+     "at": 4.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/window_break.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/dagger.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Sube despacio por la gran escalera. Un escalón. Otro. Y entonces, arriba, en el descanso… se enciende una vela.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.3,
+     "gain": -10,
+     "args": {
+      "dur": 6
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "dur": 6,
+      "bpm": 80
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/l_intruder.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.025,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/l_diego_candle.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.05,
+         "speed": 1.5
+        }
+       ]
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.3,
+       1.4
+      ],
+      "to": [
+       0.72,
+       0.28,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "weight": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "¿Quién anda ahí?",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.4,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/diego_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "¿Quién anda ahí?|",
+       "style": "whisper",
+       "at": [
+        0.3,
+        3.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -1.9,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.6,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.6,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/diego_shock.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "dur": 1.6,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/red_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Nadie volvió a ver con vida al dueño de esa voz.",
+   "music": "silence",
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candle_floor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Casi dos siglos después, esa escalera sigue ahí. La subes tú, la sube cualquiera. Y hay quien jura que, cuando el edificio se queda vacío, alguien sigue bajando por ella… con una vela en la mano.",
+   "music": "dread",
+   "amb": [
+    "room"
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 6.0,
+     "gain": -14,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.45,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs_dark.png"
+      },
+      {
+       "src": "art/l_float_candle.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 4
+        },
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": 0.04,
+         "ease": "inout"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.4,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "",
+   "pause": 5.2,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "LA CASA|de los Azulejos",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Pero para entender quién baja esa escalera, primero hay que saber cómo una casa terminó vestida de azulejos. Y esa historia empieza con un padre furioso… y una frase que se volvió refrán.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_night.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/father_angry.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Qué es lo que busca esa vela cada noche… lo vas a saber al final.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -14,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_dark.png"
+      },
+      {
+       "src": "art/l_float_candle.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 4
+        },
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": 0.04,
+         "ease": "inout"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.35,
+       1.3
+      ],
+      "to": [
+       0.7,
+       0.35,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Cuentan que en el siglo dieciocho, en la calle de San Francisco, la que hoy es la calle de Madero, vivían los condes del Valle de Orizaba. Una de las familias más ricas de la Nueva España.",
+   "music": "calm",
+   "amb": [
+    "city",
+    {
+     "name": "wind",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_colonial.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|El hijo que no hacía casa",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      },
+      {
+       "str": "Calle de San Francisco|Ciudad de México, siglo XVIII",
+       "style": "date",
+       "at": [
+        6.0,
+        11.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/street_colonial.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.5,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.48,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.7,
+     "grade": "warm",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "Tenían haciendas, títulos y carruajes con el escudo pintado en la puerta. Cuando un conde del Valle de Orizaba pasaba por la calle, la gente se quitaba el sombrero.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/carriage.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/carriage.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.55,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.53,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Su casa era un palacio de piedra y tezontle, con patios, caballerizas y una capilla. Pero por fuera era como tantas otras. Gris. Seria. Sin un solo azulejo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_plain.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/patio_old.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "El conde tenía un hijo. Y el hijo tenía un problema. No le gustaba trabajar.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/son_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Le gustaban las noches. Las mesas de juego, los dados, las cartas, las peleas de gallos. Las fiestas que terminaban cuando ya amanecía.",
+   "amb": [
+    "room",
+    {
+     "name": "fire",
+     "gain": -12
+    }
+   ],
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 1.0,
+     "gain": -10
+    },
+    {
+     "name": "coins",
+     "at": 5.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/gambling.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/son_smile.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Imagina el ruido de las monedas sobre la mesa. El humo de los puros. Y la risa del muchacho, que perdía en una noche lo que a su padre le había costado un año.",
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 0.5,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dice_close.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/gambling.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.3
+      ],
+      "to": [
+       0.4,
+       0.55,
+       1.4
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "El conde lo veía llegar al amanecer, con la ropa arrugada y los bolsillos vacíos. Y cada vez, la paciencia se le acababa un poco más.",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -16
+    }
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 1.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/street_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/father_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Hasta que una mañana, delante de los criados, el viejo le dijo la frase que nadie en esa casa iba a olvidar.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/confront.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Hijo… tú nunca harás casa de azulejos.",
+   "voice": "em_santa",
+   "speed": 0.8,
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.2,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_angry.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Tú nunca harás casa de azulejos.|el conde",
+       "style": "quote",
+       "at": [
+        0.4,
+        5.0
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "En aquel tiempo, eso era una sentencia. Hacer casa de azulejos quería decir llegar lejos. Tener fortuna. Ser alguien. Cubrir tu casa con talavera era cosa de ricos de verdad.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tile_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.4,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.4
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "HACER CASA DE AZULEJOS|llegar lejos, tener fortuna",
+       "style": "big",
+       "at": [
+        2.5,
+        7.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "none",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tile_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.6,
+       1.52
+      ],
+      "to": [
+       0.52,
+       0.58,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "none",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Decirle a un hijo que nunca haría casa de azulejos era decirle, delante de todos: tú no vales nada.",
+   "pause": 0.9,
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/son_shame.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "El muchacho no contestó. Esa noche no salió a jugar. Se quedó despierto en su cuarto, mirando la pared, a la luz de una vela.",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -16
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/son_room.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|La promesa de talavera",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Y cuentan que, antes del amanecer, hizo una promesa en voz baja.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/son_night.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Un día, padre, esta casa va a brillar más que ninguna.",
+   "voice": "em_santa",
+   "speed": 0.9,
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/son_night.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Esta casa va a brillar más que ninguna.|el hijo",
+       "style": "quote",
+       "at": [
+        0.4,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Y se fue.",
+   "pause": 0.8,
+   "music": "hope",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -14,
+     "args": {
+      "dur": 5,
+      "distance": 0.6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "No se llevó criados ni carruaje. Solo un caballo, una capa y el orgullo herido. Su padre no salió a despedirlo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Lo que pasó en los años siguientes, cada quien lo cuenta a su manera. Unos dicen que trabajó en las minas de plata. Otros, que se hizo comerciante, que viajó por los caminos con recuas de mulas, que compró y vendió de todo.",
+   "sfx": [
+    {
+     "name": "chains",
+     "at": 1.0,
+     "gain": -18
+    },
+    {
+     "name": "coins",
+     "at": 14.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mine.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_mules.png"
+      },
+      {
+       "src": "art/l_mules.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/coins.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Pero todas las versiones coinciden en algo. Volvió rico.",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/son_rich.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Años después, un jinete se detuvo frente a la casa gris de la calle de San Francisco. Más delgado, más serio, con las manos endurecidas por el trabajo. Los criados tardaron en reconocerlo.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_return.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rider_return.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.5,
+       1.37
+      ],
+      "to": [
+       0.47000000000000003,
+       0.48,
+       1.4900000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Y lo primero que hizo fue ir a Puebla, a los talleres donde se hacía la talavera. Hornos encendidos día y noche. Manos llenas de barro. Pinceles de azul cobalto.",
+   "amb": [
+    "fire",
+    {
+     "name": "room",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/taller.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Puebla de los Ángeles|",
+       "style": "date",
+       "at": [
+        1.0,
+        5.0
+       ]
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/painting_tile.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Encargó miles de azulejos. Azules, blancos, amarillos. Y los mandó traer en carretas hasta la Ciudad de México.",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 3.0,
+     "gain": -14,
+     "args": {
+      "dur": 5,
+      "distance": 0.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tile_stacks.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_mules.png"
+      },
+      {
+       "src": "art/l_mules.png",
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.05,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Uno por uno, los albañiles fueron cubriendo la fachada. Semanas. Meses. Hasta que una mañana, cuando el sol salió por encima de los volcanes… la casa entera se encendió de azul.",
+   "amb": [
+    "city"
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 13.0,
+     "gain": -10,
+     "args": {
+      "freq": 200
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tiling_work.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/volcanoes_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/facade_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.02
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "AZUL|",
+       "style": "big",
+       "at": [
+        1.0,
+        4.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 1.0,
+     "grade": "none"
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "Dicen que el viejo conde salió a la calle, levantó la vista… y se quedó callado mucho tiempo.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/father_tear.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Su hijo, el que nunca iba a hacer casa de azulejos, le había vestido la casa entera con ellos. Desde entonces, la gente la llamó así. La Casa de los Azulejos.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.15
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "none"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tile_close2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "none"
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Pero cuentan los criados que esa primera noche, con la fachada terminada, alguien tocó la puerta tres veces.",
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -9
+    }
+   ],
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 4.0,
+     "gain": -6,
+     "args": {
+      "times": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Abrieron. No había nadie. Solo, en el suelo, frente a la puerta… un azulejo roto.",
+   "pause": 0.9,
+   "sfx": [
+    {
+     "name": "door",
+     "at": 0.3,
+     "gain": -10
+    },
+    {
+     "name": "riser",
+     "at": -1.9,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.6,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.6,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/door_open.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tile_crack.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Si te gustan estas historias, suscríbete al canal, porque lo que viene ahora ya no es una historia de orgullo. Es una historia de sangre.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_night.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Pasó el tiempo. Pasaron los condes. La Nueva España dejó de ser Nueva España y se convirtió en México.",
+   "music": "calm",
+   "amb": [
+    "city"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/plaza_1820.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|La noche del motín",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Y a finales de noviembre de mil ochocientos veintiocho estalló en la capital el motín de la Acordada. Una revuelta por las elecciones presidenciales, que terminó con el saqueo del Parián, el gran mercado de la Plaza Mayor.",
+   "music": "tension",
+   "amb": [
+    "fire",
+    {
+     "name": "city",
+     "gain": -8
+    },
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 3.0,
+     "gain": -12
+    },
+    {
+     "name": "boom",
+     "at": 9.0,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/riot_night.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "Motín de la Acordada|noviembre y diciembre de 1828",
+       "style": "date",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/parian.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      "ash"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Durante días, la ciudad fue de nadie. Tiendas rotas, disparos, incendios. Y en medio del desorden, cada quien aprovechaba para arreglar sus propias cuentas.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 2.0,
+     "gain": -8
+    },
+    {
+     "name": "whoosh",
+     "at": 6.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/riot_street.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "shake",
+       "amp": 3,
+       "at": [
+        2.0,
+        3.0
+       ]
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/riot_street.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.5,
+       1.42
+      ],
+      "to": [
+       0.37,
+       0.48,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "shake",
+       "amp": 3,
+       "at": [
+        2.0,
+        3.0
+       ]
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "En la Casa de los Azulejos vivía entonces un anciano de la familia, don Diego Suárez de Peredo, que había llevado el título de conde. Y vivía también una muchacha joven de la casa, llamada Graciana.",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -16
+    }
+   ],
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/diego_portrait.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "don Diego Suárez de Peredo|",
+       "style": "date",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/graciana.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "A Graciana la pretendía un militar. Manuel Palacios. Un hombre de uniforme, de mirada dura, que no estaba acostumbrado a que le dijeran que no.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palacios.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Manuel Palacios|",
+       "style": "date",
+       "at": [
+        1.5,
+        6.0
+       ]
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/palacios.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Dicen que la seguía a misa. Que se paraba bajo sus balcones de noche, envuelto en la capa, mirando hacia arriba. Y que Graciana, al verlo, cerraba las cortinas con las manos temblando.",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -9
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/watcher_street.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/graciana_fear.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Pero la familia le dijo que no. Le cerraron la puerta. Le prohibieron acercarse a ella.",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 3.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/graciana_window.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Y Manuel Palacios esperó. Esperó a que la ciudad estuviera en llamas. A que nadie fuera a escuchar un grito.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palacios_red.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Una noche de diciembre, entró por las ventanas del entresuelo.",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -16
+    }
+   ],
+   "sfx": [
+    {
+     "name": "door",
+     "at": 1.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/window_break.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Ahora ya sabes cómo empieza. Un hombre con capa. Una escalera de piedra. Pasos que suben en la oscuridad.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -9,
+     "args": {
+      "dur": 7
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/l_intruder.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.03,
+         "dy": -0.025,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.35,
+       0.65,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Y arriba, en el descanso, una vela. Don Diego lo había oído entrar.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.0,
+     "gain": -10,
+     "args": {
+      "dur": 6,
+      "bpm": 90
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs.png"
+      },
+      {
+       "src": "art/l_diego_candle.png",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.05,
+         "speed": 1.5
+        }
+       ]
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.72,
+       0.3,
+       1.3
+      ],
+      "to": [
+       0.72,
+       0.28,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "¿Quién anda ahí?",
+   "voice": "em_santa",
+   "speed": 0.78,
+   "pause": 0.5,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/diego_shock.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "¿Quién anda ahí?|",
+       "style": "whisper",
+       "at": [
+        0.3,
+        3.0
+       ]
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "No hubo respuesta. Solo el brillo del acero.",
+   "pause": 1.0,
+   "music": "climax",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -1.9,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.6,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.6,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palacios_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "blood"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/red_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Lo que pasó en ese descanso duró apenas unos segundos. Cuando los criados llegaron con luces, el anciano estaba en el suelo, y la vela seguía encendida a su lado. El hombre de la capa había desaparecido en la noche.",
+   "music": "sad",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/servants_light.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fallen_stairs.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/riot_street.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "La familia supo quién había sido. Lo dijo con nombre y apellido. Pero en una ciudad revuelta, con las autoridades ocupadas en otras cosas… nadie lo castigó.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/graciana_fear.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/chronicle.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Manuel Palacios nunca pagó.",
+   "pause": 1.0,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/palacios.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "NUNCA PAGÓ|",
+       "style": "big",
+       "at": [
+        0.6,
+        3.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Dicen que fue entonces cuando empezaron los pasos.",
+   "music": "dread",
+   "amb": [
+    "room",
+    {
+     "name": "drips",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|La escalera",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Los criados los oían de madrugada. Lentos, cansados, como de alguien viejo. Bajaban la escalera… se detenían en el descanso… y volvían a subir.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 2.0,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "footsteps",
+     "at": 9.0,
+     "gain": -14,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/servant_bed.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.3,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Algunos vieron la luz. Una vela que flotaba a la altura de un hombre, sin nadie que la sostuviera.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -16,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_dark.png"
+      },
+      {
+       "src": "art/l_float_candle.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 4
+        },
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": 0.04,
+         "ease": "inout"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.65,
+       0.35,
+       1.25
+      ],
+      "to": [
+       0.6,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Y una cocinera, cuentan, lo vio de frente. Un anciano pálido, de levita, con la vela en una mano y la otra extendida, como si quisiera detener a alguien.",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -1.9,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.6,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.6,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_ghost.png"
+      },
+      {
+       "src": "art/l_ghost_diego.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 0.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.4,
+       1.1
+      ],
+      "to": [
+       0.68,
+       0.32,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ghost_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Gritó. Soltó la charola. Y cuando los demás llegaron corriendo, en la escalera no había nadie. Solo un olor a cera quemada… y el frío.",
+   "sfx": [
+    {
+     "name": "splash",
+     "at": 0.6,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/candle_floor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/candle_floor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.55,
+       1.52
+      ],
+      "to": [
+       0.42,
+       0.53,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "La familia vendió la casa años después. Se fueron. Pero la escalera se quedó.",
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -9
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_night.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "ease": "out"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "En mil ochocientos ochenta y uno, el piso de arriba lo rentó el club de caballeros más exclusivo de la ciudad. Bailes, cenas, brindis. Y aun así, cuentan que los meseros no querían quedarse solos cerca de la escalera después de medianoche.",
+   "amb": [
+    "room"
+   ],
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 12.0,
+     "gain": -12,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ballroom.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "1881|el club de caballeros",
+       "style": "date",
+       "at": [
+        1.0,
+        5.0
+       ]
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/waiter_stairs.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.4,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      },
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "Uno de ellos contó que una noche, recogiendo copas, vio a un señor muy viejo parado en el descanso. Le preguntó si se le ofrecía algo. El viejo no contestó. Solo levantó la mano… y señaló la ventana.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 6.0,
+     "gain": -14,
+     "args": {
+      "dur": 3
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_ghost.png"
+      },
+      {
+       "src": "art/l_ghost_diego.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 0.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.68,
+       0.32,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs_ghost.png"
+      },
+      {
+       "src": "art/l_ghost_diego.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 0.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.75,
+       0.32,
+       1.5699999999999998
+      ],
+      "to": [
+       0.6000000000000001,
+       0.3,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    },
+    {
+     "layers": [
+      {
+       "src": "art/window_break.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "weight": 0.5,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Luego vino la Revolución. Soldados, banquetes, gobiernos que llegaban y se iban.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/revolution.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "1910 – 1920|la Revolución",
+       "style": "date",
+       "at": [
+        0.8,
+        4.5
+       ]
+      }
+     ],
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Y a finales de esa década, los hermanos Sanborn abrieron ahí su famoso restaurante, el mismo que sigue funcionando hoy.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/patio_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "En mil novecientos veinticinco, José Clemente Orozco pintó un mural en el muro de la escalera. Lo llamó Omnisciencia. La que todo lo ve.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.75,
+       0.3,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "OMNISCIENCIA|José Clemente Orozco, 1925",
+       "style": "big",
+       "at": [
+        3.0,
+        8.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "warm",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.75,
+       0.3,
+       1.5699999999999998
+      ],
+      "to": [
+       0.67,
+       0.27999999999999997,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Y hay quien dice que no es casualidad. Que en esa escalera, más que en ningún otro lugar de la ciudad, alguien sigue mirando.",
+   "music": "dread",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ghost_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Meseros que cierran de noche cuentan que se oyen pasos en los escalones cuando ya no queda nadie. Que una luz pequeña, como de vela, baja hasta el descanso… y se apaga.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 1.5,
+     "gain": -12,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "whoosh",
+     "at": 9.5,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/patio_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs_dark.png"
+      },
+      {
+       "src": "art/l_float_candle.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 4
+        },
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": 0.04,
+         "ease": "inout"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.3,
+       1.35
+      ],
+      "to": [
+       0.7,
+       0.32,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "out": "fade",
+     "out_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Ahora, lo que sí es historia.",
+   "music": "calm",
+   "amb": [
+    "room"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/book.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "LO QUE DICE LA HISTORIA|",
+       "style": "chapter",
+       "at": [
+        0.4,
+        4.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "La Casa de los Azulejos existe, y puedes visitarla, en la calle de Madero, en el Centro Histórico de la Ciudad de México. Perteneció de verdad a los condes del Valle de Orizaba desde finales del siglo dieciséis.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Casa de los Azulejos|calle de Madero, Centro Histórico",
+       "style": "date",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "none",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/facade_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.37
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.4900000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "none",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "En el siglo diecinueve, para abrir la avenida Cinco de Mayo, le cortaron una parte de su lado norte. Y en mil novecientos treinta y uno fue declarada monumento nacional.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.4,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Monumento nacional|1931",
+       "style": "date",
+       "at": [
+        6.0,
+        11.0
+       ]
+      }
+     ],
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/facade_day.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.48000000000000004,
+       0.5,
+       1.3199999999999998
+      ],
+      "to": [
+       0.32,
+       0.48,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Y la fachada de talavera de Puebla tampoco es leyenda. Pero según los documentos, no la mandó poner un hijo arrepentido, sino una mujer. Doña Graciana Suárez de Peredo, quinta condesa del Valle de Orizaba, hacia mil setecientos treinta y siete.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/countess.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "Graciana Suárez de Peredo|quinta condesa, hacia 1737",
+       "style": "date",
+       "at": [
+        4.0,
+        10.0
+       ]
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/tile_close2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.4,
+       1.15
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "none"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "La historia del hijo que no hacía casa es eso, una leyenda. Una manera de explicar un dicho que la gente usaba de verdad: hacer casa de azulejos, para decir que alguien había prosperado.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/son_rich.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/son_rich.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "En cambio, el asesinato de mil ochocientos veintiocho sí aparece en las crónicas de la ciudad, durante los días del motín de la Acordada. Los detalles cambian según quién los cuente. Los fantasmas, como siempre, los puso la gente.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chronicle.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Y aquí está la respuesta a la pregunta del principio. ¿Qué busca esa vela cada noche?",
+   "music": "dread",
+   "amb": [
+    "room",
+    {
+     "name": "drips",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_dark.png"
+      },
+      {
+       "src": "art/l_float_candle.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 4
+        },
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": 0.04,
+         "ease": "inout"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.4,
+       1.1
+      ],
+      "to": [
+       0.68,
+       0.32,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "Dicen que don Diego no baja la escalera por miedo. Baja porque sigue haciendo lo que hacía aquella noche. Cuidando la casa. Esperando al hombre que entró por la ventana… para que esta vez no llegue arriba.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_ghost.png"
+      },
+      {
+       "src": "art/l_ghost_diego.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.9
+       ],
+       "fade_in": 2.0,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.004,
+         "period": 5
+        },
+        {
+         "type": "flicker",
+         "amp": 0.12,
+         "speed": 0.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.68,
+       0.32,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ghost_diego.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "Porque Manuel Palacios nunca pagó. Y el viejo, todavía, no ha dejado de esperarlo.",
+   "pause": 1.0,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/ghost_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "Así que si algún día subes esa escalera, entre los azulejos y el mural… y sientes que alguien te mira desde el descanso… no subas con prisa. No vaya a ser que te confunda.",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -1.9,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.6,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.6,
+     "gain": -3
+    },
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/stairs_pov.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.4,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/stairs_pov.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.4,
+       1.4700000000000002
+      ],
+      "to": [
+       0.52,
+       0.38,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    },
+    {
+     "layers": [
+      {
+       "src": "art/ghost_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b078",
+   "text": "¿Tú has entrado a la Casa de los Azulejos? ¿Te atreverías a subir esa escalera de noche? Te leo en los comentarios.",
+   "music": "mystery",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "¿Subirías esa escalera de noche?|",
+       "style": "quote",
+       "at": [
+        1.0,
+        7.0
+       ],
+       "pos": "center"
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b079",
+   "text": "En el próximo video nos vamos a Oaxaca, a un pueblo donde, cada año, un hombre se casa con una lagarta. La leyenda del Hombre Caimán.",
+   "amb": [
+    "river",
+    "crickets"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/river_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|El Hombre Caimán",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b080",
+   "text": "Hasta la próxima leyenda. Y recuerda… en esa casa, alguien todavía tiene la vela encendida.",
+   "pause": 1.0,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -9
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/facade_night.png"
+      },
+      {
+       "src": "art/l_float_candle.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 4
+        },
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": 0.04,
+         "ease": "inout"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/facade_night.png"
+      },
+      {
+       "src": "art/l_float_candle.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.01,
+         "period": 4
+        },
+        {
+         "type": "drift",
+         "dx": -0.05,
+         "dy": 0.04,
+         "ease": "inout"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.52
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 2.0,
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  }
+ ]
+}
