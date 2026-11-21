@@ -1,0 +1,181 @@
+{
+ "title": "La Casa de los Azulejos short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.22,
+ "key": "D",
+ "seed": 121,
+ "grade": "night",
+ "outro": 1.3,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "¿Quién anda ahí?",
+   "voice": "em_santa",
+   "speed": 0.8,
+   "fx": "eco",
+   "pre": 0.15,
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "night",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.05,
+     "gain": -4
+    },
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Medianoche. Estás al pie de la gran escalera… y una vela baja sola. Escalón por escalón.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 3.0,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    },
+    {
+     "name": "whoosh",
+     "at": 3.9,
+     "gain": -7
+    },
+    {
+     "name": "sting",
+     "at": 4.0,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Cuentan que esta casa se cubrió de azulejos por el orgullo de un hijo. Su padre le dijo: tú nunca harás casa de azulejos.",
+   "pause": 0.3,
+   "music": "mystery",
+   "amb": [
+    "night",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -8
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Pero la noche más oscura llegó en mil ochocientos veintiocho. La ciudad ardía. Y un militar con capa entró por una ventana.",
+   "pause": 0.3,
+   "music": "tension",
+   "amb": [
+    "fire",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.5,
+     "gain": -10
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "Subió la escalera en silencio. Arriba, en el descanso, un anciano encendió una vela. Nadie lo volvió a ver con vida.",
+   "pause": 0.3,
+   "music": "dread",
+   "amb": [
+    "night",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.2,
+     "gain": -9,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "boom",
+     "at": 5.8,
+     "gain": -5
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Desde entonces, de madrugada, se oyen pasos. Y una cocinera lo vio de frente… pálido, con la vela en la mano.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 1.5,
+     "gain": -10,
+     "args": {
+      "dur": 3
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 3.5,
+     "gain": -10,
+     "args": {
+      "dur": 4,
+      "bpm": 75
+     }
+    },
+    {
+     "name": "sting",
+     "at": 5.2,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "¿Qué busca esa vela cada noche?",
+   "pause": 0.5,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "La historia completa, La Casa de los Azulejos, ya está en el canal. Suscríbete.",
+   "pause": 0.3,
+   "music": "sad",
+   "amb": [
+    "wind"
+   ]
+  }
+ ]
+}
