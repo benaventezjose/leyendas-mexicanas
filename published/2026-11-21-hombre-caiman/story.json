@@ -1,0 +1,5393 @@
+{
+ "title": "El Hombre Caimán",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "E",
+ "seed": 147,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Costa de Oaxaca. Una noche sin viento. La laguna está tan quieta que parece un espejo negro.",
+   "pre": 0.6,
+   "music": "dread",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Costa de Oaxaca|hace muchos siglos",
+       "style": "date",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Imagina a un hombre que camina hacia el agua con collar de conchas y flores en las manos. Va vestido de novio. Y nadie del pueblo se atreve a seguirlo.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.4,
+     "gain": -14,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/king_shore.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/king_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.05
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Se detiene en la orilla. Espera. Y entonces, en medio de la laguna, se abren dos ojos dorados.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -12,
+     "args": {
+      "dur": 7,
+      "bpm": 76
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_eyes.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        1.0
+       ],
+       "appear_at": 1.2,
+       "fade_in": 1.2,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Algo enorme empieza a nadar hacia él. Despacio. Sin hacer ruido.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -18,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night2.png"
+      },
+      {
+       "src": "art/l_caiman_swim.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.12,
+         "dy": 0.01,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.1,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.4,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.4,
+     "gain": -3
+    },
+    {
+     "name": "splash",
+     "at": 1.4,
+     "gain": -4
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "dur": 1.4
+    },
+    {
+     "layers": [
+      {
+       "src": "art/caiman_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Esa noche, un rey se casó con una lagarta. Y lo más extraño de esta historia… es que esa boda se sigue celebrando. Todos los años. Hasta hoy.",
+   "music": "mystery",
+   "amb": [
+    "city",
+    {
+     "name": "crickets",
+     "gain": -12
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 5.0,
+     "gain": -14,
+     "args": {
+      "freq": 180
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/caiman_bride.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/church_huamelula.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "",
+   "pause": 5.2,
+   "music": "mystery",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "EL HOMBRE CAIMÁN|la boda con la lagarta",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "Pero hay una pregunta que en ese pueblo nadie quiere hacer en voz alta. ¿Qué pasaría si un año… no hubiera boda? Esa respuesta te la cuento al final.",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night3.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night3.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.48,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.45999999999999996,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Cuentan que hace muchos siglos, en la costa del Istmo de Tehuantepec, vivían dos pueblos que no se podían ver.",
+   "music": "calm",
+   "amb": [
+    "sea",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/map_isthmus.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|La sequía",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "En los cerros, mirando al mar, estaban los chontales. Abajo, en las barras de arena entre las lagunas, vivían los huaves, que se llaman a sí mismos ikoots.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/village_chontal.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/huave_village.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Unos sembraban maíz en las laderas. Los otros eran dueños del agua. De las lagunas llenas de camarón, de pescado, de vida.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/milpa_coast.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/canoe_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "Y por esa agua peleaban. Canoas que se encontraban de noche en la laguna. Antorchas. Gritos. Redes cortadas al amanecer.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 1.0,
+     "gain": -10
+    },
+    {
+     "name": "splash",
+     "at": 2.5,
+     "gain": -10
+    },
+    {
+     "name": "splash",
+     "at": 4.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/war_canoes.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/war_canoes.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.5,
+       1.4700000000000002
+      ],
+      "to": [
+       0.47000000000000003,
+       0.48,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "Cada pueblo tenía sus muertos y sus rencores. Y cada uno le enseñaba a sus hijos que del otro lado de la laguna vivía el enemigo.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 2.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/war_canoes.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Hasta que un año, el cielo dejó de llover.",
+   "music": "sad",
+   "amb": [
+    "wind",
+    {
+     "name": "fire",
+     "gain": -20
+    }
+   ],
+   "pre": 0.4,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/drought.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Imagina el sol de la costa, blanco, encima de tu cabeza, un día tras otro. La milpa se dobla y se seca. La tierra se abre en grietas tan anchas que cabe tu mano.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/drought.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.62,
+       1.4
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "pulse",
+       "bpm": 50,
+       "amp": 0.05
+      }
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cracked_earth.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "Las lagunas empezaron a encogerse. Primero un palmo. Luego una brazada. Al final, los pescadores caminaban sobre lodo donde antes había agua hasta el pecho.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dry_lagoon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/nets_empty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Las redes salían vacías. Los niños lloraban de hambre. Y los viejos, sentados junto al fuego, decían algo que daba miedo escuchar.",
+   "amb": [
+    "fire",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/nets_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/council.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Decían que el agua no se había ido. Que alguien se la había llevado. Que el agua estaba enojada.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/elder_portrait.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Y había un nombre que los viejos repetían una y otra vez, junto al fuego, como si fuera una oración. El nombre de la laguna de los huaves.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 1.0,
+     "gain": -18,
+     "args": {
+      "dur": 5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/council.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "El rey de los chontales era joven. Dicen que tenía el pelo largo, una manta de algodón blanco y un collar de conchas que sonaba cuando caminaba.",
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/king_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|La hija de la laguna",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Y una noche hizo lo que ningún chontal se había atrevido a hacer. Bajó solo a la laguna de los huaves. Sin armas. Con una antorcha.",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.3,
+     "gain": -12,
+     "args": {
+      "dur": 7
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/king_walk_bg.png"
+      },
+      {
+       "src": "art/l_king_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.08,
+         "ease": "linear"
+        }
+       ]
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/king_walk_bg.png"
+      },
+      {
+       "src": "art/l_king_walk.png",
+       "depth": 1.1,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.08,
+         "ease": "linear"
+        }
+       ]
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.55,
+       1.42
+      ],
+      "to": [
+       0.52,
+       0.53,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Cruzó los manglares con el lodo hasta las rodillas. Las raíces parecían manos saliendo del agua. Y sintió, todo el camino, que algo lo estaba mirando desde la oscuridad.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "splash",
+     "at": 3.0,
+     "gain": -14
+    },
+    {
+     "name": "owl",
+     "at": 6.0,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mangrove_path.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.52,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_eyes.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        1.0
+       ],
+       "appear_at": 1.2,
+       "fade_in": 1.2,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5,
+     "weight": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Lo recibió el viejo rey de los huaves, sentado frente a su casa de palma, con el agua de la laguna a sus pies.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huave_king.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "Alrededor, en la oscuridad, los pescadores huaves lo miraban con los arpones en la mano. Bastaba una palabra del viejo para que el rey chontal no volviera a ver el amanecer.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "dur": 6,
+      "bpm": 84
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/crowd_shore.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/crowd_shore.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.55,
+       1.4700000000000002
+      ],
+      "to": [
+       0.37,
+       0.53,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Mi pueblo se muere. Te ofrezco la paz. Pide lo que quieras.",
+   "voice": "em_santa",
+   "speed": 0.84,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/king_resolve.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "text": [
+      {
+       "str": "Te ofrezco la paz.|el rey chontal",
+       "style": "quote",
+       "at": [
+        0.5,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "El viejo se quedó callado mucho rato. Luego sonrió, despacio, como quien ya sabía que esa visita iba a llegar.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huave_king_smile.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Habrá paz. Habrá agua. Pero tendrás que casarte con mi hija.",
+   "voice": "em_santa",
+   "speed": 0.74,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huave_king_smile.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "text": [
+      {
+       "str": "Tendrás que casarte con mi hija.|el rey huave",
+       "style": "quote",
+       "at": [
+        0.5,
+        5.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "El rey chontal aceptó sin pensarlo. Había oído hablar de la princesa huave. Decían que era la mujer más hermosa de toda la costa.",
+   "music": "calm",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/princess_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Pero había algo que nadie le había contado. Algo que los huaves solo decían en voz baja.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.3,
+     "gain": -16,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/princess_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night"
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Que la princesa había nacido de la laguna. Que de día caminaba entre ellos como cualquier muchacha. Y que de noche… volvía al agua.",
+   "sfx": [
+    {
+     "name": "splash",
+     "at": 7.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/princess_shore.png"
+      },
+      {
+       "src": "art/l_princess.png",
+       "depth": 1.08,
+       "opacity": [
+        0,
+        1.0
+       ],
+       "fade_in": 1.5,
+       "anim": [
+        {
+         "type": "sway",
+         "deg": 0.6,
+         "period": 6,
+         "pivot": [
+          0.5,
+          0.95
+         ]
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night.png"
+      },
+      {
+       "src": "art/l_caiman_swim.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.1,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "Si te está gustando esta leyenda, suscríbete y activa la campanita. Aquí, cada semana, una nueva historia de México.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/canoe_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "SUSCRÍBETE|una leyenda nueva cada semana",
+       "style": "big",
+       "at": [
+        0.8,
+        6.0
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "La boda sería en la orilla, la noche de luna llena. Los huaves llenaron la arena de flores y quemaron copal.",
+   "music": "mystery",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 2.0,
+     "gain": -18,
+     "args": {
+      "freq": 220
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wedding_ancient.png"
+      },
+      {
+       "src": "art/l_copal.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dy": -0.08,
+         "ease": "linear"
+        }
+       ]
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|La boda",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Las mujeres huaves tejieron un vestido de algodón blanco, bordado con flores y peces. Los hombres llevaron tambores y caracoles de mar. Pero nadie, en todo el día, vio a la novia.",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/weaving.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/weaving.png"
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "El rey chontal esperó en la orilla, con su collar de conchas, mirando hacia el agua negra. Detrás de él, los dos pueblos guardaban silencio.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 2.0,
+     "gain": -14,
+     "args": {
+      "dur": 8,
+      "bpm": 70
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/king_shore.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/crowd_shore.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Entonces el viejo rey huave levantó los brazos y llamó a su hija por su nombre.",
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 1.0,
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huave_king_call.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "La laguna se movió. Las olas pequeñas llegaron hasta los pies del rey. Y del agua salió una cabeza larga, cubierta de escamas, con dos ojos dorados que lo miraban fijo.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "splash",
+     "at": 0.8,
+     "gain": -8
+    },
+    {
+     "name": "riser",
+     "at": 6.0,
+     "gain": -10,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_eyes.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        1.0
+       ],
+       "appear_at": 1.2,
+       "fade_in": 1.2,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.52,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/caiman_full.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.1,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.4,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.4,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/caiman_full.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "dur": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/caiman_close2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "Ella es mi hija. Ella es tu esposa.",
+   "voice": "em_santa",
+   "speed": 0.74,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huave_king_call.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Ella es tu esposa.|el rey huave",
+       "style": "quote",
+       "at": [
+        0.5,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Imagina estar ahí. Frente a ti, una lagarta del largo de tu brazo extendido, con la boca llena de dientes. Detrás de ti, tu pueblo muriéndose de hambre.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/king_fear.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/caiman_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "El rey se arrodilló en la arena. Extendió las manos. Y la lagarta, muy despacio, se dejó cargar.",
+   "music": "sad",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/king_kneel.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Nadie respiraba. Las antorchas temblaban con el viento del mar. La lagarta abrió la boca… y la volvió a cerrar, despacio, como si sonriera.",
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 0.5,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/caiman_close2.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/caiman_close2.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.62
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.7400000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.06
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Dicen que en ese momento, por un instante, el rey vio en el reflejo del agua a una muchacha de pelo largo que le sonreía.",
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/reflection.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.62,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/princess_soft.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Te estaba esperando.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/princess_soft.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "text": [
+      {
+       "str": "Te estaba esperando.|",
+       "style": "whisper",
+       "at": [
+        0.4,
+        3.4
+       ]
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Y el rey besó a su esposa.",
+   "pause": 0.4,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/kiss_ancient.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "En ese mismo instante, un trueno partió el cielo en dos.",
+   "music": "climax",
+   "amb": [
+    "rain",
+    {
+     "name": "wind",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 0.3,
+     "gain": -2
+    },
+    {
+     "name": "thunder",
+     "at": 2.6,
+     "gain": -5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/storm_village.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "lightning",
+       "at": [
+        0.4,
+        2.6
+       ]
+      },
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0.4,
+        1.2
+       ]
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "Y empezó a llover. Después de tantos meses, empezó a llover. La gente salió de sus casas con los brazos abiertos. Los niños bailaban en el lodo.",
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 3.0,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rain_joy.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.45
+      },
+      {
+       "type": "lightning",
+       "at": [
+        3.0
+       ]
+      }
+     ],
+     "grade": "cold"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/cracked_rain.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.5
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Las lagunas se llenaron otra vez. Y a la mañana siguiente, las redes salieron tan pesadas de pescado que hacían falta cuatro hombres para sacarlas.",
+   "music": "hope",
+   "amb": [
+    "sea",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "splash",
+     "at": 4.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "none"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fish_abundance.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Desde esa noche, chontales y huaves dejaron de pelear. El hombre del cerro y la hija de la laguna habían quedado unidos para siempre.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/two_peoples.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Pero un pacto con el agua no se firma una sola vez.",
+   "music": "dread",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "pre": 0.4,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|La promesa",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "Cuentan que la princesa le hizo prometer al rey una sola cosa.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/princess_soft.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Cada año, cuando vuelvan las lluvias, cásate conmigo otra vez. Y que nadie en tu pueblo me falte al respeto.",
+   "voice": "ef_dora",
+   "speed": 0.8,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/princess_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Cásate conmigo otra vez.|la princesa",
+       "style": "quote",
+       "at": [
+        0.5,
+        5.0
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/princess_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.4,
+       1.5699999999999998
+      ],
+      "to": [
+       0.42,
+       0.38,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Y así fue durante generaciones. Cada año, una lagarta era vestida de novia, llevada de casa en casa y casada con el señor del pueblo. Y cada año, llovía.",
+   "music": "mystery",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/caiman_bride.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rain_joy.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "rain",
+       "strength": 0.3
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Pero dicen que hubo un pescador que no creía en esas cosas.",
+   "music": "tension",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fisher_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "Un muchacho que se reía de la boda. Que decía que una lagarta era solo un animal, y que él no le tenía miedo a nada que viviera en el agua.",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fisher_laugh.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Gritaba en la playa, delante de todos, que él iba a traer a la novia arrastrando de la cola. Los viejos bajaban la mirada. Nadie le contestaba.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/council.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/council.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.55,
+       1.4700000000000002
+      ],
+      "to": [
+       0.47000000000000003,
+       0.53,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "Una noche, borracho, salió solo en su canoa. Llevaba un arpón. Iba a buscar a la novia de la laguna.",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "sfx": [
+    {
+     "name": "splash",
+     "at": 1.0,
+     "gain": -14
+    },
+    {
+     "name": "splash",
+     "at": 4.0,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/canoe_night.png"
+      },
+      {
+       "src": "art/l_torch_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.5
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "La laguna estaba en silencio. Ni un grillo. Ni una rana. Solo el ruido del remo entrando en el agua… y saliendo… y entrando.",
+   "amb": [],
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "splash",
+     "at": 1.5,
+     "gain": -16
+    },
+    {
+     "name": "splash",
+     "at": 4.0,
+     "gain": -16
+    },
+    {
+     "name": "splash",
+     "at": 6.5,
+     "gain": -16
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/canoe_far.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/canoe_far.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.55,
+       1.5699999999999998
+      ],
+      "to": [
+       0.42,
+       0.53,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Entonces sintió que algo golpeaba la canoa por debajo. Una vez. Dos veces.",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "knock",
+     "at": 1.5,
+     "gain": -4,
+     "args": {
+      "times": 1
+     }
+    },
+    {
+     "name": "knock",
+     "at": 3.4,
+     "gain": -2,
+     "args": {
+      "times": 1
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/canoe_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "shake",
+       "amp": 8,
+       "at": [
+        1.5,
+        2.0
+       ]
+      },
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        3.4,
+        3.9
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Se asomó por la orilla de la canoa. Y en el agua negra no vio su propia cara. Vio la cara de una mujer… con los ojos dorados de una lagarta.",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 3.0,
+     "gain": -9,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/water_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/water_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.5699999999999998
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.69
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.1,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.4,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.4,
+     "gain": -3
+    },
+    {
+     "name": "splash",
+     "at": 1.4,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/water_face.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "dur": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/princess_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "A la mañana siguiente encontraron la canoa vacía, flotando en medio de la laguna. El arpón estaba partido en dos.",
+   "music": "sad",
+   "amb": [
+    "river",
+    {
+     "name": "wind",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/canoe_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "En el lodo de la orilla había unas huellas largas, de patas con garras. Y junto a ellas, las huellas de unos pies descalzos, pequeños, de mujer. Las dos se metían juntas al agua.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -18,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/prints_mud.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/prints_mud.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.55,
+       1.4700000000000002
+      ],
+      "to": [
+       0.52,
+       0.53,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Al muchacho lo hallaron horas después, en la orilla, temblando, con los ojos abiertos. Vivo. Pero nunca más volvió a hablar. Solo señalaba el agua.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -18,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fisher_mute.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fisher_mute.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.42,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.39999999999999997,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Y dicen que ese año, en la costa de los chontales, no cayó ni una gota de lluvia.",
+   "amb": [
+    "wind",
+    {
+     "name": "fire",
+     "gain": -20
+    }
+   ],
+   "pause": 0.9,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/drought.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Hasta aquí, la leyenda. Ahora, lo que sí es historia.",
+   "music": "calm",
+   "amb": [
+    "city",
+    {
+     "name": "crickets",
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_huamelula.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|Lo que dice la historia",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "Ese pueblo existe. Se llama San Pedro Huamelula. Es un pueblo chontal de la costa de Oaxaca, en el Istmo de Tehuantepec, no muy lejos del mar.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/map_isthmus.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.62,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "San Pedro Huamelula|Oaxaca, Istmo de Tehuantepec",
+       "style": "date",
+       "at": [
+        1.0,
+        6.0
+       ]
+      }
+     ],
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/map_isthmus.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.6,
+       1.62
+      ],
+      "to": [
+       0.54,
+       0.58,
+       1.7400000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Sus vecinos huaves, los ikoots, viven todavía junto a las grandes lagunas del Istmo, como pescadores, igual que en la leyenda.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/huave_village.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "Y cada año, al terminar las fiestas de San Pedro Apóstol, el presidente municipal se casa con una lagarta de verdad. Un caimán hembra pequeño, al que llaman la princesa.",
+   "amb": [
+    "city"
+   ],
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "freq": 180
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_fiesta.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/caiman_bride.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "Una madrina la viste con trajes tradicionales y, al final, con vestido blanco de novia. Le amarran el hocico con cuidado, para que nadie salga herido, y la llevan en procesión de casa en casa.",
+   "music": "hope",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/procession.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/bride_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "Hay música, flores y baile. El presidente municipal baila con la novia en brazos. Y al final, delante de todo el pueblo… le da un beso.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dance_mayor.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/kiss_today.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Es una fiesta alegre, de tres días, llena de color. Y aun así, si te fijas, hay un momento en que la música baja y todo el pueblo guarda silencio, mirando a la novia.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/procession.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/procession.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.5,
+       1.4700000000000002
+      ],
+      "to": [
+       0.37,
+       0.48,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "En el pueblo dicen que la tradición tiene más de doscientos treinta años, aunque sus raíces seguramente son mucho más antiguas que eso. Hoy se mezcla con la fiesta católica del santo patrono.",
+   "music": "calm",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/church_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.37
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.4900000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "fireflies"
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Y su sentido es el mismo que en la leyenda. Es una ofrenda. Se le pide a la Madre Tierra y al Creador que haya lluvia, buena cosecha y buena pesca. Y se celebra la unión de dos pueblos, chontales y huaves.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/copal_altar.png"
+      },
+      {
+       "src": "art/l_copal.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dy": -0.08,
+         "ease": "linear"
+        }
+       ]
+      },
+      {
+       "src": "art/l_candle_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.8
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/two_peoples.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Para mucha gente de fuera parece una curiosidad, algo raro para salir en las noticias. Para Huamelula es otra cosa. Es su manera de cumplir, cada año, la promesa que hizo un rey en la orilla de una laguna.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/church_fiesta.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/church_fiesta.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.5,
+       1.42
+      ],
+      "to": [
+       0.37,
+       0.48,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "Y ahora sí, la respuesta a la pregunta del principio. ¿Qué pasaría si un año no hubiera boda?",
+   "music": "dread",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night3.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "La verdad es que nadie lo sabe. Porque en San Pedro Huamelula nadie ha querido averiguarlo. Ni los abuelos, ni los pescadores, ni el presidente municipal en turno.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/elder_portrait.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/fisher_mute.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "Porque los viejos todavía recuerdan lo que les contaron sus abuelos. El año del pescador. El año en que no llovió.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/cracked_earth.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b078",
+   "text": "Y si alguna noche, en una laguna de Oaxaca, ves dos ojos dorados que te miran desde el agua… no te rías. No le faltes al respeto. Puede que sea una novia… esperando a que cumplas tu promesa.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "dur": 8,
+      "bpm": 66
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_eyes.png"
+      },
+      {
+       "src": "art/l_eyes.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        1.0
+       ],
+       "appear_at": 1.2,
+       "fade_in": 1.2,
+       "anim": [
+        {
+         "type": "float",
+         "amp": 0.003,
+         "period": 4
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/princess_eyes.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b079",
+   "text": "¿Tú te casarías con la lagarta para salvar a tu pueblo? Te leo en los comentarios.",
+   "music": "mystery",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/caiman_bride.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "¿Te casarías con la lagarta?|",
+       "style": "quote",
+       "at": [
+        1.0,
+        6.0
+       ],
+       "pos": "center"
+      }
+     ],
+     "grade": "warm"
+    }
+   ]
+  },
+  {
+   "id": "b080",
+   "text": "En el próximo video viajamos por los caminos de México para conocer a un jinete que cabalga de noche… sin cabeza. La leyenda del Jinete sin Cabeza.",
+   "amb": [
+    "wind",
+    "crickets"
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 1.0,
+     "gain": -12,
+     "args": {
+      "dur": 5,
+      "distance": 0.6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_road.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|El Jinete sin Cabeza",
+       "style": "big",
+       "at": [
+        2.0,
+        7.0
+       ]
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rider_road.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "night",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b081",
+   "text": "Hasta la próxima leyenda. Y recuerda… en la laguna, alguien todavía espera a su novio.",
+   "pause": 1.0,
+   "music": "dread",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -6
+    },
+    {
+     "name": "night",
+     "gain": -10
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night.png"
+      },
+      {
+       "src": "art/l_caiman_swim.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.12,
+         "dy": 0.01,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/lagoon_night.png"
+      },
+      {
+       "src": "art/l_caiman_swim.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.12,
+         "dy": 0.01,
+         "ease": "inout"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.52
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 2.0,
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  }
+ ]
+}

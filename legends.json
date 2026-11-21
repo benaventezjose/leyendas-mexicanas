@@ -122,10 +122,16 @@
       "published": "2026-11-21 09:00",
       "published_slot": "09:00",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=9028312776761296361"
+    },
+    {
+      "slug": "hombre-caiman",
+      "title": "El Hombre Caimán: el rey que se casó con una lagarta | Leyenda de Oaxaca",
+      "published": "2026-11-21 14:00",
+      "published_slot": "14:00",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=164766860902419660"
     }
   ],
   "backlog": [
-    "El Hombre Caimán (Oaxaca)",
     "La Leyenda del Jinete sin Cabeza",
     "La Isla de las Muñecas (Xochimilco)",
     "La Dama de Negro de Guadalajara / el árbol del Panteón de Belén",
