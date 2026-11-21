@@ -1,0 +1,169 @@
+{
+ "title": "La Monja de La Concepción short",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.22,
+ "key": "E",
+ "seed": 118,
+ "grade": "night",
+ "outro": 1.3,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "¿Por qué no volviste?",
+   "voice": "ef_dora",
+   "speed": 0.82,
+   "fx": "eco",
+   "pre": 0.15,
+   "pause": 0.35,
+   "music": "dread",
+   "amb": [
+    "night",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 0.05,
+     "gain": -4
+    },
+    {
+     "name": "whisper",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Las tres de la mañana. Te asomas al huerto del convento. Debajo del viejo durazno hay una monja… inmóvil. Levanta la cara… y no tiene ojos.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 0.2,
+     "gain": -14,
+     "args": {
+      "freq": 180
+     }
+    },
+    {
+     "name": "whoosh",
+     "at": 10.2,
+     "gain": -7
+    },
+    {
+     "name": "sting",
+     "at": 10.3,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Cuentan que hacia mil quinientos sesenta, María de Ávila se enamoró de Arrutia, un muchacho sin fortuna.",
+   "pause": 0.3,
+   "music": "mystery",
+   "amb": [
+    "night",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.0,
+     "gain": -8
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Sus hermanos le ofrecieron una bolsa de oro. Y Arrutia… la tomó.",
+   "pause": 0.3,
+   "sfx": [
+    {
+     "name": "coins",
+     "at": 1.8,
+     "gain": -8
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "A María la encerraron en el convento. Cada tarde esperaba debajo del durazno, mirando hacia la puerta.",
+   "pause": 0.3,
+   "music": "sad",
+   "sfx": [
+    {
+     "name": "door",
+     "at": 1.0,
+     "gain": -9
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "Una mañana la encontraron al pie del árbol. Sin vida. Y desde entonces, de noche, la ven ahí. Esperando.",
+   "pause": 0.3,
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 3.05,
+     "gain": -6
+    },
+    {
+     "name": "heartbeat",
+     "at": 4.0,
+     "gain": -10,
+     "args": {
+      "dur": 4,
+      "bpm": 70
+     }
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "Hasta que, muchos años después, alguien tocó la puerta del convento… preguntando por ella.",
+   "pause": 0.4,
+   "music": "dread",
+   "amb": [
+    "rain",
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "thunder",
+     "at": 0.0,
+     "gain": -11
+    },
+    {
+     "name": "knock",
+     "at": 2.5,
+     "gain": -5
+    },
+    {
+     "name": "sting",
+     "at": 4.6,
+     "gain": -3
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "La historia completa, La Monja de La Concepción, ya está en el canal. Suscríbete.",
+   "pause": 0.3,
+   "music": "sad",
+   "amb": [
+    "wind"
+   ]
+  }
+ ]
+}
