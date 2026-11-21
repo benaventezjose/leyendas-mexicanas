@@ -1,152 +1,158 @@
 {
-  "done": [
-    {
-      "slug": "la-llorona",
-      "title": "La Llorona: si la escuchas lejos… ya está junto a ti",
-      "published": "2026-11 (manual)"
-    },
-    {
-      "slug": "charro-negro",
-      "title": "El Charro Negro: nunca aceptes subir a su caballo",
-      "published": "2026-11 (manual)"
-    },
-    {
-      "slug": "la-planchada",
-      "title": "La Planchada: la enfermera muerta que sigue haciendo su ronda",
-      "published": "2026-11 (manual)"
-    },
-    {
-      "slug": "don-juan-manuel",
-      "title": "¿Qué hora es?: la pregunta que costaba la vida en la Ciudad de México",
-      "published": "2026-11 (manual)"
-    },
-    {
-      "slug": "mulata-de-cordoba",
-      "title": "La Mulata de Córdoba: la bruja que escapó de la Inquisición en un barco dibujado",
-      "published": "2026-11 (manual)"
-    },
-    {
-      "slug": "callejon-del-beso",
-      "title": "El Callejón del Beso: la leyenda que exige un beso en el tercer escalón",
-      "published": "2026-11-10 14:20",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=554195753384495812"
-    },
-    {
-      "slug": "popocatepetl-iztaccihuatl",
-      "title": "Popocatépetl e Iztaccíhuatl: el guerrero que sigue velando a su princesa",
-      "published": "2026-11-11 09:40",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6104423824962899053"
-    },
-    {
-      "slug": "el-nahual",
-      "title": "El Nahual: el curandero que de noche se quitaba la piel",
-      "published": "2026-11-13 09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-1142376370197475348"
-    },
-    {
-      "slug": "la-xtabay",
-      "title": "La Xtabay: la mujer de la ceiba que llama a los hombres que caminan solos",
-      "published": "2026-11-14 09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-7524604694924604229",
-      "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=4025703464351189704",
-      "short_published": "2026-11-14 13:00"
-    },
-    {
-      "slug": "los-aluxes",
-      "title": "Los Aluxes: los duendes mayas que cobran cuando te olvidas de ellos",
-      "published": "2026-11-15 09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-3932455775323469613",
-      "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=1980105064478821111",
-      "short_published": "2026-11-15 13:00"
-    },
-    {
-      "slug": "la-mano-peluda",
-      "title": "La Mano Peluda: nunca dejes el brazo fuera de la cama | Leyenda de Puebla",
-      "published": "2026-11-16 09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=5440456318935056817",
-      "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=7008968378708806107",
-      "short_published": "2026-11-16 13:00"
-    },
-    {
-      "slug": "la-calle-de-la-quemada",
-      "title": "La Calle de la Quemada: la mujer que se escondió detrás de un velo | Leyenda de la CDMX",
-      "published": "2026-11-17 09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-3243273487717219669",
-      "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-4415263160841779515",
-      "short_published": "2026-11-17 13:00"
-    },
-    {
-      "slug": "callejon-del-aguacate",
-      "title": "El Callejón del Aguacate: el niño que todavía te pide jugar | Leyenda de Coyoacán",
-      "published": "2026-11-18 09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=3208089012504448558",
-      "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6674141475452109732",
-      "short_published": "2026-11-18 13:00"
-    },
-    {
-      "slug": "la-pascualita",
-      "title": "La Pascualita: la novia del aparador que no es una maniquí | Leyenda de Chihuahua",
-      "published": "2026-11-19 09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=1305365342202839964",
-      "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6585820778263824141",
-      "short_published": "2026-11-19 13:00"
-    },
-    {
-      "slug": "el-sombreron",
-      "title": "El Sombrerón: el hombrecito que trenza el cabello de las muchachas | Leyenda de Chiapas",
-      "published": "2026-11-20 09:00",
-      "published_slot": "09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6637387740185578598",
-      "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-2043465312801242011",
-      "short_published": "2026-11-20 13:00"
-    },
-    {
-      "slug": "el-cadejo",
-      "title": "El Cadejo: el perro blanco y el perro negro que te siguen de noche | Leyenda de Chiapas",
-      "published": "2026-11-20 14:00",
-      "published_slot": "14:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-2265292854815666797",
-      "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=3326989632338611225",
-      "short_published": "2026-11-20 18:00"
-    },
-    {
-      "slug": "la-monja-de-la-concepcion",
-      "title": "La Monja de La Concepción: la novicia que nunca dejó de esperar | Leyenda de la Ciudad de México",
-      "published": "2026-11-20 19:00",
-      "published_slot": "19:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-2697528825572146140"
-    },
-    {
-      "slug": "casa-de-los-azulejos",
-      "title": "La Casa de los Azulejos: el hijo que nunca haría casa y el fantasma de la escalera | CDMX",
-      "published": "2026-11-21 09:00",
-      "published_slot": "09:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=9028312776761296361"
-    },
-    {
-      "slug": "hombre-caiman",
-      "title": "El Hombre Caimán: el rey que se casó con una lagarta | Leyenda de Oaxaca",
-      "published": "2026-11-21 14:00",
-      "published_slot": "14:00",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=164766860902419660"
-    }
-  ],
-  "backlog": [
-    "La Leyenda del Jinete sin Cabeza",
-    "La Isla de las Muñecas (Xochimilco)",
-    "La Dama de Negro de Guadalajara / el árbol del Panteón de Belén",
-    "El Vampiro del Panteón de Belén (Guadalajara)",
-    "La Niña del Panteón de Belén",
-    "La Bruja de la Casa de la Calle de Olmedo",
-    "El Puente del Clérigo",
-    "La Calle de Olvido",
-    "El Diablo de la Mina de Real de Catorce",
-    "La Leyenda de la China Poblana",
-    "La Leyenda del Pípila y el túnel de Guanajuato",
-    "El Perro Negro del camino real",
-    "La Lechuza (la bruja que se vuelve ave)",
-    "La Leyenda de la Calle del Indio Triste",
-    "La Mujer de la Lavandería de Durango",
-    "El Tzitzimime"
-  ]
+ "done": [
+  {
+   "slug": "la-llorona",
+   "title": "La Llorona: si la escuchas lejos… ya está junto a ti",
+   "published": "2026-11 (manual)"
+  },
+  {
+   "slug": "charro-negro",
+   "title": "El Charro Negro: nunca aceptes subir a su caballo",
+   "published": "2026-11 (manual)"
+  },
+  {
+   "slug": "la-planchada",
+   "title": "La Planchada: la enfermera muerta que sigue haciendo su ronda",
+   "published": "2026-11 (manual)"
+  },
+  {
+   "slug": "don-juan-manuel",
+   "title": "¿Qué hora es?: la pregunta que costaba la vida en la Ciudad de México",
+   "published": "2026-11 (manual)"
+  },
+  {
+   "slug": "mulata-de-cordoba",
+   "title": "La Mulata de Córdoba: la bruja que escapó de la Inquisición en un barco dibujado",
+   "published": "2026-11 (manual)"
+  },
+  {
+   "slug": "callejon-del-beso",
+   "title": "El Callejón del Beso: la leyenda que exige un beso en el tercer escalón",
+   "published": "2026-11-10 14:20",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=554195753384495812"
+  },
+  {
+   "slug": "popocatepetl-iztaccihuatl",
+   "title": "Popocatépetl e Iztaccíhuatl: el guerrero que sigue velando a su princesa",
+   "published": "2026-11-11 09:40",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6104423824962899053"
+  },
+  {
+   "slug": "el-nahual",
+   "title": "El Nahual: el curandero que de noche se quitaba la piel",
+   "published": "2026-11-13 09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-1142376370197475348"
+  },
+  {
+   "slug": "la-xtabay",
+   "title": "La Xtabay: la mujer de la ceiba que llama a los hombres que caminan solos",
+   "published": "2026-11-14 09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-7524604694924604229",
+   "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=4025703464351189704",
+   "short_published": "2026-11-14 13:00"
+  },
+  {
+   "slug": "los-aluxes",
+   "title": "Los Aluxes: los duendes mayas que cobran cuando te olvidas de ellos",
+   "published": "2026-11-15 09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-3932455775323469613",
+   "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=1980105064478821111",
+   "short_published": "2026-11-15 13:00"
+  },
+  {
+   "slug": "la-mano-peluda",
+   "title": "La Mano Peluda: nunca dejes el brazo fuera de la cama | Leyenda de Puebla",
+   "published": "2026-11-16 09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=5440456318935056817",
+   "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=7008968378708806107",
+   "short_published": "2026-11-16 13:00"
+  },
+  {
+   "slug": "la-calle-de-la-quemada",
+   "title": "La Calle de la Quemada: la mujer que se escondió detrás de un velo | Leyenda de la CDMX",
+   "published": "2026-11-17 09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-3243273487717219669",
+   "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-4415263160841779515",
+   "short_published": "2026-11-17 13:00"
+  },
+  {
+   "slug": "callejon-del-aguacate",
+   "title": "El Callejón del Aguacate: el niño que todavía te pide jugar | Leyenda de Coyoacán",
+   "published": "2026-11-18 09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=3208089012504448558",
+   "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6674141475452109732",
+   "short_published": "2026-11-18 13:00"
+  },
+  {
+   "slug": "la-pascualita",
+   "title": "La Pascualita: la novia del aparador que no es una maniquí | Leyenda de Chihuahua",
+   "published": "2026-11-19 09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=1305365342202839964",
+   "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6585820778263824141",
+   "short_published": "2026-11-19 13:00"
+  },
+  {
+   "slug": "el-sombreron",
+   "title": "El Sombrerón: el hombrecito que trenza el cabello de las muchachas | Leyenda de Chiapas",
+   "published": "2026-11-20 09:00",
+   "published_slot": "09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=6637387740185578598",
+   "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-2043465312801242011",
+   "short_published": "2026-11-20 13:00"
+  },
+  {
+   "slug": "el-cadejo",
+   "title": "El Cadejo: el perro blanco y el perro negro que te siguen de noche | Leyenda de Chiapas",
+   "published": "2026-11-20 14:00",
+   "published_slot": "14:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-2265292854815666797",
+   "short_planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=3326989632338611225",
+   "short_published": "2026-11-20 18:00"
+  },
+  {
+   "slug": "la-monja-de-la-concepcion",
+   "title": "La Monja de La Concepción: la novicia que nunca dejó de esperar | Leyenda de la Ciudad de México",
+   "published": "2026-11-20 19:00",
+   "published_slot": "19:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-2697528825572146140"
+  },
+  {
+   "slug": "casa-de-los-azulejos",
+   "title": "La Casa de los Azulejos: el hijo que nunca haría casa y el fantasma de la escalera | CDMX",
+   "published": "2026-11-21 09:00",
+   "published_slot": "09:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=9028312776761296361"
+  },
+  {
+   "slug": "hombre-caiman",
+   "title": "El Hombre Caimán: el rey que se casó con una lagarta | Leyenda de Oaxaca",
+   "published": "2026-11-21 14:00",
+   "published_slot": "14:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=164766860902419660"
+  },
+  {
+   "slug": "jinete-sin-cabeza",
+   "title": "El Jinete sin Cabeza: El Muerto, el fantasma de la tierra que fue de México | Leyenda de la frontera",
+   "published": "2026-11-21 19:00",
+   "published_slot": "19:00",
+   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7820990&openWithPostUuid=-5461918556849484083"
+  }
+ ],
+ "backlog": [
+  "La Isla de las Muñecas (Xochimilco)",
+  "La Dama de Negro de Guadalajara / el árbol del Panteón de Belén",
+  "El Vampiro del Panteón de Belén (Guadalajara)",
+  "La Niña del Panteón de Belén",
+  "La Bruja de la Casa de la Calle de Olmedo",
+  "El Puente del Clérigo",
+  "La Calle de Olvido",
+  "El Diablo de la Mina de Real de Catorce",
+  "La Leyenda de la China Poblana",
+  "La Leyenda del Pípila y el túnel de Guanajuato",
+  "El Perro Negro del camino real",
+  "La Lechuza (la bruja que se vuelve ave)",
+  "La Leyenda de la Calle del Indio Triste",
+  "La Mujer de la Lavandería de Durango",
+  "El Tzitzimime"
+ ]
 }

@@ -1,0 +1,5215 @@
+{
+ "title": "El Jinete sin Cabeza",
+ "voice": "em_alex",
+ "speed": 0.88,
+ "sentence_gap": 0.28,
+ "key": "D",
+ "seed": 151,
+ "grade": "night",
+ "vignette": 0.58,
+ "outro": 5.0,
+ "music_gain": -15,
+ "amb_gain": -21,
+ "sfx_gain": -9,
+ "beats": [
+  {
+   "id": "b001",
+   "text": "Sur de Texas. Mil novecientos diecisiete. Un camino de tierra entre mezquites y nopales, a pocas leguas del río Bravo.",
+   "pre": 0.6,
+   "music": "dread",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_night.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Cerca de San Diego, Texas, 1917|tierra que un día fue de México",
+       "style": "date",
+       "at": [
+        0.6,
+        5.5
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b002",
+   "text": "Imagina una carreta que avanza despacio bajo la luna. Un hombre y una mujer vuelven a su rancho… y de pronto, el caballo se detiene. No quiere dar un paso más.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.3,
+     "gain": -16,
+     "args": {
+      "dur": 4,
+      "bpm": 60
+     }
+    },
+    {
+     "name": "gust",
+     "at": 6.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wagon_1917.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.52,
+       0.62,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/wagon_1917.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.5
+      ],
+      "to": [
+       0.48,
+       0.66,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b003",
+   "text": "Entonces lo oyen. Cascos. Un galope que viene del monte, cada vez más fuerte, cada vez más cerca.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.2,
+     "gain": -12,
+     "args": {
+      "dur": 7,
+      "distance": 0.9,
+      "bpm": 150
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "dur": 6,
+      "bpm": 84
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_fog.png"
+      },
+      {
+       "src": "art/l_rider_far.png",
+       "depth": 1.02,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.22,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b004",
+   "text": "Y en la orilla del camino aparece un jinete. Alto. Derecho sobre la silla. Con las manos amarradas a la cabeza de la montura.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 4,
+      "distance": 0.3,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_front.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hands_tied.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "transition": "xfade",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b005",
+   "text": "La mujer levanta la vista para verle la cara… y no hay cara. No hay nada.",
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -18,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.75,
+       1.25
+      ],
+      "to": [
+       0.42,
+       0.3,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b006",
+   "text": "",
+   "pause": 0.6,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.3,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.2,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.2,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.3,
+       1.35
+      ],
+      "to": [
+       0.42,
+       0.3,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "dur": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rider_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b007",
+   "text": "¡Es mío! ¡Todo es mío!",
+   "pause": 0.9,
+   "voice": "em_santa",
+   "speed": 0.7,
+   "fx": "eco",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_close_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.4,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.38,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        0,
+        1.0
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "¡Es mío! ¡Todo es mío!|",
+       "style": "quote",
+       "at": [
+        0.3,
+        3.5
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b008",
+   "text": "",
+   "pause": 5.2,
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 0.4,
+     "gain": -4
+    },
+    {
+     "name": "whoosh",
+     "at": 0.3,
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/title_bg.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.12
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "EL JINETE SIN CABEZA|la leyenda de El Muerto",
+       "style": "title",
+       "at": [
+        0.6,
+        6.4
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b009",
+   "text": "Por esos caminos lo llaman El Muerto. Es el jinete sin cabeza de la frontera. Y hay una pregunta que nadie ha podido responder en casi dos siglos. ¿Qué es lo que reclama? ¿Qué es eso que dice que es suyo? Al final de esta historia te lo voy a contar.",
+   "music": "mystery",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 6.0,
+     "gain": -14,
+     "args": {
+      "dur": 6,
+      "distance": 0.7,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/brush_night.png"
+      },
+      {
+       "src": "art/l_rider.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.32,
+         "dy": -0.01,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b010",
+   "text": "Para entender a este jinete hay que regresar mucho antes, a una tierra que hoy pocos recuerdan que fue mexicana.",
+   "music": "calm",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/map_nueces.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.02
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO I|La tierra de nadie",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b011",
+   "text": "Entre el río Nueces y el río Bravo había una franja enorme de monte. Mezquite, nopal, caballos salvajes. Ranchos mexicanos, vaqueros, familias que llevaban generaciones ahí.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 6.0,
+     "gain": -16,
+     "args": {
+      "dur": 5,
+      "distance": 0.8,
+      "bpm": 140
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rancho_dusk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/mustangs_run.png"
+      },
+      {
+       "src": "art/l_dust.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.7
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.08,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b012",
+   "text": "En mil ochocientos treinta y seis, Texas se separó de México, y empezó la pelea por esa franja. Texas decía que su frontera era el Bravo. México decía que era el Nueces.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/map_nueces.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.45,
+       1.3
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.5
+      ],
+      "ease": "inout"
+     },
+     "grade": "sepia",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/map_nueces.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.6,
+       1.62
+      ],
+      "to": [
+       0.47000000000000003,
+       0.58,
+       1.7400000000000002
+      ],
+      "ease": "inout"
+     },
+     "grade": "sepia",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b013",
+   "text": "En medio quedó una tierra sin ley. La gente le decía la tierra de nadie. Ahí cada quien se cuidaba solo… y de noche, nadie salía al monte sin su rifle.",
+   "music": "mystery",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 3.0,
+     "gain": -14
+    },
+    {
+     "name": "howl",
+     "at": 7.0,
+     "gain": -16
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_night2.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/vaqueros_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b014",
+   "text": "Por ese monte cruzaba de todo. Arrieros con mulas cargadas rumbo a Matamoros. Soldados. Contrabandistas. Y bandas de hombres armados que no respetaban ni una bandera ni la otra.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 1.0,
+     "gain": -14,
+     "args": {
+      "dur": 5,
+      "distance": 0.6
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/riders_chase.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/riders_chase.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6799999999999999,
+       0.6,
+       1.3199999999999998
+      ],
+      "to": [
+       0.52,
+       0.58,
+       1.44
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b015",
+   "text": "Luego vino la guerra entre México y Estados Unidos. Y en mil ochocientos cuarenta y ocho, con el Tratado de Guadalupe Hidalgo, la frontera quedó en el río Bravo.",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/treaty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "Guadalupe Hidalgo, 1848|fin de la guerra",
+       "style": "date",
+       "at": [
+        3.0,
+        7.5
+       ]
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/treaty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.4,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.38,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b016",
+   "text": "De un día para otro, miles de mexicanos amanecieron del otro lado de la línea. Sus ranchos, sus caballos, sus muertos enterrados… ahora estaban en otro país.",
+   "music": "sad",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rio_bravo.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/border_fire.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.68,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b017",
+   "text": "Muchos se quedaron a defender lo suyo. Otros cruzaron el río y no volvieron. Y algunos, dicen, se quedaron en el monte, resentidos, sin patria y sin ley.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_dusk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.45,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/brush_dusk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.55,
+       1.37
+      ],
+      "to": [
+       0.37,
+       0.53,
+       1.4900000000000002
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "dust"
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b018",
+   "text": "Y es en esos años, en ese monte, donde aparece el hombre de esta historia. Cuentan que se llamaba Vidal.",
+   "music": "mystery",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/vidal_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b019",
+   "text": "Nadie sabe su apellido. Algunos dicen que fue vaquero, que conocía el monte como la palma de su mano y que podía amansar un mesteño en una sola tarde.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/vidal_smile.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.48,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/mustangs_run.png"
+      },
+      {
+       "src": "art/l_dust.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.7
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.08,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.55,
+       0.62,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b020",
+   "text": "Lo que sí cuentan todos es que montaba como pocos, que nunca se quitaba su sombrero de ala ancha… y que se reía de los rinches.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/vidal_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.35,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.32,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b021",
+   "text": "Otros dicen que ya entonces era cuatrero, ladrón de ganado y de caballos… y que por su cabeza se ofrecía una recompensa.",
+   "music": "tension",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/vidal_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b022",
+   "text": "Y quédate con esa frase. Porque en esta historia… la cabeza de Vidal es lo más importante.",
+   "sfx": [
+    {
+     "name": "sting",
+     "at": 3.5,
+     "gain": -10
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -14,
+     "args": {
+      "dur": 6,
+      "bpm": 64
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/vidal_cold.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.36,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 64,
+       "amp": 0.12
+      }
+     ],
+     "text": [
+      {
+       "str": "SU CABEZA|tenía precio",
+       "style": "big",
+       "at": [
+        1.5,
+        5.5
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b023",
+   "text": "Mil ochocientos cincuenta. Era la temporada que en el monte llamaban la luna comanche.",
+   "music": "mystery",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/comanche_moon.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.4,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO II|Los caballos del rinche",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b024",
+   "text": "En las noches de luna llena bajaban partidas a robar caballos, y los rancheros salían a perseguirlas. Las casas se quedaban casi solas.",
+   "sfx": [
+    {
+     "name": "howl",
+     "at": 2.0,
+     "gain": -16
+    },
+    {
+     "name": "hooves",
+     "at": 5.0,
+     "gain": -18,
+     "args": {
+      "dur": 4,
+      "distance": 0.9
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/comanche_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.7,
+       0.6,
+       1.35
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rancho_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b025",
+   "text": "Cuentan que Vidal aprovechó justo eso. Mientras los hombres andaban lejos, él y su gente entraron a los ranchos cerca del río San Antonio y se llevaron una manada entera, rumbo al sur, rumbo a México.",
+   "music": "tension",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 6.0,
+     "gain": -10,
+     "args": {
+      "dur": 7,
+      "distance": 0.4,
+      "bpm": 160
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rancho_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.65,
+       0.65,
+       1.3
+      ],
+      "to": [
+       0.75,
+       0.65,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/mustangs_run.png"
+      },
+      {
+       "src": "art/l_dust.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.7
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.08,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.4,
+       0.6,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b026",
+   "text": "Pero esa vez se equivocó de corrales. Entre esos animales había mesteños de un hombre que no perdonaba.",
+   "amb": [
+    "wind"
+   ],
+   "sfx": [
+    {
+     "name": "gust",
+     "at": 1.0,
+     "gain": -12
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/corral_empty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b027",
+   "text": "Se llamaba Creed Taylor. Era un rinche, como les decían en la frontera a los guardias montados de Texas. Había peleado en la guerra y conocía el monte tanto como Vidal.",
+   "music": "calm",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/taylor_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/taylor_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.4,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.38,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b028",
+   "text": "Esos caballos son míos… y los voy a traer de vuelta.",
+   "pause": 0.7,
+   "voice": "em_santa",
+   "speed": 0.84,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/taylor_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.25
+      ],
+      "to": [
+       0.5,
+       0.38,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "text": [
+      {
+       "str": "Esos caballos son míos.|Creed Taylor",
+       "style": "quote",
+       "at": [
+        0.3,
+        4.0
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b029",
+   "text": "Con él iba otro rinche, un hombre enorme al que todos llamaban Pie Grande Wallace. Y un ranchero mexicano de apellido Flores, que también había perdido sus animales.",
+   "music": "tension",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 7.0,
+     "gain": -14,
+     "args": {
+      "dur": 5,
+      "distance": 0.5
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wallace_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/riders_chase.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b030",
+   "text": "Los tres siguieron el rastro durante días. Huellas de cascos en la tierra seca. Ramas rotas. Cenizas de fogatas apagadas.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/tracks.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.7,
+       0.55,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/camp_embers.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.75,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.72,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b031",
+   "text": "De día el sol de la franja quemaba como brasa. De noche el frío se metía en los huesos. Y en cada aguaje, en cada arroyo seco, el rastro de la manada seguía apuntando al sur.",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/brush_dusk.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.5,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b032",
+   "text": "Y una noche, a lo lejos, vieron una lucecita entre los mezquites.",
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 2.0,
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camp_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.0
+      ],
+      "to": [
+       0.5,
+       0.68,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b033",
+   "text": "Si te gustan las leyendas de México, suscríbete. Porque lo que pasó esa noche es algo que la frontera nunca pudo olvidar.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.15
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b034",
+   "text": "El campamento de Vidal estaba en un claro del monte. La fogata casi apagada. Los caballos robados, amarrados a un lado. Y los hombres… dormidos.",
+   "music": "dread",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camp_night.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.65,
+       1.15
+      ],
+      "to": [
+       0.55,
+       0.7,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO III|La noche del campamento",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/camp_night.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.63,
+       0.7,
+       1.52
+      ],
+      "to": [
+       0.47000000000000003,
+       0.6799999999999999,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.7,
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b035",
+   "text": "Imagina el silencio. Solo los grillos y el resoplido de los caballos. Tres sombras que se acercan entre los nopales, agachadas, con los rifles en la mano.",
+   "sfx": [
+    {
+     "name": "footsteps",
+     "at": 1.0,
+     "gain": -18,
+     "args": {
+      "dur": 6
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 3.0,
+     "gain": -12,
+     "args": {
+      "dur": 6,
+      "bpm": 90
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camp_shadows.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.6,
+       1.15
+      ],
+      "to": [
+       0.4,
+       0.6,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/camp_shadows.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.65,
+       1.35
+      ],
+      "to": [
+       0.65,
+       0.65,
+       1.55
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b036",
+   "text": "Uno de los caballos levantó la cabeza. Paró las orejas. Algo había olido en el aire. Pero ninguno de los hombres despertó.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 6,
+      "bpm": 100
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camp_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.2,
+       0.62,
+       1.5
+      ],
+      "to": [
+       0.22,
+       0.62,
+       1.7
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b037",
+   "text": "Los rinches no gritaron. No dieron aviso.",
+   "pause": 0.3,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camp_embers.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.7,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b038",
+   "text": "",
+   "pause": 0.8,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 1.0,
+     "gain": -3
+    },
+    {
+     "name": "boom",
+     "at": 1.4,
+     "gain": -5,
+     "pan": -0.5
+    },
+    {
+     "name": "boom",
+     "at": 1.9,
+     "gain": -6,
+     "pan": 0.5
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camp_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.65,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "dur": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/muzzle_flash.png"
+      }
+     ],
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 10,
+       "at": [
+        0,
+        1.2
+       ]
+      },
+      {
+       "type": "lightning",
+       "at": [
+        0.0,
+        0.4,
+        0.9
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.1,
+     "dur": 2.2
+    }
+   ]
+  },
+  {
+   "id": "b039",
+   "text": "Cuando volvió el silencio, ninguno de los cuatreros se levantó de su cobija.",
+   "music": "sad",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/camp_embers.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.7,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.75,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b040",
+   "text": "Pero para Pie Grande Wallace eso no era suficiente. Dicen que se quedó mirando el cuerpo de Vidal a la luz de las brasas… y que se le ocurrió una lección para todos los ladrones de caballos de la frontera.",
+   "music": "dread",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wallace_shadow.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 0.8
+    },
+    {
+     "layers": [
+      {
+       "src": "art/wallace_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b041",
+   "text": "Que todos lo vean. Que nadie vuelva a tocar un caballo de este lado del río.",
+   "pause": 0.8,
+   "voice": "em_santa",
+   "speed": 0.76,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wallace_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.38,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.36,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 60,
+       "amp": 0.1
+      }
+     ],
+     "text": [
+      {
+       "str": "Que todos lo vean.|Pie Grande Wallace",
+       "style": "quote",
+       "at": [
+        0.3,
+        4.5
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b042",
+   "text": "Lo que hicieron después, la leyenda lo cuenta en voz baja.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 0.5,
+     "gain": -16,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "blood"
+    }
+   ]
+  },
+  {
+   "id": "b043",
+   "text": "Atraparon un mesteño salvaje, uno que nunca había sentido una silla. Le pusieron la montura. Y sobre ella sentaron a Vidal… muy derecho, con las piernas amarradas a los estribos y las manos atadas a la cabeza de la silla.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.4,
+     "gain": -10
+    },
+    {
+     "name": "hooves",
+     "at": 0.6,
+     "gain": -12,
+     "args": {
+      "dur": 2,
+      "distance": 0.2,
+      "bpm": 200
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mustang_wild.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "shake",
+       "amp": 5,
+       "at": [
+        0.5,
+        1.5
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/hands_tied.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.58,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b044",
+   "text": "Vidal ya no tenía la cabeza sobre los hombros. Su sombrero, con lo que había quedado debajo, lo colgaron de la montura con una tira de cuero crudo.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 8,
+      "bpm": 56
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sombrero_horn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.4,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 56,
+       "amp": 0.1
+      }
+     ],
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b045",
+   "text": "Luego le dieron un golpe en el anca al caballo. Y el mesteño salió disparado hacia la oscuridad, relinchando, con su jinete muerto encima.",
+   "music": "climax",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.0,
+     "gain": -6
+    },
+    {
+     "name": "hooves",
+     "at": 0.2,
+     "gain": -6,
+     "args": {
+      "dur": 9,
+      "distance": 0.2,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hooves_dust.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 6,
+       "at": [
+        0,
+        1.0
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/release_dark.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.7,
+       0.55,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b046",
+   "text": "El galope se fue apagando poco a poco en el monte… hasta que no se oyó nada.",
+   "pause": 1.0,
+   "music": "silence",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -20,
+     "args": {
+      "dur": 5,
+      "distance": 1.0,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_night3.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b047",
+   "text": "Pasaron semanas. Y en los ranchos del sur de Texas empezaron a contar algo que nadie quería creer.",
+   "music": "mystery",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/vaqueros_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO IV|El Muerto",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0
+    }
+   ]
+  },
+  {
+   "id": "b048",
+   "text": "Vaqueros que cuidaban ganado de noche veían pasar un caballo salvaje con un hombre encima. Un hombre sin cabeza.",
+   "music": "tension",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 6,
+      "distance": 0.5,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_night.png"
+      },
+      {
+       "src": "art/l_rider.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.32,
+         "dy": -0.01,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rider_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.35,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.3,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b049",
+   "text": "Le gritaban. No contestaba. Le disparaban… y el jinete seguía adelante, como si las balas lo atravesaran.",
+   "sfx": [
+    {
+     "name": "boom",
+     "at": 3.2,
+     "gain": -8
+    },
+    {
+     "name": "boom",
+     "at": 4.0,
+     "gain": -9
+    },
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -12,
+     "args": {
+      "dur": 7,
+      "distance": 0.6,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/vaqueros_shoot.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "lightning",
+       "at": [
+        3.2,
+        4.0
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b050",
+   "text": "",
+   "pause": 0.6,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.3,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.2,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.2,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_night2.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.25
+      ],
+      "ease": "inout"
+     },
+     "dur": 1.0
+    },
+    {
+     "layers": [
+      {
+       "src": "art/red_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b051",
+   "text": "Los soldados del fuerte Inge, donde hoy está la ciudad de Uvalde, juraban haberlo visto cruzar de noche frente a la muralla.",
+   "music": "mystery",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 3.0,
+     "gain": -14,
+     "args": {
+      "dur": 5,
+      "distance": 0.7
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/fort_inge.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.65,
+       0.6,
+       1.3
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "Fuerte Inge|hoy Uvalde, Texas",
+       "style": "date",
+       "at": [
+        0.8,
+        5.0
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b052",
+   "text": "Dicen que el mesteño no paraba nunca. Que cruzaba arroyos, matorrales y nopaleras sin detenerse, como si algo lo persiguiera. Y que sobre su lomo, el jinete se sacudía con cada salto… derecho, amarrado, sin cabeza.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.0,
+     "gain": -9,
+     "args": {
+      "dur": 10,
+      "distance": 0.4,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/hooves_dust.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.3
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 3,
+       "at": [
+        0,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/brush_night2.png"
+      },
+      {
+       "src": "art/l_rider.png",
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.32,
+         "dy": -0.01,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.15
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b053",
+   "text": "Le pusieron un nombre: El Muerto. Y los vaqueros, mexicanos y texanos por igual, dejaron de salir solos al monte en las noches de luna.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.48,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "EL MUERTO|",
+       "style": "big",
+       "at": [
+        1.5,
+        5.0
+       ],
+       "pos": "bottom"
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/brush_night3.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b054",
+   "text": "En los ranchos lo usaban para asustar a los muchachos desobedientes. Pórtate bien, les decían, o va a venir El Muerto. Y los viejos rezaban un Padre Nuestro cada vez que oían cascos en la noche.",
+   "amb": [
+    "fire",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/vaqueros_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.6,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "embers"
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/vaqueros_fire.png"
+      },
+      {
+       "src": "art/l_fire_glow.png",
+       "blend": "screen",
+       "anim": [
+        {
+         "type": "flicker",
+         "amp": 0.2,
+         "speed": 1.2
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.53,
+       0.6,
+       1.52
+      ],
+      "to": [
+       0.37,
+       0.58,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      "embers"
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b055",
+   "text": "Cuentan que al fin, después de mucho tiempo, unos vaqueros atraparon al mesteño en un aguaje cerca de un lugar llamado Ben Bolt, al sur de Alice.",
+   "music": "sad",
+   "amb": [
+    "wind",
+    {
+     "name": "river",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "grade": "warm"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/waterhole_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.52,
+       0.62,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b056",
+   "text": "El caballo estaba flaco, con el lomo herido por la silla. Y el jinete seguía ahí, amarrado, con la ropa llena de agujeros de bala y de flechas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/waterhole_dawn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.52,
+       0.55,
+       1.4
+      ],
+      "to": [
+       0.52,
+       0.5,
+       1.7
+      ],
+      "ease": "in"
+     }
+    }
+   ]
+  },
+  {
+   "id": "b057",
+   "text": "Dicen que uno de los vaqueros se acercó a revisar el sombrero que colgaba de la montura… y que se alejó sin decir una sola palabra. Nunca quiso contar lo que vio.",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -12,
+     "args": {
+      "dur": 7,
+      "bpm": 60
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/sombrero_horn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.33,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.34,
+       0.6,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 56,
+       "amp": 0.1
+      }
+     ],
+     "grade": "warm",
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/sombrero_horn.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42000000000000004,
+       0.6,
+       1.52
+      ],
+      "to": [
+       0.26,
+       0.58,
+       1.6400000000000001
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "pulse",
+       "bpm": 56,
+       "amp": 0.1
+      }
+     ],
+     "grade": "warm",
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b058",
+   "text": "Lo bajaron y lo enterraron ahí mismo, bajo un mezquite. Sin cruz. Sin nombre.",
+   "sfx": [
+    {
+     "name": "bell",
+     "at": 2.5,
+     "gain": -18,
+     "args": {
+      "freq": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/grave_mesquite.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.05
+      ],
+      "to": [
+       0.42,
+       0.65,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b059",
+   "text": "Pensaron que con eso se acababa todo.",
+   "pause": 1.0,
+   "music": "silence",
+   "amb": [
+    "wind"
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/grave_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.62,
+       1.15
+      ],
+      "to": [
+       0.45,
+       0.65,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b060",
+   "text": "Se equivocaron.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.3,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.2,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.2,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/grave_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.65,
+       1.3
+      ],
+      "to": [
+       0.45,
+       0.65,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "dur": 1.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rider_close_red.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.4,
+       1.25
+      ],
+      "to": [
+       0.45,
+       0.38,
+       1.45
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "text": [
+      {
+       "str": "SE EQUIVOCARON|",
+       "style": "big",
+       "at": [
+        0.2,
+        2.6
+       ],
+       "pos": "bottom"
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12
+    }
+   ]
+  },
+  {
+   "id": "b061",
+   "text": "Porque el jinete siguió saliendo. Siguió cabalgando por el monte… aunque su cuerpo ya estaba bajo tierra.",
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.5,
+     "gain": -14,
+     "args": {
+      "dur": 7,
+      "distance": 0.8,
+      "bpm": 150
+     }
+    },
+    {
+     "name": "whisper",
+     "at": 2.0,
+     "gain": -18,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_fog.png"
+      },
+      {
+       "src": "art/l_rider_ghost.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.85
+       ],
+       "fade_in": 1.5,
+       "depth": 1.05,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.2,
+         "ease": "linear"
+        },
+        {
+         "type": "flicker",
+         "amp": 0.15,
+         "speed": 1.0
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b062",
+   "text": "En mil novecientos diecisiete, una pareja que viajaba en carreta cerca de San Diego, Texas, contó que un jinete sin cabeza les cerró el camino… y que les gritó que todo era suyo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/wagon_1917.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.52,
+       0.62,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "1917|San Diego, Texas",
+       "style": "date",
+       "at": [
+        0.8,
+        4.5
+       ]
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rider_front.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b063",
+   "text": "Y en mil novecientos sesenta y nueve, cerca de Freer, unos viajeros dijeron haber visto en la carretera, a la luz de los faros, un caballo con un jinete que no tenía cabeza.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 6.0,
+     "gain": -12,
+     "args": {
+      "dur": 4,
+      "distance": 0.4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/car_1969.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.65,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.7,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "1969|cerca de Freer, Texas",
+       "style": "date",
+       "at": [
+        0.8,
+        4.5
+       ]
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/car_1969.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.7,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.6799999999999999,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b064",
+   "text": "Hasta hay una loma en ese monte a la que la gente empezó a llamar la loma del jinete sin cabeza.",
+   "sfx": [
+    {
+     "name": "owl",
+     "at": 2.0,
+     "gain": -14
+    },
+    {
+     "name": "howl",
+     "at": 5.0,
+     "gain": -16
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/headless_hill.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b065",
+   "text": "Ahora, vamos a separar la historia de la leyenda.",
+   "music": "calm",
+   "amb": [
+    "room",
+    {
+     "name": "clock",
+     "gain": -14
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chronicle.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.45,
+       1.05
+      ],
+      "to": [
+       0.62,
+       0.4,
+       1.2
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      "dust",
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "text": [
+      {
+       "str": "CAPÍTULO V|Lo que dice la historia",
+       "style": "chapter",
+       "at": [
+        0.6,
+        5.0
+       ]
+      }
+     ],
+     "transition": "fade",
+     "transition_len": 1.0,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b066",
+   "text": "La tierra de nadie existió. La disputa entre el Nueces y el Bravo fue real, y el tratado de mil ochocientos cuarenta y ocho cambió la vida de miles de familias mexicanas.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/map_nueces.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.1
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "grade": "sepia"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/treaty.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b067",
+   "text": "Creed Taylor y Pie Grande Wallace también existieron. Fueron rinches conocidos en su tiempo, y Wallace terminó convertido en un personaje del folclor texano.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/taylor_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/wallace_portrait.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "candle"
+    }
+   ]
+  },
+  {
+   "id": "b068",
+   "text": "La historia de Vidal, en cambio, no aparece en documentos oficiales. La conocemos porque se contó de boca en boca… y porque, según se dice, el propio Taylor la relató muchos años después, ya de viejo.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/chronicle.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.35,
+       0.6,
+       1.5
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "flicker",
+       "amp": 0.08
+      }
+     ],
+     "grade": "candle"
+    },
+    {
+     "layers": [
+      {
+       "src": "art/vidal_night.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.42,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.35
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6,
+     "grade": "moon"
+    }
+   ]
+  },
+  {
+   "id": "b069",
+   "text": "Así que no sabemos si Vidal existió de verdad, ni si aquella noche pasó como la cuentan. Pero en muchos ranchos del norte de México también se habla de jinetes sin cabeza que cruzan los caminos de noche.",
+   "music": "mystery",
+   "amb": [
+    "wind",
+    {
+     "name": "crickets",
+     "gain": -6
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/border_fire.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.68,
+       0.6,
+       1.4
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/road_night.png"
+      },
+      {
+       "src": "art/l_rider_far.png",
+       "depth": 1.02,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.22,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b070",
+   "text": "¿Y qué es lo que reclama El Muerto, cuando grita que todo es suyo?",
+   "music": "dread",
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.5,
+     "gain": -14,
+     "args": {
+      "dur": 6,
+      "bpm": 58
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.45,
+       0.6,
+       1.2
+      ],
+      "to": [
+       0.45,
+       0.35,
+       1.35
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      },
+      {
+       "type": "pulse",
+       "bpm": 58,
+       "amp": 0.08
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b071",
+   "text": "Algunos dicen que son los caballos. Que Vidal sigue buscando la manada que le quitaron aquella noche.",
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/mustangs_run.png"
+      },
+      {
+       "src": "art/l_dust.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.7
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.08,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.1
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.25
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      "dust"
+     ],
+     "grade": "cold"
+    }
+   ]
+  },
+  {
+   "id": "b072",
+   "text": "Pero los viejos de la frontera cuentan otra cosa. Dicen que Vidal no habla de caballos. Que habla de la tierra. De esa franja de monte entre dos ríos que un día fue de México… y que de la noche a la mañana dejó de serlo.",
+   "music": "sad",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rio_bravo.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/map_nueces.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.6
+      ],
+      "ease": "in"
+     },
+     "transition": "xfade",
+     "transition_len": 0.8,
+     "grade": "sepia"
+    }
+   ]
+  },
+  {
+   "id": "b073",
+   "text": "Y que por eso cabalga siempre hacia el sur. Hacia el río. Buscando su cabeza… y buscando su tierra.",
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 0.5,
+     "gain": -10,
+     "args": {
+      "dur": 7,
+      "distance": 0.5,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/road_night.png"
+      },
+      {
+       "src": "art/l_rider.png",
+       "depth": 1.05,
+       "opacity": [
+        0,
+        1.0
+       ],
+       "fade_in": 0.8,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.18,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.55,
+       0.55,
+       1.2
+      ],
+      "ease": "linear"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "SU TIERRA|",
+       "style": "big",
+       "at": [
+        4.0,
+        7.5
+       ],
+       "pos": "bottom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b074",
+   "text": "Así que si alguna noche, en un camino del norte, tu caballo se detiene y oyes un galope entre los mezquites… no levantes la vista para buscarle la cara.",
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 1.0,
+     "gain": -10,
+     "args": {
+      "dur": 9,
+      "distance": 0.6,
+      "bpm": 150
+     }
+    },
+    {
+     "name": "heartbeat",
+     "at": 4.0,
+     "gain": -12,
+     "args": {
+      "dur": 6,
+      "bpm": 96
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_fog.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ]
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rider_front.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.42,
+       1.45
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "transition": "xfade",
+     "transition_len": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b075",
+   "text": "Porque no la vas a encontrar.",
+   "pause": 0.8,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": -2.3,
+     "gain": -8,
+     "args": {
+      "dur": 3.5
+     }
+    },
+    {
+     "name": "sting",
+     "at": 1.2,
+     "gain": -2
+    },
+    {
+     "name": "boom",
+     "at": 1.2,
+     "gain": -3
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_close.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.42,
+       0.32,
+       1.3
+      ],
+      "to": [
+       0.42,
+       0.3,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "dur": 2.2
+    },
+    {
+     "layers": [
+      {
+       "src": "art/rider_flash.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.15
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.4
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "shake",
+       "amp": 9,
+       "at": [
+        0,
+        0.6
+       ]
+      }
+     ],
+     "transition": "flash",
+     "transition_len": 0.12,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "b076",
+   "text": "¿Tú crees que El Muerto reclama sus caballos… o su tierra? Te leo en los comentarios.",
+   "music": "mystery",
+   "pause": 0.8,
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/rider_moon.png"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.48,
+       1.25
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "¿Sus caballos… o su tierra?|",
+       "style": "quote",
+       "at": [
+        1.0,
+        6.0
+       ],
+       "pos": "center"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b077",
+   "text": "En el próximo video viajamos a los canales de Xochimilco, a una isla donde cientos de muñecas cuelgan de los árboles… y dicen que te siguen con la mirada. La Isla de las Muñecas.",
+   "amb": [
+    "river",
+    {
+     "name": "crickets",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whisper",
+     "at": 3.0,
+     "gain": -18,
+     "args": {
+      "dur": 4
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/dolls_tease.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.05
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.3
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "text": [
+      {
+       "str": "PRÓXIMO VIDEO|La Isla de las Muñecas",
+       "style": "big",
+       "at": [
+        2.0,
+        7.5
+       ]
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/dolls_tease.png"
+      },
+      {
+       "src": "art/l_fog.png",
+       "blend": "screen",
+       "opacity": [
+        0,
+        0.8
+       ],
+       "anim": [
+        {
+         "type": "drift",
+         "dx": -0.06,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.5,
+       1.42
+      ],
+      "to": [
+       0.42,
+       0.48,
+       1.54
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  },
+  {
+   "id": "b078",
+   "text": "Hasta la próxima leyenda. Y recuerda… en la frontera, alguien todavía cabalga sin cabeza.",
+   "pause": 1.0,
+   "music": "dread",
+   "amb": [
+    "night",
+    {
+     "name": "wind",
+     "gain": -8
+    }
+   ],
+   "sfx": [
+    {
+     "name": "hooves",
+     "at": 1.0,
+     "gain": -16,
+     "args": {
+      "dur": 6,
+      "distance": 0.9,
+      "bpm": 150
+     }
+    }
+   ],
+   "scenes": [
+    {
+     "layers": [
+      {
+       "src": "art/brush_night.png"
+      },
+      {
+       "src": "art/l_rider_far.png",
+       "depth": 1.02,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.22,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.35
+      ],
+      "ease": "in"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "weight": 0.5
+    },
+    {
+     "layers": [
+      {
+       "src": "art/brush_night.png"
+      },
+      {
+       "src": "art/l_rider_far.png",
+       "depth": 1.02,
+       "anim": [
+        {
+         "type": "drift",
+         "dx": 0.22,
+         "ease": "linear"
+        }
+       ]
+      }
+     ],
+     "cam": {
+      "from": [
+       0.58,
+       0.45,
+       1.4700000000000002
+      ],
+      "to": [
+       0.42,
+       0.43,
+       1.5900000000000003
+      ],
+      "ease": "inout"
+     },
+     "fx": [
+      {
+       "type": "fog",
+       "strength": 0.45,
+       "low": true
+      }
+     ],
+     "out": "fade",
+     "out_len": 2.0,
+     "weight": 0.5,
+     "transition": "xfade",
+     "transition_len": 0.7
+    }
+   ]
+  }
+ ]
+}
